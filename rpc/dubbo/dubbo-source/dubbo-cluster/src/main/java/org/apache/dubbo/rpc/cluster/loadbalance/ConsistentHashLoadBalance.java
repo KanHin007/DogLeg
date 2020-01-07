@@ -34,6 +34,9 @@ import static org.apache.dubbo.common.constants.CommonConstants.COMMA_SPLIT_PATT
 
 /**
  * ConsistentHashLoadBalance
+ *
+ * 一致性hash算法，同一个请求只能打到对应的机器上，否则就是顺时针最近的机器
+ *
  */
 public class ConsistentHashLoadBalance extends AbstractLoadBalance {
     public static final String NAME = "consistenthash";
@@ -53,18 +56,28 @@ public class ConsistentHashLoadBalance extends AbstractLoadBalance {
     @SuppressWarnings("unchecked")
     @Override
     protected <T> Invoker<T> doSelect(List<Invoker<T>> invokers, URL url, Invocation invocation) {
+        // 获取调用的方法
         String methodName = RpcUtils.getMethodName(invocation);
+        // 拼装权限定名字
         String key = invokers.get(0).getUrl().getServiceKey() + "." + methodName;
         // using the hashcode of list to compute the hash only pay attention to the elements in the list
         int invokersHashCode = invokers.hashCode();
+        // 根据权限名字获取一致性hash选择器
         ConsistentHashSelector<T> selector = (ConsistentHashSelector<T>) selectors.get(key);
+        //如果选择器为空 或者 选择器的hashcode不想等
         if (selector == null || selector.identityHashCode != invokersHashCode) {
+            //创建一个新的
             selectors.put(key, new ConsistentHashSelector<T>(invokers, methodName, invokersHashCode));
             selector = (ConsistentHashSelector<T>) selectors.get(key);
         }
+        // 选择一个invoker
         return selector.select(invocation);
     }
 
+    /**
+     * 一致性hash选择器
+     * @param <T>
+     */
     private static final class ConsistentHashSelector<T> {
 
         private final TreeMap<Long, Invoker<T>> virtualInvokers;
@@ -85,6 +98,7 @@ public class ConsistentHashLoadBalance extends AbstractLoadBalance {
             for (int i = 0; i < index.length; i++) {
                 argumentIndex[i] = Integer.parseInt(index[i]);
             }
+            // 将所有的invoker放入的一致性hash环中
             for (Invoker<T> invoker : invokers) {
                 String address = invoker.getUrl().getAddress();
                 for (int i = 0; i < replicaNumber / 4; i++) {
@@ -114,7 +128,9 @@ public class ConsistentHashLoadBalance extends AbstractLoadBalance {
         }
 
         private Invoker<T> selectForKey(long hash) {
+            // 拿出大于hash索引的一个元素
             Map.Entry<Long, Invoker<T>> entry = virtualInvokers.ceilingEntry(hash);
+            //如果为空就拿第一个entry
             if (entry == null) {
                 entry = virtualInvokers.firstEntry();
             }

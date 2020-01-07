@@ -1,0 +1,66 @@
+spring:
+  application:
+    name: user-service
+  cloud:
+    ### consul相关配置
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        heartbeat:
+          enabled: true
+        enabled: true
+        register: true
+        deregister: true
+        prefer-ip-address: true
+        instance-id: ${spring.application.name}
+        #        只查询有效的记录
+        query-passing: true
+      config:
+        #      在consul中配置的key路径为: config/cloud-consul/key 在启动或更新时会覆盖项目中原先配置
+        format: key_value
+        enabled: false
+        #        所有项目共用的配置 consul的配置路径为： config/application/key
+        default-context: application
+        data-key: data
+        prefix: config
+    ##zookeeper
+    zookeeper:
+      connect-string: localhost:2181
+    ##nacos
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+  autoconfigure:
+    exclude: org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration,org.springframework.cloud.consul.ConsulAutoConfiguration
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone:
+        http://localhost:7001/eureka/
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: basic
+  hystrix:
+    enabled: true
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 30000
+
+server:
+  port: 8001
+
+
+
