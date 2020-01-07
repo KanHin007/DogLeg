@@ -351,6 +351,14 @@
   </profiles>
 
   <properties>
+
+    <!-- 这里内部会调用jni的脚本 但是mac上的jdk识别不到 所以将默认的连接做成软连接
+    $cd /System/Library/Frameworks/JavaVM.framework/Versions
+    $sudo ln -nsf /Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents ./CurrentJDK
+    $cd /System/Library/Frameworks/JavaVM.framework
+    $sudo ln -nsf Versions/CurrentJDK/Home/include/ ./Headers
+
+    -->
     <javaModuleName>io.netty.transport.kqueue</javaModuleName>
     <!-- Needed as we use SelfSignedCertificate in our tests -->
     <argLine.java9.extras>--add-exports java.base/sun.security.x509=ALL-UNNAMED</argLine.java9.extras>

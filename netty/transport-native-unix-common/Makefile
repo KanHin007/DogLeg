@@ -23,8 +23,10 @@
 # LIB_NAME - the name of the native library
 
 SRC_DIR = src/main/c
-JNI_INCLUDE_DIR = $(JAVA_HOME)/include
-JNI_INCLUDES = -I$(JNI_INCLUDE_DIR) -I$(JNI_INCLUDE_DIR)/$(JNI_PLATFORM)
+# 确定你的jdk目录
+JNI_INCLUDE_DIR = /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/include
+# 确定你的平台  darwin-mac linux-linux
+JNI_INCLUDES = -I$(JNI_INCLUDE_DIR) -I$(JNI_INCLUDE_DIR)/darwin
 LIB = $(LIB_DIR)/$(LIB_NAME).a
 
 CFLAGS += $(JNI_INCLUDES)
