@@ -13,6 +13,7 @@
         <module>rpc</module>
         <module>zookeeper</module>
         <module>springcloud</module>
+        <module>nacos</module>
     </modules>
 
     <parent>
