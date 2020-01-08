@@ -16,6 +16,7 @@
         <module>nacos</module>
         <module>netty</module>
         <module>springboot-source</module>
+        <module>springcloud-source</module>
     </modules>
 
     <parent>
