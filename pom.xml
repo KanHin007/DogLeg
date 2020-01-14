@@ -17,6 +17,7 @@
         <module>netty</module>
         <module>springboot-source</module>
         <module>springcloud-source</module>
+        <module>search-engine</module>
     </modules>
 
     <parent>
