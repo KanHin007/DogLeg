@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.admin.DeleteOffsetsConsumerGroupCommandIntegrationTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:13:08" hostname="localhost" time="60.812">
+  <properties/>
+  <testcase name="testDeleteOffsetsOfStableConsumerGroupWithTopicOnly" classname="kafka.admin.DeleteOffsetsConsumerGroupCommandIntegrationTest" time="9.465"/>
+  <testcase name="testDeleteOffsetsOfEmptyConsumerGroupWithUnknownTopicOnly" classname="kafka.admin.DeleteOffsetsConsumerGroupCommandIntegrationTest" time="8.065"/>
+  <testcase name="testDeleteOffsetsOfStableConsumerGroupWithUnknownTopicPartition" classname="kafka.admin.DeleteOffsetsConsumerGroupCommandIntegrationTest" time="8.036"/>
+  <testcase name="testDeleteOffsetsOfEmptyConsumerGroupWithUnknownTopicPartition" classname="kafka.admin.DeleteOffsetsConsumerGroupCommandIntegrationTest" time="4.71"/>
+  <testcase name="testDeleteOffsetsOfEmptyConsumerGroupWithTopicPartition" classname="kafka.admin.DeleteOffsetsConsumerGroupCommandIntegrationTest" time="5.48"/>
+  <testcase name="testDeleteOffsetsOfEmptyConsumerGroupWithTopicOnly" classname="kafka.admin.DeleteOffsetsConsumerGroupCommandIntegrationTest" time="7.092"/>
+  <testcase name="testDeleteOffsetsOfStableConsumerGroupWithTopicPartition" classname="kafka.admin.DeleteOffsetsConsumerGroupCommandIntegrationTest" time="3.983"/>
+  <testcase name="testDeleteOffsetsNonExistingGroup" classname="kafka.admin.DeleteOffsetsConsumerGroupCommandIntegrationTest" time="6.775"/>
+  <testcase name="testDeleteOffsetsOfStableConsumerGroupWithUnknownTopicOnly" classname="kafka.admin.DeleteOffsetsConsumerGroupCommandIntegrationTest" time="7.206"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

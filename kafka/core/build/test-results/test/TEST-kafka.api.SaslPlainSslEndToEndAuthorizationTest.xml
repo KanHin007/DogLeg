@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.api.SaslPlainSslEndToEndAuthorizationTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:40:10" hostname="localhost" time="111.875">
+  <properties/>
+  <testcase name="testAcls" classname="kafka.api.SaslPlainSslEndToEndAuthorizationTest" time="8.353"/>
+  <testcase name="testTwoConsumersWithDifferentSaslCredentials" classname="kafka.api.SaslPlainSslEndToEndAuthorizationTest" time="8.612"/>
+  <testcase name="testNoConsumeWithoutDescribeAclViaSubscribe" classname="kafka.api.SaslPlainSslEndToEndAuthorizationTest" time="8.364"/>
+  <testcase name="testProduceConsumeWithPrefixedAcls" classname="kafka.api.SaslPlainSslEndToEndAuthorizationTest" time="7.605"/>
+  <testcase name="testProduceConsumeViaAssign" classname="kafka.api.SaslPlainSslEndToEndAuthorizationTest" time="8.285"/>
+  <testcase name="testNoConsumeWithDescribeAclViaAssign" classname="kafka.api.SaslPlainSslEndToEndAuthorizationTest" time="8.385"/>
+  <testcase name="testProduceConsumeTopicAutoCreateTopicCreateAcl" classname="kafka.api.SaslPlainSslEndToEndAuthorizationTest" time="7.669"/>
+  <testcase name="testProduceConsumeWithWildcardAcls" classname="kafka.api.SaslPlainSslEndToEndAuthorizationTest" time="7.604"/>
+  <testcase name="testNoConsumeWithDescribeAclViaSubscribe" classname="kafka.api.SaslPlainSslEndToEndAuthorizationTest" time="7.928"/>
+  <testcase name="testNoConsumeWithoutDescribeAclViaAssign" classname="kafka.api.SaslPlainSslEndToEndAuthorizationTest" time="8.531"/>
+  <testcase name="testNoGroupAcl" classname="kafka.api.SaslPlainSslEndToEndAuthorizationTest" time="6.97"/>
+  <testcase name="testNoProduceWithDescribeAcl" classname="kafka.api.SaslPlainSslEndToEndAuthorizationTest" time="6.43"/>
+  <testcase name="testNoDescribeProduceOrConsumeWithoutTopicDescribeAcl" classname="kafka.api.SaslPlainSslEndToEndAuthorizationTest" time="9.523"/>
+  <testcase name="testProduceConsumeViaSubscribe" classname="kafka.api.SaslPlainSslEndToEndAuthorizationTest" time="7.616"/>
+  <system-out><![CDATA[Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:admin has Allow permission for operations: Read from hosts: * 
+
+[2020-01-15 10:40:12,687] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:40:12,687] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:40:12,969] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:40:12,969] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:admin has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:user has Allow permission for operations: Write from hosts: *
+	User:user has Allow permission for operations: Create from hosts: *
+	User:user has Allow permission for operations: Describe from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=READ, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:user has Allow permission for operations: Write from hosts: *
+	User:user has Allow permission for operations: Read from hosts: *
+	User:user has Allow permission for operations: Create from hosts: *
+	User:user has Allow permission for operations: Describe from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:user has Allow permission for operations: Read from hosts: * 
+
+[2020-01-15 10:40:21,488] ERROR [Consumer clientId=consumer-group-94, groupId=group] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:admin has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:user has Allow permission for operations: Write from hosts: *
+	User:user has Allow permission for operations: Create from hosts: *
+	User:user has Allow permission for operations: Describe from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:user has Allow permission for operations: Read from hosts: * 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:user has Allow permission for operations: Write from hosts: *
+	User:user has Allow permission for operations: Create from hosts: * 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:user has Allow permission for operations: Create from hosts: * 
+
+[2020-01-15 10:40:29,977] ERROR [Consumer clientId=consumer-group-95, groupId=group] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:user has Allow permission for operations: Write from hosts: *
+	User:user has Allow permission for operations: Create from hosts: *
+	User:user has Allow permission for operations: Describe from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=READ, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:user has Allow permission for operations: Write from hosts: *
+	User:user has Allow permission for operations: Read from hosts: *
+	User:user has Allow permission for operations: Create from hosts: *
+	User:user has Allow permission for operations: Describe from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:user has Allow permission for operations: Read from hosts: * 
+
+[2020-01-15 10:40:30,452] ERROR [Consumer clientId=consumer-group-95, groupId=group] Topic authorization failed for topics [topic2] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:40:30,453] ERROR [Consumer clientId=consumer-group-95, groupId=group] Topic authorization failed for topics [topic2] (org.apache.kafka.clients.Metadata:281)
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:admin has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2e, patternType=PREFIXED)`: 
+ 	(principal=User:user, host=*, operation=READ, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=WRITE, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=gr, patternType=PREFIXED)`: 
+ 	(principal=User:user, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:PREFIXED:e2e`: 
+ 	User:user has Allow permission for operations: Write from hosts: *
+	User:user has Allow permission for operations: Read from hosts: *
+	User:user has Allow permission for operations: Create from hosts: *
+	User:user has Allow permission for operations: Describe from hosts: * 
+
+Current ACLs for resource `Group:PREFIXED:gr`: 
+ 	User:user has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:admin has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:user has Allow permission for operations: Write from hosts: *
+	User:user has Allow permission for operations: Create from hosts: *
+	User:user has Allow permission for operations: Describe from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=READ, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:user has Allow permission for operations: Write from hosts: *
+	User:user has Allow permission for operations: Read from hosts: *
+	User:user has Allow permission for operations: Create from hosts: *
+	User:user has Allow permission for operations: Describe from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:user has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:admin has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:user has Allow permission for operations: Write from hosts: *
+	User:user has Allow permission for operations: Create from hosts: *
+	User:user has Allow permission for operations: Describe from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:user has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:admin has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=topic2, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:topic2`: 
+ 	User:user has Allow permission for operations: Write from hosts: *
+	User:user has Allow permission for operations: Create from hosts: *
+	User:user has Allow permission for operations: Describe from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=topic2, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=READ, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:topic2`: 
+ 	User:user has Allow permission for operations: Write from hosts: *
+	User:user has Allow permission for operations: Read from hosts: *
+	User:user has Allow permission for operations: Create from hosts: *
+	User:user has Allow permission for operations: Describe from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:user has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:admin has Allow permission for operations: Read from hosts: * 
+
+[2020-01-15 10:41:08,988] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:41:08,988] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:41:09,264] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:41:09,264] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=READ, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=WRITE, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=*, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:user has Allow permission for operations: Describe from hosts: *
+	User:admin has Allow permission for operations: Read from hosts: *
+	User:user has Allow permission for operations: Write from hosts: *
+	User:user has Allow permission for operations: Read from hosts: *
+	User:user has Allow permission for operations: Create from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:*`: 
+ 	User:user has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:admin has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:user has Allow permission for operations: Write from hosts: *
+	User:user has Allow permission for operations: Create from hosts: *
+	User:user has Allow permission for operations: Describe from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:user has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:admin has Allow permission for operations: Read from hosts: * 
+
+[2020-01-15 10:41:25,154] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:41:25,154] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:user has Allow permission for operations: Write from hosts: *
+	User:user has Allow permission for operations: Create from hosts: *
+	User:user has Allow permission for operations: Describe from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:user has Allow permission for operations: Read from hosts: * 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:user has Allow permission for operations: Write from hosts: *
+	User:user has Allow permission for operations: Create from hosts: * 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:user has Allow permission for operations: Create from hosts: * 
+
+[2020-01-15 10:41:26,633] ERROR [Consumer clientId=consumer-group-102, groupId=group] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:admin has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:user has Allow permission for operations: Write from hosts: *
+	User:user has Allow permission for operations: Create from hosts: *
+	User:user has Allow permission for operations: Describe from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:admin has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:user has Allow permission for operations: Describe from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:admin has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:user has Allow permission for operations: Read from hosts: * 
+
+[2020-01-15 10:41:47,222] ERROR [Producer clientId=producer-174] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:41:47,239] ERROR [Consumer clientId=consumer-group-104, groupId=group] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=topic2, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:topic2`: 
+ 	User:user has Allow permission for operations: Write from hosts: *
+	User:user has Allow permission for operations: Create from hosts: *
+	User:user has Allow permission for operations: Describe from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=topic2, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=READ, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:topic2`: 
+ 	User:user has Allow permission for operations: Write from hosts: *
+	User:user has Allow permission for operations: Read from hosts: *
+	User:user has Allow permission for operations: Create from hosts: *
+	User:user has Allow permission for operations: Describe from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:user has Allow permission for operations: Read from hosts: * 
+
+[2020-01-15 10:41:47,734] ERROR [Producer clientId=producer-174] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:41:47,838] ERROR [Producer clientId=producer-174] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:41:47,878] ERROR [Consumer clientId=consumer-group-104, groupId=group] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:user has Allow permission for operations: Write from hosts: *
+	User:user has Allow permission for operations: Create from hosts: *
+	User:user has Allow permission for operations: Describe from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=READ, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:user has Allow permission for operations: Write from hosts: *
+	User:user has Allow permission for operations: Read from hosts: *
+	User:user has Allow permission for operations: Create from hosts: *
+	User:user has Allow permission for operations: Describe from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:user has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:admin has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:user has Allow permission for operations: Write from hosts: *
+	User:user has Allow permission for operations: Create from hosts: *
+	User:user has Allow permission for operations: Describe from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=READ, permissionType=ALLOW)
+	(principal=User:user, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:user, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:user has Allow permission for operations: Write from hosts: *
+	User:user has Allow permission for operations: Read from hosts: *
+	User:user has Allow permission for operations: Create from hosts: *
+	User:user has Allow permission for operations: Describe from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:user has Allow permission for operations: Read from hosts: * 
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

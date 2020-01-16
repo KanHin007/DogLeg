@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.KafkaConfigTest" tests="41" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:28:02" hostname="localhost" time="1.286">
+  <properties/>
+  <testcase name="testAdvertiseConfigured" classname="kafka.server.KafkaConfigTest" time="0.003"/>
+  <testcase name="testLogRetentionTimeHoursProvided" classname="kafka.server.KafkaConfigTest" time="0.001"/>
+  <testcase name="testLogRollTimeBothMsAndHoursProvided" classname="kafka.server.KafkaConfigTest" time="0.002"/>
+  <testcase name="testLogRetentionValid" classname="kafka.server.KafkaConfigTest" time="0.023"/>
+  <testcase name="testSpecificProperties" classname="kafka.server.KafkaConfigTest" time="0.002"/>
+  <testcase name="testDefaultCompressionType" classname="kafka.server.KafkaConfigTest" time="0.0"/>
+  <testcase name="testControlPlaneListenerName" classname="kafka.server.KafkaConfigTest" time="0.002"/>
+  <testcase name="testDuplicateListeners" classname="kafka.server.KafkaConfigTest" time="0.001"/>
+  <testcase name="testLogRetentionUnlimited" classname="kafka.server.KafkaConfigTest" time="0.003"/>
+  <testcase name="testLogRetentionTimeMsProvided" classname="kafka.server.KafkaConfigTest" time="0.0"/>
+  <testcase name="testInterBrokerListenerNameMissingFromListenerSecurityProtocolMap" classname="kafka.server.KafkaConfigTest" time="0.001"/>
+  <testcase name="testMaxConnectionsPerIpProp" classname="kafka.server.KafkaConfigTest" time="0.001"/>
+  <testcase name="testLogRollTimeNoConfigProvided" classname="kafka.server.KafkaConfigTest" time="0.001"/>
+  <testcase name="testInvalidInterBrokerSecurityProtocol" classname="kafka.server.KafkaConfigTest" time="0.002"/>
+  <testcase name="testAdvertiseDefaults" classname="kafka.server.KafkaConfigTest" time="0.001"/>
+  <testcase name="testBadListenerProtocol" classname="kafka.server.KafkaConfigTest" time="0.001"/>
+  <testcase name="testListenerDefaults" classname="kafka.server.KafkaConfigTest" time="0.001"/>
+  <testcase name="testLogRetentionTimeBothMinutesAndHoursProvided" classname="kafka.server.KafkaConfigTest" time="0.001"/>
+  <testcase name="testUncleanElectionDisabled" classname="kafka.server.KafkaConfigTest" time="0.0"/>
+  <testcase name="testListenerNameMissingFromListenerSecurityProtocolMap" classname="kafka.server.KafkaConfigTest" time="0.001"/>
+  <testcase name="testLogRetentionTimeNoConfigProvided" classname="kafka.server.KafkaConfigTest" time="0.0"/>
+  <testcase name="testCaseInsensitiveListenerProtocol" classname="kafka.server.KafkaConfigTest" time="0.001"/>
+  <testcase name="testListenerAndAdvertisedListenerNames" classname="kafka.server.KafkaConfigTest" time="0.001"/>
+  <testcase name="testNonroutableAdvertisedListeners" classname="kafka.server.KafkaConfigTest" time="0.001"/>
+  <testcase name="testInterBrokerListenerNameAndSecurityProtocolSet" classname="kafka.server.KafkaConfigTest" time="0.001"/>
+  <testcase name="testFromPropsInvalid" classname="kafka.server.KafkaConfigTest" time="0.444"/>
+  <testcase name="testInvalidCompressionType" classname="kafka.server.KafkaConfigTest" time="0.03"/>
+  <testcase name="testAdvertiseHostNameDefault" classname="kafka.server.KafkaConfigTest" time="0.001"/>
+  <testcase name="testLogRetentionTimeMinutesProvided" classname="kafka.server.KafkaConfigTest" time="0.001"/>
+  <testcase name="testValidCompressionType" classname="kafka.server.KafkaConfigTest" time="0.002"/>
+  <testcase name="testUncleanElectionInvalid" classname="kafka.server.KafkaConfigTest" time="0.0"/>
+  <testcase name="testListenerNamesWithAdvertisedListenerUnset" classname="kafka.server.KafkaConfigTest" time="0.001"/>
+  <testcase name="testLogRetentionTimeBothMinutesAndMsProvided" classname="kafka.server.KafkaConfigTest" time="0.09"/>
+  <testcase name="testLogRollTimeMsProvided" classname="kafka.server.KafkaConfigTest" time="0.045"/>
+  <testcase name="testUncleanLeaderElectionDefault" classname="kafka.server.KafkaConfigTest" time="0.046"/>
+  <testcase name="testInvalidAdvertisedListenersProtocol" classname="kafka.server.KafkaConfigTest" time="0.001"/>
+  <testcase name="testUncleanElectionEnabled" classname="kafka.server.KafkaConfigTest" time="0.001"/>
+  <testcase name="testInterBrokerVersionMessageFormatCompatibility" classname="kafka.server.KafkaConfigTest" time="0.567"/>
+  <testcase name="testAdvertisePortDefault" classname="kafka.server.KafkaConfigTest" time="0.003"/>
+  <testcase name="testVersionConfiguration" classname="kafka.server.KafkaConfigTest" time="0.002"/>
+  <testcase name="testEqualAdvertisedListenersProtocol" classname="kafka.server.KafkaConfigTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.kafka.clients.ClientUtilsTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:08:09" hostname="localhost" time="7.655">
+  <properties/>
+  <testcase name="testFilterPreferredAddresses" classname="org.apache.kafka.clients.ClientUtilsTest" time="0.418"/>
+  <testcase name="testResolveUnknownHostException" classname="org.apache.kafka.clients.ClientUtilsTest" time="5.051"/>
+  <testcase name="testOnlyBadHostname" classname="org.apache.kafka.clients.ClientUtilsTest" time="0.008"/>
+  <testcase name="testInvalidConfig" classname="org.apache.kafka.clients.ClientUtilsTest" time="0.001"/>
+  <testcase name="testResolveDnsLookupAllIps" classname="org.apache.kafka.clients.ClientUtilsTest" time="0.001"/>
+  <testcase name="testResolveDnsLookup" classname="org.apache.kafka.clients.ClientUtilsTest" time="0.001"/>
+  <testcase name="testParseAndValidateAddresses" classname="org.apache.kafka.clients.ClientUtilsTest" time="0.001"/>
+  <testcase name="testParseAndValidateAddressesWithReverseLookup" classname="org.apache.kafka.clients.ClientUtilsTest" time="2.172"/>
+  <testcase name="testNoPort" classname="org.apache.kafka.clients.ClientUtilsTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

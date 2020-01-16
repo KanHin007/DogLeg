@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class kafka.server.GssapiAuthenticationTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class kafka.server.GssapiAuthenticationTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/kafka.server.html">kafka.server</a> &gt; GssapiAuthenticationTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1m10.63s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testRequestIsAReplay</td>
+<td class="success">42.479s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testServerAuthenticationFailure</td>
+<td class="success">15.585s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testServerNotFoundInKerberosDatabase</td>
+<td class="success">12.567s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka1482422742697122866.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka4164464756145477596.tmp refreshKrb5Config is false principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka3849487898498446014.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka4125844753578807665.tmp refreshKrb5Config is false principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka3988589371692003730.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka2902997735357161378.tmp refreshKrb5Config is false principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+[2020-01-15 10:27:07,576] ERROR [Consumer clientId=consumer-group-39, groupId=group] Connection to node -1 (localhost/127.0.0.1:53086) failed authentication due to: An error: (java.security.PrivilegedActionException: javax.security.sasl.SaslException: GSS initiate failed [Caused by GSSException: No valid credentials provided (Mechanism level: Server not found in Kerberos database (7) - Server not found in Kerberos database)]) occurred when evaluating SASL token received from the Kafka Broker. This may be caused by Java's being unable to resolve the Kafka Broker's hostname correctly. You may want to try to adding '-Dsun.net.spi.nameservice.provider.1=dns,sun' to your client's JVMFLAGS environment. Users must configure FQDN of kafka brokers when authenticating using SASL and `socketChannel.socket().getInetAddress().getHostName()` must match the hostname in `principal/hostname@realm` Kafka Client will go to AUTHENTICATION_FAILED state. (org.apache.kafka.clients.NetworkClient:745)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.2</a> at 2020-1-15 10:48:49</p>
+</div>
+</div>
+</body>
+</html>

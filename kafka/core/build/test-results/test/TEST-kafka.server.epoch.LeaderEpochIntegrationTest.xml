@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.epoch.LeaderEpochIntegrationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:37:46" hostname="localhost" time="33.696">
+  <properties/>
+  <testcase name="shouldIncreaseLeaderEpochBetweenLeaderRestarts" classname="kafka.server.epoch.LeaderEpochIntegrationTest" time="14.383"/>
+  <testcase name="shouldAddCurrentLeaderEpochToMessagesAsTheyAreWrittenToLeader" classname="kafka.server.epoch.LeaderEpochIntegrationTest" time="12.221"/>
+  <testcase name="shouldSendLeaderEpochRequestAndGetAResponse" classname="kafka.server.epoch.LeaderEpochIntegrationTest" time="7.092"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

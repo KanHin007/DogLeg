@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.controller.TopicDeletionManagerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:23:22" hostname="localhost" time="1.015">
+  <properties/>
+  <testcase name="testBrokerFailureAfterDeletionStarted" classname="kafka.controller.TopicDeletionManagerTest" time="0.836"/>
+  <testcase name="testInitialization" classname="kafka.controller.TopicDeletionManagerTest" time="0.027"/>
+  <testcase name="testBasicDeletion" classname="kafka.controller.TopicDeletionManagerTest" time="0.07"/>
+  <testcase name="testDeletionWithBrokerOffline" classname="kafka.controller.TopicDeletionManagerTest" time="0.082"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

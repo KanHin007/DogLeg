@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.ReplicationQuotasTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:30:11" hostname="localhost" time="50.77">
+  <properties/>
+  <testcase name="shouldBootstrapTwoBrokersWithLeaderThrottle" classname="kafka.server.ReplicationQuotasTest" time="18.713"/>
+  <testcase name="shouldThrottleOldSegments" classname="kafka.server.ReplicationQuotasTest" time="12.642"/>
+  <testcase name="shouldBootstrapTwoBrokersWithFollowerThrottle" classname="kafka.server.ReplicationQuotasTest" time="19.415"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

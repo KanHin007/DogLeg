@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.admin.ReassignPartitionsCommandTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:14:09" hostname="localhost" time="39.637">
+  <properties/>
+  <testcase name="shouldRemoveThrottleReplicaListBasedOnProposedAssignment" classname="kafka.admin.ReassignPartitionsCommandTest" time="0.666"/>
+  <testcase name="testReassigningNonExistingPartition" classname="kafka.admin.ReassignPartitionsCommandTest" time="5.047"/>
+  <testcase name="shouldFindMovingReplicasMultipleTopics" classname="kafka.admin.ReassignPartitionsCommandTest" time="0.864"/>
+  <testcase name="shouldNotOverwriteExistingPropertiesWhenLimitIsAdded" classname="kafka.admin.ReassignPartitionsCommandTest" time="0.735"/>
+  <testcase name="shouldFindMovingReplicasMultipleTopicsAndPartitions" classname="kafka.admin.ReassignPartitionsCommandTest" time="1.338"/>
+  <testcase name="shouldRemoveThrottleLimitFromAllBrokers" classname="kafka.admin.ReassignPartitionsCommandTest" time="0.756"/>
+  <testcase name="shouldFindMovingReplicas" classname="kafka.admin.ReassignPartitionsCommandTest" time="0.832"/>
+  <testcase name="shouldFindMovingReplicasMultiplePartitions" classname="kafka.admin.ReassignPartitionsCommandTest" time="1.354"/>
+  <testcase name="testPartitionReassignmentNonOverlappingReplicas" classname="kafka.admin.ReassignPartitionsCommandTest" time="6.635"/>
+  <testcase name="testPartitionReassignmentWithLeaderNotInNewReplicas" classname="kafka.admin.ReassignPartitionsCommandTest" time="5.608"/>
+  <testcase name="testResumePartitionReassignmentThatWasCompleted" classname="kafka.admin.ReassignPartitionsCommandTest" time="5.291"/>
+  <testcase name="shouldSetQuotaLimit" classname="kafka.admin.ReassignPartitionsCommandTest" time="0.562"/>
+  <testcase name="testPartitionReassignmentWithLeaderInNewReplicas" classname="kafka.admin.ReassignPartitionsCommandTest" time="7.019"/>
+  <testcase name="shouldFindMovingReplicasWhenProposedIsSubsetOfExisting" classname="kafka.admin.ReassignPartitionsCommandTest" time="0.651"/>
+  <testcase name="shouldUpdateQuotaLimit" classname="kafka.admin.ReassignPartitionsCommandTest" time="0.415"/>
+  <testcase name="shouldFindTwoMovingReplicasInSamePartition" classname="kafka.admin.ReassignPartitionsCommandTest" time="0.876"/>
+  <testcase name="shouldNotOverwriteEntityConfigsWhenUpdatingThrottledReplicas" classname="kafka.admin.ReassignPartitionsCommandTest" time="0.987"/>
+  <system-out><![CDATA[Throttle was removed.
+[2020-01-15 10:14:11,269] ERROR Skipping reassignment of partition [test,0] since topic test doesn't exist (kafka.admin.ReassignPartitionsCommand:74)
+Throttle was removed.
+[2020-01-15 10:14:19,450] WARN Unable to read additional data from client sessionid 0x100039d9d810000, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn:366)
+[2020-01-15 10:14:39,204] WARN Unable to read additional data from client sessionid 0x100039deaae0000, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn:366)
+[2020-01-15 10:14:41,154] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:41,255] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

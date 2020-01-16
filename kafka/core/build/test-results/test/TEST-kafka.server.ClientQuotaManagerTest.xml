@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.ClientQuotaManagerTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:22:00" hostname="localhost" time="13.036">
+  <properties/>
+  <testcase name="testUserQuotaParsingWithDefaultClientIdQuota" classname="kafka.server.ClientQuotaManagerTest" time="1.001"/>
+  <testcase name="testUserQuotaParsing" classname="kafka.server.ClientQuotaManagerTest" time="1.003"/>
+  <testcase name="testClientIdQuotaParsing" classname="kafka.server.ClientQuotaManagerTest" time="1.006"/>
+  <testcase name="testQuotaViolation" classname="kafka.server.ClientQuotaManagerTest" time="2.005"/>
+  <testcase name="testRequestPercentageQuotaViolation" classname="kafka.server.ClientQuotaManagerTest" time="2.009"/>
+  <testcase name="testQuotaConfigPrecedence" classname="kafka.server.ClientQuotaManagerTest" time="1.001"/>
+  <testcase name="testExpireQuotaSensors" classname="kafka.server.ClientQuotaManagerTest" time="1.002"/>
+  <testcase name="testClientIdNotSanitized" classname="kafka.server.ClientQuotaManagerTest" time="1.002"/>
+  <testcase name="testExpireThrottleTimeSensor" classname="kafka.server.ClientQuotaManagerTest" time="1.0"/>
+  <testcase name="testUserClientIdQuotaParsing" classname="kafka.server.ClientQuotaManagerTest" time="1.001"/>
+  <testcase name="testUserClientQuotaParsingIdWithDefaultClientIdQuota" classname="kafka.server.ClientQuotaManagerTest" time="1.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.DynamicConfigChangeTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:46:00" hostname="localhost" time="64.899">
+  <properties/>
+  <testcase name="testProcessNotification" classname="kafka.server.DynamicConfigChangeTest" time="3.331"/>
+  <testcase name="shouldParseWildcardReplicationQuotaProperties" classname="kafka.server.DynamicConfigChangeTest" time="4.314"/>
+  <testcase name="testDefaultClientIdQuotaConfigChange" classname="kafka.server.DynamicConfigChangeTest" time="3.313"/>
+  <testcase name="testQuotaInitialization" classname="kafka.server.DynamicConfigChangeTest" time="8.356"/>
+  <testcase name="testUserQuotaConfigChange" classname="kafka.server.DynamicConfigChangeTest" time="4.314"/>
+  <testcase name="testClientIdQuotaConfigChange" classname="kafka.server.DynamicConfigChangeTest" time="4.346"/>
+  <testcase name="testUserClientIdQuotaChange" classname="kafka.server.DynamicConfigChangeTest" time="4.344"/>
+  <testcase name="shouldParseReplicationQuotaProperties" classname="kafka.server.DynamicConfigChangeTest" time="4.322"/>
+  <testcase name="shouldParseRegardlessOfWhitespaceAroundValues" classname="kafka.server.DynamicConfigChangeTest" time="3.323"/>
+  <testcase name="testDefaultUserQuotaConfigChange" classname="kafka.server.DynamicConfigChangeTest" time="3.325"/>
+  <testcase name="shouldParseReplicationQuotaReset" classname="kafka.server.DynamicConfigChangeTest" time="4.329"/>
+  <testcase name="testDefaultUserClientIdQuotaConfigChange" classname="kafka.server.DynamicConfigChangeTest" time="4.318"/>
+  <testcase name="testConfigChangeOnNonExistingTopic" classname="kafka.server.DynamicConfigChangeTest" time="4.315"/>
+  <testcase name="testConfigChange" classname="kafka.server.DynamicConfigChangeTest" time="4.318"/>
+  <testcase name="testDynamicTopicConfigChange" classname="kafka.server.DynamicConfigChangeTest" time="4.331"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

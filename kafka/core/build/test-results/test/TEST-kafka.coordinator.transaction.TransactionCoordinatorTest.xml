@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.coordinator.transaction.TransactionCoordinatorTest" tests="52" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:23:23" hostname="localhost" time="0.139">
+  <properties/>
+  <testcase name="shouldNotAbortExpiredTransactionsThatHaveAPendingStateTransition" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.066"/>
+  <testcase name="shouldRespondWithCoordinatorLoadInProgressOnInitPidWhenCoordintorLoading" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.003"/>
+  <testcase name="shouldReplyWithInvalidPidMappingOnEndTxnWhenPidDosentMatchMapped" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.001"/>
+  <testcase name="shouldReturnConcurrentTxnRequestOnEndTxnRequestWhenStatusIsPrepareCommit" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.001"/>
+  <testcase name="shouldRespondWithNotCoordinatorOnEndTxnWhenIsNotCoordinatorForId" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.003"/>
+  <testcase name="shouldRespondWithInvalidTnxProduceEpochOnAddPartitionsWhenEpochsAreDifferent" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.001"/>
+  <testcase name="shouldReturnInvalidRequestWhenTransactionalIdIsEmpty" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.002"/>
+  <testcase name="shouldNotBumpEpochWithPendingTransaction" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.002"/>
+  <testcase name="shouldRespondWithInvalidPidMappingOnAddPartitionsToTransactionWhenTransactionalIdNotPresent" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.001"/>
+  <testcase name="testInitProducerIdWithCurrentEpochProvided" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.003"/>
+  <testcase name="shouldRespondWithSuccessOnAddPartitionsWhenStateIsCompleteCommit" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.002"/>
+  <testcase name="shouldReplyWithInvalidPidMappingOnEndTxnWhenTxnIdDoesntExist" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.001"/>
+  <testcase name="shouldUseLastEpochToFenceWhenEpochsAreExhausted" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.002"/>
+  <testcase name="shouldReplyWithProducerFencedOnEndTxnWhenEpochIsNotSameAsTransaction" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.0"/>
+  <testcase name="testInitProducerIdWithNoLastProducerData" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.003"/>
+  <testcase name="shouldReturnInvalidTxnRequestOnEndTxnRequestWhenStatusIsPrepareAbort" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.002"/>
+  <testcase name="shouldIncrementEpochAndUpdateMetadataOnHandleInitPidWhenExistingCompleteCommitTransaction" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.002"/>
+  <testcase name="testInitProducerIdWithInvalidEpochAfterProducerIdRotation" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.002"/>
+  <testcase name="shouldAbortTransactionOnHandleInitPidWhenExistingTransactionInOngoingState" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.001"/>
+  <testcase name="shouldRespondWithNotCoordinatorOnAddPartitionsWhenNotCoordinator" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.001"/>
+  <testcase name="shouldRespondWithCoordinatorLoadInProgressOnAddPartitionsWhenCoordintorLoading" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.001"/>
+  <testcase name="shouldRespondWithInvalidRequestAddPartitionsToTransactionWhenTransactionalIdIsNull" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.001"/>
+  <testcase name="shouldGenerateNewProducerIdIfNoStateAndProducerIdAndEpochProvided" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.002"/>
+  <testcase name="shouldReturnInvalidTxnRequestOnEndTxnRequestWhenStatusIsCompleteAbortAndResultIsNotAbort" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.0"/>
+  <testcase name="shouldRespondWithSuccessOnAddPartitionsWhenStateIsOngoing" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.0"/>
+  <testcase name="shouldIncrementEpochAndUpdateMetadataOnHandleInitPidWhenExistingEmptyTransaction" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.001"/>
+  <testcase name="shouldReturnOkOnEndTxnWhenStatusIsCompleteAbortAndResultIsAbort" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.001"/>
+  <testcase name="shouldAppendPrepareCommitToLogOnEndTxnWhenStatusIsOngoingAndResultIsCommit" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.002"/>
+  <testcase name="shouldAppendNewMetadataToLogOnAddPartitionsWhenPartitionsAdded" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.001"/>
+  <testcase name="shouldRespondWithInvalidRequestOnEndTxnWhenTransactionalIdIsNull" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.0"/>
+  <testcase name="testFenceProducerWhenMappingExistsWithDifferentProducerId" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.001"/>
+  <testcase name="shouldRespondWithCoordinatorLoadInProgressOnEndTxnWhenCoordinatorIsLoading" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.001"/>
+  <testcase name="shouldRespondWithSuccessOnAddPartitionsWhenStateIsCompleteAbort" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.0"/>
+  <testcase name="shouldWaitForCommitToCompleteOnHandleInitPidAndExistingTransactionInPrepareAbortState" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.001"/>
+  <testcase name="shouldRespondWithErrorsNoneOnAddPartitionWhenNoErrorsAndPartitionsTheSame" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.001"/>
+  <testcase name="shouldRespondWithInvalidRequestOnEndTxnWhenTransactionalIdIsEmpty" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.001"/>
+  <testcase name="shouldRespondWithInvalidRequestAddPartitionsToTransactionWhenTransactionalIdIsEmpty" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.001"/>
+  <testcase name="shouldAppendPrepareAbortToLogOnEndTxnWhenStatusIsOngoingAndResultIsAbort" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.001"/>
+  <testcase name="shouldAcceptInitPidAndReturnNextPidWhenTransactionalIdIsNull" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.001"/>
+  <testcase name="shouldRemoveTransactionsForPartitionOnEmigration" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.001"/>
+  <testcase name="shouldWaitForCommitToCompleteOnHandleInitPidAndExistingTransactionInPrepareCommitState" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.0"/>
+  <testcase name="shouldAbortExpiredTransactionsInOngoingStateAndBumpEpoch" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.002"/>
+  <testcase name="shouldReturnInvalidTxnRequestOnEndTxnRequestWhenStatusIsCompleteCommitAndResultIsNotCommit" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.001"/>
+  <testcase name="shouldReturnOkOnEndTxnWhenStatusIsCompleteCommitAndResultIsCommit" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.002"/>
+  <testcase name="shouldRespondWithConcurrentTransactionsOnAddPartitionsWhenStateIsPrepareCommit" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.003"/>
+  <testcase name="shouldIncrementEpochAndUpdateMetadataOnHandleInitPidWhenExistingCompleteTransaction" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.0"/>
+  <testcase name="shouldGenerateNewProducerIdIfEpochsExhausted" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.003"/>
+  <testcase name="shouldRespondWithNotCoordinatorOnInitPidWhenNotCoordinator" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.001"/>
+  <testcase name="testRetryInitProducerIdAfterProducerIdRotation" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.001"/>
+  <testcase name="shouldRespondWithConcurrentTransactionOnAddPartitionsWhenStateIsPrepareAbort" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.001"/>
+  <testcase name="testInitProducerIdStaleCurrentEpochProvided" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.002"/>
+  <testcase name="shouldInitPidWithEpochZeroForNewTransactionalId" classname="kafka.coordinator.transaction.TransactionCoordinatorTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.admin.ReassignPartitionsIntegrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:15:43" hostname="localhost" time="5.131">
+  <properties/>
+  <testcase name="testRackAwareReassign" classname="kafka.admin.ReassignPartitionsIntegrationTest" time="5.131"/>
+  <system-out><![CDATA[Created topic foo.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

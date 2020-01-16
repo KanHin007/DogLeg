@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.cluster.PartitionTest" tests="36" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:20:57" hostname="localhost" time="9.895">
+  <properties/>
+  <testcase name="testMakeLeaderDoesNotUpdateEpochCacheForOldFormats" classname="kafka.cluster.PartitionTest" time="1.698"/>
+  <testcase name="testIsrExpansion" classname="kafka.cluster.PartitionTest" time="1.254"/>
+  <testcase name="testReadRecordEpochValidationForLeader" classname="kafka.cluster.PartitionTest" time="0.053"/>
+  <testcase name="testIsrNotShrunkIfUpdateFails" classname="kafka.cluster.PartitionTest" time="0.018"/>
+  <testcase name="testFetchOffsetForTimestampEpochValidationForFollower" classname="kafka.cluster.PartitionTest" time="0.011"/>
+  <testcase name="testIsrNotExpandedIfUpdateFails" classname="kafka.cluster.PartitionTest" time="0.014"/>
+  <testcase name="testLogConfigDirtyAsBrokerUpdated" classname="kafka.cluster.PartitionTest" time="0.376"/>
+  <testcase name="testAddAndRemoveMetrics" classname="kafka.cluster.PartitionTest" time="0.012"/>
+  <testcase name="testListOffsetIsolationLevels" classname="kafka.cluster.PartitionTest" time="0.319"/>
+  <testcase name="testAppendRecordsAsFollowerBelowLogStartOffset" classname="kafka.cluster.PartitionTest" time="0.022"/>
+  <testcase name="testFetchLatestOffsetIncludesLeaderEpoch" classname="kafka.cluster.PartitionTest" time="0.014"/>
+  <testcase name="testUnderReplicatedPartitionsCorrectSemantics" classname="kafka.cluster.PartitionTest" time="0.011"/>
+  <testcase name="testFetchOffsetSnapshotEpochValidationForFollower" classname="kafka.cluster.PartitionTest" time="0.008"/>
+  <testcase name="testMaybeShrinkIsr" classname="kafka.cluster.PartitionTest" time="0.018"/>
+  <testcase name="testLogConfigNotDirty" classname="kafka.cluster.PartitionTest" time="0.007"/>
+  <testcase name="testMonotonicOffsetsAfterLeaderChange" classname="kafka.cluster.PartitionTest" time="1.169"/>
+  <testcase name="testUpdateAssignmentAndIsr" classname="kafka.cluster.PartitionTest" time="0.331"/>
+  <testcase name="testMakeFollowerWithNoLeaderIdChange" classname="kafka.cluster.PartitionTest" time="0.404"/>
+  <testcase name="testAppendRecordsToFollowerWithNoReplicaThrowsException" classname="kafka.cluster.PartitionTest" time="0.047"/>
+  <testcase name="testFollowerDoesNotJoinISRUntilCaughtUpToOffsetWithinCurrentLeaderEpoch" classname="kafka.cluster.PartitionTest" time="0.074"/>
+  <testcase name="testShouldNotShrinkIsrIfFollowerCaughtUpToLogEnd" classname="kafka.cluster.PartitionTest" time="0.086"/>
+  <testcase name="testFetchOffsetSnapshotEpochValidationForLeader" classname="kafka.cluster.PartitionTest" time="0.026"/>
+  <testcase name="testOffsetForLeaderEpochValidationForLeader" classname="kafka.cluster.PartitionTest" time="0.044"/>
+  <testcase name="testAtMinIsr" classname="kafka.cluster.PartitionTest" time="0.055"/>
+  <testcase name="testOffsetForLeaderEpochValidationForFollower" classname="kafka.cluster.PartitionTest" time="0.011"/>
+  <testcase name="testDelayedFetchAfterAppendRecords" classname="kafka.cluster.PartitionTest" time="3.515"/>
+  <testcase name="testMakeLeaderUpdatesEpochCache" classname="kafka.cluster.PartitionTest" time="0.097"/>
+  <testcase name="testUseCheckpointToInitializeHighWatermark" classname="kafka.cluster.PartitionTest" time="0.077"/>
+  <testcase name="testMaybeReplaceCurrentWithFutureReplicaDifferentBaseOffsets" classname="kafka.cluster.PartitionTest" time="0.061"/>
+  <testcase name="testFetchOffsetForTimestampEpochValidationForLeader" classname="kafka.cluster.PartitionTest" time="0.007"/>
+  <testcase name="testShouldNotShrinkIsrIfPreviousFetchIsCaughtUp" classname="kafka.cluster.PartitionTest" time="0.013"/>
+  <testcase name="testGetReplica" classname="kafka.cluster.PartitionTest" time="0.005"/>
+  <testcase name="testReadRecordEpochValidationForFollower" classname="kafka.cluster.PartitionTest" time="0.007"/>
+  <testcase name="testLogConfigDirtyAsTopicUpdated" classname="kafka.cluster.PartitionTest" time="0.009"/>
+  <testcase name="testMaybeReplaceCurrentWithFutureReplica" classname="kafka.cluster.PartitionTest" time="0.01"/>
+  <testcase name="testUpdateFollowerFetchState" classname="kafka.cluster.PartitionTest" time="0.009"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

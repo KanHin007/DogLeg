@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.admin.DeleteConsumerGroupsTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:11:58" hostname="localhost" time="86.232">
+  <properties/>
+  <testcase name="testDeleteNonEmptyGroup" classname="kafka.admin.DeleteConsumerGroupsTest" time="17.203"/>
+  <testcase name="testDeleteCmdWithMixOfSuccessAndError" classname="kafka.admin.DeleteConsumerGroupsTest" time="8.862"/>
+  <testcase name="testDeleteWithTopicOption" classname="kafka.admin.DeleteConsumerGroupsTest" time="6.374"/>
+  <testcase name="testDeleteNonExistingGroup" classname="kafka.admin.DeleteConsumerGroupsTest" time="7.002"/>
+  <testcase name="testDeleteCmdNonEmptyGroup" classname="kafka.admin.DeleteConsumerGroupsTest" time="7.87"/>
+  <testcase name="testDeleteCmdNonExistingGroup" classname="kafka.admin.DeleteConsumerGroupsTest" time="7.654"/>
+  <testcase name="testDeleteEmptyGroup" classname="kafka.admin.DeleteConsumerGroupsTest" time="5.555"/>
+  <testcase name="testDeleteWithMixOfSuccessAndError" classname="kafka.admin.DeleteConsumerGroupsTest" time="5.575"/>
+  <testcase name="testDeleteWithUnrecognizedNewConsumerOption" classname="kafka.admin.DeleteConsumerGroupsTest" time="4.72"/>
+  <testcase name="testDeleteCmdAllGroups" classname="kafka.admin.DeleteConsumerGroupsTest" time="8.672"/>
+  <testcase name="testDeleteCmdEmptyGroup" classname="kafka.admin.DeleteConsumerGroupsTest" time="6.745"/>
+  <system-out><![CDATA[
+Error: Deletion of some consumer groups failed:
+* Group 'test.group' could not be deleted due to: java.util.concurrent.ExecutionException: org.apache.kafka.common.errors.GroupNotEmptyException: The group is not empty.
+
+Error: Deletion of some consumer groups failed:
+* Group 'missing.group' could not be deleted due to: java.util.concurrent.ExecutionException: org.apache.kafka.common.errors.GroupIdNotFoundException: The group id does not exist.
+Deletion of requested consumer groups ('test.group') was successful.
+
+Error: Deletion of some consumer groups failed:
+* Group 'missing.group' could not be deleted due to: java.util.concurrent.ExecutionException: org.apache.kafka.common.errors.GroupIdNotFoundException: The group id does not exist.
+
+These consumer groups were deleted successfully: 'test.group'
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

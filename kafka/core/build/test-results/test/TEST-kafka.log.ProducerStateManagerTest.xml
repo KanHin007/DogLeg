@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.log.ProducerStateManagerTest" tests="38" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:28:05" hostname="localhost" time="0.108">
+  <properties/>
+  <testcase name="testProducerSequenceWithWrapAroundBatchRecord" classname="kafka.log.ProducerStateManagerTest" time="0.002"/>
+  <testcase name="testCoordinatorFencing" classname="kafka.log.ProducerStateManagerTest" time="0.002"/>
+  <testcase name="testTruncate" classname="kafka.log.ProducerStateManagerTest" time="0.009"/>
+  <testcase name="testLoadFromTruncatedSnapshotFile" classname="kafka.log.ProducerStateManagerTest" time="0.003"/>
+  <testcase name="testRemoveExpiredPidsOnReload" classname="kafka.log.ProducerStateManagerTest" time="0.002"/>
+  <testcase name="testRecoverFromSnapshotFinishedTransaction" classname="kafka.log.ProducerStateManagerTest" time="0.002"/>
+  <testcase name="testOutOfSequenceAfterControlRecordEpochBump" classname="kafka.log.ProducerStateManagerTest" time="0.003"/>
+  <testcase name="testFirstUnstableOffsetAfterTruncation" classname="kafka.log.ProducerStateManagerTest" time="0.004"/>
+  <testcase name="testTakeSnapshot" classname="kafka.log.ProducerStateManagerTest" time="0.001"/>
+  <testcase name="testRecoverFromSnapshotUnfinishedTransaction" classname="kafka.log.ProducerStateManagerTest" time="0.004"/>
+  <testcase name="testDeleteSnapshotsBefore" classname="kafka.log.ProducerStateManagerTest" time="0.005"/>
+  <testcase name="testAppendEmptyControlBatch" classname="kafka.log.ProducerStateManagerTest" time="0.008"/>
+  <testcase name="testNoValidationOnFirstEntryWhenLoadingLog" classname="kafka.log.ProducerStateManagerTest" time="0.002"/>
+  <testcase name="testLoadFromEmptySnapshotFile" classname="kafka.log.ProducerStateManagerTest" time="0.007"/>
+  <testcase name="testProducersWithOngoingTransactionsDontExpire" classname="kafka.log.ProducerStateManagerTest" time="0.004"/>
+  <testcase name="testBasicIdMapping" classname="kafka.log.ProducerStateManagerTest" time="0.002"/>
+  <testcase name="updateProducerTransactionState" classname="kafka.log.ProducerStateManagerTest" time="0.0"/>
+  <testcase name="testPrepareUpdateDoesNotMutate" classname="kafka.log.ProducerStateManagerTest" time="0.001"/>
+  <testcase name="testSequenceNotValidatedForGroupMetadataTopic" classname="kafka.log.ProducerStateManagerTest" time="0.001"/>
+  <testcase name="testLastStableOffsetCompletedTxn" classname="kafka.log.ProducerStateManagerTest" time="0.0"/>
+  <testcase name="testFirstUnstableOffset" classname="kafka.log.ProducerStateManagerTest" time="0.001"/>
+  <testcase name="testTxnFirstOffsetMetadataCached" classname="kafka.log.ProducerStateManagerTest" time="0.001"/>
+  <testcase name="testCoordinatorFencedAfterReload" classname="kafka.log.ProducerStateManagerTest" time="0.003"/>
+  <testcase name="testControlRecordBumpsEpoch" classname="kafka.log.ProducerStateManagerTest" time="0.002"/>
+  <testcase name="testAcceptAppendWithoutProducerStateOnReplica" classname="kafka.log.ProducerStateManagerTest" time="0.003"/>
+  <testcase name="testProducerStateAfterFencingAbortMarker" classname="kafka.log.ProducerStateManagerTest" time="0.001"/>
+  <testcase name="testLoadFromCorruptSnapshotFile" classname="kafka.log.ProducerStateManagerTest" time="0.005"/>
+  <testcase name="testProducerSequenceWrapAround" classname="kafka.log.ProducerStateManagerTest" time="0.0"/>
+  <testcase name="testPidExpirationTimeout" classname="kafka.log.ProducerStateManagerTest" time="0.001"/>
+  <testcase name="testAcceptAppendWithSequenceGapsOnReplica" classname="kafka.log.ProducerStateManagerTest" time="0.0"/>
+  <testcase name="testAppendTxnMarkerWithNoProducerState" classname="kafka.log.ProducerStateManagerTest" time="0.001"/>
+  <testcase name="testOldEpochForControlRecord" classname="kafka.log.ProducerStateManagerTest" time="0.001"/>
+  <testcase name="testTruncateAndReloadRemovesOutOfRangeSnapshots" classname="kafka.log.ProducerStateManagerTest" time="0.008"/>
+  <testcase name="testProducerSequenceInvalidWrapAround" classname="kafka.log.ProducerStateManagerTest" time="0.0"/>
+  <testcase name="testRecoverFromSnapshotEmptyTransaction" classname="kafka.log.ProducerStateManagerTest" time="0.003"/>
+  <testcase name="testNonTransactionalAppendWithOngoingTransaction" classname="kafka.log.ProducerStateManagerTest" time="0.002"/>
+  <testcase name="testLoadFromSnapshotRetainsNonExpiredProducers" classname="kafka.log.ProducerStateManagerTest" time="0.001"/>
+  <testcase name="testSkipSnapshotIfOffsetUnchanged" classname="kafka.log.ProducerStateManagerTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

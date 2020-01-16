@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.api.test.ProducerCompressionTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:27:00" hostname="localhost" time="34.587">
+  <properties/>
+  <testcase name="testCompression[0 compressionType = none]" classname="kafka.api.test.ProducerCompressionTest" time="7.45"/>
+  <testcase name="testCompression[1 compressionType = gzip]" classname="kafka.api.test.ProducerCompressionTest" time="7.375"/>
+  <testcase name="testCompression[2 compressionType = snappy]" classname="kafka.api.test.ProducerCompressionTest" time="7.736"/>
+  <testcase name="testCompression[3 compressionType = lz4]" classname="kafka.api.test.ProducerCompressionTest" time="5.671"/>
+  <testcase name="testCompression[4 compressionType = zstd]" classname="kafka.api.test.ProducerCompressionTest" time="6.355"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,1211 @@
+[Šz[2020-01-15 10:08:13,334] ERROR Metadata response reported invalid topics [topic] (org.apache.kafka.clients.Metadata:274)
+Ôæ[2020-01-15 10:08:13,984] ERROR Connection to node 1 (null) failed authentication due to: Authentication failed (org.apache.kafka.clients.NetworkClient:745)
+Ôæ[2020-01-15 10:08:14,076] ERROR Connection to node 1 (null) failed authentication due to: Authentication failed (org.apache.kafka.clients.NetworkClient:745)
+õ÷«[2020-01-15 10:08:14,037] ERROR Attempt to join group failed due to fatal error: The session timeout is not within the range allowed by the broker (as configured by group.min.session.timeout.ms and group.max.session.timeout.ms). (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:620)
+[v[2020-01-15 10:08:16,416] ERROR Topic authorization failed for topics [topic] (org.apache.kafka.clients.Metadata:281)
+õµè[2020-01-15 10:08:17,400] ERROR Offset commit failed on partition test1-0 at offset 100: The server experienced an unexpected error when processing the request. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1145)
+õÄÑ[2020-01-15 10:08:17,559] ERROR Offset commit failed on partition test1-0 at offset 100: The group is rebalancing, so a rejoin is needed. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1145)
+¦ãø[2020-01-15 10:08:18,021] ERROR User provided listener org.apache.kafka.clients.consumer.KafkaConsumerTest$7 failed on invocation of onPartitionsAssigned for partitions [test-0] (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:284)
+¦ã:java.lang.RuntimeException: Hit partition assign [test-0]
+¦ãl	at org.apache.kafka.clients.consumer.KafkaConsumerTest$7.onPartitionsAssigned(KafkaConsumerTest.java:1963)
+¦ã{	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.invokePartitionsAssigned(ConsumerCoordinator.java:279)
+¦ãq	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.onJoinComplete(ConsumerCoordinator.java:407)
+¦ãt	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.joinGroupIfNeeded(AbstractCoordinator.java:439)
+¦ãt	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureActiveGroup(AbstractCoordinator.java:358)
+¦ãg	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.poll(ConsumerCoordinator.java:478)
+¦ãn	at org.apache.kafka.clients.consumer.KafkaConsumer.updateAssignmentMetadataIfNeeded(KafkaConsumer.java:1273)
+¦ãŸ	at org.apache.kafka.clients.consumer.KafkaConsumerTest.lambda$testUnsubscribeShouldTriggerPartitionsRevokedWithValidGeneration$1(KafkaConsumerTest.java:1165)
+¦ã4	at org.junit.Assert.assertThrows(Assert.java:1001)
+¦ã3	at org.junit.Assert.assertThrows(Assert.java:981)
+¦ã–	at org.apache.kafka.clients.consumer.KafkaConsumerTest.testUnsubscribeShouldTriggerPartitionsRevokedWithValidGeneration(KafkaConsumerTest.java:1164)
+¦ã@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+¦ãR	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+¦ãZ	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+¦ã5	at java.lang.reflect.Method.invoke(Method.java:498)
+¦ãY	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+¦ãX	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+¦ãW	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+¦ãV	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+¦ãE	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+¦ãY	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+¦ãB	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+¦ãW	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+¦ãV	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+¦ã@	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+¦ãD	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+¦ãF	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+¦ãD	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+¦ãE	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+¦ãE	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+¦ã>	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+¦ãu	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+¦ão	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+¦ão	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+¦ãŠ	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+¦ãt	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+¦ã@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+¦ãR	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+¦ãZ	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+¦ã5	at java.lang.reflect.Method.invoke(Method.java:498)
+¦ãY	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+¦ãY	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+¦ãi	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+¦ãx	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+¦ã;	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+¦ãb	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+¦ã@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+¦ãR	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+¦ãZ	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+¦ã5	at java.lang.reflect.Method.invoke(Method.java:498)
+¦ãY	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+¦ãY	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+¦ã‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+¦ã‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+¦ãX	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+¦ãk	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+¦ãZ	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+¦ãT	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+¦ãT	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+¦ãj	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+¦ã*	at java.lang.Thread.run(Thread.java:748)
+¦ã÷[2020-01-15 10:08:18,033] ERROR User provided listener org.apache.kafka.clients.consumer.KafkaConsumerTest$7 failed on invocation of onPartitionsRevoked for partitions [test-0] (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:303)
+¦ã:java.lang.RuntimeException: Hit partition revoke [test-0]
+¦ãk	at org.apache.kafka.clients.consumer.KafkaConsumerTest$7.onPartitionsRevoked(KafkaConsumerTest.java:1958)
+¦ãz	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.invokePartitionsRevoked(ConsumerCoordinator.java:298)
+¦ãq	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.onLeavePrepare(ConsumerCoordinator.java:714)
+¦ãY	at org.apache.kafka.clients.consumer.KafkaConsumer.unsubscribe(KafkaConsumer.java:1076)
+¦ã4	at org.junit.Assert.assertThrows(Assert.java:1001)
+¦ã3	at org.junit.Assert.assertThrows(Assert.java:981)
+¦ã–	at org.apache.kafka.clients.consumer.KafkaConsumerTest.testUnsubscribeShouldTriggerPartitionsRevokedWithValidGeneration(KafkaConsumerTest.java:1168)
+¦ã@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+¦ãR	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+¦ãZ	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+¦ã5	at java.lang.reflect.Method.invoke(Method.java:498)
+¦ãY	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+¦ãX	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+¦ãW	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+¦ãV	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+¦ãE	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+¦ãY	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+¦ãB	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+¦ãW	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+¦ãV	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+¦ã@	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+¦ãD	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+¦ãF	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+¦ãD	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+¦ãE	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+¦ãE	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+¦ã>	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+¦ãu	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+¦ão	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+¦ão	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+¦ãŠ	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+¦ãt	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+¦ã@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+¦ãR	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+¦ãZ	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+¦ã5	at java.lang.reflect.Method.invoke(Method.java:498)
+¦ãY	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+¦ãY	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+¦ãi	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+¦ãx	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+¦ã;	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+¦ãb	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+¦ã@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+¦ãR	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+¦ãZ	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+¦ã5	at java.lang.reflect.Method.invoke(Method.java:498)
+¦ãY	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+¦ãY	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+¦ã‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+¦ã‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+¦ãX	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+¦ãk	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+¦ãZ	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+¦ãT	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+¦ãT	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+¦ãj	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+¦ã*	at java.lang.Thread.run(Thread.java:748)
+¦ís[2020-01-15 10:08:18,247] ERROR Failed to close coordinator (org.apache.kafka.clients.consumer.KafkaConsumer:2344)
+¦íRorg.apache.kafka.common.errors.InterruptException: java.lang.InterruptedException
+¦íƒ	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.maybeThrowInterruptException(ConsumerNetworkClient.java:517)
+¦ík	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:278)
+¦ík	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:233)
+¦ík	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:224)
+¦í{	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.awaitPendingRequests(ConsumerNetworkClient.java:335)
+¦íh	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.close(AbstractCoordinator.java:918)
+¦íh	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.close(ConsumerCoordinator.java:857)
+¦íS	at org.apache.kafka.clients.consumer.KafkaConsumer.close(KafkaConsumer.java:2341)
+¦íS	at org.apache.kafka.clients.consumer.KafkaConsumer.close(KafkaConsumer.java:2308)
+¦í[	at org.apache.kafka.clients.consumer.KafkaConsumerTest$4.run(KafkaConsumerTest.java:1628)
+¦íL	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+¦í=	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+¦íT	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+¦íT	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+¦í*	at java.lang.Thread.run(Thread.java:748)
+¦í*Caused by: java.lang.InterruptedException
+¦í	... 15 more
+õó«[2020-01-15 10:08:18,293] ERROR Offset commit failed on partition test1-0 at offset 100: The broker rejected this static consumer since another consumer with the same group.instance.id has registered with a different member.id. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1145)
+õóŸ[2020-01-15 10:08:18,294] ERROR Received fatal exception: group.instance.id gets fenced (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1170)
+¦…ø[2020-01-15 10:08:18,397] ERROR User provided listener org.apache.kafka.clients.consumer.KafkaConsumerTest$7 failed on invocation of onPartitionsAssigned for partitions [test-0] (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:284)
+¦…:java.lang.RuntimeException: Hit partition assign [test-0]
+¦…l	at org.apache.kafka.clients.consumer.KafkaConsumerTest$7.onPartitionsAssigned(KafkaConsumerTest.java:1963)
+¦…{	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.invokePartitionsAssigned(ConsumerCoordinator.java:279)
+¦…q	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.onJoinComplete(ConsumerCoordinator.java:407)
+¦…t	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.joinGroupIfNeeded(AbstractCoordinator.java:439)
+¦…t	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureActiveGroup(AbstractCoordinator.java:358)
+¦…g	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.poll(ConsumerCoordinator.java:478)
+¦…n	at org.apache.kafka.clients.consumer.KafkaConsumer.updateAssignmentMetadataIfNeeded(KafkaConsumer.java:1273)
+¦…l	at org.apache.kafka.clients.consumer.KafkaConsumerTest.testRebalanceException(KafkaConsumerTest.java:1753)
+¦…@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+¦…R	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+¦…Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+¦…5	at java.lang.reflect.Method.invoke(Method.java:498)
+¦…Y	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+¦…X	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+¦…W	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+¦…V	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+¦…E	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+¦…Y	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+¦…B	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+¦…W	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+¦…V	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+¦…@	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+¦…D	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+¦…F	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+¦…D	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+¦…E	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+¦…E	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+¦…>	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+¦…u	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+¦…o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+¦…o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+¦…Š	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+¦…t	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+¦…@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+¦…R	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+¦…Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+¦…5	at java.lang.reflect.Method.invoke(Method.java:498)
+¦…Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+¦…Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+¦…i	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+¦…x	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+¦…;	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+¦…b	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+¦…@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+¦…R	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+¦…Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+¦…5	at java.lang.reflect.Method.invoke(Method.java:498)
+¦…Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+¦…Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+¦…‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+¦…‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+¦…X	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+¦…k	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+¦…Z	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+¦…T	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+¦…T	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+¦…j	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+¦…*	at java.lang.Thread.run(Thread.java:748)
+¦…÷[2020-01-15 10:08:18,400] ERROR User provided listener org.apache.kafka.clients.consumer.KafkaConsumerTest$7 failed on invocation of onPartitionsRevoked for partitions [test-0] (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:303)
+¦…:java.lang.RuntimeException: Hit partition revoke [test-0]
+¦…k	at org.apache.kafka.clients.consumer.KafkaConsumerTest$7.onPartitionsRevoked(KafkaConsumerTest.java:1958)
+¦…z	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.invokePartitionsRevoked(ConsumerCoordinator.java:298)
+¦…q	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.onLeavePrepare(ConsumerCoordinator.java:714)
+¦…h	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.close(AbstractCoordinator.java:909)
+¦…h	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.close(ConsumerCoordinator.java:857)
+¦…S	at org.apache.kafka.clients.consumer.KafkaConsumer.close(KafkaConsumer.java:2341)
+¦…S	at org.apache.kafka.clients.consumer.KafkaConsumer.close(KafkaConsumer.java:2308)
+¦…l	at org.apache.kafka.clients.consumer.KafkaConsumerTest.testRebalanceException(KafkaConsumerTest.java:1764)
+¦…@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+¦…R	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+¦…Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+¦…5	at java.lang.reflect.Method.invoke(Method.java:498)
+¦…Y	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+¦…X	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+¦…W	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+¦…V	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+¦…E	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+¦…Y	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+¦…B	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+¦…W	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+¦…V	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+¦…@	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+¦…D	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+¦…F	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+¦…D	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+¦…E	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+¦…E	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+¦…>	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+¦…u	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+¦…o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+¦…o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+¦…Š	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+¦…t	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+¦…@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+¦…R	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+¦…Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+¦…5	at java.lang.reflect.Method.invoke(Method.java:498)
+¦…Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+¦…Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+¦…i	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+¦…x	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+¦…;	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+¦…b	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+¦…@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+¦…R	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+¦…Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+¦…5	at java.lang.reflect.Method.invoke(Method.java:498)
+¦…Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+¦…Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+¦…‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+¦…‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+¦…X	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+¦…k	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+¦…Z	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+¦…T	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+¦…T	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+¦…j	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+¦…*	at java.lang.Thread.run(Thread.java:748)
+¦…s[2020-01-15 10:08:18,403] ERROR Failed to close coordinator (org.apache.kafka.clients.consumer.KafkaConsumer:2344)
+¦…Porg.apache.kafka.common.KafkaException: User rebalance callback throws an error
+¦…q	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.onLeavePrepare(ConsumerCoordinator.java:722)
+¦…h	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.close(AbstractCoordinator.java:909)
+¦…h	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.close(ConsumerCoordinator.java:857)
+¦…S	at org.apache.kafka.clients.consumer.KafkaConsumer.close(KafkaConsumer.java:2341)
+¦…S	at org.apache.kafka.clients.consumer.KafkaConsumer.close(KafkaConsumer.java:2308)
+¦…l	at org.apache.kafka.clients.consumer.KafkaConsumerTest.testRebalanceException(KafkaConsumerTest.java:1764)
+¦…@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+¦…R	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+¦…Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+¦…5	at java.lang.reflect.Method.invoke(Method.java:498)
+¦…Y	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+¦…X	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+¦…W	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+¦…V	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+¦…E	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+¦…Y	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+¦…B	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+¦…W	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+¦…V	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+¦…@	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+¦…D	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+¦…F	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+¦…D	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+¦…E	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+¦…E	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+¦…>	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+¦…u	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+¦…o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+¦…o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+¦…Š	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+¦…t	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+¦…@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+¦…R	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+¦…Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+¦…5	at java.lang.reflect.Method.invoke(Method.java:498)
+¦…Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+¦…Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+¦…i	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+¦…x	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+¦…;	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+¦…b	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+¦…@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+¦…R	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+¦…Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+¦…5	at java.lang.reflect.Method.invoke(Method.java:498)
+¦…Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+¦…Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+¦…‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+¦…‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+¦…X	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+¦…k	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+¦…Z	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+¦…T	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+¦…T	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+¦…j	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+¦…*	at java.lang.Thread.run(Thread.java:748)
+¦…ECaused by: java.lang.RuntimeException: Hit partition revoke [test-0]
+¦…k	at org.apache.kafka.clients.consumer.KafkaConsumerTest$7.onPartitionsRevoked(KafkaConsumerTest.java:1958)
+¦…z	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.invokePartitionsRevoked(ConsumerCoordinator.java:298)
+¦…q	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.onLeavePrepare(ConsumerCoordinator.java:714)
+¦…	... 55 more
+¦‰~[2020-01-15 10:08:18,416] ERROR Metadata response reported invalid topics [topic abc] (org.apache.kafka.clients.Metadata:274)
+õÈÑ[2020-01-15 10:08:19,033] ERROR Offset commit failed on partition test1-0 at offset 100: The group is rebalancing, so a rejoin is needed. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1145)
+õŞ³[2020-01-15 10:08:19,057] ERROR Attempt to join group failed due to fatal error: Group authorization failed. (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:620)
+õâÍ[2020-01-15 10:08:19,064] ERROR Offset commit failed on partition test1-0 at offset 100: The coordinator is not aware of this member. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1145)
+õ¬«[2020-01-15 10:08:19,628] ERROR Offset commit failed on partition test1-0 at offset 100: The broker rejected this static consumer since another consumer with the same group.instance.id has registered with a different member.id. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1145)
+õ¬Ÿ[2020-01-15 10:08:19,628] ERROR Received fatal exception: group.instance.id gets fenced (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1170)
+õ±Ø[2020-01-15 10:08:19,640] ERROR Offset commit failed on partition test1-0 at offset 100: The metadata field of the offset request was too large. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1145)
+õ¿«[2020-01-15 10:08:19,808] ERROR Offset commit failed on partition test1-0 at offset 100: The broker rejected this static consumer since another consumer with the same group.instance.id has registered with a different member.id. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1145)
+õ¿Ÿ[2020-01-15 10:08:19,809] ERROR Received fatal exception: group.instance.id gets fenced (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1170)
+õÁº[2020-01-15 10:08:19,814] ERROR Attempt to join group failed due to fatal error: The configured groupId is invalid. (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:620)
+õÂÌ[2020-01-15 10:08:19,816] ERROR Offset commit failed on partition test1-0 at offset 100: Specified group generation id is not valid. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1145)
+¼½[2020-01-15 10:08:19,791] ERROR Received fatal exception: group.instance.id gets fenced (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:612)
+¼É[2020-01-15 10:08:19,961] ERROR Received fatal exception: group.instance.id gets fenced (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:719)
+õÒ«[2020-01-15 10:08:20,031] ERROR Attempt to join group failed due to fatal error: The session timeout is not within the range allowed by the broker (as configured by group.min.session.timeout.ms and group.max.session.timeout.ms). (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:620)
+¼ßŸ[2020-01-15 10:08:20,189] ERROR Received fatal exception: group.instance.id gets fenced (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:1014)
+¼ß°[2020-01-15 10:08:20,190] ERROR Caught fenced group.instance.id Optional.empty error in heartbeat thread (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:1278)
+¼„¹[2020-01-15 10:08:20,417] ERROR LeaveGroup request failed with error: The coordinator is not aware of this member. (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:972)
+¼‘Ä[2020-01-15 10:08:20,844] ERROR Attempt to join group failed due to fatal error: The consumer group has reached its max size. (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:620)
+¼™—[2020-01-15 10:08:21,192] ERROR Heartbeat thread failed due to unexpected error (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:1303)
+¼™java.lang.RuntimeException
+¼™‘	at org.apache.kafka.clients.consumer.internals.AbstractCoordinatorTest.testUncaughtExceptionInHeartbeatThread(AbstractCoordinatorTest.java:519)
+¼™@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+¼™R	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+¼™Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+¼™5	at java.lang.reflect.Method.invoke(Method.java:498)
+¼™Y	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+¼™X	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+¼™W	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+¼™V	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+¼™E	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+¼™Y	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+¼™B	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+¼™W	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+¼™V	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+¼™@	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+¼™D	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+¼™F	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+¼™D	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+¼™E	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+¼™E	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+¼™>	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+¼™u	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+¼™o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+¼™o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+¼™Š	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+¼™t	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+¼™@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+¼™R	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+¼™Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+¼™5	at java.lang.reflect.Method.invoke(Method.java:498)
+¼™Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+¼™Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+¼™i	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+¼™x	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+¼™;	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+¼™b	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+¼™@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+¼™R	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+¼™Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+¼™5	at java.lang.reflect.Method.invoke(Method.java:498)
+¼™Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+¼™Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+¼™‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+¼™‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+¼™X	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+¼™k	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+¼™Z	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+¼™T	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+¼™T	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+¼™j	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+¼™*	at java.lang.Thread.run(Thread.java:748)
+¦½ø[2020-01-15 10:08:21,520] ERROR User provided listener org.apache.kafka.clients.consumer.KafkaConsumerTest$7 failed on invocation of onPartitionsAssigned for partitions [test-0] (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:284)
+¦½:java.lang.RuntimeException: Hit partition assign [test-0]
+¦½l	at org.apache.kafka.clients.consumer.KafkaConsumerTest$7.onPartitionsAssigned(KafkaConsumerTest.java:1963)
+¦½{	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.invokePartitionsAssigned(ConsumerCoordinator.java:279)
+¦½q	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.onJoinComplete(ConsumerCoordinator.java:407)
+¦½t	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.joinGroupIfNeeded(AbstractCoordinator.java:439)
+¦½t	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureActiveGroup(AbstractCoordinator.java:358)
+¦½g	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.poll(ConsumerCoordinator.java:478)
+¦½n	at org.apache.kafka.clients.consumer.KafkaConsumer.updateAssignmentMetadataIfNeeded(KafkaConsumer.java:1273)
+¦½™	at org.apache.kafka.clients.consumer.KafkaConsumerTest.lambda$testUnsubscribeShouldTriggerPartitionsLostWithNoGeneration$2(KafkaConsumerTest.java:1189)
+¦½4	at org.junit.Assert.assertThrows(Assert.java:1001)
+¦½3	at org.junit.Assert.assertThrows(Assert.java:981)
+¦½	at org.apache.kafka.clients.consumer.KafkaConsumerTest.testUnsubscribeShouldTriggerPartitionsLostWithNoGeneration(KafkaConsumerTest.java:1188)
+¦½@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+¦½R	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+¦½Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+¦½5	at java.lang.reflect.Method.invoke(Method.java:498)
+¦½Y	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+¦½X	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+¦½W	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+¦½V	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+¦½E	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+¦½Y	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+¦½B	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+¦½W	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+¦½V	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+¦½@	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+¦½D	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+¦½F	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+¦½D	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+¦½E	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+¦½E	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+¦½>	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+¦½u	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+¦½o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+¦½o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+¦½Š	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+¦½t	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+¦½@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+¦½R	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+¦½Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+¦½5	at java.lang.reflect.Method.invoke(Method.java:498)
+¦½Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+¦½Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+¦½i	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+¦½x	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+¦½;	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+¦½b	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+¦½@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+¦½R	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+¦½Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+¦½5	at java.lang.reflect.Method.invoke(Method.java:498)
+¦½Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+¦½Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+¦½‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+¦½‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+¦½X	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+¦½k	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+¦½Z	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+¦½T	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+¦½T	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+¦½j	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+¦½*	at java.lang.Thread.run(Thread.java:748)
+¦½ô[2020-01-15 10:08:21,627] ERROR User provided listener org.apache.kafka.clients.consumer.KafkaConsumerTest$7 failed on invocation of onPartitionsLost for partitions [test-0] (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:322)
+¦½8java.lang.RuntimeException: Hit partition lost [test-0]
+¦½h	at org.apache.kafka.clients.consumer.KafkaConsumerTest$7.onPartitionsLost(KafkaConsumerTest.java:1968)
+¦½w	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.invokePartitionsLost(ConsumerCoordinator.java:317)
+¦½q	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.onLeavePrepare(ConsumerCoordinator.java:716)
+¦½Y	at org.apache.kafka.clients.consumer.KafkaConsumer.unsubscribe(KafkaConsumer.java:1076)
+¦½4	at org.junit.Assert.assertThrows(Assert.java:1001)
+¦½3	at org.junit.Assert.assertThrows(Assert.java:981)
+¦½	at org.apache.kafka.clients.consumer.KafkaConsumerTest.testUnsubscribeShouldTriggerPartitionsLostWithNoGeneration(KafkaConsumerTest.java:1200)
+¦½@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+¦½R	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+¦½Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+¦½5	at java.lang.reflect.Method.invoke(Method.java:498)
+¦½Y	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+¦½X	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+¦½W	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+¦½V	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+¦½E	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+¦½Y	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+¦½B	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+¦½W	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+¦½V	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+¦½@	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+¦½D	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+¦½F	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+¦½D	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+¦½E	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+¦½E	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+¦½>	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+¦½u	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+¦½o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+¦½o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+¦½Š	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+¦½t	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+¦½@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+¦½R	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+¦½Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+¦½5	at java.lang.reflect.Method.invoke(Method.java:498)
+¦½Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+¦½Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+¦½i	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+¦½x	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+¦½;	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+¦½b	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+¦½@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+¦½R	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+¦½Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+¦½5	at java.lang.reflect.Method.invoke(Method.java:498)
+¦½Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+¦½Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+¦½‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+¦½‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+¦½X	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+¦½k	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+¦½Z	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+¦½T	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+¦½T	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+¦½j	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+¦½*	at java.lang.Thread.run(Thread.java:748)
+Ö×{[2020-01-15 10:08:22,326] ERROR Metadata response reported invalid topics [topic3] (org.apache.kafka.clients.Metadata:274)
+Ö×w[2020-01-15 10:08:22,327] ERROR Topic authorization failed for topics [topic4] (org.apache.kafka.clients.Metadata:281)
+ÖØ[2020-01-15 10:08:22,389] ERROR Metadata response reported invalid topics [invalidTopic] (org.apache.kafka.clients.Metadata:274)
+ÖØ‘[2020-01-15 10:08:22,389] ERROR Topic authorization failed for topics [sensitiveTopic2, sensitiveTopic1] (org.apache.kafka.clients.Metadata:281)
+ÖØ[2020-01-15 10:08:22,391] ERROR Metadata response reported invalid topics [invalidTopic] (org.apache.kafka.clients.Metadata:274)
+ÖØ‘[2020-01-15 10:08:22,392] ERROR Topic authorization failed for topics [sensitiveTopic2, sensitiveTopic1] (org.apache.kafka.clients.Metadata:281)
+ÖØ[2020-01-15 10:08:22,393] ERROR Metadata response reported invalid topics [invalidTopic] (org.apache.kafka.clients.Metadata:274)
+ÖØ‘[2020-01-15 10:08:22,393] ERROR Topic authorization failed for topics [sensitiveTopic2, sensitiveTopic1] (org.apache.kafka.clients.Metadata:281)
+ÖØ[2020-01-15 10:08:22,394] ERROR Metadata response reported invalid topics [invalidTopic] (org.apache.kafka.clients.Metadata:274)
+ÖØ‘[2020-01-15 10:08:22,394] ERROR Topic authorization failed for topics [sensitiveTopic2, sensitiveTopic1] (org.apache.kafka.clients.Metadata:281)
+ÖÙ[2020-01-15 10:08:22,396] ERROR Metadata response reported invalid topics [topic dfsa] (org.apache.kafka.clients.Metadata:274)
+ÖÙ[2020-01-15 10:08:22,397] ERROR Metadata response reported invalid topics [topic dfsa] (org.apache.kafka.clients.Metadata:274)
+ÖŞt[2020-01-15 10:08:22,427] ERROR Topic authorization failed for topics [foo] (org.apache.kafka.clients.Metadata:281)
+ÖŞt[2020-01-15 10:08:22,437] ERROR Topic authorization failed for topics [foo] (org.apache.kafka.clients.Metadata:281)
+õ€è[2020-01-15 10:08:23,282] ERROR Offset commit failed on partition test1-0 at offset 100: The server experienced an unexpected error when processing the request. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1145)
+õ‘Ñ[2020-01-15 10:08:23,407] ERROR Offset commit failed on partition test1-0 at offset 100: The group is rebalancing, so a rejoin is needed. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1145)
+õ «[2020-01-15 10:08:24,121] ERROR Offset commit failed on partition test1-0 at offset 100: The broker rejected this static consumer since another consumer with the same group.instance.id has registered with a different member.id. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1145)
+õ Ÿ[2020-01-15 10:08:24,122] ERROR Received fatal exception: group.instance.id gets fenced (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1170)
+õÑ[2020-01-15 10:08:24,850] ERROR Offset commit failed on partition test1-0 at offset 100: The group is rebalancing, so a rejoin is needed. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1145)
+õ—³[2020-01-15 10:08:24,862] ERROR Attempt to join group failed due to fatal error: Group authorization failed. (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:620)
+õ›Í[2020-01-15 10:08:24,866] ERROR Offset commit failed on partition test1-0 at offset 100: The coordinator is not aware of this member. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1145)
+õ§«[2020-01-15 10:08:25,476] ERROR Offset commit failed on partition test1-0 at offset 100: The broker rejected this static consumer since another consumer with the same group.instance.id has registered with a different member.id. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1145)
+õ§Ÿ[2020-01-15 10:08:25,477] ERROR Received fatal exception: group.instance.id gets fenced (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1170)
+õ¬Ø[2020-01-15 10:08:25,483] ERROR Offset commit failed on partition test1-0 at offset 100: The metadata field of the offset request was too large. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1145)
+õº«[2020-01-15 10:08:25,615] ERROR Offset commit failed on partition test1-0 at offset 100: The broker rejected this static consumer since another consumer with the same group.instance.id has registered with a different member.id. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1145)
+õºŸ[2020-01-15 10:08:25,616] ERROR Received fatal exception: group.instance.id gets fenced (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1170)
+õ¼º[2020-01-15 10:08:25,620] ERROR Attempt to join group failed due to fatal error: The configured groupId is invalid. (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:620)
+õ½Ì[2020-01-15 10:08:25,623] ERROR Offset commit failed on partition test1-0 at offset 100: Specified group generation id is not valid. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1145)
+Ùàº[2020-01-15 10:08:28,289] ERROR [SslTransportLayer channelId=0 key=sun.nio.ch.SelectionKeyImpl@178e218c] Renegotiation requested, but it is not supported, channelId 0, appReadBuffer pos 0, netReadBuffer pos 0, netWriteBuffer pos 85 handshakeStatus NEED_TASK (org.apache.kafka.common.network.SslTransportLayer:580)
+Ùà¼[2020-01-15 10:08:28,297] ERROR [SslTransportLayer channelId=0 key=sun.nio.ch.SelectionKeyImpl@178e218c] Renegotiation requested, but it is not supported, channelId 0, appReadBuffer pos 0, netReadBuffer pos 425, netWriteBuffer pos 85 handshakeStatus NEED_TASK (org.apache.kafka.common.network.SslTransportLayer:580)
+„Ş[2020-01-15 10:08:30,423] ERROR ClassNotFoundException exception occurred: org.apache.kafka.common.config.provider.InvalidConfigProvider (org.apache.kafka.common.config.AbstractConfigTest$TestIndirectConfigResolution:536)
+¶·â[2020-01-15 10:08:32,130] ERROR Modification time of key store could not be obtained: /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/serverKS799037212786039952.jks (org.apache.kafka.common.security.ssl.SslEngineBuilder:300)
+¶·sjava.nio.file.NoSuchFileException: /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/serverKS799037212786039952.jks
+¶·K	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+¶·J	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+¶·J	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+¶·[	at sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+¶·V	at sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:144)
+¶·8	at java.nio.file.Files.readAttributes(Files.java:1737)
+¶·=	at java.nio.file.Files.getLastModifiedTime(Files.java:2266)
+¶·r	at org.apache.kafka.common.security.ssl.SslEngineBuilder$SecurityStore.lastModifiedMs(SslEngineBuilder.java:298)
+¶·l	at org.apache.kafka.common.security.ssl.SslEngineBuilder$SecurityStore.modified(SslEngineBuilder.java:306)
+¶·e	at org.apache.kafka.common.security.ssl.SslEngineBuilder.shouldBeRebuilt(SslEngineBuilder.java:255)
+¶·c	at org.apache.kafka.common.security.ssl.SslFactory.createNewSslEngineBuilder(SslFactory.java:136)
+¶·U	at org.apache.kafka.common.security.ssl.SslFactory.reconfigure(SslFactory.java:119)
+¶·e	at org.apache.kafka.common.security.ssl.SslFactoryTest.testReconfiguration(SslFactoryTest.java:215)
+¶·@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+¶·R	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+¶·Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+¶·5	at java.lang.reflect.Method.invoke(Method.java:498)
+¶·Y	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+¶·X	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+¶·W	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+¶·V	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+¶·E	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+¶·Y	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+¶·B	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+¶·W	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+¶·V	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+¶·@	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+¶·D	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+¶·F	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+¶·D	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+¶·E	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+¶·>	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+¶·5	at org.junit.runners.Suite.runChild(Suite.java:128)
+¶·4	at org.junit.runners.Suite.runChild(Suite.java:27)
+¶·@	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+¶·D	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+¶·F	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+¶·D	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+¶·E	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+¶·E	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+¶·>	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+¶·u	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+¶·o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+¶·o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+¶·Š	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+¶·t	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+¶·A	at sun.reflect.GeneratedMethodAccessor28.invoke(Unknown Source)
+¶·Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+¶·5	at java.lang.reflect.Method.invoke(Method.java:498)
+¶·Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+¶·Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+¶·i	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+¶·x	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+¶·;	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+¶·b	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+¶·A	at sun.reflect.GeneratedMethodAccessor27.invoke(Unknown Source)
+¶·Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+¶·5	at java.lang.reflect.Method.invoke(Method.java:498)
+¶·Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+¶·Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+¶·‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+¶·‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+¶·X	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+¶·k	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+¶·Z	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+¶·T	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+¶·T	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+¶·j	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+¶·*	at java.lang.Thread.run(Thread.java:748)
+¶€€[2020-01-15 10:08:35,688] ERROR Unrecognized security provider creator class (org.apache.kafka.common.config.SecurityConfig:82)
+¶€:java.lang.ClassNotFoundException: com.fake.ProviderClass1
+¶€?	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+¶€:	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+¶€B	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+¶€:	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+¶€,	at java.lang.Class.forName0(Native Method)
+¶€,	at java.lang.Class.forName(Class.java:264)
+¶€f	at org.apache.kafka.common.utils.SecurityUtils.addConfiguredSecurityProviders(SecurityUtils.java:74)
+¶€[	at org.apache.kafka.common.security.ssl.SslEngineBuilder.<init>(SslEngineBuilder.java:70)
+¶€R	at org.apache.kafka.common.security.ssl.SslFactory.configure(SslFactory.java:95)
+¶€‡	at org.apache.kafka.common.security.ssl.SslFactoryTest.testSslFactoryWithIncorrectProviderClassConfiguration(SslFactoryTest.java:129)
+¶€@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+¶€R	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+¶€Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+¶€5	at java.lang.reflect.Method.invoke(Method.java:498)
+¶€Y	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+¶€X	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+¶€W	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+¶€V	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+¶€\	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+¶€E	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+¶€Y	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+¶€B	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+¶€W	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+¶€V	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+¶€@	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+¶€D	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+¶€F	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+¶€D	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+¶€E	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+¶€>	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+¶€5	at org.junit.runners.Suite.runChild(Suite.java:128)
+¶€4	at org.junit.runners.Suite.runChild(Suite.java:27)
+¶€@	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+¶€D	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+¶€F	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+¶€D	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+¶€E	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+¶€E	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+¶€>	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+¶€u	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+¶€o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+¶€o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+¶€Š	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+¶€t	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+¶€A	at sun.reflect.GeneratedMethodAccessor28.invoke(Unknown Source)
+¶€Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+¶€5	at java.lang.reflect.Method.invoke(Method.java:498)
+¶€Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+¶€Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+¶€i	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+¶€x	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+¶€;	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+¶€b	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+¶€A	at sun.reflect.GeneratedMethodAccessor27.invoke(Unknown Source)
+¶€Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+¶€5	at java.lang.reflect.Method.invoke(Method.java:498)
+¶€Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+¶€Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+¶€‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+¶€‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+¶€X	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+¶€k	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+¶€Z	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+¶€T	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+¶€T	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+¶€j	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+¶€*	at java.lang.Thread.run(Thread.java:748)
+Ùƒ¢[2020-01-15 10:08:36,294] ERROR Unexpected exception during send, closing connection 0 and rethrowing exception {} (org.apache.kafka.common.network.Selector:406)
+Ùƒƒjava.lang.IllegalStateException: Attempt to begin a send operation with prior send operation still in progress, connection id is 0
+ÙƒP	at org.apache.kafka.common.network.KafkaChannel.setSend(KafkaChannel.java:377)
+ÙƒE	at org.apache.kafka.common.network.Selector.send(Selector.java:398)
+Ùƒc	at org.apache.kafka.common.network.SelectorTest.testCantSendWithInProgress(SelectorTest.java:164)
+Ùƒ@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ÙƒR	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ÙƒZ	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Ùƒ5	at java.lang.reflect.Method.invoke(Method.java:498)
+ÙƒY	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+ÙƒX	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+ÙƒW	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+ÙƒV	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+ÙƒR	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+ÙƒP	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+Ùƒg	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:288)
+Ùƒg	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:282)
+Ùƒ=	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+Ùƒ*	at java.lang.Thread.run(Thread.java:748)
+†[2020-01-15 10:08:41,705] ERROR Aborting producer batches due to fatal error (org.apache.kafka.clients.producer.internals.Sender:492)
+torg.apache.kafka.common.errors.ClusterAuthorizationException: The producer is not authorized to do idempotent sends
+š¼[2020-01-15 10:08:41,909] ERROR The broker returned org.apache.kafka.common.errors.OutOfOrderSequenceException: The broker received an out of order sequence number. for topic-partition test-0 with producerId 343434, epoch 0, and sequence number 1 (org.apache.kafka.clients.producer.internals.TransactionManager:614)
+Ÿ†[2020-01-15 10:08:41,922] ERROR Aborting producer batches due to fatal error (org.apache.kafka.clients.producer.internals.Sender:492)
+Ÿtorg.apache.kafka.common.errors.ClusterAuthorizationException: The producer is not authorized to do idempotent sends
+£¼[2020-01-15 10:08:41,929] ERROR The broker returned org.apache.kafka.common.errors.OutOfOrderSequenceException: The broker received an out of order sequence number. for topic-partition test-0 with producerId 343434, epoch 0, and sequence number 0 (org.apache.kafka.clients.producer.internals.TransactionManager:614)
+¦¼[2020-01-15 10:08:41,934] ERROR The broker returned org.apache.kafka.common.errors.OutOfOrderSequenceException: The broker received an out of order sequence number. for topic-partition test-0 with producerId 343434, epoch 0, and sequence number 0 (org.apache.kafka.clients.producer.internals.TransactionManager:614)
+¨ [2020-01-15 10:08:41,941] ERROR The broker returned org.apache.kafka.common.errors.UnknownProducerIdException: This exception is raised by the broker if it could not locate the producer metadata associated with the producerId in question. This could happen if, for instance, the producer's records were deleted because their retention time had elapsed. Once the last records of the producerId are removed, the producer's metadata is removed from the broker, and future appends by the producer will return this exception. for topic-partition test-0 with producerId 343434, epoch 0, and sequence number 1 (org.apache.kafka.clients.producer.internals.TransactionManager:614)
+«·[2020-01-15 10:08:41,945] ERROR The broker returned org.apache.kafka.common.errors.OutOfOrderSequenceException: The broker received an out of order sequence number. for topic-partition test-0 with producerId 1, epoch 0, and sequence number 0 (org.apache.kafka.clients.producer.internals.TransactionManager:614)
+­¼[2020-01-15 10:08:41,949] ERROR The broker returned org.apache.kafka.common.errors.OutOfOrderSequenceException: The broker received an out of order sequence number. for topic-partition test-0 with producerId 343434, epoch 0, and sequence number 0 (org.apache.kafka.clients.producer.internals.TransactionManager:614)
+°¼[2020-01-15 10:08:41,954] ERROR The broker returned org.apache.kafka.common.errors.OutOfOrderSequenceException: The broker received an out of order sequence number. for topic-partition test-0 with producerId 343434, epoch 0, and sequence number 2 (org.apache.kafka.clients.producer.internals.TransactionManager:614)
+³¼[2020-01-15 10:08:41,959] ERROR The broker returned org.apache.kafka.common.errors.OutOfOrderSequenceException: The broker received an out of order sequence number. for topic-partition test-0 with producerId 343434, epoch 0, and sequence number 0 (org.apache.kafka.clients.producer.internals.TransactionManager:614)
+·†[2020-01-15 10:08:41,965] ERROR Aborting producer batches due to fatal error (org.apache.kafka.clients.producer.internals.Sender:492)
+·\org.apache.kafka.common.errors.ClusterAuthorizationException: Cluster authorization failed.
+¸†[2020-01-15 10:08:41,968] ERROR Aborting producer batches due to fatal error (org.apache.kafka.clients.producer.internals.Sender:492)
+¸aorg.apache.kafka.common.errors.UnsupportedVersionException: The version of API is not supported.
+çò¦[2020-01-15 10:08:44,921] ERROR [Producer clientId=producer-6] Uncaught error in kafka producer I/O thread:  (org.apache.kafka.clients.producer.internals.Sender:247)
+çòDjava.lang.IllegalStateException: No previous metadata update to use
+çòr	at org.apache.kafka.clients.MockClient$DefaultMockMetadataUpdater.updateWithCurrentMetadata(MockClient.java:623)
+çòB	at org.apache.kafka.clients.MockClient.poll(MockClient.java:287)
+çòP	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:334)
+çòL	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:245)
+çò*	at java.lang.Thread.run(Thread.java:748)
+çô¦[2020-01-15 10:08:45,024] ERROR [Producer clientId=producer-8] Uncaught error in kafka producer I/O thread:  (org.apache.kafka.clients.producer.internals.Sender:247)
+çôDjava.lang.IllegalStateException: No previous metadata update to use
+çôr	at org.apache.kafka.clients.MockClient$DefaultMockMetadataUpdater.updateWithCurrentMetadata(MockClient.java:623)
+çôB	at org.apache.kafka.clients.MockClient.poll(MockClient.java:287)
+çôP	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:334)
+çôL	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:245)
+çô*	at java.lang.Thread.run(Thread.java:748)
+çù™[2020-01-15 10:08:45,239] ERROR [Producer clientId=producer-9] Interrupted while joining ioThread (org.apache.kafka.clients.producer.KafkaProducer:1159)
+çùjava.lang.InterruptedException
+çù)	at java.lang.Object.wait(Native Method)
+çù,	at java.lang.Thread.join(Thread.java:1260)
+çùS	at org.apache.kafka.clients.producer.KafkaProducer.close(KafkaProducer.java:1156)
+çùS	at org.apache.kafka.clients.producer.KafkaProducer.close(KafkaProducer.java:1133)
+çùS	at org.apache.kafka.clients.producer.KafkaProducer.close(KafkaProducer.java:1111)
+çù†	at org.apache.kafka.clients.producer.KafkaProducerTest.lambda$shouldCloseProperlyAndThrowIfInterrupted$1(KafkaProducerTest.java:280)
+çùL	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+çù=	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+çùT	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+çùT	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+çù*	at java.lang.Thread.run(Thread.java:748)
+ç•~[2020-01-15 10:08:50,455] ERROR Metadata response reported invalid topics [topic abc] (org.apache.kafka.clients.Metadata:274)
+ ¡Ì[2020-01-15 10:08:50,537] ERROR Reclaimed buffer of size 95446630 and identity 1184896025 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+ ¡Ì[2020-01-15 10:08:50,538] ERROR Reclaimed buffer of size 95446630 and identity 1427712016 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+ ¡Ì[2020-01-15 10:08:50,538] ERROR Reclaimed buffer of size 95446630 and identity 1543171488 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+ ¡Ê[2020-01-15 10:08:50,538] ERROR Reclaimed buffer of size 95446630 and identity 24757077 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+ ¡Ë[2020-01-15 10:08:50,538] ERROR Reclaimed buffer of size 95446630 and identity 490484418 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+ ¡Ì[2020-01-15 10:08:50,538] ERROR Reclaimed buffer of size 95446630 and identity 2113221626 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+ ¡Ë[2020-01-15 10:08:50,619] ERROR Reclaimed buffer of size 95446630 and identity 526960074 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+ ¡Ë[2020-01-15 10:08:50,620] ERROR Reclaimed buffer of size 95446630 and identity 807770935 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+ ¡Ë[2020-01-15 10:08:50,620] ERROR Reclaimed buffer of size 95446630 and identity 256147398 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+ ¡Ì[2020-01-15 10:08:50,620] ERROR Reclaimed buffer of size 95446630 and identity 1019143917 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+ ¡Ì[2020-01-15 10:08:50,620] ERROR Reclaimed buffer of size 95446630 and identity 1088976400 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+ ¡Ì[2020-01-15 10:08:50,620] ERROR Reclaimed buffer of size 95446630 and identity 1412092228 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+ ¡Ë[2020-01-15 10:08:50,621] ERROR Reclaimed buffer of size 95446630 and identity 481519802 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+ ¡Ë[2020-01-15 10:08:50,697] ERROR Reclaimed buffer of size 95446630 and identity 432148365 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+ ¡Ì[2020-01-15 10:08:50,697] ERROR Reclaimed buffer of size 95446630 and identity 1221199061 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+ ¡Ë[2020-01-15 10:08:50,697] ERROR Reclaimed buffer of size 95446630 and identity 208836862 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+ ¡Ë[2020-01-15 10:08:50,698] ERROR Reclaimed buffer of size 95446630 and identity 344381975 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+ ¡Ë[2020-01-15 10:08:50,698] ERROR Reclaimed buffer of size 95446630 and identity 731896426 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+ ¡Ì[2020-01-15 10:08:50,698] ERROR Reclaimed buffer of size 95446630 and identity 1337672654 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+ ¡Ë[2020-01-15 10:08:50,698] ERROR Reclaimed buffer of size 95446630 and identity 371493222 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+ ¡Ë[2020-01-15 10:08:50,776] ERROR Reclaimed buffer of size 95446630 and identity 453909409 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+ ¡Ë[2020-01-15 10:08:50,777] ERROR Reclaimed buffer of size 95446630 and identity 298203079 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+ ¡Ë[2020-01-15 10:08:50,777] ERROR Reclaimed buffer of size 95446630 and identity 743488819 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+ ¡Ì[2020-01-15 10:08:50,777] ERROR Reclaimed buffer of size 95446630 and identity 1307060731 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+ ¡Ë[2020-01-15 10:08:50,777] ERROR Reclaimed buffer of size 95446630 and identity 410123285 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+ ¡Ë[2020-01-15 10:08:50,777] ERROR Reclaimed buffer of size 95446630 and identity 166456172 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+ ¡Ì[2020-01-15 10:08:50,777] ERROR Reclaimed buffer of size 95446630 and identity 1003908872 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+µ·Ì[2020-01-15 10:08:50,988] ERROR Reclaimed buffer of size 95446630 and identity 1262692894 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+µ·Æ[2020-01-15 10:08:50,988] ERROR Reclaimed buffer of size 10 and identity 1786066491 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+µ·Ë[2020-01-15 10:08:50,988] ERROR Reclaimed buffer of size 95446630 and identity 553385651 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+µ·Å[2020-01-15 10:08:50,989] ERROR Reclaimed buffer of size 10 and identity 693951831 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+µ·Ì[2020-01-15 10:08:50,989] ERROR Reclaimed buffer of size 95446630 and identity 1139126865 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+µ·Å[2020-01-15 10:08:50,989] ERROR Reclaimed buffer of size 10 and identity 352600992 that was not properly release()ed. This is a bug. (org.apache.kafka.common.memory.GarbageCollectedMemoryPool:106)
+µÀ¢[2020-01-15 10:08:51,215] ERROR Unexpected exception during send, closing connection 0 and rethrowing exception {} (org.apache.kafka.common.network.Selector:406)
+µÀƒjava.lang.IllegalStateException: Attempt to begin a send operation with prior send operation still in progress, connection id is 0
+µÀP	at org.apache.kafka.common.network.KafkaChannel.setSend(KafkaChannel.java:377)
+µÀE	at org.apache.kafka.common.network.Selector.send(Selector.java:398)
+µÀc	at org.apache.kafka.common.network.SelectorTest.testCantSendWithInProgress(SelectorTest.java:164)
+µÀ@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+µÀR	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+µÀZ	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+µÀ5	at java.lang.reflect.Method.invoke(Method.java:498)
+µÀY	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+µÀX	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+µÀW	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+µÀV	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+µÀR	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+µÀP	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+µÀg	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:288)
+µÀg	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:282)
+µÀ=	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+µÀ*	at java.lang.Thread.run(Thread.java:748)
+şó§[2020-01-15 10:08:53,235] ERROR Modification time of key store could not be obtained: some.truststore.path (org.apache.kafka.common.security.ssl.SslEngineBuilder:300)
+şó8java.nio.file.NoSuchFileException: some.truststore.path
+şóK	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+şóJ	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+şóJ	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+şó[	at sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+şóV	at sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:144)
+şó8	at java.nio.file.Files.readAttributes(Files.java:1737)
+şó=	at java.nio.file.Files.getLastModifiedTime(Files.java:2266)
+şór	at org.apache.kafka.common.security.ssl.SslEngineBuilder$SecurityStore.lastModifiedMs(SslEngineBuilder.java:298)
+şój	at org.apache.kafka.common.security.ssl.SslEngineBuilder$SecurityStore.<init>(SslEngineBuilder.java:275)
+şóf	at org.apache.kafka.common.security.ssl.SslEngineBuilder.createTruststore(SslEngineBuilder.java:182)
+şó\	at org.apache.kafka.common.security.ssl.SslEngineBuilder.<init>(SslEngineBuilder.java:100)
+şóc	at org.apache.kafka.common.security.ssl.SslFactory.createNewSslEngineBuilder(SslFactory.java:140)
+şóa	at org.apache.kafka.common.security.ssl.SslFactory.validateReconfiguration(SslFactory.java:114)
+şói	at org.apache.kafka.common.network.SslChannelBuilder.validateReconfiguration(SslChannelBuilder.java:85)
+şót	at org.apache.kafka.common.network.SslTransportLayerTest.verifyInvalidReconfigure(SslTransportLayerTest.java:1090)
+şó}	at org.apache.kafka.common.network.SslTransportLayerTest.testServerTruststoreDynamicUpdate(SslTransportLayerTest.java:1080)
+şó@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+şóR	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+şóZ	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+şó5	at java.lang.reflect.Method.invoke(Method.java:498)
+şóY	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+şóX	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+şóW	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+şóV	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+şóR	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+şóP	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+şóE	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+şóY	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+şóB	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+şóW	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+şóV	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+şó@	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+şóD	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+şóF	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+şóD	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+şóE	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+şó>	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+şó5	at org.junit.runners.Suite.runChild(Suite.java:128)
+şó4	at org.junit.runners.Suite.runChild(Suite.java:27)
+şó@	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+şóD	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+şóF	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+şóD	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+şóE	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+şóE	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+şó>	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+şóu	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+şóo	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+şóo	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+şóŠ	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+şót	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+şó@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+şóR	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+şóZ	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+şó5	at java.lang.reflect.Method.invoke(Method.java:498)
+şóY	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+şóY	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+şói	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+şóx	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+şó;	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+şób	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+şó@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+şóR	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+şóZ	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+şó5	at java.lang.reflect.Method.invoke(Method.java:498)
+şóY	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+şóY	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+şó‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+şó‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+şóX	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+şók	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+şóZ	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+şóT	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+şóT	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+şój	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+şó*	at java.lang.Thread.run(Thread.java:748)
+şó§[2020-01-15 10:08:53,251] ERROR Modification time of key store could not be obtained: some.truststore.path (org.apache.kafka.common.security.ssl.SslEngineBuilder:300)
+şó8java.nio.file.NoSuchFileException: some.truststore.path
+şóK	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+şóJ	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+şóJ	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+şó[	at sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+şóV	at sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:144)
+şó8	at java.nio.file.Files.readAttributes(Files.java:1737)
+şó=	at java.nio.file.Files.getLastModifiedTime(Files.java:2266)
+şór	at org.apache.kafka.common.security.ssl.SslEngineBuilder$SecurityStore.lastModifiedMs(SslEngineBuilder.java:298)
+şój	at org.apache.kafka.common.security.ssl.SslEngineBuilder$SecurityStore.<init>(SslEngineBuilder.java:275)
+şóf	at org.apache.kafka.common.security.ssl.SslEngineBuilder.createTruststore(SslEngineBuilder.java:182)
+şó\	at org.apache.kafka.common.security.ssl.SslEngineBuilder.<init>(SslEngineBuilder.java:100)
+şóc	at org.apache.kafka.common.security.ssl.SslFactory.createNewSslEngineBuilder(SslFactory.java:140)
+şóU	at org.apache.kafka.common.security.ssl.SslFactory.reconfigure(SslFactory.java:119)
+şó]	at org.apache.kafka.common.network.SslChannelBuilder.reconfigure(SslChannelBuilder.java:90)
+şót	at org.apache.kafka.common.network.SslTransportLayerTest.verifyInvalidReconfigure(SslTransportLayerTest.java:1096)
+şó}	at org.apache.kafka.common.network.SslTransportLayerTest.testServerTruststoreDynamicUpdate(SslTransportLayerTest.java:1080)
+şó@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+şóR	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+şóZ	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+şó5	at java.lang.reflect.Method.invoke(Method.java:498)
+şóY	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+şóX	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+şóW	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+şóV	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+şóR	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+şóP	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+şóE	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+şóY	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+şóB	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+şóW	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+şóV	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+şó@	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+şóD	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+şóF	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+şóD	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+şóE	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+şó>	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+şó5	at org.junit.runners.Suite.runChild(Suite.java:128)
+şó4	at org.junit.runners.Suite.runChild(Suite.java:27)
+şó@	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+şóD	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+şóF	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+şóD	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+şóE	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+şóE	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+şó>	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+şóu	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+şóo	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+şóo	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+şóŠ	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+şót	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+şó@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+şóR	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+şóZ	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+şó5	at java.lang.reflect.Method.invoke(Method.java:498)
+şóY	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+şóY	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+şói	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+şóx	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+şó;	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+şób	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+şó@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+şóR	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+şóZ	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+şó5	at java.lang.reflect.Method.invoke(Method.java:498)
+şóY	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+şóY	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+şó‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+şó‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+şóX	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+şók	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+şóZ	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+şóT	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+şóT	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+şój	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+şó*	at java.lang.Thread.run(Thread.java:748)
+ùşŸ[2020-01-15 10:08:55,996] ERROR Extensions provided in login context without a token (org.apache.kafka.common.security.oauthbearer.OAuthBearerLoginModule:318)
+ùşJjava.io.IOException: Extensions provided in login context without a token
+ùş¨	at org.apache.kafka.common.security.oauthbearer.internals.unsecured.OAuthBearerUnsecuredLoginCallbackHandler.handle(OAuthBearerUnsecuredLoginCallbackHandler.java:164)
+ùşw	at org.apache.kafka.common.security.oauthbearer.OAuthBearerLoginModule.identifyToken(OAuthBearerLoginModule.java:316)
+ùşo	at org.apache.kafka.common.security.oauthbearer.OAuthBearerLoginModule.login(OAuthBearerLoginModule.java:301)
+ùş@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ùşR	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ùşZ	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ùş5	at java.lang.reflect.Method.invoke(Method.java:498)
+ùşI	at javax.security.auth.login.LoginContext.invoke(LoginContext.java:755)
+ùşM	at javax.security.auth.login.LoginContext.access$000(LoginContext.java:195)
+ùşH	at javax.security.auth.login.LoginContext$4.run(LoginContext.java:682)
+ùşH	at javax.security.auth.login.LoginContext$4.run(LoginContext.java:680)
+ùş?	at java.security.AccessController.doPrivileged(Native Method)
+ùşM	at javax.security.auth.login.LoginContext.invokePriv(LoginContext.java:680)
+ùşH	at javax.security.auth.login.LoginContext.login(LoginContext.java:587)
+ùş^	at org.apache.kafka.common.security.authenticator.AbstractLogin.login(AbstractLogin.java:60)
+ùş]	at org.apache.kafka.common.security.authenticator.LoginManager.<init>(LoginManager.java:62)
+ùşk	at org.apache.kafka.common.security.authenticator.LoginManager.acquireLoginManager(LoginManager.java:105)
+ùş^	at org.apache.kafka.common.network.SaslChannelBuilder.configure(SaslChannelBuilder.java:158)
+ùşU	at org.apache.kafka.common.network.ChannelBuilders.create(ChannelBuilders.java:157)
+ùşb	at org.apache.kafka.common.network.ChannelBuilders.serverChannelBuilder(ChannelBuilders.java:97)
+ùşQ	at org.apache.kafka.common.network.NioEchoServer.<init>(NioEchoServer.java:123)
+ùşP	at org.apache.kafka.common.network.NioEchoServer.<init>(NioEchoServer.java:98)
+ùş`	at org.apache.kafka.common.network.NetworkTestUtils.createEchoServer(NetworkTestUtils.java:49)
+ùş`	at org.apache.kafka.common.network.NetworkTestUtils.createEchoServer(NetworkTestUtils.java:43)
+ùş{	at org.apache.kafka.common.security.authenticator.SaslAuthenticatorTest.createEchoServer(SaslAuthenticatorTest.java:1947)
+ùş{	at org.apache.kafka.common.security.authenticator.SaslAuthenticatorTest.createEchoServer(SaslAuthenticatorTest.java:1943)
+ùşŸ	at org.apache.kafka.common.security.authenticator.SaslAuthenticatorTest.testValidSaslOauthBearerMechanismWithoutServerTokens(SaslAuthenticatorTest.java:1666)
+ùş@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ùşR	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ùşZ	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ùş5	at java.lang.reflect.Method.invoke(Method.java:498)
+ùşY	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+ùşX	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+ùşW	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+ùşV	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+ùşR	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+ùşP	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+ùşE	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+ùşY	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+ùşB	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+ùşW	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+ùşV	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+ùş@	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+ùşD	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+ùşF	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+ùşD	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+ùşE	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+ùşE	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+ùş>	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+ùşu	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+ùşo	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+ùşo	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+ùşŠ	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+ùşt	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+ùşA	at sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+ùşZ	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ùş5	at java.lang.reflect.Method.invoke(Method.java:498)
+ùşY	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+ùşY	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+ùşi	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+ùşx	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+ùş;	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+ùşb	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+ùşA	at sun.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)
+ùşZ	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ùş5	at java.lang.reflect.Method.invoke(Method.java:498)
+ùşY	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+ùşY	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+ùş‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+ùş‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+ùşX	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+ùşk	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+ùşZ	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+ùşT	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ùşT	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ùşj	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+ùş*	at java.lang.Thread.run(Thread.java:748)
+ùşCaused by: org.apache.kafka.common.security.oauthbearer.internals.unsecured.OAuthBearerConfigException: Extensions provided in login context without a token
+ùşµ	at org.apache.kafka.common.security.oauthbearer.internals.unsecured.OAuthBearerUnsecuredLoginCallbackHandler.handleTokenCallback(OAuthBearerUnsecuredLoginCallbackHandler.java:191)
+ùş¨	at org.apache.kafka.common.security.oauthbearer.internals.unsecured.OAuthBearerUnsecuredLoginCallbackHandler.handle(OAuthBearerUnsecuredLoginCallbackHandler.java:162)
+ùş	... 76 more
+şû'¥[2020-01-15 10:09:00,669] ERROR Modification time of key store could not be obtained: some.keystore.path (org.apache.kafka.common.security.ssl.SslEngineBuilder:300)
+şû'6java.nio.file.NoSuchFileException: some.keystore.path
+şû'K	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+şû'J	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+şû'J	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+şû'[	at sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+şû'V	at sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:144)
+şû'8	at java.nio.file.Files.readAttributes(Files.java:1737)
+şû'=	at java.nio.file.Files.getLastModifiedTime(Files.java:2266)
+şû'r	at org.apache.kafka.common.security.ssl.SslEngineBuilder$SecurityStore.lastModifiedMs(SslEngineBuilder.java:298)
+şû'j	at org.apache.kafka.common.security.ssl.SslEngineBuilder$SecurityStore.<init>(SslEngineBuilder.java:275)
+şû'd	at org.apache.kafka.common.security.ssl.SslEngineBuilder.createKeystore(SslEngineBuilder.java:173)
+şû'[	at org.apache.kafka.common.security.ssl.SslEngineBuilder.<init>(SslEngineBuilder.java:95)
+şû'c	at org.apache.kafka.common.security.ssl.SslFactory.createNewSslEngineBuilder(SslFactory.java:140)
+şû'a	at org.apache.kafka.common.security.ssl.SslFactory.validateReconfiguration(SslFactory.java:114)
+şû'i	at org.apache.kafka.common.network.SslChannelBuilder.validateReconfiguration(SslChannelBuilder.java:85)
+şû't	at org.apache.kafka.common.network.SslTransportLayerTest.verifyInvalidReconfigure(SslTransportLayerTest.java:1090)
+şû'{	at org.apache.kafka.common.network.SslTransportLayerTest.testServerKeystoreDynamicUpdate(SslTransportLayerTest.java:1021)
+şû'@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+şû'R	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+şû'Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+şû'5	at java.lang.reflect.Method.invoke(Method.java:498)
+şû'Y	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+şû'X	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+şû'W	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+şû'V	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+şû'R	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+şû'P	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+şû'E	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+şû'Y	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+şû'B	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+şû'W	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+şû'V	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+şû'@	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+şû'D	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+şû'F	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+şû'D	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+şû'E	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+şû'>	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+şû'5	at org.junit.runners.Suite.runChild(Suite.java:128)
+şû'4	at org.junit.runners.Suite.runChild(Suite.java:27)
+şû'@	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+şû'D	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+şû'F	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+şû'D	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+şû'E	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+şû'E	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+şû'>	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+şû'u	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+şû'o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+şû'o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+şû'Š	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+şû't	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+şû'@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+şû'R	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+şû'Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+şû'5	at java.lang.reflect.Method.invoke(Method.java:498)
+şû'Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+şû'Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+şû'i	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+şû'x	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+şû';	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+şû'b	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+şû'@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+şû'R	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+şû'Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+şû'5	at java.lang.reflect.Method.invoke(Method.java:498)
+şû'Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+şû'Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+şû'‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+şû'‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+şû'X	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+şû'k	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+şû'Z	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+şû'T	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+şû'T	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+şû'j	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+şû'*	at java.lang.Thread.run(Thread.java:748)
+şû'¥[2020-01-15 10:09:00,671] ERROR Modification time of key store could not be obtained: some.keystore.path (org.apache.kafka.common.security.ssl.SslEngineBuilder:300)
+şû'6java.nio.file.NoSuchFileException: some.keystore.path
+şû'K	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+şû'J	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+şû'J	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+şû'[	at sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+şû'V	at sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:144)
+şû'8	at java.nio.file.Files.readAttributes(Files.java:1737)
+şû'=	at java.nio.file.Files.getLastModifiedTime(Files.java:2266)
+şû'r	at org.apache.kafka.common.security.ssl.SslEngineBuilder$SecurityStore.lastModifiedMs(SslEngineBuilder.java:298)
+şû'j	at org.apache.kafka.common.security.ssl.SslEngineBuilder$SecurityStore.<init>(SslEngineBuilder.java:275)
+şû'd	at org.apache.kafka.common.security.ssl.SslEngineBuilder.createKeystore(SslEngineBuilder.java:173)
+şû'[	at org.apache.kafka.common.security.ssl.SslEngineBuilder.<init>(SslEngineBuilder.java:95)
+şû'c	at org.apache.kafka.common.security.ssl.SslFactory.createNewSslEngineBuilder(SslFactory.java:140)
+şû'U	at org.apache.kafka.common.security.ssl.SslFactory.reconfigure(SslFactory.java:119)
+şû']	at org.apache.kafka.common.network.SslChannelBuilder.reconfigure(SslChannelBuilder.java:90)
+şû't	at org.apache.kafka.common.network.SslTransportLayerTest.verifyInvalidReconfigure(SslTransportLayerTest.java:1096)
+şû'{	at org.apache.kafka.common.network.SslTransportLayerTest.testServerKeystoreDynamicUpdate(SslTransportLayerTest.java:1021)
+şû'@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+şû'R	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+şû'Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+şû'5	at java.lang.reflect.Method.invoke(Method.java:498)
+şû'Y	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+şû'X	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+şû'W	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+şû'V	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+şû'R	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+şû'P	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+şû'E	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+şû'Y	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+şû'B	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+şû'W	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+şû'V	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+şû'@	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+şû'D	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+şû'F	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+şû'D	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+şû'E	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+şû'>	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+şû'5	at org.junit.runners.Suite.runChild(Suite.java:128)
+şû'4	at org.junit.runners.Suite.runChild(Suite.java:27)
+şû'@	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+şû'D	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+şû'F	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+şû'D	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+şû'E	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+şû'E	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+şû'>	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+şû'u	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+şû'o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+şû'o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+şû'Š	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+şû't	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+şû'@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+şû'R	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+şû'Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+şû'5	at java.lang.reflect.Method.invoke(Method.java:498)
+şû'Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+şû'Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+şû'i	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+şû'x	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+şû';	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+şû'b	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+şû'@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+şû'R	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+şû'Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+şû'5	at java.lang.reflect.Method.invoke(Method.java:498)
+şû'Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+şû'Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+şû'‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+şû'‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+şû'X	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+şû'k	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+şû'Z	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+şû'T	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+şû'T	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+şû'j	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+şû'*	at java.lang.Thread.run(Thread.java:748)
+¤,¢,ğ[2020-01-15 10:09:03,391] ERROR [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:56478) failed authentication due to: Authentication failed: Invalid username or password (org.apache.kafka.clients.NetworkClient:745)
+¤,¥,•[2020-01-15 10:09:03,517] ERROR [Producer clientId=producer-txclient-1, transactionalId=txclient-1] Connection to node -1 (localhost/127.0.0.1:56482) failed authentication due to: Authentication failed: Invalid username or password (org.apache.kafka.clients.NetworkClient:745)
+¤,¦,ú[2020-01-15 10:09:03,677] ERROR [Consumer clientId=consumer-1, groupId=] Connection to node -1 (localhost/127.0.0.1:56484) failed authentication due to: Authentication failed: Invalid username or password (org.apache.kafka.clients.NetworkClient:745)
+¤,§,ö[2020-01-15 10:09:03,817] ERROR [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:56488) failed authentication due to: Authentication failed: Invalid username or password (org.apache.kafka.clients.NetworkClient:745)

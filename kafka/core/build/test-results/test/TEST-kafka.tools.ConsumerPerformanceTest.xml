@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.tools.ConsumerPerformanceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:27:01" hostname="localhost" time="0.187">
+  <properties/>
+  <testcase name="testDetailedHeaderMatchBody" classname="kafka.tools.ConsumerPerformanceTest" time="0.093"/>
+  <testcase name="testConfigWithUnrecognizedOption" classname="kafka.tools.ConsumerPerformanceTest" time="0.092"/>
+  <testcase name="testConfig" classname="kafka.tools.ConsumerPerformanceTest" time="0.001"/>
+  <testcase name="testNonDetailedHeaderMatchBody" classname="kafka.tools.ConsumerPerformanceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

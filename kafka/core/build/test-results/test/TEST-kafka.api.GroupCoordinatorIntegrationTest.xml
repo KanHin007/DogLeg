@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.api.GroupCoordinatorIntegrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:24:16" hostname="localhost" time="5.554">
+  <properties/>
+  <testcase name="testGroupCoordinatorPropagatesOffsetsTopicCompressionCodec" classname="kafka.api.GroupCoordinatorIntegrationTest" time="5.554"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

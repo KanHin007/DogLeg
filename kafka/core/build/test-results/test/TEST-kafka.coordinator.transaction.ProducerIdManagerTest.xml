@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.coordinator.transaction.ProducerIdManagerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:43:22" hostname="localhost" time="0.023">
+  <properties/>
+  <testcase name="testExceedProducerIdLimit" classname="kafka.coordinator.transaction.ProducerIdManagerTest" time="0.003"/>
+  <testcase name="testGetProducerId" classname="kafka.coordinator.transaction.ProducerIdManagerTest" time="0.02"/>
+  <system-out><![CDATA[[2020-01-15 10:43:22,102] ERROR [ProducerId Manager 0]: Exhausted all producerIds as the next block's end producerId is will has exceeded long type limit (current block end producerId is 9223372036854775807) (kafka.coordinator.transaction.ProducerIdManager:143)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

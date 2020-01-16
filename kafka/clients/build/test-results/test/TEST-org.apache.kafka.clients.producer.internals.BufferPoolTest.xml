@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.kafka.clients.producer.internals.BufferPoolTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:08:21" hostname="localhost" time="8.916">
+  <properties/>
+  <testcase name="testStressfulSituation" classname="org.apache.kafka.clients.producer.internals.BufferPoolTest" time="0.57"/>
+  <testcase name="testCleanupMemoryAvailabilityWaiterOnInterruption" classname="org.apache.kafka.clients.producer.internals.BufferPoolTest" time="1.509"/>
+  <testcase name="testBlockTimeout" classname="org.apache.kafka.clients.producer.internals.BufferPoolTest" time="2.005"/>
+  <testcase name="testLargeAvailableMemory" classname="org.apache.kafka.clients.producer.internals.BufferPoolTest" time="0.0"/>
+  <testcase name="testCleanupMemoryAvailabilityOnMetricsException" classname="org.apache.kafka.clients.producer.internals.BufferPoolTest" time="2.827"/>
+  <testcase name="testCantAllocateMoreMemoryThanWeHave" classname="org.apache.kafka.clients.producer.internals.BufferPoolTest" time="0.0"/>
+  <testcase name="testCleanupMemoryAvailabilityWaiterOnBlockTimeout" classname="org.apache.kafka.clients.producer.internals.BufferPoolTest" time="2.002"/>
+  <testcase name="testSimple" classname="org.apache.kafka.clients.producer.internals.BufferPoolTest" time="0.0"/>
+  <testcase name="testDelayedAllocation" classname="org.apache.kafka.clients.producer.internals.BufferPoolTest" time="0.001"/>
+  <testcase name="outOfMemoryOnAllocation" classname="org.apache.kafka.clients.producer.internals.BufferPoolTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

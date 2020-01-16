@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.tools.MirrorMakerIntegrationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:40:21" hostname="localhost" time="17.252">
+  <properties/>
+  <testcase name="testCommaSeparatedRegex" classname="kafka.tools.MirrorMakerIntegrationTest" time="4.712"/>
+  <testcase name="testCommitOffsetsRemoveNonExistentTopics" classname="kafka.tools.MirrorMakerIntegrationTest" time="7.346"/>
+  <testcase name="testCommitOffsetsThrowTimeoutException" classname="kafka.tools.MirrorMakerIntegrationTest" time="5.194"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

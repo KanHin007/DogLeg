@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class org.apache.kafka.clients.producer.internals.SenderTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class org.apache.kafka.clients.producer.internals.SenderTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.apache.kafka.clients.producer.internals.html">org.apache.kafka.clients.producer.internals</a> &gt; SenderTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">52</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.331s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testAbortRetryWhenProducerIdChanges</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAppendInExpiryCallback</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testBatchesDrainedWithOldProducerIdShouldFailWithOutOfOrderSequenceOnSubsequentRetry</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCanRetryWithoutIdempotence</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCancelInFlightRequestAfterFatalError</td>
+<td class="success">0.015s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCloseWithProducerIdReset</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testClusterAuthorizationExceptionInInitProducerIdRequest</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testClusterAuthorizationExceptionInProduceRequest</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCorrectHandlingOfDuplicateSequenceError</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCorrectHandlingOfOutOfOrderResponses</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCorrectHandlingOfOutOfOrderResponsesWhenSecondSucceeds</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDoNotPollWhenNoRequestSent</td>
+<td class="success">0.162s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDownConversionForMismatchedMagicValues</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testExpiredBatchDoesNotRetry</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testExpiredBatchDoesNotSplitOnMessageTooLargeError</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testExpiredBatchesInMultiplePartitions</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testExpiryOfAllSentBatchesShouldCauseUnresolvedSequences</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testExpiryOfFirstBatchShouldCauseResetIfFutureBatchesFail</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testExpiryOfFirstBatchShouldNotCauseUnresolvedSequencesIfFutureBatchesSucceed</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testExpiryOfUnsentBatchesShouldNotCauseUnresolvedSequences</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testForceCloseWithProducerIdReset</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testForceShutdownWithIncompleteTransaction</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testIdempotenceWithMultipleInflights</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testIdempotenceWithMultipleInflightsRetriedInOrder</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testIdempotenceWithMultipleInflightsWhereFirstFailsFatallyAndSequenceOfFutureBatchesIsAdjusted</td>
+<td class="success">0.038s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testIdempotentSplitBatchAndSend</td>
+<td class="success">0.008s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testIncompleteTransactionAbortOnShutdown</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testInflightBatchesExpireOnDeliveryTimeout</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testInitProducerIdRequest</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMessageFormatDownConversion</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMetadataTopicExpiry</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMustNotRetryOutOfOrderSequenceForNextBatch</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testNoDoubleDeallocation</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testQuotaMetrics</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testResetNextBatchExpiry</td>
+<td class="success">0.013s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testResetOfProducerStateShouldAllowQueuedBatchesToDrain</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testResetWhenOutOfOrderSequenceReceived</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRetries</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSendInOrder</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSenderMetricsTemplates</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSequenceNumberIncrement</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testShouldRaiseOutOfOrderSequenceExceptionToUserIfLogWasNotTruncated</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSimple</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testTooLargeBatchesAreSafelyRemoved</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testTransactionalRequestsSentOnShutdown</td>
+<td class="success">0.008s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testTransactionalSplitBatchAndSend</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUnknownProducerErrorShouldBeRetriedForFutureBatchesWhenFirstFails</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUnknownProducerErrorShouldBeRetriedWhenLogStartOffsetIsUnknown</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUnknownProducerHandlingWhenRetentionLimitReached</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUnsupportedForMessageFormatInProduceRequest</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUnsupportedVersionInProduceRequest</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testWhenFirstBatchExpireNoSendSecondBatchIfGuaranteeOrder</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>[2020-01-15 10:08:41,705] ERROR Aborting producer batches due to fatal error (org.apache.kafka.clients.producer.internals.Sender:492)
+org.apache.kafka.common.errors.ClusterAuthorizationException: The producer is not authorized to do idempotent sends
+[2020-01-15 10:08:41,909] ERROR The broker returned org.apache.kafka.common.errors.OutOfOrderSequenceException: The broker received an out of order sequence number. for topic-partition test-0 with producerId 343434, epoch 0, and sequence number 1 (org.apache.kafka.clients.producer.internals.TransactionManager:614)
+[2020-01-15 10:08:41,922] ERROR Aborting producer batches due to fatal error (org.apache.kafka.clients.producer.internals.Sender:492)
+org.apache.kafka.common.errors.ClusterAuthorizationException: The producer is not authorized to do idempotent sends
+[2020-01-15 10:08:41,929] ERROR The broker returned org.apache.kafka.common.errors.OutOfOrderSequenceException: The broker received an out of order sequence number. for topic-partition test-0 with producerId 343434, epoch 0, and sequence number 0 (org.apache.kafka.clients.producer.internals.TransactionManager:614)
+[2020-01-15 10:08:41,934] ERROR The broker returned org.apache.kafka.common.errors.OutOfOrderSequenceException: The broker received an out of order sequence number. for topic-partition test-0 with producerId 343434, epoch 0, and sequence number 0 (org.apache.kafka.clients.producer.internals.TransactionManager:614)
+[2020-01-15 10:08:41,941] ERROR The broker returned org.apache.kafka.common.errors.UnknownProducerIdException: This exception is raised by the broker if it could not locate the producer metadata associated with the producerId in question. This could happen if, for instance, the producer's records were deleted because their retention time had elapsed. Once the last records of the producerId are removed, the producer's metadata is removed from the broker, and future appends by the producer will return this exception. for topic-partition test-0 with producerId 343434, epoch 0, and sequence number 1 (org.apache.kafka.clients.producer.internals.TransactionManager:614)
+[2020-01-15 10:08:41,945] ERROR The broker returned org.apache.kafka.common.errors.OutOfOrderSequenceException: The broker received an out of order sequence number. for topic-partition test-0 with producerId 1, epoch 0, and sequence number 0 (org.apache.kafka.clients.producer.internals.TransactionManager:614)
+[2020-01-15 10:08:41,949] ERROR The broker returned org.apache.kafka.common.errors.OutOfOrderSequenceException: The broker received an out of order sequence number. for topic-partition test-0 with producerId 343434, epoch 0, and sequence number 0 (org.apache.kafka.clients.producer.internals.TransactionManager:614)
+[2020-01-15 10:08:41,954] ERROR The broker returned org.apache.kafka.common.errors.OutOfOrderSequenceException: The broker received an out of order sequence number. for topic-partition test-0 with producerId 343434, epoch 0, and sequence number 2 (org.apache.kafka.clients.producer.internals.TransactionManager:614)
+[2020-01-15 10:08:41,959] ERROR The broker returned org.apache.kafka.common.errors.OutOfOrderSequenceException: The broker received an out of order sequence number. for topic-partition test-0 with producerId 343434, epoch 0, and sequence number 0 (org.apache.kafka.clients.producer.internals.TransactionManager:614)
+[2020-01-15 10:08:41,965] ERROR Aborting producer batches due to fatal error (org.apache.kafka.clients.producer.internals.Sender:492)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Cluster authorization failed.
+[2020-01-15 10:08:41,968] ERROR Aborting producer batches due to fatal error (org.apache.kafka.clients.producer.internals.Sender:492)
+org.apache.kafka.common.errors.UnsupportedVersionException: The version of API is not supported.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.2</a> at 2020-1-15 10:09:31</p>
+</div>
+</div>
+</body>
+</html>

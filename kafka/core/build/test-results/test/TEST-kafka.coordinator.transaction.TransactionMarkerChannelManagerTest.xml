@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.coordinator.transaction.TransactionMarkerChannelManagerTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:28:17" hostname="localhost" time="0.088">
+  <properties/>
+  <testcase name="shouldSaveForLaterWhenLeaderUnknownButNotAvailable" classname="kafka.coordinator.transaction.TransactionMarkerChannelManagerTest" time="0.061"/>
+  <testcase name="shouldGenerateEmptyMapWhenNoRequestsOutstanding" classname="kafka.coordinator.transaction.TransactionMarkerChannelManagerTest" time="0.001"/>
+  <testcase name="shouldCreateMetricsOnStarting" classname="kafka.coordinator.transaction.TransactionMarkerChannelManagerTest" time="0.004"/>
+  <testcase name="shouldAbortAppendToLogOnEndTxnWhenNotCoordinatorError" classname="kafka.coordinator.transaction.TransactionMarkerChannelManagerTest" time="0.006"/>
+  <testcase name="shouldRetryAppendToLogOnEndTxnWhenCoordinatorNotAvailableError" classname="kafka.coordinator.transaction.TransactionMarkerChannelManagerTest" time="0.006"/>
+  <testcase name="shouldCompleteAppendToLogOnEndTxnWhenSendMarkersSucceed" classname="kafka.coordinator.transaction.TransactionMarkerChannelManagerTest" time="0.003"/>
+  <testcase name="shouldGenerateRequestPerPartitionPerBroker" classname="kafka.coordinator.transaction.TransactionMarkerChannelManagerTest" time="0.002"/>
+  <testcase name="shouldRemoveMarkersForTxnPartitionWhenPartitionEmigrated" classname="kafka.coordinator.transaction.TransactionMarkerChannelManagerTest" time="0.003"/>
+  <testcase name="shouldSkipSendMarkersWhenLeaderNotFound" classname="kafka.coordinator.transaction.TransactionMarkerChannelManagerTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

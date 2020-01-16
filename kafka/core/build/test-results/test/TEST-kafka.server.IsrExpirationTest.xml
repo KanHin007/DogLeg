@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.IsrExpirationTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:38:19" hostname="localhost" time="2.885">
+  <properties/>
+  <testcase name="testIsrExpirationForSlowFollowers" classname="kafka.server.IsrExpirationTest" time="0.63"/>
+  <testcase name="testIsrExpirationForCaughtUpFollowers" classname="kafka.server.IsrExpirationTest" time="0.617"/>
+  <testcase name="testIsrExpirationForStuckFollowers" classname="kafka.server.IsrExpirationTest" time="0.818"/>
+  <testcase name="testIsrExpirationIfNoFetchRequestMade" classname="kafka.server.IsrExpirationTest" time="0.82"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.api.SaslOAuthBearerSslEndToEndAuthorizationTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:25:50" hostname="localhost" time="142.495">
+  <properties/>
+  <testcase name="testTwoConsumersWithDifferentSaslCredentials" classname="kafka.api.SaslOAuthBearerSslEndToEndAuthorizationTest" time="9.3"/>
+  <testcase name="testNoConsumeWithoutDescribeAclViaSubscribe" classname="kafka.api.SaslOAuthBearerSslEndToEndAuthorizationTest" time="11.924"/>
+  <testcase name="testProduceConsumeWithPrefixedAcls" classname="kafka.api.SaslOAuthBearerSslEndToEndAuthorizationTest" time="10.21"/>
+  <testcase name="testProduceConsumeViaAssign" classname="kafka.api.SaslOAuthBearerSslEndToEndAuthorizationTest" time="16.92"/>
+  <testcase name="testNoConsumeWithDescribeAclViaAssign" classname="kafka.api.SaslOAuthBearerSslEndToEndAuthorizationTest" time="10.86"/>
+  <testcase name="testProduceConsumeTopicAutoCreateTopicCreateAcl" classname="kafka.api.SaslOAuthBearerSslEndToEndAuthorizationTest" time="14.053"/>
+  <testcase name="testProduceConsumeWithWildcardAcls" classname="kafka.api.SaslOAuthBearerSslEndToEndAuthorizationTest" time="8.672"/>
+  <testcase name="testNoConsumeWithDescribeAclViaSubscribe" classname="kafka.api.SaslOAuthBearerSslEndToEndAuthorizationTest" time="9.915"/>
+  <testcase name="testNoConsumeWithoutDescribeAclViaAssign" classname="kafka.api.SaslOAuthBearerSslEndToEndAuthorizationTest" time="8.511"/>
+  <testcase name="testNoGroupAcl" classname="kafka.api.SaslOAuthBearerSslEndToEndAuthorizationTest" time="8.387"/>
+  <testcase name="testNoProduceWithDescribeAcl" classname="kafka.api.SaslOAuthBearerSslEndToEndAuthorizationTest" time="10.193"/>
+  <testcase name="testNoDescribeProduceOrConsumeWithoutTopicDescribeAcl" classname="kafka.api.SaslOAuthBearerSslEndToEndAuthorizationTest" time="14.548"/>
+  <testcase name="testProduceConsumeViaSubscribe" classname="kafka.api.SaslOAuthBearerSslEndToEndAuthorizationTest" time="9.002"/>
+  <system-out><![CDATA[Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:oauthbearer-admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:oauthbearer-admin has Allow permission for operations: Read from hosts: * 
+
+[2020-01-15 10:25:53,150] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:53,195] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:53,944] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=WRITE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:oauthbearer-user has Allow permission for operations: Describe from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Create from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Write from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=READ, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:oauthbearer-user has Allow permission for operations: Read from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Describe from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Create from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Write from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:oauthbearer-user has Allow permission for operations: Read from hosts: * 
+
+[2020-01-15 10:25:55,019] ERROR [Consumer clientId=consumer-group-11, groupId=group] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:oauthbearer-admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:oauthbearer-admin has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=WRITE, permissionType=ALLOW) 
+
+[2020-01-15 10:26:03,475] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:oauthbearer-user has Allow permission for operations: Describe from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Create from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Write from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:oauthbearer-user has Allow permission for operations: Read from hosts: * 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:oauthbearer-user has Allow permission for operations: Create from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Write from hosts: * 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:oauthbearer-user has Allow permission for operations: Create from hosts: * 
+
+[2020-01-15 10:26:05,177] ERROR [Consumer clientId=consumer-group-12, groupId=group] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=WRITE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:oauthbearer-user has Allow permission for operations: Describe from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Create from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Write from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=READ, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:oauthbearer-user has Allow permission for operations: Read from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Describe from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Create from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Write from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:oauthbearer-user has Allow permission for operations: Read from hosts: * 
+
+[2020-01-15 10:26:05,699] ERROR [Consumer clientId=consumer-group-12, groupId=group] Topic authorization failed for topics [topic2] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:26:05,700] ERROR [Consumer clientId=consumer-group-12, groupId=group] Topic authorization failed for topics [topic2] (org.apache.kafka.clients.Metadata:281)
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:oauthbearer-admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:oauthbearer-admin has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2e, patternType=PREFIXED)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=READ, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=WRITE, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=gr, patternType=PREFIXED)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:PREFIXED:e2e`: 
+ 	User:oauthbearer-user has Allow permission for operations: Read from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Describe from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Create from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Write from hosts: * 
+
+Current ACLs for resource `Group:PREFIXED:gr`: 
+ 	User:oauthbearer-user has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:oauthbearer-admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:oauthbearer-admin has Allow permission for operations: Read from hosts: * 
+
+[2020-01-15 10:26:27,134] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:27,332] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:28,682] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:28,746] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=WRITE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:oauthbearer-user has Allow permission for operations: Describe from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Create from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Write from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=READ, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:oauthbearer-user has Allow permission for operations: Read from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Describe from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Create from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Write from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:oauthbearer-user has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:oauthbearer-admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:oauthbearer-admin has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=WRITE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:oauthbearer-user has Allow permission for operations: Describe from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Create from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Write from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:oauthbearer-user has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:oauthbearer-admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:oauthbearer-admin has Allow permission for operations: Read from hosts: * 
+
+[2020-01-15 10:26:54,276] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:55,056] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=topic2, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=WRITE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:topic2`: 
+ 	User:oauthbearer-user has Allow permission for operations: Describe from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Create from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Write from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=topic2, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=READ, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:topic2`: 
+ 	User:oauthbearer-user has Allow permission for operations: Read from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Describe from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Create from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Write from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:oauthbearer-user has Allow permission for operations: Read from hosts: * 
+
+[2020-01-15 10:26:56,856] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition topic2-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:oauthbearer-admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:oauthbearer-admin has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=READ, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=WRITE, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=*, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:oauthbearer-user has Allow permission for operations: Describe from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Read from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Create from hosts: *
+	User:oauthbearer-admin has Allow permission for operations: Read from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Write from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:*`: 
+ 	User:oauthbearer-user has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:oauthbearer-admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:oauthbearer-admin has Allow permission for operations: Read from hosts: * 
+
+[2020-01-15 10:27:14,711] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:27:14,711] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:27:15,334] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:27:15,387] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=WRITE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:oauthbearer-user has Allow permission for operations: Describe from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Create from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Write from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:oauthbearer-user has Allow permission for operations: Read from hosts: * 
+
+[2020-01-15 10:27:16,745] ERROR [Consumer clientId=consumer-group-18, groupId=group] Offset commit failed on partition e2etopic-0 at offset 0: Topic authorization failed. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1145)
+[2020-01-15 10:27:16,746] ERROR [Consumer clientId=consumer-group-18, groupId=group] Not authorized to commit to topics [e2etopic] (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1202)
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:oauthbearer-admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:oauthbearer-admin has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=WRITE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:oauthbearer-user has Allow permission for operations: Describe from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Create from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Write from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:oauthbearer-user has Allow permission for operations: Read from hosts: * 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:oauthbearer-user has Allow permission for operations: Create from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Write from hosts: * 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:oauthbearer-user has Allow permission for operations: Create from hosts: * 
+
+[2020-01-15 10:27:26,135] ERROR [Consumer clientId=consumer-group-19, groupId=group] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:oauthbearer-admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:oauthbearer-admin has Allow permission for operations: Read from hosts: * 
+
+[2020-01-15 10:27:32,919] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:27:32,961] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=WRITE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:oauthbearer-user has Allow permission for operations: Describe from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Create from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Write from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:oauthbearer-admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:oauthbearer-admin has Allow permission for operations: Read from hosts: * 
+
+[2020-01-15 10:27:43,563] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:27:43,563] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:27:44,213] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:27:44,214] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:oauthbearer-user has Allow permission for operations: Describe from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:oauthbearer-admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:oauthbearer-admin has Allow permission for operations: Read from hosts: * 
+
+[2020-01-15 10:27:54,084] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:27:54,128] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:27:54,708] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:27:54,708] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:oauthbearer-user has Allow permission for operations: Read from hosts: * 
+
+[2020-01-15 10:27:55,169] ERROR [Producer clientId=producer-12] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:27:55,187] ERROR [Consumer clientId=consumer-group-21, groupId=group] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=topic2, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=WRITE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:topic2`: 
+ 	User:oauthbearer-user has Allow permission for operations: Describe from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Create from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Write from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=topic2, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=READ, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:topic2`: 
+ 	User:oauthbearer-user has Allow permission for operations: Read from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Describe from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Create from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Write from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:oauthbearer-user has Allow permission for operations: Read from hosts: * 
+
+[2020-01-15 10:27:55,681] ERROR [Producer clientId=producer-12] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:27:55,783] ERROR [Producer clientId=producer-12] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:27:55,888] ERROR [Producer clientId=producer-12] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:27:55,934] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition topic2-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:27:55,991] ERROR [Producer clientId=producer-12] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:27:56,095] ERROR [Producer clientId=producer-12] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:27:56,197] ERROR [Producer clientId=producer-12] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:27:56,983] ERROR [Consumer clientId=consumer-group-21, groupId=group] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=WRITE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:oauthbearer-user has Allow permission for operations: Describe from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Create from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Write from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=READ, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:oauthbearer-user has Allow permission for operations: Read from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Describe from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Create from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Write from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:oauthbearer-user has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:oauthbearer-admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:oauthbearer-admin has Allow permission for operations: Read from hosts: * 
+
+[2020-01-15 10:28:05,854] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:28:05,936] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:28:06,111] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=WRITE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:oauthbearer-user has Allow permission for operations: Describe from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Create from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Write from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:oauthbearer-user, host=*, operation=READ, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:oauthbearer-user, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:oauthbearer-user has Allow permission for operations: Read from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Describe from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Create from hosts: *
+	User:oauthbearer-user has Allow permission for operations: Write from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:oauthbearer-user has Allow permission for operations: Read from hosts: * 
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

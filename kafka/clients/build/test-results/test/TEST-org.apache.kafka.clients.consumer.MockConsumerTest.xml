@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.kafka.clients.consumer.MockConsumerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:08:11" hostname="localhost" time="0.228">
+  <properties/>
+  <testcase name="testSimpleMock" classname="org.apache.kafka.clients.consumer.MockConsumerTest" time="0.188"/>
+  <testcase name="testConsumerRecordsIsEmptyWhenReturningNoRecords" classname="org.apache.kafka.clients.consumer.MockConsumerTest" time="0.008"/>
+  <testcase name="testSimpleMockDeprecated" classname="org.apache.kafka.clients.consumer.MockConsumerTest" time="0.031"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

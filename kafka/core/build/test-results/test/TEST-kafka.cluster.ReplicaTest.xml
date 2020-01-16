@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.cluster.ReplicaTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:43:21" hostname="localhost" time="0.213">
+  <properties/>
+  <testcase name="testCannotIncrementLogStartOffsetPastHighWatermark" classname="kafka.cluster.ReplicaTest" time="0.031"/>
+  <testcase name="testSegmentDeletionWithHighWatermarkInitialization" classname="kafka.cluster.ReplicaTest" time="0.031"/>
+  <testcase name="testCannotDeleteSegmentsAtOrAboveHighWatermark" classname="kafka.cluster.ReplicaTest" time="0.15"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

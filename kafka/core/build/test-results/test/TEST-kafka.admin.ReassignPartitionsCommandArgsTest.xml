@@ -1,0 +1,1229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.admin.ReassignPartitionsCommandArgsTest" tests="19" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:13:24" hostname="localhost" time="0.105">
+  <properties/>
+  <testcase name="shouldFailIfBlankArg" classname="kafka.admin.ReassignPartitionsCommandArgsTest" time="0.036"/>
+  <testcase name="shouldNotAllowVerifyWithoutReassignmentOption" classname="kafka.admin.ReassignPartitionsCommandArgsTest" time="0.005"/>
+  <testcase name="shouldNotAllowGenerateWithoutBrokersOption" classname="kafka.admin.ReassignPartitionsCommandArgsTest" time="0.006"/>
+  <testcase name="shouldNotAllowTopicsOptionWithVerify" classname="kafka.admin.ReassignPartitionsCommandArgsTest" time="0.005"/>
+  <testcase name="shouldNotAllowGenerateWithThrottleOption" classname="kafka.admin.ReassignPartitionsCommandArgsTest" time="0.005"/>
+  <testcase name="shouldFailIfNoArgs" classname="kafka.admin.ReassignPartitionsCommandArgsTest" time="0.004"/>
+  <testcase name="shouldNotAllowExecuteWithoutReassignmentOption" classname="kafka.admin.ReassignPartitionsCommandArgsTest" time="0.003"/>
+  <testcase name="shouldNotAllowBrokersListWithVerifyOption" classname="kafka.admin.ReassignPartitionsCommandArgsTest" time="0.003"/>
+  <testcase name="shouldCorrectlyParseValidMinimumExecuteOptions" classname="kafka.admin.ReassignPartitionsCommandArgsTest" time="0.001"/>
+  <testcase name="shouldNotAllowGenerateWithReassignmentOption" classname="kafka.admin.ReassignPartitionsCommandArgsTest" time="0.012"/>
+  <testcase name="shouldCorrectlyParseValidMinimumGenerateOptions" classname="kafka.admin.ReassignPartitionsCommandArgsTest" time="0.007"/>
+  <testcase name="shouldNotAllowGenerateWithoutBrokersAndTopicsOptions" classname="kafka.admin.ReassignPartitionsCommandArgsTest" time="0.004"/>
+  <testcase name="shouldNotAllowThrottleWithVerifyOption" classname="kafka.admin.ReassignPartitionsCommandArgsTest" time="0.002"/>
+  <testcase name="shouldUseDefaultsIfEnabled" classname="kafka.admin.ReassignPartitionsCommandArgsTest" time="0.001"/>
+  <testcase name="shouldAllowThrottleOptionOnExecute" classname="kafka.admin.ReassignPartitionsCommandArgsTest" time="0.001"/>
+  <testcase name="shouldNotAllowExecuteWithBrokers" classname="kafka.admin.ReassignPartitionsCommandArgsTest" time="0.003"/>
+  <testcase name="shouldNotAllowExecuteWithTopicsOption" classname="kafka.admin.ReassignPartitionsCommandArgsTest" time="0.002"/>
+  <testcase name="shouldCorrectlyParseValidMinimumVerifyOptions" classname="kafka.admin.ReassignPartitionsCommandArgsTest" time="0.001"/>
+  <testcase name="shouldNotAllowGenerateWithoutTopicsOption" classname="kafka.admin.ReassignPartitionsCommandArgsTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Command must include exactly one action: --generate, --execute or --verify
+Option                                  Description                           
+------                                  -----------                           
+--bootstrap-server <String: Server(s)   the server(s) to use for              
+  to use for bootstrapping>               bootstrapping. REQUIRED if an       
+                                          absolute path of the log directory  
+                                          is specified for any replica in the 
+                                          reassignment json file              
+--broker-list <String: brokerlist>      The list of brokers to which the      
+                                          partitions need to be reassigned in 
+                                          the form "0,1,2". This is required  
+                                          if --topics-to-move-json-file is    
+                                          used to generate reassignment       
+                                          configuration                       
+--command-config <String: Admin client  Property file containing configs to be
+  property file>                          passed to Admin Client.             
+--disable-rack-aware                    Disable rack aware replica assignment 
+--execute                               Kick off the reassignment as specified
+                                          by the --reassignment-json-file     
+                                          option.                             
+--generate                              Generate a candidate partition        
+                                          reassignment configuration. Note    
+                                          that this only generates a candidate
+                                          assignment, it does not execute it. 
+--help                                  Print usage information.              
+--reassignment-json-file <String:       The JSON file with the partition      
+  manual assignment json file path>       reassignment configurationThe format
+                                          to use is -                         
+                                        {"partitions":                        
+                                        	[{"topic": "foo",                    
+                                        	  "partition": 1,                    
+                                        	  "replicas": [1,2,3],               
+                                        	  "log_dirs": ["dir1","dir2","dir3"] 
+                                          }],                                 
+                                        "version":1                           
+                                        }                                     
+                                        Note that "log_dirs" is optional. When
+                                          it is specified, its length must    
+                                          equal the length of the replicas    
+                                          list. The value in this list can be 
+                                          either "any" or the absolution path 
+                                          of the log directory on the broker. 
+                                          If absolute log directory path is   
+                                          specified, the replica will be moved
+                                          to the specified log directory on   
+                                          the broker.                         
+--replica-alter-log-dirs-throttle       The movement of replicas between log  
+  <Long: replicaAlterLogDirsThrottle>     directories on the same broker will 
+                                          be throttled to this value          
+                                          (bytes/sec). Rerunning with this    
+                                          option, whilst a rebalance is in    
+                                          progress, will alter the throttle   
+                                          value. The throttle rate should be  
+                                          at least 1 KB/s. (default: -1)      
+--throttle <Long: throttle>             The movement of partitions between    
+                                          brokers will be throttled to this   
+                                          value (bytes/sec). Rerunning with   
+                                          this option, whilst a rebalance is  
+                                          in progress, will alter the throttle
+                                          value. The throttle rate should be  
+                                          at least 1 KB/s. (default: -1)      
+--timeout <Long: timeout>               The maximum time in ms allowed to wait
+                                          for partition reassignment execution
+                                          to be successfully initiated        
+                                          (default: 10000)                    
+--topics-to-move-json-file <String:     Generate a reassignment configuration 
+  topics to reassign json file path>      to move the partitions of the       
+                                          specified topics to the list of     
+                                          brokers specified by the --broker-  
+                                          list option. The format to use is - 
+                                        {"topics":                            
+                                        	[{"topic": "foo"},{"topic": "foo1"}],
+                                        "version":1                           
+                                        }                                     
+--verify                                Verify if the reassignment completed  
+                                          as specified by the --reassignment- 
+                                          json-file option. If there is a     
+                                          throttle engaged for the replicas   
+                                          specified, and the rebalance has    
+                                          completed, the throttle will be     
+                                          removed                             
+--version                               Display Kafka version.                
+--zookeeper <String: urls>              REQUIRED: The connection string for   
+                                          the zookeeper connection in the form
+                                          host:port. Multiple URLS can be     
+                                          given to allow fail-over.           
+If --verify option is used, command must include --reassignment-json-file that was used during the --execute option
+Option                                  Description                           
+------                                  -----------                           
+--bootstrap-server <String: Server(s)   the server(s) to use for              
+  to use for bootstrapping>               bootstrapping. REQUIRED if an       
+                                          absolute path of the log directory  
+                                          is specified for any replica in the 
+                                          reassignment json file              
+--broker-list <String: brokerlist>      The list of brokers to which the      
+                                          partitions need to be reassigned in 
+                                          the form "0,1,2". This is required  
+                                          if --topics-to-move-json-file is    
+                                          used to generate reassignment       
+                                          configuration                       
+--command-config <String: Admin client  Property file containing configs to be
+  property file>                          passed to Admin Client.             
+--disable-rack-aware                    Disable rack aware replica assignment 
+--execute                               Kick off the reassignment as specified
+                                          by the --reassignment-json-file     
+                                          option.                             
+--generate                              Generate a candidate partition        
+                                          reassignment configuration. Note    
+                                          that this only generates a candidate
+                                          assignment, it does not execute it. 
+--help                                  Print usage information.              
+--reassignment-json-file <String:       The JSON file with the partition      
+  manual assignment json file path>       reassignment configurationThe format
+                                          to use is -                         
+                                        {"partitions":                        
+                                        	[{"topic": "foo",                    
+                                        	  "partition": 1,                    
+                                        	  "replicas": [1,2,3],               
+                                        	  "log_dirs": ["dir1","dir2","dir3"] 
+                                          }],                                 
+                                        "version":1                           
+                                        }                                     
+                                        Note that "log_dirs" is optional. When
+                                          it is specified, its length must    
+                                          equal the length of the replicas    
+                                          list. The value in this list can be 
+                                          either "any" or the absolution path 
+                                          of the log directory on the broker. 
+                                          If absolute log directory path is   
+                                          specified, the replica will be moved
+                                          to the specified log directory on   
+                                          the broker.                         
+--replica-alter-log-dirs-throttle       The movement of replicas between log  
+  <Long: replicaAlterLogDirsThrottle>     directories on the same broker will 
+                                          be throttled to this value          
+                                          (bytes/sec). Rerunning with this    
+                                          option, whilst a rebalance is in    
+                                          progress, will alter the throttle   
+                                          value. The throttle rate should be  
+                                          at least 1 KB/s. (default: -1)      
+--throttle <Long: throttle>             The movement of partitions between    
+                                          brokers will be throttled to this   
+                                          value (bytes/sec). Rerunning with   
+                                          this option, whilst a rebalance is  
+                                          in progress, will alter the throttle
+                                          value. The throttle rate should be  
+                                          at least 1 KB/s. (default: -1)      
+--timeout <Long: timeout>               The maximum time in ms allowed to wait
+                                          for partition reassignment execution
+                                          to be successfully initiated        
+                                          (default: 10000)                    
+--topics-to-move-json-file <String:     Generate a reassignment configuration 
+  topics to reassign json file path>      to move the partitions of the       
+                                          specified topics to the list of     
+                                          brokers specified by the --broker-  
+                                          list option. The format to use is - 
+                                        {"topics":                            
+                                        	[{"topic": "foo"},{"topic": "foo1"}],
+                                        "version":1                           
+                                        }                                     
+--verify                                Verify if the reassignment completed  
+                                          as specified by the --reassignment- 
+                                          json-file option. If there is a     
+                                          throttle engaged for the replicas   
+                                          specified, and the rebalance has    
+                                          completed, the throttle will be     
+                                          removed                             
+--version                               Display Kafka version.                
+--zookeeper <String: urls>              REQUIRED: The connection string for   
+                                          the zookeeper connection in the form
+                                          host:port. Multiple URLS can be     
+                                          given to allow fail-over.           
+If --generate option is used, command must include both --topics-to-move-json-file and --broker-list options
+Option                                  Description                           
+------                                  -----------                           
+--bootstrap-server <String: Server(s)   the server(s) to use for              
+  to use for bootstrapping>               bootstrapping. REQUIRED if an       
+                                          absolute path of the log directory  
+                                          is specified for any replica in the 
+                                          reassignment json file              
+--broker-list <String: brokerlist>      The list of brokers to which the      
+                                          partitions need to be reassigned in 
+                                          the form "0,1,2". This is required  
+                                          if --topics-to-move-json-file is    
+                                          used to generate reassignment       
+                                          configuration                       
+--command-config <String: Admin client  Property file containing configs to be
+  property file>                          passed to Admin Client.             
+--disable-rack-aware                    Disable rack aware replica assignment 
+--execute                               Kick off the reassignment as specified
+                                          by the --reassignment-json-file     
+                                          option.                             
+--generate                              Generate a candidate partition        
+                                          reassignment configuration. Note    
+                                          that this only generates a candidate
+                                          assignment, it does not execute it. 
+--help                                  Print usage information.              
+--reassignment-json-file <String:       The JSON file with the partition      
+  manual assignment json file path>       reassignment configurationThe format
+                                          to use is -                         
+                                        {"partitions":                        
+                                        	[{"topic": "foo",                    
+                                        	  "partition": 1,                    
+                                        	  "replicas": [1,2,3],               
+                                        	  "log_dirs": ["dir1","dir2","dir3"] 
+                                          }],                                 
+                                        "version":1                           
+                                        }                                     
+                                        Note that "log_dirs" is optional. When
+                                          it is specified, its length must    
+                                          equal the length of the replicas    
+                                          list. The value in this list can be 
+                                          either "any" or the absolution path 
+                                          of the log directory on the broker. 
+                                          If absolute log directory path is   
+                                          specified, the replica will be moved
+                                          to the specified log directory on   
+                                          the broker.                         
+--replica-alter-log-dirs-throttle       The movement of replicas between log  
+  <Long: replicaAlterLogDirsThrottle>     directories on the same broker will 
+                                          be throttled to this value          
+                                          (bytes/sec). Rerunning with this    
+                                          option, whilst a rebalance is in    
+                                          progress, will alter the throttle   
+                                          value. The throttle rate should be  
+                                          at least 1 KB/s. (default: -1)      
+--throttle <Long: throttle>             The movement of partitions between    
+                                          brokers will be throttled to this   
+                                          value (bytes/sec). Rerunning with   
+                                          this option, whilst a rebalance is  
+                                          in progress, will alter the throttle
+                                          value. The throttle rate should be  
+                                          at least 1 KB/s. (default: -1)      
+--timeout <Long: timeout>               The maximum time in ms allowed to wait
+                                          for partition reassignment execution
+                                          to be successfully initiated        
+                                          (default: 10000)                    
+--topics-to-move-json-file <String:     Generate a reassignment configuration 
+  topics to reassign json file path>      to move the partitions of the       
+                                          specified topics to the list of     
+                                          brokers specified by the --broker-  
+                                          list option. The format to use is - 
+                                        {"topics":                            
+                                        	[{"topic": "foo"},{"topic": "foo1"}],
+                                        "version":1                           
+                                        }                                     
+--verify                                Verify if the reassignment completed  
+                                          as specified by the --reassignment- 
+                                          json-file option. If there is a     
+                                          throttle engaged for the replicas   
+                                          specified, and the rebalance has    
+                                          completed, the throttle will be     
+                                          removed                             
+--version                               Display Kafka version.                
+--zookeeper <String: urls>              REQUIRED: The connection string for   
+                                          the zookeeper connection in the form
+                                          host:port. Multiple URLS can be     
+                                          given to allow fail-over.           
+Option "[verify]" can't be used with option "[topics-to-move-json-file]"
+Option                                  Description                           
+------                                  -----------                           
+--bootstrap-server <String: Server(s)   the server(s) to use for              
+  to use for bootstrapping>               bootstrapping. REQUIRED if an       
+                                          absolute path of the log directory  
+                                          is specified for any replica in the 
+                                          reassignment json file              
+--broker-list <String: brokerlist>      The list of brokers to which the      
+                                          partitions need to be reassigned in 
+                                          the form "0,1,2". This is required  
+                                          if --topics-to-move-json-file is    
+                                          used to generate reassignment       
+                                          configuration                       
+--command-config <String: Admin client  Property file containing configs to be
+  property file>                          passed to Admin Client.             
+--disable-rack-aware                    Disable rack aware replica assignment 
+--execute                               Kick off the reassignment as specified
+                                          by the --reassignment-json-file     
+                                          option.                             
+--generate                              Generate a candidate partition        
+                                          reassignment configuration. Note    
+                                          that this only generates a candidate
+                                          assignment, it does not execute it. 
+--help                                  Print usage information.              
+--reassignment-json-file <String:       The JSON file with the partition      
+  manual assignment json file path>       reassignment configurationThe format
+                                          to use is -                         
+                                        {"partitions":                        
+                                        	[{"topic": "foo",                    
+                                        	  "partition": 1,                    
+                                        	  "replicas": [1,2,3],               
+                                        	  "log_dirs": ["dir1","dir2","dir3"] 
+                                          }],                                 
+                                        "version":1                           
+                                        }                                     
+                                        Note that "log_dirs" is optional. When
+                                          it is specified, its length must    
+                                          equal the length of the replicas    
+                                          list. The value in this list can be 
+                                          either "any" or the absolution path 
+                                          of the log directory on the broker. 
+                                          If absolute log directory path is   
+                                          specified, the replica will be moved
+                                          to the specified log directory on   
+                                          the broker.                         
+--replica-alter-log-dirs-throttle       The movement of replicas between log  
+  <Long: replicaAlterLogDirsThrottle>     directories on the same broker will 
+                                          be throttled to this value          
+                                          (bytes/sec). Rerunning with this    
+                                          option, whilst a rebalance is in    
+                                          progress, will alter the throttle   
+                                          value. The throttle rate should be  
+                                          at least 1 KB/s. (default: -1)      
+--throttle <Long: throttle>             The movement of partitions between    
+                                          brokers will be throttled to this   
+                                          value (bytes/sec). Rerunning with   
+                                          this option, whilst a rebalance is  
+                                          in progress, will alter the throttle
+                                          value. The throttle rate should be  
+                                          at least 1 KB/s. (default: -1)      
+--timeout <Long: timeout>               The maximum time in ms allowed to wait
+                                          for partition reassignment execution
+                                          to be successfully initiated        
+                                          (default: 10000)                    
+--topics-to-move-json-file <String:     Generate a reassignment configuration 
+  topics to reassign json file path>      to move the partitions of the       
+                                          specified topics to the list of     
+                                          brokers specified by the --broker-  
+                                          list option. The format to use is - 
+                                        {"topics":                            
+                                        	[{"topic": "foo"},{"topic": "foo1"}],
+                                        "version":1                           
+                                        }                                     
+--verify                                Verify if the reassignment completed  
+                                          as specified by the --reassignment- 
+                                          json-file option. If there is a     
+                                          throttle engaged for the replicas   
+                                          specified, and the rebalance has    
+                                          completed, the throttle will be     
+                                          removed                             
+--version                               Display Kafka version.                
+--zookeeper <String: urls>              REQUIRED: The connection string for   
+                                          the zookeeper connection in the form
+                                          host:port. Multiple URLS can be     
+                                          given to allow fail-over.           
+Option "[generate]" can't be used with option "[throttle]"
+Option                                  Description                           
+------                                  -----------                           
+--bootstrap-server <String: Server(s)   the server(s) to use for              
+  to use for bootstrapping>               bootstrapping. REQUIRED if an       
+                                          absolute path of the log directory  
+                                          is specified for any replica in the 
+                                          reassignment json file              
+--broker-list <String: brokerlist>      The list of brokers to which the      
+                                          partitions need to be reassigned in 
+                                          the form "0,1,2". This is required  
+                                          if --topics-to-move-json-file is    
+                                          used to generate reassignment       
+                                          configuration                       
+--command-config <String: Admin client  Property file containing configs to be
+  property file>                          passed to Admin Client.             
+--disable-rack-aware                    Disable rack aware replica assignment 
+--execute                               Kick off the reassignment as specified
+                                          by the --reassignment-json-file     
+                                          option.                             
+--generate                              Generate a candidate partition        
+                                          reassignment configuration. Note    
+                                          that this only generates a candidate
+                                          assignment, it does not execute it. 
+--help                                  Print usage information.              
+--reassignment-json-file <String:       The JSON file with the partition      
+  manual assignment json file path>       reassignment configurationThe format
+                                          to use is -                         
+                                        {"partitions":                        
+                                        	[{"topic": "foo",                    
+                                        	  "partition": 1,                    
+                                        	  "replicas": [1,2,3],               
+                                        	  "log_dirs": ["dir1","dir2","dir3"] 
+                                          }],                                 
+                                        "version":1                           
+                                        }                                     
+                                        Note that "log_dirs" is optional. When
+                                          it is specified, its length must    
+                                          equal the length of the replicas    
+                                          list. The value in this list can be 
+                                          either "any" or the absolution path 
+                                          of the log directory on the broker. 
+                                          If absolute log directory path is   
+                                          specified, the replica will be moved
+                                          to the specified log directory on   
+                                          the broker.                         
+--replica-alter-log-dirs-throttle       The movement of replicas between log  
+  <Long: replicaAlterLogDirsThrottle>     directories on the same broker will 
+                                          be throttled to this value          
+                                          (bytes/sec). Rerunning with this    
+                                          option, whilst a rebalance is in    
+                                          progress, will alter the throttle   
+                                          value. The throttle rate should be  
+                                          at least 1 KB/s. (default: -1)      
+--throttle <Long: throttle>             The movement of partitions between    
+                                          brokers will be throttled to this   
+                                          value (bytes/sec). Rerunning with   
+                                          this option, whilst a rebalance is  
+                                          in progress, will alter the throttle
+                                          value. The throttle rate should be  
+                                          at least 1 KB/s. (default: -1)      
+--timeout <Long: timeout>               The maximum time in ms allowed to wait
+                                          for partition reassignment execution
+                                          to be successfully initiated        
+                                          (default: 10000)                    
+--topics-to-move-json-file <String:     Generate a reassignment configuration 
+  topics to reassign json file path>      to move the partitions of the       
+                                          specified topics to the list of     
+                                          brokers specified by the --broker-  
+                                          list option. The format to use is - 
+                                        {"topics":                            
+                                        	[{"topic": "foo"},{"topic": "foo1"}],
+                                        "version":1                           
+                                        }                                     
+--verify                                Verify if the reassignment completed  
+                                          as specified by the --reassignment- 
+                                          json-file option. If there is a     
+                                          throttle engaged for the replicas   
+                                          specified, and the rebalance has    
+                                          completed, the throttle will be     
+                                          removed                             
+--version                               Display Kafka version.                
+--zookeeper <String: urls>              REQUIRED: The connection string for   
+                                          the zookeeper connection in the form
+                                          host:port. Multiple URLS can be     
+                                          given to allow fail-over.           
+This tool helps to moves topic partitions between replicas.
+Option                                  Description                           
+------                                  -----------                           
+--bootstrap-server <String: Server(s)   the server(s) to use for              
+  to use for bootstrapping>               bootstrapping. REQUIRED if an       
+                                          absolute path of the log directory  
+                                          is specified for any replica in the 
+                                          reassignment json file              
+--broker-list <String: brokerlist>      The list of brokers to which the      
+                                          partitions need to be reassigned in 
+                                          the form "0,1,2". This is required  
+                                          if --topics-to-move-json-file is    
+                                          used to generate reassignment       
+                                          configuration                       
+--command-config <String: Admin client  Property file containing configs to be
+  property file>                          passed to Admin Client.             
+--disable-rack-aware                    Disable rack aware replica assignment 
+--execute                               Kick off the reassignment as specified
+                                          by the --reassignment-json-file     
+                                          option.                             
+--generate                              Generate a candidate partition        
+                                          reassignment configuration. Note    
+                                          that this only generates a candidate
+                                          assignment, it does not execute it. 
+--help                                  Print usage information.              
+--reassignment-json-file <String:       The JSON file with the partition      
+  manual assignment json file path>       reassignment configurationThe format
+                                          to use is -                         
+                                        {"partitions":                        
+                                        	[{"topic": "foo",                    
+                                        	  "partition": 1,                    
+                                        	  "replicas": [1,2,3],               
+                                        	  "log_dirs": ["dir1","dir2","dir3"] 
+                                          }],                                 
+                                        "version":1                           
+                                        }                                     
+                                        Note that "log_dirs" is optional. When
+                                          it is specified, its length must    
+                                          equal the length of the replicas    
+                                          list. The value in this list can be 
+                                          either "any" or the absolution path 
+                                          of the log directory on the broker. 
+                                          If absolute log directory path is   
+                                          specified, the replica will be moved
+                                          to the specified log directory on   
+                                          the broker.                         
+--replica-alter-log-dirs-throttle       The movement of replicas between log  
+  <Long: replicaAlterLogDirsThrottle>     directories on the same broker will 
+                                          be throttled to this value          
+                                          (bytes/sec). Rerunning with this    
+                                          option, whilst a rebalance is in    
+                                          progress, will alter the throttle   
+                                          value. The throttle rate should be  
+                                          at least 1 KB/s. (default: -1)      
+--throttle <Long: throttle>             The movement of partitions between    
+                                          brokers will be throttled to this   
+                                          value (bytes/sec). Rerunning with   
+                                          this option, whilst a rebalance is  
+                                          in progress, will alter the throttle
+                                          value. The throttle rate should be  
+                                          at least 1 KB/s. (default: -1)      
+--timeout <Long: timeout>               The maximum time in ms allowed to wait
+                                          for partition reassignment execution
+                                          to be successfully initiated        
+                                          (default: 10000)                    
+--topics-to-move-json-file <String:     Generate a reassignment configuration 
+  topics to reassign json file path>      to move the partitions of the       
+                                          specified topics to the list of     
+                                          brokers specified by the --broker-  
+                                          list option. The format to use is - 
+                                        {"topics":                            
+                                        	[{"topic": "foo"},{"topic": "foo1"}],
+                                        "version":1                           
+                                        }                                     
+--verify                                Verify if the reassignment completed  
+                                          as specified by the --reassignment- 
+                                          json-file option. If there is a     
+                                          throttle engaged for the replicas   
+                                          specified, and the rebalance has    
+                                          completed, the throttle will be     
+                                          removed                             
+--version                               Display Kafka version.                
+--zookeeper <String: urls>              REQUIRED: The connection string for   
+                                          the zookeeper connection in the form
+                                          host:port. Multiple URLS can be     
+                                          given to allow fail-over.           
+If --execute option is used, command must include --reassignment-json-file that was output during the --generate option
+Option                                  Description                           
+------                                  -----------                           
+--bootstrap-server <String: Server(s)   the server(s) to use for              
+  to use for bootstrapping>               bootstrapping. REQUIRED if an       
+                                          absolute path of the log directory  
+                                          is specified for any replica in the 
+                                          reassignment json file              
+--broker-list <String: brokerlist>      The list of brokers to which the      
+                                          partitions need to be reassigned in 
+                                          the form "0,1,2". This is required  
+                                          if --topics-to-move-json-file is    
+                                          used to generate reassignment       
+                                          configuration                       
+--command-config <String: Admin client  Property file containing configs to be
+  property file>                          passed to Admin Client.             
+--disable-rack-aware                    Disable rack aware replica assignment 
+--execute                               Kick off the reassignment as specified
+                                          by the --reassignment-json-file     
+                                          option.                             
+--generate                              Generate a candidate partition        
+                                          reassignment configuration. Note    
+                                          that this only generates a candidate
+                                          assignment, it does not execute it. 
+--help                                  Print usage information.              
+--reassignment-json-file <String:       The JSON file with the partition      
+  manual assignment json file path>       reassignment configurationThe format
+                                          to use is -                         
+                                        {"partitions":                        
+                                        	[{"topic": "foo",                    
+                                        	  "partition": 1,                    
+                                        	  "replicas": [1,2,3],               
+                                        	  "log_dirs": ["dir1","dir2","dir3"] 
+                                          }],                                 
+                                        "version":1                           
+                                        }                                     
+                                        Note that "log_dirs" is optional. When
+                                          it is specified, its length must    
+                                          equal the length of the replicas    
+                                          list. The value in this list can be 
+                                          either "any" or the absolution path 
+                                          of the log directory on the broker. 
+                                          If absolute log directory path is   
+                                          specified, the replica will be moved
+                                          to the specified log directory on   
+                                          the broker.                         
+--replica-alter-log-dirs-throttle       The movement of replicas between log  
+  <Long: replicaAlterLogDirsThrottle>     directories on the same broker will 
+                                          be throttled to this value          
+                                          (bytes/sec). Rerunning with this    
+                                          option, whilst a rebalance is in    
+                                          progress, will alter the throttle   
+                                          value. The throttle rate should be  
+                                          at least 1 KB/s. (default: -1)      
+--throttle <Long: throttle>             The movement of partitions between    
+                                          brokers will be throttled to this   
+                                          value (bytes/sec). Rerunning with   
+                                          this option, whilst a rebalance is  
+                                          in progress, will alter the throttle
+                                          value. The throttle rate should be  
+                                          at least 1 KB/s. (default: -1)      
+--timeout <Long: timeout>               The maximum time in ms allowed to wait
+                                          for partition reassignment execution
+                                          to be successfully initiated        
+                                          (default: 10000)                    
+--topics-to-move-json-file <String:     Generate a reassignment configuration 
+  topics to reassign json file path>      to move the partitions of the       
+                                          specified topics to the list of     
+                                          brokers specified by the --broker-  
+                                          list option. The format to use is - 
+                                        {"topics":                            
+                                        	[{"topic": "foo"},{"topic": "foo1"}],
+                                        "version":1                           
+                                        }                                     
+--verify                                Verify if the reassignment completed  
+                                          as specified by the --reassignment- 
+                                          json-file option. If there is a     
+                                          throttle engaged for the replicas   
+                                          specified, and the rebalance has    
+                                          completed, the throttle will be     
+                                          removed                             
+--version                               Display Kafka version.                
+--zookeeper <String: urls>              REQUIRED: The connection string for   
+                                          the zookeeper connection in the form
+                                          host:port. Multiple URLS can be     
+                                          given to allow fail-over.           
+Option "[verify]" can't be used with option "[broker-list]"
+Option                                  Description                           
+------                                  -----------                           
+--bootstrap-server <String: Server(s)   the server(s) to use for              
+  to use for bootstrapping>               bootstrapping. REQUIRED if an       
+                                          absolute path of the log directory  
+                                          is specified for any replica in the 
+                                          reassignment json file              
+--broker-list <String: brokerlist>      The list of brokers to which the      
+                                          partitions need to be reassigned in 
+                                          the form "0,1,2". This is required  
+                                          if --topics-to-move-json-file is    
+                                          used to generate reassignment       
+                                          configuration                       
+--command-config <String: Admin client  Property file containing configs to be
+  property file>                          passed to Admin Client.             
+--disable-rack-aware                    Disable rack aware replica assignment 
+--execute                               Kick off the reassignment as specified
+                                          by the --reassignment-json-file     
+                                          option.                             
+--generate                              Generate a candidate partition        
+                                          reassignment configuration. Note    
+                                          that this only generates a candidate
+                                          assignment, it does not execute it. 
+--help                                  Print usage information.              
+--reassignment-json-file <String:       The JSON file with the partition      
+  manual assignment json file path>       reassignment configurationThe format
+                                          to use is -                         
+                                        {"partitions":                        
+                                        	[{"topic": "foo",                    
+                                        	  "partition": 1,                    
+                                        	  "replicas": [1,2,3],               
+                                        	  "log_dirs": ["dir1","dir2","dir3"] 
+                                          }],                                 
+                                        "version":1                           
+                                        }                                     
+                                        Note that "log_dirs" is optional. When
+                                          it is specified, its length must    
+                                          equal the length of the replicas    
+                                          list. The value in this list can be 
+                                          either "any" or the absolution path 
+                                          of the log directory on the broker. 
+                                          If absolute log directory path is   
+                                          specified, the replica will be moved
+                                          to the specified log directory on   
+                                          the broker.                         
+--replica-alter-log-dirs-throttle       The movement of replicas between log  
+  <Long: replicaAlterLogDirsThrottle>     directories on the same broker will 
+                                          be throttled to this value          
+                                          (bytes/sec). Rerunning with this    
+                                          option, whilst a rebalance is in    
+                                          progress, will alter the throttle   
+                                          value. The throttle rate should be  
+                                          at least 1 KB/s. (default: -1)      
+--throttle <Long: throttle>             The movement of partitions between    
+                                          brokers will be throttled to this   
+                                          value (bytes/sec). Rerunning with   
+                                          this option, whilst a rebalance is  
+                                          in progress, will alter the throttle
+                                          value. The throttle rate should be  
+                                          at least 1 KB/s. (default: -1)      
+--timeout <Long: timeout>               The maximum time in ms allowed to wait
+                                          for partition reassignment execution
+                                          to be successfully initiated        
+                                          (default: 10000)                    
+--topics-to-move-json-file <String:     Generate a reassignment configuration 
+  topics to reassign json file path>      to move the partitions of the       
+                                          specified topics to the list of     
+                                          brokers specified by the --broker-  
+                                          list option. The format to use is - 
+                                        {"topics":                            
+                                        	[{"topic": "foo"},{"topic": "foo1"}],
+                                        "version":1                           
+                                        }                                     
+--verify                                Verify if the reassignment completed  
+                                          as specified by the --reassignment- 
+                                          json-file option. If there is a     
+                                          throttle engaged for the replicas   
+                                          specified, and the rebalance has    
+                                          completed, the throttle will be     
+                                          removed                             
+--version                               Display Kafka version.                
+--zookeeper <String: urls>              REQUIRED: The connection string for   
+                                          the zookeeper connection in the form
+                                          host:port. Multiple URLS can be     
+                                          given to allow fail-over.           
+Option "[generate]" can't be used with option "[reassignment-json-file]"
+Option                                  Description                           
+------                                  -----------                           
+--bootstrap-server <String: Server(s)   the server(s) to use for              
+  to use for bootstrapping>               bootstrapping. REQUIRED if an       
+                                          absolute path of the log directory  
+                                          is specified for any replica in the 
+                                          reassignment json file              
+--broker-list <String: brokerlist>      The list of brokers to which the      
+                                          partitions need to be reassigned in 
+                                          the form "0,1,2". This is required  
+                                          if --topics-to-move-json-file is    
+                                          used to generate reassignment       
+                                          configuration                       
+--command-config <String: Admin client  Property file containing configs to be
+  property file>                          passed to Admin Client.             
+--disable-rack-aware                    Disable rack aware replica assignment 
+--execute                               Kick off the reassignment as specified
+                                          by the --reassignment-json-file     
+                                          option.                             
+--generate                              Generate a candidate partition        
+                                          reassignment configuration. Note    
+                                          that this only generates a candidate
+                                          assignment, it does not execute it. 
+--help                                  Print usage information.              
+--reassignment-json-file <String:       The JSON file with the partition      
+  manual assignment json file path>       reassignment configurationThe format
+                                          to use is -                         
+                                        {"partitions":                        
+                                        	[{"topic": "foo",                    
+                                        	  "partition": 1,                    
+                                        	  "replicas": [1,2,3],               
+                                        	  "log_dirs": ["dir1","dir2","dir3"] 
+                                          }],                                 
+                                        "version":1                           
+                                        }                                     
+                                        Note that "log_dirs" is optional. When
+                                          it is specified, its length must    
+                                          equal the length of the replicas    
+                                          list. The value in this list can be 
+                                          either "any" or the absolution path 
+                                          of the log directory on the broker. 
+                                          If absolute log directory path is   
+                                          specified, the replica will be moved
+                                          to the specified log directory on   
+                                          the broker.                         
+--replica-alter-log-dirs-throttle       The movement of replicas between log  
+  <Long: replicaAlterLogDirsThrottle>     directories on the same broker will 
+                                          be throttled to this value          
+                                          (bytes/sec). Rerunning with this    
+                                          option, whilst a rebalance is in    
+                                          progress, will alter the throttle   
+                                          value. The throttle rate should be  
+                                          at least 1 KB/s. (default: -1)      
+--throttle <Long: throttle>             The movement of partitions between    
+                                          brokers will be throttled to this   
+                                          value (bytes/sec). Rerunning with   
+                                          this option, whilst a rebalance is  
+                                          in progress, will alter the throttle
+                                          value. The throttle rate should be  
+                                          at least 1 KB/s. (default: -1)      
+--timeout <Long: timeout>               The maximum time in ms allowed to wait
+                                          for partition reassignment execution
+                                          to be successfully initiated        
+                                          (default: 10000)                    
+--topics-to-move-json-file <String:     Generate a reassignment configuration 
+  topics to reassign json file path>      to move the partitions of the       
+                                          specified topics to the list of     
+                                          brokers specified by the --broker-  
+                                          list option. The format to use is - 
+                                        {"topics":                            
+                                        	[{"topic": "foo"},{"topic": "foo1"}],
+                                        "version":1                           
+                                        }                                     
+--verify                                Verify if the reassignment completed  
+                                          as specified by the --reassignment- 
+                                          json-file option. If there is a     
+                                          throttle engaged for the replicas   
+                                          specified, and the rebalance has    
+                                          completed, the throttle will be     
+                                          removed                             
+--version                               Display Kafka version.                
+--zookeeper <String: urls>              REQUIRED: The connection string for   
+                                          the zookeeper connection in the form
+                                          host:port. Multiple URLS can be     
+                                          given to allow fail-over.           
+If --generate option is used, command must include both --topics-to-move-json-file and --broker-list options
+Option                                  Description                           
+------                                  -----------                           
+--bootstrap-server <String: Server(s)   the server(s) to use for              
+  to use for bootstrapping>               bootstrapping. REQUIRED if an       
+                                          absolute path of the log directory  
+                                          is specified for any replica in the 
+                                          reassignment json file              
+--broker-list <String: brokerlist>      The list of brokers to which the      
+                                          partitions need to be reassigned in 
+                                          the form "0,1,2". This is required  
+                                          if --topics-to-move-json-file is    
+                                          used to generate reassignment       
+                                          configuration                       
+--command-config <String: Admin client  Property file containing configs to be
+  property file>                          passed to Admin Client.             
+--disable-rack-aware                    Disable rack aware replica assignment 
+--execute                               Kick off the reassignment as specified
+                                          by the --reassignment-json-file     
+                                          option.                             
+--generate                              Generate a candidate partition        
+                                          reassignment configuration. Note    
+                                          that this only generates a candidate
+                                          assignment, it does not execute it. 
+--help                                  Print usage information.              
+--reassignment-json-file <String:       The JSON file with the partition      
+  manual assignment json file path>       reassignment configurationThe format
+                                          to use is -                         
+                                        {"partitions":                        
+                                        	[{"topic": "foo",                    
+                                        	  "partition": 1,                    
+                                        	  "replicas": [1,2,3],               
+                                        	  "log_dirs": ["dir1","dir2","dir3"] 
+                                          }],                                 
+                                        "version":1                           
+                                        }                                     
+                                        Note that "log_dirs" is optional. When
+                                          it is specified, its length must    
+                                          equal the length of the replicas    
+                                          list. The value in this list can be 
+                                          either "any" or the absolution path 
+                                          of the log directory on the broker. 
+                                          If absolute log directory path is   
+                                          specified, the replica will be moved
+                                          to the specified log directory on   
+                                          the broker.                         
+--replica-alter-log-dirs-throttle       The movement of replicas between log  
+  <Long: replicaAlterLogDirsThrottle>     directories on the same broker will 
+                                          be throttled to this value          
+                                          (bytes/sec). Rerunning with this    
+                                          option, whilst a rebalance is in    
+                                          progress, will alter the throttle   
+                                          value. The throttle rate should be  
+                                          at least 1 KB/s. (default: -1)      
+--throttle <Long: throttle>             The movement of partitions between    
+                                          brokers will be throttled to this   
+                                          value (bytes/sec). Rerunning with   
+                                          this option, whilst a rebalance is  
+                                          in progress, will alter the throttle
+                                          value. The throttle rate should be  
+                                          at least 1 KB/s. (default: -1)      
+--timeout <Long: timeout>               The maximum time in ms allowed to wait
+                                          for partition reassignment execution
+                                          to be successfully initiated        
+                                          (default: 10000)                    
+--topics-to-move-json-file <String:     Generate a reassignment configuration 
+  topics to reassign json file path>      to move the partitions of the       
+                                          specified topics to the list of     
+                                          brokers specified by the --broker-  
+                                          list option. The format to use is - 
+                                        {"topics":                            
+                                        	[{"topic": "foo"},{"topic": "foo1"}],
+                                        "version":1                           
+                                        }                                     
+--verify                                Verify if the reassignment completed  
+                                          as specified by the --reassignment- 
+                                          json-file option. If there is a     
+                                          throttle engaged for the replicas   
+                                          specified, and the rebalance has    
+                                          completed, the throttle will be     
+                                          removed                             
+--version                               Display Kafka version.                
+--zookeeper <String: urls>              REQUIRED: The connection string for   
+                                          the zookeeper connection in the form
+                                          host:port. Multiple URLS can be     
+                                          given to allow fail-over.           
+Option "[verify]" can't be used with option "[throttle]"
+Option                                  Description                           
+------                                  -----------                           
+--bootstrap-server <String: Server(s)   the server(s) to use for              
+  to use for bootstrapping>               bootstrapping. REQUIRED if an       
+                                          absolute path of the log directory  
+                                          is specified for any replica in the 
+                                          reassignment json file              
+--broker-list <String: brokerlist>      The list of brokers to which the      
+                                          partitions need to be reassigned in 
+                                          the form "0,1,2". This is required  
+                                          if --topics-to-move-json-file is    
+                                          used to generate reassignment       
+                                          configuration                       
+--command-config <String: Admin client  Property file containing configs to be
+  property file>                          passed to Admin Client.             
+--disable-rack-aware                    Disable rack aware replica assignment 
+--execute                               Kick off the reassignment as specified
+                                          by the --reassignment-json-file     
+                                          option.                             
+--generate                              Generate a candidate partition        
+                                          reassignment configuration. Note    
+                                          that this only generates a candidate
+                                          assignment, it does not execute it. 
+--help                                  Print usage information.              
+--reassignment-json-file <String:       The JSON file with the partition      
+  manual assignment json file path>       reassignment configurationThe format
+                                          to use is -                         
+                                        {"partitions":                        
+                                        	[{"topic": "foo",                    
+                                        	  "partition": 1,                    
+                                        	  "replicas": [1,2,3],               
+                                        	  "log_dirs": ["dir1","dir2","dir3"] 
+                                          }],                                 
+                                        "version":1                           
+                                        }                                     
+                                        Note that "log_dirs" is optional. When
+                                          it is specified, its length must    
+                                          equal the length of the replicas    
+                                          list. The value in this list can be 
+                                          either "any" or the absolution path 
+                                          of the log directory on the broker. 
+                                          If absolute log directory path is   
+                                          specified, the replica will be moved
+                                          to the specified log directory on   
+                                          the broker.                         
+--replica-alter-log-dirs-throttle       The movement of replicas between log  
+  <Long: replicaAlterLogDirsThrottle>     directories on the same broker will 
+                                          be throttled to this value          
+                                          (bytes/sec). Rerunning with this    
+                                          option, whilst a rebalance is in    
+                                          progress, will alter the throttle   
+                                          value. The throttle rate should be  
+                                          at least 1 KB/s. (default: -1)      
+--throttle <Long: throttle>             The movement of partitions between    
+                                          brokers will be throttled to this   
+                                          value (bytes/sec). Rerunning with   
+                                          this option, whilst a rebalance is  
+                                          in progress, will alter the throttle
+                                          value. The throttle rate should be  
+                                          at least 1 KB/s. (default: -1)      
+--timeout <Long: timeout>               The maximum time in ms allowed to wait
+                                          for partition reassignment execution
+                                          to be successfully initiated        
+                                          (default: 10000)                    
+--topics-to-move-json-file <String:     Generate a reassignment configuration 
+  topics to reassign json file path>      to move the partitions of the       
+                                          specified topics to the list of     
+                                          brokers specified by the --broker-  
+                                          list option. The format to use is - 
+                                        {"topics":                            
+                                        	[{"topic": "foo"},{"topic": "foo1"}],
+                                        "version":1                           
+                                        }                                     
+--verify                                Verify if the reassignment completed  
+                                          as specified by the --reassignment- 
+                                          json-file option. If there is a     
+                                          throttle engaged for the replicas   
+                                          specified, and the rebalance has    
+                                          completed, the throttle will be     
+                                          removed                             
+--version                               Display Kafka version.                
+--zookeeper <String: urls>              REQUIRED: The connection string for   
+                                          the zookeeper connection in the form
+                                          host:port. Multiple URLS can be     
+                                          given to allow fail-over.           
+Option "[execute]" can't be used with option "[broker-list]"
+Option                                  Description                           
+------                                  -----------                           
+--bootstrap-server <String: Server(s)   the server(s) to use for              
+  to use for bootstrapping>               bootstrapping. REQUIRED if an       
+                                          absolute path of the log directory  
+                                          is specified for any replica in the 
+                                          reassignment json file              
+--broker-list <String: brokerlist>      The list of brokers to which the      
+                                          partitions need to be reassigned in 
+                                          the form "0,1,2". This is required  
+                                          if --topics-to-move-json-file is    
+                                          used to generate reassignment       
+                                          configuration                       
+--command-config <String: Admin client  Property file containing configs to be
+  property file>                          passed to Admin Client.             
+--disable-rack-aware                    Disable rack aware replica assignment 
+--execute                               Kick off the reassignment as specified
+                                          by the --reassignment-json-file     
+                                          option.                             
+--generate                              Generate a candidate partition        
+                                          reassignment configuration. Note    
+                                          that this only generates a candidate
+                                          assignment, it does not execute it. 
+--help                                  Print usage information.              
+--reassignment-json-file <String:       The JSON file with the partition      
+  manual assignment json file path>       reassignment configurationThe format
+                                          to use is -                         
+                                        {"partitions":                        
+                                        	[{"topic": "foo",                    
+                                        	  "partition": 1,                    
+                                        	  "replicas": [1,2,3],               
+                                        	  "log_dirs": ["dir1","dir2","dir3"] 
+                                          }],                                 
+                                        "version":1                           
+                                        }                                     
+                                        Note that "log_dirs" is optional. When
+                                          it is specified, its length must    
+                                          equal the length of the replicas    
+                                          list. The value in this list can be 
+                                          either "any" or the absolution path 
+                                          of the log directory on the broker. 
+                                          If absolute log directory path is   
+                                          specified, the replica will be moved
+                                          to the specified log directory on   
+                                          the broker.                         
+--replica-alter-log-dirs-throttle       The movement of replicas between log  
+  <Long: replicaAlterLogDirsThrottle>     directories on the same broker will 
+                                          be throttled to this value          
+                                          (bytes/sec). Rerunning with this    
+                                          option, whilst a rebalance is in    
+                                          progress, will alter the throttle   
+                                          value. The throttle rate should be  
+                                          at least 1 KB/s. (default: -1)      
+--throttle <Long: throttle>             The movement of partitions between    
+                                          brokers will be throttled to this   
+                                          value (bytes/sec). Rerunning with   
+                                          this option, whilst a rebalance is  
+                                          in progress, will alter the throttle
+                                          value. The throttle rate should be  
+                                          at least 1 KB/s. (default: -1)      
+--timeout <Long: timeout>               The maximum time in ms allowed to wait
+                                          for partition reassignment execution
+                                          to be successfully initiated        
+                                          (default: 10000)                    
+--topics-to-move-json-file <String:     Generate a reassignment configuration 
+  topics to reassign json file path>      to move the partitions of the       
+                                          specified topics to the list of     
+                                          brokers specified by the --broker-  
+                                          list option. The format to use is - 
+                                        {"topics":                            
+                                        	[{"topic": "foo"},{"topic": "foo1"}],
+                                        "version":1                           
+                                        }                                     
+--verify                                Verify if the reassignment completed  
+                                          as specified by the --reassignment- 
+                                          json-file option. If there is a     
+                                          throttle engaged for the replicas   
+                                          specified, and the rebalance has    
+                                          completed, the throttle will be     
+                                          removed                             
+--version                               Display Kafka version.                
+--zookeeper <String: urls>              REQUIRED: The connection string for   
+                                          the zookeeper connection in the form
+                                          host:port. Multiple URLS can be     
+                                          given to allow fail-over.           
+Option "[execute]" can't be used with option "[topics-to-move-json-file]"
+Option                                  Description                           
+------                                  -----------                           
+--bootstrap-server <String: Server(s)   the server(s) to use for              
+  to use for bootstrapping>               bootstrapping. REQUIRED if an       
+                                          absolute path of the log directory  
+                                          is specified for any replica in the 
+                                          reassignment json file              
+--broker-list <String: brokerlist>      The list of brokers to which the      
+                                          partitions need to be reassigned in 
+                                          the form "0,1,2". This is required  
+                                          if --topics-to-move-json-file is    
+                                          used to generate reassignment       
+                                          configuration                       
+--command-config <String: Admin client  Property file containing configs to be
+  property file>                          passed to Admin Client.             
+--disable-rack-aware                    Disable rack aware replica assignment 
+--execute                               Kick off the reassignment as specified
+                                          by the --reassignment-json-file     
+                                          option.                             
+--generate                              Generate a candidate partition        
+                                          reassignment configuration. Note    
+                                          that this only generates a candidate
+                                          assignment, it does not execute it. 
+--help                                  Print usage information.              
+--reassignment-json-file <String:       The JSON file with the partition      
+  manual assignment json file path>       reassignment configurationThe format
+                                          to use is -                         
+                                        {"partitions":                        
+                                        	[{"topic": "foo",                    
+                                        	  "partition": 1,                    
+                                        	  "replicas": [1,2,3],               
+                                        	  "log_dirs": ["dir1","dir2","dir3"] 
+                                          }],                                 
+                                        "version":1                           
+                                        }                                     
+                                        Note that "log_dirs" is optional. When
+                                          it is specified, its length must    
+                                          equal the length of the replicas    
+                                          list. The value in this list can be 
+                                          either "any" or the absolution path 
+                                          of the log directory on the broker. 
+                                          If absolute log directory path is   
+                                          specified, the replica will be moved
+                                          to the specified log directory on   
+                                          the broker.                         
+--replica-alter-log-dirs-throttle       The movement of replicas between log  
+  <Long: replicaAlterLogDirsThrottle>     directories on the same broker will 
+                                          be throttled to this value          
+                                          (bytes/sec). Rerunning with this    
+                                          option, whilst a rebalance is in    
+                                          progress, will alter the throttle   
+                                          value. The throttle rate should be  
+                                          at least 1 KB/s. (default: -1)      
+--throttle <Long: throttle>             The movement of partitions between    
+                                          brokers will be throttled to this   
+                                          value (bytes/sec). Rerunning with   
+                                          this option, whilst a rebalance is  
+                                          in progress, will alter the throttle
+                                          value. The throttle rate should be  
+                                          at least 1 KB/s. (default: -1)      
+--timeout <Long: timeout>               The maximum time in ms allowed to wait
+                                          for partition reassignment execution
+                                          to be successfully initiated        
+                                          (default: 10000)                    
+--topics-to-move-json-file <String:     Generate a reassignment configuration 
+  topics to reassign json file path>      to move the partitions of the       
+                                          specified topics to the list of     
+                                          brokers specified by the --broker-  
+                                          list option. The format to use is - 
+                                        {"topics":                            
+                                        	[{"topic": "foo"},{"topic": "foo1"}],
+                                        "version":1                           
+                                        }                                     
+--verify                                Verify if the reassignment completed  
+                                          as specified by the --reassignment- 
+                                          json-file option. If there is a     
+                                          throttle engaged for the replicas   
+                                          specified, and the rebalance has    
+                                          completed, the throttle will be     
+                                          removed                             
+--version                               Display Kafka version.                
+--zookeeper <String: urls>              REQUIRED: The connection string for   
+                                          the zookeeper connection in the form
+                                          host:port. Multiple URLS can be     
+                                          given to allow fail-over.           
+If --generate option is used, command must include both --topics-to-move-json-file and --broker-list options
+Option                                  Description                           
+------                                  -----------                           
+--bootstrap-server <String: Server(s)   the server(s) to use for              
+  to use for bootstrapping>               bootstrapping. REQUIRED if an       
+                                          absolute path of the log directory  
+                                          is specified for any replica in the 
+                                          reassignment json file              
+--broker-list <String: brokerlist>      The list of brokers to which the      
+                                          partitions need to be reassigned in 
+                                          the form "0,1,2". This is required  
+                                          if --topics-to-move-json-file is    
+                                          used to generate reassignment       
+                                          configuration                       
+--command-config <String: Admin client  Property file containing configs to be
+  property file>                          passed to Admin Client.             
+--disable-rack-aware                    Disable rack aware replica assignment 
+--execute                               Kick off the reassignment as specified
+                                          by the --reassignment-json-file     
+                                          option.                             
+--generate                              Generate a candidate partition        
+                                          reassignment configuration. Note    
+                                          that this only generates a candidate
+                                          assignment, it does not execute it. 
+--help                                  Print usage information.              
+--reassignment-json-file <String:       The JSON file with the partition      
+  manual assignment json file path>       reassignment configurationThe format
+                                          to use is -                         
+                                        {"partitions":                        
+                                        	[{"topic": "foo",                    
+                                        	  "partition": 1,                    
+                                        	  "replicas": [1,2,3],               
+                                        	  "log_dirs": ["dir1","dir2","dir3"] 
+                                          }],                                 
+                                        "version":1                           
+                                        }                                     
+                                        Note that "log_dirs" is optional. When
+                                          it is specified, its length must    
+                                          equal the length of the replicas    
+                                          list. The value in this list can be 
+                                          either "any" or the absolution path 
+                                          of the log directory on the broker. 
+                                          If absolute log directory path is   
+                                          specified, the replica will be moved
+                                          to the specified log directory on   
+                                          the broker.                         
+--replica-alter-log-dirs-throttle       The movement of replicas between log  
+  <Long: replicaAlterLogDirsThrottle>     directories on the same broker will 
+                                          be throttled to this value          
+                                          (bytes/sec). Rerunning with this    
+                                          option, whilst a rebalance is in    
+                                          progress, will alter the throttle   
+                                          value. The throttle rate should be  
+                                          at least 1 KB/s. (default: -1)      
+--throttle <Long: throttle>             The movement of partitions between    
+                                          brokers will be throttled to this   
+                                          value (bytes/sec). Rerunning with   
+                                          this option, whilst a rebalance is  
+                                          in progress, will alter the throttle
+                                          value. The throttle rate should be  
+                                          at least 1 KB/s. (default: -1)      
+--timeout <Long: timeout>               The maximum time in ms allowed to wait
+                                          for partition reassignment execution
+                                          to be successfully initiated        
+                                          (default: 10000)                    
+--topics-to-move-json-file <String:     Generate a reassignment configuration 
+  topics to reassign json file path>      to move the partitions of the       
+                                          specified topics to the list of     
+                                          brokers specified by the --broker-  
+                                          list option. The format to use is - 
+                                        {"topics":                            
+                                        	[{"topic": "foo"},{"topic": "foo1"}],
+                                        "version":1                           
+                                        }                                     
+--verify                                Verify if the reassignment completed  
+                                          as specified by the --reassignment- 
+                                          json-file option. If there is a     
+                                          throttle engaged for the replicas   
+                                          specified, and the rebalance has    
+                                          completed, the throttle will be     
+                                          removed                             
+--version                               Display Kafka version.                
+--zookeeper <String: urls>              REQUIRED: The connection string for   
+                                          the zookeeper connection in the form
+                                          host:port. Multiple URLS can be     
+                                          given to allow fail-over.           
+]]></system-err>
+</testsuite>

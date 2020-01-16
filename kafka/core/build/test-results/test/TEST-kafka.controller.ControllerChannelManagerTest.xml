@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.controller.ControllerChannelManagerTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:21:44" hostname="localhost" time="0.568">
+  <properties/>
+  <testcase name="testUpdateMetadataInterBrokerProtocolVersion" classname="kafka.controller.ControllerChannelManagerTest" time="0.029"/>
+  <testcase name="testLeaderAndIsrRequestIsNew" classname="kafka.controller.ControllerChannelManagerTest" time="0.076"/>
+  <testcase name="testStopReplicaRequestsWhileTopicQueuedForDeletion" classname="kafka.controller.ControllerChannelManagerTest" time="0.093"/>
+  <testcase name="testLeaderAndIsrRequestSentToLiveOrShuttingDownBrokers" classname="kafka.controller.ControllerChannelManagerTest" time="0.048"/>
+  <testcase name="testStopReplicaInterBrokerProtocolVersion" classname="kafka.controller.ControllerChannelManagerTest" time="0.057"/>
+  <testcase name="testStopReplicaSentOnlyToLiveAndShuttingDownBrokers" classname="kafka.controller.ControllerChannelManagerTest" time="0.026"/>
+  <testcase name="testStopReplicaGroupsByBroker" classname="kafka.controller.ControllerChannelManagerTest" time="0.057"/>
+  <testcase name="testUpdateMetadataDoesNotIncludePartitionsWithoutLeaderAndIsr" classname="kafka.controller.ControllerChannelManagerTest" time="0.105"/>
+  <testcase name="testMixedDeleteAndNotDeleteStopReplicaRequests" classname="kafka.controller.ControllerChannelManagerTest" time="0.044"/>
+  <testcase name="testLeaderAndIsrInterBrokerProtocolVersion" classname="kafka.controller.ControllerChannelManagerTest" time="0.014"/>
+  <testcase name="testUpdateMetadataRequestSent" classname="kafka.controller.ControllerChannelManagerTest" time="0.004"/>
+  <testcase name="testUpdateMetadataRequestDuringTopicDeletion" classname="kafka.controller.ControllerChannelManagerTest" time="0.004"/>
+  <testcase name="testUpdateMetadataIncludesLiveOrShuttingDownBrokers" classname="kafka.controller.ControllerChannelManagerTest" time="0.002"/>
+  <testcase name="testStopReplicaRequestSent" classname="kafka.controller.ControllerChannelManagerTest" time="0.001"/>
+  <testcase name="testStopReplicaRequestsWhileTopicDeletionStarted" classname="kafka.controller.ControllerChannelManagerTest" time="0.003"/>
+  <testcase name="testLeaderAndIsrRequestSent" classname="kafka.controller.ControllerChannelManagerTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

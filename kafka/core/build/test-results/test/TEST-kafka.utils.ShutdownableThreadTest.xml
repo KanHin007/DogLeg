@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.utils.ShutdownableThreadTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:48:13" hostname="localhost" time="0.104">
+  <properties/>
+  <testcase name="testShutdownWhenCalledAfterThreadStart" classname="kafka.utils.ShutdownableThreadTest" time="0.104"/>
+  <system-out><![CDATA[[2020-01-15 10:48:13,200] ERROR Thread Thread[shutdownable-thread-test,5,main] died (org.apache.zookeeper.server.NIOServerCnxnFactory:92)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at kafka.utils.ShutdownableThreadTest.$anonfun$testShutdownWhenCalledAfterThreadStart$1(ShutdownableThreadTest.scala:36)
+	at kafka.utils.ShutdownableThreadTest.$anonfun$testShutdownWhenCalledAfterThreadStart$1$adapted(ShutdownableThreadTest.scala:33)
+	at kafka.utils.Exit$$anon$1.execute(Exit.scala:50)
+	at org.apache.kafka.common.utils.Exit.exit(Exit.java:51)
+	at kafka.utils.Exit$.exit(Exit.scala:28)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:102)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

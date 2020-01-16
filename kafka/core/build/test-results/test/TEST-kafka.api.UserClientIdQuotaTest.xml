@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.api.UserClientIdQuotaTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:27:00" hostname="localhost" time="75.848">
+  <properties/>
+  <testcase name="testProducerConsumerOverrideUnthrottled" classname="kafka.api.UserClientIdQuotaTest" time="13.84"/>
+  <testcase name="testThrottledProducerConsumer" classname="kafka.api.UserClientIdQuotaTest" time="21.538"/>
+  <testcase name="testQuotaOverrideDelete" classname="kafka.api.UserClientIdQuotaTest" time="29.974"/>
+  <testcase name="testThrottledRequest" classname="kafka.api.UserClientIdQuotaTest" time="10.496"/>
+  <system-out><![CDATA[[2020-01-15 10:27:16,820] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:27:17,629] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition topic-1-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:27:36,880] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:27:37,071] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition topic-1-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:28:07,127] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

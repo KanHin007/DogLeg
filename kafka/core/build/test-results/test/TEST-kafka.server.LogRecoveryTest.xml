@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.LogRecoveryTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:28:04" hostname="localhost" time="63.62">
+  <properties/>
+  <testcase name="testHWCheckpointNoFailuresMultipleLogSegments" classname="kafka.server.LogRecoveryTest" time="10.208"/>
+  <testcase name="testHWCheckpointWithFailuresMultipleLogSegments" classname="kafka.server.LogRecoveryTest" time="22.016"/>
+  <testcase name="testHWCheckpointNoFailuresSingleLogSegment" classname="kafka.server.LogRecoveryTest" time="10.633"/>
+  <testcase name="testHWCheckpointWithFailuresSingleLogSegment" classname="kafka.server.LogRecoveryTest" time="20.763"/>
+  <system-out><![CDATA[[2020-01-15 10:28:04,473] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition new-topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:28:15,484] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition new-topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:28:38,109] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition new-topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:28:47,634] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition new-topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

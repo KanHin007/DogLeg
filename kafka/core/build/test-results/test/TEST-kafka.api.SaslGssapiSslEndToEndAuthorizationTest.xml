@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.api.SaslGssapiSslEndToEndAuthorizationTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:23:05" hostname="localhost" time="179.718">
+  <properties/>
+  <testcase name="testTwoConsumersWithDifferentSaslCredentials" classname="kafka.api.SaslGssapiSslEndToEndAuthorizationTest" time="12.616"/>
+  <testcase name="testNoConsumeWithoutDescribeAclViaSubscribe" classname="kafka.api.SaslGssapiSslEndToEndAuthorizationTest" time="10.338"/>
+  <testcase name="testProduceConsumeWithPrefixedAcls" classname="kafka.api.SaslGssapiSslEndToEndAuthorizationTest" time="12.219"/>
+  <testcase name="testProduceConsumeViaAssign" classname="kafka.api.SaslGssapiSslEndToEndAuthorizationTest" time="14.517"/>
+  <testcase name="testNoConsumeWithDescribeAclViaAssign" classname="kafka.api.SaslGssapiSslEndToEndAuthorizationTest" time="10.329"/>
+  <testcase name="testProduceConsumeTopicAutoCreateTopicCreateAcl" classname="kafka.api.SaslGssapiSslEndToEndAuthorizationTest" time="17.402"/>
+  <testcase name="testProduceConsumeWithWildcardAcls" classname="kafka.api.SaslGssapiSslEndToEndAuthorizationTest" time="16.838"/>
+  <testcase name="testNoConsumeWithDescribeAclViaSubscribe" classname="kafka.api.SaslGssapiSslEndToEndAuthorizationTest" time="12.784"/>
+  <testcase name="testNoConsumeWithoutDescribeAclViaAssign" classname="kafka.api.SaslGssapiSslEndToEndAuthorizationTest" time="11.478"/>
+  <testcase name="testNoGroupAcl" classname="kafka.api.SaslGssapiSslEndToEndAuthorizationTest" time="11.975"/>
+  <testcase name="testNoProduceWithDescribeAcl" classname="kafka.api.SaslGssapiSslEndToEndAuthorizationTest" time="16.644"/>
+  <testcase name="testNoDescribeProduceOrConsumeWithoutTopicDescribeAcl" classname="kafka.api.SaslGssapiSslEndToEndAuthorizationTest" time="16.182"/>
+  <testcase name="testProduceConsumeViaSubscribe" classname="kafka.api.SaslGssapiSslEndToEndAuthorizationTest" time="16.396"/>
+  <system-out><![CDATA[Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:kafka, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:kafka has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:kafka, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:kafka has Allow permission for operations: Read from hosts: * 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka6038012611460435105.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+[2020-01-15 10:23:11,025] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:23:11,126] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:23:11,677] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:23:11,681] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:client has Allow permission for operations: Describe from hosts: *
+	User:client has Allow permission for operations: Write from hosts: *
+	User:client has Allow permission for operations: Create from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=READ, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:client has Allow permission for operations: Read from hosts: *
+	User:client has Allow permission for operations: Describe from hosts: *
+	User:client has Allow permission for operations: Write from hosts: *
+	User:client has Allow permission for operations: Create from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:client has Allow permission for operations: Read from hosts: * 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka3383529061134305097.tmp refreshKrb5Config is false principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka3383529061134305097.tmp refreshKrb5Config is false principal is client2@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client2@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+[2020-01-15 10:23:12,956] ERROR [Consumer clientId=consumer-group-4, groupId=group] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:kafka, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:kafka has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:kafka, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:kafka has Allow permission for operations: Read from hosts: * 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka2859632054058460214.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+[2020-01-15 10:23:20,944] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:client has Allow permission for operations: Describe from hosts: *
+	User:client has Allow permission for operations: Write from hosts: *
+	User:client has Allow permission for operations: Create from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:client has Allow permission for operations: Read from hosts: * 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka3916338381025009674.tmp refreshKrb5Config is false principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:client has Allow permission for operations: Write from hosts: *
+	User:client has Allow permission for operations: Create from hosts: * 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:client has Allow permission for operations: Create from hosts: * 
+
+[2020-01-15 10:23:22,495] ERROR [Consumer clientId=consumer-group-5, groupId=group] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:client has Allow permission for operations: Describe from hosts: *
+	User:client has Allow permission for operations: Create from hosts: *
+	User:client has Allow permission for operations: Write from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=READ, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:client has Allow permission for operations: Read from hosts: *
+	User:client has Allow permission for operations: Describe from hosts: *
+	User:client has Allow permission for operations: Create from hosts: *
+	User:client has Allow permission for operations: Write from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:client has Allow permission for operations: Read from hosts: * 
+
+[2020-01-15 10:23:22,996] ERROR [Consumer clientId=consumer-group-5, groupId=group] Topic authorization failed for topics [topic2] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:23:22,997] ERROR [Consumer clientId=consumer-group-5, groupId=group] Topic authorization failed for topics [topic2] (org.apache.kafka.clients.Metadata:281)
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:kafka, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:kafka has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:kafka, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:kafka has Allow permission for operations: Read from hosts: * 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka6714958978921003919.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+[2020-01-15 10:23:32,393] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:23:33,026] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2e, patternType=PREFIXED)`: 
+ 	(principal=User:client, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=READ, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=CREATE, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=gr, patternType=PREFIXED)`: 
+ 	(principal=User:client, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:PREFIXED:e2e`: 
+ 	User:client has Allow permission for operations: Read from hosts: *
+	User:client has Allow permission for operations: Describe from hosts: *
+	User:client has Allow permission for operations: Write from hosts: *
+	User:client has Allow permission for operations: Create from hosts: * 
+
+Current ACLs for resource `Group:PREFIXED:gr`: 
+ 	User:client has Allow permission for operations: Read from hosts: * 
+
+[2020-01-15 10:23:33,528] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka1131583425479282700.tmp refreshKrb5Config is false principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:kafka, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:kafka has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:kafka, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:kafka has Allow permission for operations: Read from hosts: * 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka3599112516485009333.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:client has Allow permission for operations: Describe from hosts: *
+	User:client has Allow permission for operations: Write from hosts: *
+	User:client has Allow permission for operations: Create from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=READ, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:client has Allow permission for operations: Read from hosts: *
+	User:client has Allow permission for operations: Describe from hosts: *
+	User:client has Allow permission for operations: Write from hosts: *
+	User:client has Allow permission for operations: Create from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:client has Allow permission for operations: Read from hosts: * 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka2246120983388494037.tmp refreshKrb5Config is false principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:kafka, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:kafka has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:kafka, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:kafka has Allow permission for operations: Read from hosts: * 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka6189271777305801703.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+[2020-01-15 10:23:58,628] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:client has Allow permission for operations: Describe from hosts: *
+	User:client has Allow permission for operations: Write from hosts: *
+	User:client has Allow permission for operations: Create from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:client has Allow permission for operations: Read from hosts: * 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka7162102894777152588.tmp refreshKrb5Config is false principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:kafka, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:kafka has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:kafka, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:kafka has Allow permission for operations: Read from hosts: * 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka5012800329507901473.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+[2020-01-15 10:24:12,310] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:24:12,911] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:24:13,201] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=topic2, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:topic2`: 
+ 	User:client has Allow permission for operations: Describe from hosts: *
+	User:client has Allow permission for operations: Write from hosts: *
+	User:client has Allow permission for operations: Create from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=topic2, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=READ, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:topic2`: 
+ 	User:client has Allow permission for operations: Read from hosts: *
+	User:client has Allow permission for operations: Describe from hosts: *
+	User:client has Allow permission for operations: Write from hosts: *
+	User:client has Allow permission for operations: Create from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:client has Allow permission for operations: Read from hosts: * 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka5596530158388188644.tmp refreshKrb5Config is false principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+[2020-01-15 10:24:14,858] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition topic2-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:kafka, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:kafka has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:kafka, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:kafka has Allow permission for operations: Read from hosts: * 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka6325599130670219980.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+[2020-01-15 10:24:29,132] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:24:29,379] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=READ, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=CREATE, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=*, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:client has Allow permission for operations: Write from hosts: *
+	User:client has Allow permission for operations: Describe from hosts: *
+	User:client has Allow permission for operations: Read from hosts: *
+	User:kafka has Allow permission for operations: Read from hosts: *
+	User:client has Allow permission for operations: Create from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:*`: 
+ 	User:client has Allow permission for operations: Read from hosts: * 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka6310752898938249620.tmp refreshKrb5Config is false principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:kafka, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:kafka has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:kafka, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:kafka has Allow permission for operations: Read from hosts: * 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka1758822328561108594.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+[2020-01-15 10:24:43,617] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:client has Allow permission for operations: Describe from hosts: *
+	User:client has Allow permission for operations: Write from hosts: *
+	User:client has Allow permission for operations: Create from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:client has Allow permission for operations: Read from hosts: * 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka1426416226913107397.tmp refreshKrb5Config is false principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:kafka, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:kafka has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:kafka, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:kafka has Allow permission for operations: Read from hosts: * 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka3938108562739279784.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:client has Allow permission for operations: Describe from hosts: *
+	User:client has Allow permission for operations: Write from hosts: *
+	User:client has Allow permission for operations: Create from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:client has Allow permission for operations: Read from hosts: * 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka8672406031091774077.tmp refreshKrb5Config is false principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:client has Allow permission for operations: Write from hosts: *
+	User:client has Allow permission for operations: Create from hosts: * 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:client has Allow permission for operations: Create from hosts: * 
+
+[2020-01-15 10:24:58,217] ERROR [Consumer clientId=consumer-group-12, groupId=group] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:kafka, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:kafka has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:kafka, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:kafka has Allow permission for operations: Read from hosts: * 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka1733401091469213214.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+[2020-01-15 10:25:09,489] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:09,587] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:client has Allow permission for operations: Describe from hosts: *
+	User:client has Allow permission for operations: Write from hosts: *
+	User:client has Allow permission for operations: Create from hosts: * 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka2338782364045629030.tmp refreshKrb5Config is false principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:kafka, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:kafka has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:kafka, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:kafka has Allow permission for operations: Read from hosts: * 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka8275031917554098338.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+[2020-01-15 10:25:25,734] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:25,772] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:26,610] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:26,611] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:client has Allow permission for operations: Describe from hosts: * 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka4669750093525002704.tmp refreshKrb5Config is false principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:kafka, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:kafka has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:kafka, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:kafka has Allow permission for operations: Read from hosts: * 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka1760323458526200714.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+[2020-01-15 10:25:37,554] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:37,555] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:client has Allow permission for operations: Read from hosts: * 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka3259534803107397100.tmp refreshKrb5Config is false principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+[2020-01-15 10:25:39,166] ERROR [Producer clientId=producer-17] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:25:39,189] ERROR [Consumer clientId=consumer-group-14, groupId=group] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=topic2, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:topic2`: 
+ 	User:client has Allow permission for operations: Describe from hosts: *
+	User:client has Allow permission for operations: Write from hosts: *
+	User:client has Allow permission for operations: Create from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=topic2, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=READ, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:topic2`: 
+ 	User:client has Allow permission for operations: Read from hosts: *
+	User:client has Allow permission for operations: Describe from hosts: *
+	User:client has Allow permission for operations: Write from hosts: *
+	User:client has Allow permission for operations: Create from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:client has Allow permission for operations: Read from hosts: * 
+
+[2020-01-15 10:25:39,713] ERROR [Producer clientId=producer-17] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:25:39,817] ERROR [Producer clientId=producer-17] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:25:39,922] ERROR [Producer clientId=producer-17] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:25:40,025] ERROR [Producer clientId=producer-17] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:25:40,132] ERROR [Producer clientId=producer-17] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:25:40,268] ERROR [Producer clientId=producer-17] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:25:40,372] ERROR [Producer clientId=producer-17] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:25:40,570] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition topic2-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:40,570] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition topic2-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:41,629] ERROR [Consumer clientId=consumer-group-14, groupId=group] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:client has Allow permission for operations: Describe from hosts: *
+	User:client has Allow permission for operations: Write from hosts: *
+	User:client has Allow permission for operations: Create from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=READ, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:client has Allow permission for operations: Read from hosts: *
+	User:client has Allow permission for operations: Describe from hosts: *
+	User:client has Allow permission for operations: Write from hosts: *
+	User:client has Allow permission for operations: Create from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:client has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=User:kafka, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	User:kafka has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=User:kafka, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	User:kafka has Allow permission for operations: Read from hosts: * 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka4177070523843192783.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+[2020-01-15 10:25:56,686] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=CREATE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:client has Allow permission for operations: Describe from hosts: *
+	User:client has Allow permission for operations: Write from hosts: *
+	User:client has Allow permission for operations: Create from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=User:client, host=*, operation=READ, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=User:client, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	User:client has Allow permission for operations: Read from hosts: *
+	User:client has Allow permission for operations: Describe from hosts: *
+	User:client has Allow permission for operations: Write from hosts: *
+	User:client has Allow permission for operations: Create from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	User:client has Allow permission for operations: Read from hosts: * 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka7880365179121883652.tmp refreshKrb5Config is false principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

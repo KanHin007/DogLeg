@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.coordinator.transaction.TransactionMetadataTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:32:08" hostname="localhost" time="0.026">
+  <properties/>
+  <testcase name="testFenceProducerAfterEpochsExhausted" classname="kafka.coordinator.transaction.TransactionMetadataTest" time="0.024"/>
+  <testcase name="testAttemptedEpochBumpWithFencedEpoch" classname="kafka.coordinator.transaction.TransactionMetadataTest" time="0.0"/>
+  <testcase name="testInitializeEpoch" classname="kafka.coordinator.transaction.TransactionMetadataTest" time="0.001"/>
+  <testcase name="testRotateProducerId" classname="kafka.coordinator.transaction.TransactionMetadataTest" time="0.0"/>
+  <testcase name="testBumpEpochNotAllowedIfEpochsExhausted" classname="kafka.coordinator.transaction.TransactionMetadataTest" time="0.0"/>
+  <testcase name="testEpochBumpWithCurrentEpochProvided" classname="kafka.coordinator.transaction.TransactionMetadataTest" time="0.0"/>
+  <testcase name="testRotateProducerIdInOngoingState" classname="kafka.coordinator.transaction.TransactionMetadataTest" time="0.0"/>
+  <testcase name="testAttemptedEpochBumpWithNewlyCreatedMetadata" classname="kafka.coordinator.transaction.TransactionMetadataTest" time="0.0"/>
+  <testcase name="testAttemptedEpochBumpWithLastEpoch" classname="kafka.coordinator.transaction.TransactionMetadataTest" time="0.0"/>
+  <testcase name="testRotateProducerIdInPrepareCommitState" classname="kafka.coordinator.transaction.TransactionMetadataTest" time="0.001"/>
+  <testcase name="testFenceProducerNotAllowedIfItWouldOverflow" classname="kafka.coordinator.transaction.TransactionMetadataTest" time="0.0"/>
+  <testcase name="testRotateProducerIdInPrepareAbortState" classname="kafka.coordinator.transaction.TransactionMetadataTest" time="0.0"/>
+  <testcase name="testNormalEpochBump" classname="kafka.coordinator.transaction.TransactionMetadataTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

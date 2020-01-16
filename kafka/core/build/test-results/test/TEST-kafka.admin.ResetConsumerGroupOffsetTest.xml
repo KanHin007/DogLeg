@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.admin.ResetConsumerGroupOffsetTest" tests="24" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:16:18" hostname="localhost" time="413.008">
+  <properties/>
+  <testcase name="testResetOffsetsExportImportPlanSingleGroupArg" classname="kafka.admin.ResetConsumerGroupOffsetTest" time="19.762"/>
+  <testcase name="testResetOffsetsShiftByHigherThanLatest" classname="kafka.admin.ResetConsumerGroupOffsetTest" time="10.576"/>
+  <testcase name="testResetOffsetsShiftMinus" classname="kafka.admin.ResetConsumerGroupOffsetTest" time="11.937"/>
+  <testcase name="testResetOffsetsToCurrentOffset" classname="kafka.admin.ResetConsumerGroupOffsetTest" time="16.685"/>
+  <testcase name="testResetOffsetsToEarliestOnOneTopicAndPartition" classname="kafka.admin.ResetConsumerGroupOffsetTest" time="14.881"/>
+  <testcase name="testResetWithUnrecognizedNewConsumerOption" classname="kafka.admin.ResetConsumerGroupOffsetTest" time="10.373"/>
+  <testcase name="testResetOffsetsByDurationToEarliest" classname="kafka.admin.ResetConsumerGroupOffsetTest" time="22.25"/>
+  <testcase name="testResetOffsetsToEarliestOnOneTopic" classname="kafka.admin.ResetConsumerGroupOffsetTest" time="15.504"/>
+  <testcase name="testResetOffsetsNotExistingGroup" classname="kafka.admin.ResetConsumerGroupOffsetTest" time="3.707"/>
+  <testcase name="testResetOffsetsExistingTopicSelectedGroups" classname="kafka.admin.ResetConsumerGroupOffsetTest" time="30.11"/>
+  <testcase name="testResetOffsetsToZonedDateTime" classname="kafka.admin.ResetConsumerGroupOffsetTest" time="20.05"/>
+  <testcase name="testResetOffsetsToEarliest" classname="kafka.admin.ResetConsumerGroupOffsetTest" time="24.524"/>
+  <testcase name="testResetOffsetsExportImportPlan" classname="kafka.admin.ResetConsumerGroupOffsetTest" time="31.927"/>
+  <testcase name="testResetOffsetsToSpecificOffset" classname="kafka.admin.ResetConsumerGroupOffsetTest" time="13.764"/>
+  <testcase name="testResetOffsetsShiftPlus" classname="kafka.admin.ResetConsumerGroupOffsetTest" time="14.832"/>
+  <testcase name="testResetOffsetsToLatest" classname="kafka.admin.ResetConsumerGroupOffsetTest" time="12.134"/>
+  <testcase name="testResetOffsetsShiftByLowerThanEarliest" classname="kafka.admin.ResetConsumerGroupOffsetTest" time="11.805"/>
+  <testcase name="testResetOffsetsExistingTopicAllGroups" classname="kafka.admin.ResetConsumerGroupOffsetTest" time="22.627"/>
+  <testcase name="testResetOffsetsByDuration" classname="kafka.admin.ResetConsumerGroupOffsetTest" time="12.022"/>
+  <testcase name="testResetOffsetsToLocalDateTime" classname="kafka.admin.ResetConsumerGroupOffsetTest" time="11.068"/>
+  <testcase name="testResetOffsetsExistingTopic" classname="kafka.admin.ResetConsumerGroupOffsetTest" time="7.193"/>
+  <testcase name="testResetOffsetsAllTopicsAllGroups" classname="kafka.admin.ResetConsumerGroupOffsetTest" time="39.049"/>
+  <testcase name="testResetOffsetsToEarliestOnTopicsAndPartitions" classname="kafka.admin.ResetConsumerGroupOffsetTest" time="19.283"/>
+  <testcase name="testResetOffsetsToEarliestOnTopics" classname="kafka.admin.ResetConsumerGroupOffsetTest" time="16.945"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

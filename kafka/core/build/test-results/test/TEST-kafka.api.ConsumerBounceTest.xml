@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.api.ConsumerBounceTest" tests="7" skipped="1" failures="0" errors="0" timestamp="2020-01-15T02:14:07" hostname="localhost" time="167.815">
+  <properties/>
+  <testcase name="testCloseDuringRebalance" classname="kafka.api.ConsumerBounceTest" time="21.925"/>
+  <testcase name="testClose" classname="kafka.api.ConsumerBounceTest" time="36.718"/>
+  <testcase name="testSeekAndCommitWithBrokerFailures" classname="kafka.api.ConsumerBounceTest" time="36.022"/>
+  <testcase name="testConsumerReceivesFatalExceptionWhenGroupPassesMaxSize" classname="kafka.api.ConsumerBounceTest" time="15.143"/>
+  <testcase name="testSubscribeWhenTopicUnavailable" classname="kafka.api.ConsumerBounceTest" time="34.611"/>
+  <testcase name="testRollingBrokerRestartsWithSmallerMaxGroupSizeConfigDisruptsBigGroup" classname="kafka.api.ConsumerBounceTest" time="23.395"/>
+  <testcase name="testConsumptionWithBrokerFailures" classname="kafka.api.ConsumerBounceTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[[2020-01-15 10:14:08,344] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:08,462] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:09,230] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition topic-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:09,231] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:09,280] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:09,280] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition topic-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:10,138] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition closetest-8 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:10,139] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition closetest-5 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:10,139] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition closetest-2 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:10,138] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition closetest-3 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:10,140] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition closetest-9 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:10,140] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition closetest-6 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:10,140] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition closetest-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:10,138] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition closetest-3 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:10,141] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition closetest-9 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:10,143] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition closetest-6 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:10,143] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition closetest-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:29,426] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:29,426] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:29,626] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:29,629] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:15:06,241] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition topic-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:15:06,243] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:15:45,266] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:15:47,689] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition fatal-exception-test-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:15:47,690] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition fatal-exception-test-4 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:15:47,711] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition fatal-exception-test-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:15:47,711] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition fatal-exception-test-4 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:15:48,236] ERROR [Consumer clientId=ConsumerTestConsumer, groupId=fatal-exception-test] Attempt to join group failed due to fatal error: The consumer group has reached its max size. (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:620)
+[2020-01-15 10:15:48,237] ERROR [daemon-consumer-assignment]: Error due to (kafka.api.AbstractConsumerTest$ConsumerAssignmentPoller:76)
+org.apache.kafka.common.errors.GroupMaxSizeReachedException: Consumer group fatal-exception-test already has the configured maximum number of members.
+[2020-01-15 10:16:00,782] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:16:00,850] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:16:07,719] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition newtopic-2 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:16:32,411] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:16:34,127] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition topic-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:16:34,922] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:16:35,007] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:16:38,272] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition group-max-size-test-4 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:16:38,274] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition group-max-size-test-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:16:38,313] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition group-max-size-test-4 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:16:38,313] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition group-max-size-test-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:16:44,405] ERROR [RequestSendThread controllerId=1] Controller 1 fails to send a request to broker localhost:63200 (id: 0 rack: null) (kafka.controller.RequestSendThread:76)
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1326)
+	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:277)
+	at kafka.utils.ShutdownableThread.pause(ShutdownableThread.scala:82)
+	at kafka.controller.RequestSendThread.backoff$1(ControllerChannelManager.scala:230)
+	at kafka.controller.RequestSendThread.doWork(ControllerChannelManager.scala:258)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:96)
+[2020-01-15 10:16:47,296] ERROR [RequestSendThread controllerId=2] Controller 2 fails to send a request to broker localhost:63201 (id: 1 rack: null) (kafka.controller.RequestSendThread:76)
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1326)
+	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:277)
+	at kafka.utils.ShutdownableThread.pause(ShutdownableThread.scala:82)
+	at kafka.controller.RequestSendThread.backoff$1(ControllerChannelManager.scala:230)
+	at kafka.controller.RequestSendThread.doWork(ControllerChannelManager.scala:258)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:96)
+[2020-01-15 10:16:48,486] ERROR [Consumer clientId=ConsumerTestConsumer, groupId=group-max-size-test] Attempt to join group failed due to fatal error: The consumer group has reached its max size. (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:620)
+[2020-01-15 10:16:48,487] ERROR [daemon-consumer-assignment]: Error due to (kafka.api.AbstractConsumerTest$ConsumerAssignmentPoller:76)
+org.apache.kafka.common.errors.GroupMaxSizeReachedException: Consumer group group-max-size-test already has the configured maximum number of members.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

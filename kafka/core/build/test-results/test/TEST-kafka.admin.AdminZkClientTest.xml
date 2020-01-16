@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.admin.AdminZkClientTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:11:58" hostname="localhost" time="32.228">
+  <properties/>
+  <testcase name="testMockedConcurrentTopicCreation" classname="kafka.admin.AdminZkClientTest" time="6.869"/>
+  <testcase name="testGetBrokerMetadatas" classname="kafka.admin.AdminZkClientTest" time="1.934"/>
+  <testcase name="testBootstrapClientIdConfig" classname="kafka.admin.AdminZkClientTest" time="5.183"/>
+  <testcase name="testTopicConfigChange" classname="kafka.admin.AdminZkClientTest" time="6.88"/>
+  <testcase name="testManualReplicaAssignment" classname="kafka.admin.AdminZkClientTest" time="0.954"/>
+  <testcase name="testConcurrentTopicCreation" classname="kafka.admin.AdminZkClientTest" time="1.454"/>
+  <testcase name="shouldPropagateDynamicBrokerConfigs" classname="kafka.admin.AdminZkClientTest" time="6.268"/>
+  <testcase name="testTopicCreationWithCollision" classname="kafka.admin.AdminZkClientTest" time="1.011"/>
+  <testcase name="testTopicCreationInZK" classname="kafka.admin.AdminZkClientTest" time="1.675"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

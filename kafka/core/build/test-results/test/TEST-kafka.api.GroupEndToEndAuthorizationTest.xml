@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.api.GroupEndToEndAuthorizationTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:16:54" hostname="localhost" time="195.367">
+  <properties/>
+  <testcase name="testTwoConsumersWithDifferentSaslCredentials" classname="kafka.api.GroupEndToEndAuthorizationTest" time="14.145"/>
+  <testcase name="testNoConsumeWithoutDescribeAclViaSubscribe" classname="kafka.api.GroupEndToEndAuthorizationTest" time="17.772"/>
+  <testcase name="testProduceConsumeWithPrefixedAcls" classname="kafka.api.GroupEndToEndAuthorizationTest" time="18.676"/>
+  <testcase name="testProduceConsumeViaAssign" classname="kafka.api.GroupEndToEndAuthorizationTest" time="16.721"/>
+  <testcase name="testNoConsumeWithDescribeAclViaAssign" classname="kafka.api.GroupEndToEndAuthorizationTest" time="10.619"/>
+  <testcase name="testProduceConsumeTopicAutoCreateTopicCreateAcl" classname="kafka.api.GroupEndToEndAuthorizationTest" time="15.974"/>
+  <testcase name="testProduceConsumeWithWildcardAcls" classname="kafka.api.GroupEndToEndAuthorizationTest" time="10.839"/>
+  <testcase name="testNoConsumeWithDescribeAclViaSubscribe" classname="kafka.api.GroupEndToEndAuthorizationTest" time="11.399"/>
+  <testcase name="testNoConsumeWithoutDescribeAclViaAssign" classname="kafka.api.GroupEndToEndAuthorizationTest" time="12.723"/>
+  <testcase name="testNoGroupAcl" classname="kafka.api.GroupEndToEndAuthorizationTest" time="15.84"/>
+  <testcase name="testNoProduceWithDescribeAcl" classname="kafka.api.GroupEndToEndAuthorizationTest" time="18.446"/>
+  <testcase name="testNoDescribeProduceOrConsumeWithoutTopicDescribeAcl" classname="kafka.api.GroupEndToEndAuthorizationTest" time="16.673"/>
+  <testcase name="testProduceConsumeViaSubscribe" classname="kafka.api.GroupEndToEndAuthorizationTest" time="15.54"/>
+  <system-out><![CDATA[Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=Group:scram-admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	Group:scram-admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=Group:scram-admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	Group:scram-admin has Allow permission for operations: Read from hosts: * 
+
+Completed updating config for entity: user-principal 'scram-admin'.
+[2020-01-15 10:16:58,891] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Completed updating config for entity: user-principal 'scram-user'.
+Completed updating config for entity: user-principal 'scram-user2'.
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=CREATE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	Group:testGroup has Allow permission for operations: Describe from hosts: *
+	Group:testGroup has Allow permission for operations: Write from hosts: *
+	Group:testGroup has Allow permission for operations: Create from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=READ, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	Group:testGroup has Allow permission for operations: Read from hosts: *
+	Group:testGroup has Allow permission for operations: Describe from hosts: *
+	Group:testGroup has Allow permission for operations: Write from hosts: *
+	Group:testGroup has Allow permission for operations: Create from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	Group:testGroup has Allow permission for operations: Read from hosts: * 
+
+[2020-01-15 10:17:00,607] ERROR [Consumer clientId=consumer-group-2, groupId=group] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=Group:scram-admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	Group:scram-admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=Group:scram-admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	Group:scram-admin has Allow permission for operations: Read from hosts: * 
+
+Completed updating config for entity: user-principal 'scram-admin'.
+[2020-01-15 10:17:14,509] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:17:14,686] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Completed updating config for entity: user-principal 'scram-user'.
+Completed updating config for entity: user-principal 'scram-user2'.
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=CREATE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	Group:testGroup has Allow permission for operations: Describe from hosts: *
+	Group:testGroup has Allow permission for operations: Write from hosts: *
+	Group:testGroup has Allow permission for operations: Create from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	Group:testGroup has Allow permission for operations: Read from hosts: * 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	Group:testGroup has Allow permission for operations: Write from hosts: *
+	Group:testGroup has Allow permission for operations: Create from hosts: * 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	Group:testGroup has Allow permission for operations: Create from hosts: * 
+
+[2020-01-15 10:17:17,518] ERROR [Consumer clientId=consumer-group-3, groupId=group] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=CREATE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	Group:testGroup has Allow permission for operations: Describe from hosts: *
+	Group:testGroup has Allow permission for operations: Write from hosts: *
+	Group:testGroup has Allow permission for operations: Create from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=READ, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	Group:testGroup has Allow permission for operations: Read from hosts: *
+	Group:testGroup has Allow permission for operations: Describe from hosts: *
+	Group:testGroup has Allow permission for operations: Write from hosts: *
+	Group:testGroup has Allow permission for operations: Create from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	Group:testGroup has Allow permission for operations: Read from hosts: * 
+
+[2020-01-15 10:17:18,034] ERROR [Consumer clientId=consumer-group-3, groupId=group] Topic authorization failed for topics [topic2] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:17:18,036] ERROR [Consumer clientId=consumer-group-3, groupId=group] Topic authorization failed for topics [topic2] (org.apache.kafka.clients.Metadata:281)
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=Group:scram-admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	Group:scram-admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=Group:scram-admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	Group:scram-admin has Allow permission for operations: Read from hosts: * 
+
+Completed updating config for entity: user-principal 'scram-admin'.
+Completed updating config for entity: user-principal 'scram-user'.
+Completed updating config for entity: user-principal 'scram-user2'.
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2e, patternType=PREFIXED)`: 
+ 	(principal=Group:testGroup, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=READ, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=CREATE, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=gr, patternType=PREFIXED)`: 
+ 	(principal=Group:testGroup, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:PREFIXED:e2e`: 
+ 	Group:testGroup has Allow permission for operations: Read from hosts: *
+	Group:testGroup has Allow permission for operations: Describe from hosts: *
+	Group:testGroup has Allow permission for operations: Write from hosts: *
+	Group:testGroup has Allow permission for operations: Create from hosts: * 
+
+Current ACLs for resource `Group:PREFIXED:gr`: 
+ 	Group:testGroup has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=Group:scram-admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	Group:scram-admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=Group:scram-admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	Group:scram-admin has Allow permission for operations: Read from hosts: * 
+
+Completed updating config for entity: user-principal 'scram-admin'.
+[2020-01-15 10:17:53,280] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:17:55,110] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:17:55,110] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Completed updating config for entity: user-principal 'scram-user'.
+Completed updating config for entity: user-principal 'scram-user2'.
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=CREATE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	Group:testGroup has Allow permission for operations: Describe from hosts: *
+	Group:testGroup has Allow permission for operations: Write from hosts: *
+	Group:testGroup has Allow permission for operations: Create from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=READ, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	Group:testGroup has Allow permission for operations: Read from hosts: *
+	Group:testGroup has Allow permission for operations: Describe from hosts: *
+	Group:testGroup has Allow permission for operations: Write from hosts: *
+	Group:testGroup has Allow permission for operations: Create from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	Group:testGroup has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=Group:scram-admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	Group:scram-admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=Group:scram-admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	Group:scram-admin has Allow permission for operations: Read from hosts: * 
+
+Completed updating config for entity: user-principal 'scram-admin'.
+[2020-01-15 10:18:05,745] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:18:05,796] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Completed updating config for entity: user-principal 'scram-user'.
+Completed updating config for entity: user-principal 'scram-user2'.
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=CREATE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	Group:testGroup has Allow permission for operations: Describe from hosts: *
+	Group:testGroup has Allow permission for operations: Write from hosts: *
+	Group:testGroup has Allow permission for operations: Create from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	Group:testGroup has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=Group:scram-admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	Group:scram-admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=Group:scram-admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	Group:scram-admin has Allow permission for operations: Read from hosts: * 
+
+Completed updating config for entity: user-principal 'scram-admin'.
+[2020-01-15 10:18:18,859] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:18:19,497] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:18:19,498] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Completed updating config for entity: user-principal 'scram-user'.
+Completed updating config for entity: user-principal 'scram-user2'.
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=topic2, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=CREATE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:topic2`: 
+ 	Group:testGroup has Allow permission for operations: Describe from hosts: *
+	Group:testGroup has Allow permission for operations: Write from hosts: *
+	Group:testGroup has Allow permission for operations: Create from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=topic2, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=READ, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:topic2`: 
+ 	Group:testGroup has Allow permission for operations: Read from hosts: *
+	Group:testGroup has Allow permission for operations: Describe from hosts: *
+	Group:testGroup has Allow permission for operations: Write from hosts: *
+	Group:testGroup has Allow permission for operations: Create from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	Group:testGroup has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=Group:scram-admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	Group:scram-admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=Group:scram-admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	Group:scram-admin has Allow permission for operations: Read from hosts: * 
+
+Completed updating config for entity: user-principal 'scram-admin'.
+[2020-01-15 10:18:33,571] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:18:33,703] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Completed updating config for entity: user-principal 'scram-user'.
+Completed updating config for entity: user-principal 'scram-user2'.
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=READ, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=CREATE, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=*, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	Group:testGroup has Allow permission for operations: Read from hosts: *
+	Group:scram-admin has Allow permission for operations: Read from hosts: *
+	Group:testGroup has Allow permission for operations: Create from hosts: *
+	Group:testGroup has Allow permission for operations: Write from hosts: *
+	Group:testGroup has Allow permission for operations: Describe from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:*`: 
+ 	Group:testGroup has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=Group:scram-admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	Group:scram-admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=Group:scram-admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	Group:scram-admin has Allow permission for operations: Read from hosts: * 
+
+Completed updating config for entity: user-principal 'scram-admin'.
+[2020-01-15 10:18:43,156] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:18:44,114] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:18:44,117] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Completed updating config for entity: user-principal 'scram-user'.
+Completed updating config for entity: user-principal 'scram-user2'.
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=CREATE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	Group:testGroup has Allow permission for operations: Describe from hosts: *
+	Group:testGroup has Allow permission for operations: Write from hosts: *
+	Group:testGroup has Allow permission for operations: Create from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	Group:testGroup has Allow permission for operations: Read from hosts: * 
+
+[2020-01-15 10:18:45,278] ERROR [Consumer clientId=consumer-group-9, groupId=group] Offset commit failed on partition e2etopic-0 at offset 0: Topic authorization failed. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1145)
+[2020-01-15 10:18:45,279] ERROR [Consumer clientId=consumer-group-9, groupId=group] Not authorized to commit to topics [e2etopic] (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1202)
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=Group:scram-admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	Group:scram-admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=Group:scram-admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	Group:scram-admin has Allow permission for operations: Read from hosts: * 
+
+Completed updating config for entity: user-principal 'scram-admin'.
+[2020-01-15 10:18:52,949] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:18:53,030] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:18:53,580] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:18:53,660] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Completed updating config for entity: user-principal 'scram-user'.
+Completed updating config for entity: user-principal 'scram-user2'.
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=CREATE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	Group:testGroup has Allow permission for operations: Describe from hosts: *
+	Group:testGroup has Allow permission for operations: Write from hosts: *
+	Group:testGroup has Allow permission for operations: Create from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	Group:testGroup has Allow permission for operations: Read from hosts: * 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	Group:testGroup has Allow permission for operations: Write from hosts: *
+	Group:testGroup has Allow permission for operations: Create from hosts: * 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	Group:testGroup has Allow permission for operations: Create from hosts: * 
+
+[2020-01-15 10:18:55,312] ERROR [Consumer clientId=consumer-group-10, groupId=group] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=Group:scram-admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	Group:scram-admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=Group:scram-admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	Group:scram-admin has Allow permission for operations: Read from hosts: * 
+
+Completed updating config for entity: user-principal 'scram-admin'.
+[2020-01-15 10:19:06,889] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:19:07,185] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:19:08,013] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:19:08,013] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Completed updating config for entity: user-principal 'scram-user'.
+Completed updating config for entity: user-principal 'scram-user2'.
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=CREATE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	Group:testGroup has Allow permission for operations: Describe from hosts: *
+	Group:testGroup has Allow permission for operations: Write from hosts: *
+	Group:testGroup has Allow permission for operations: Create from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=Group:scram-admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	Group:scram-admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=Group:scram-admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	Group:scram-admin has Allow permission for operations: Read from hosts: * 
+
+Completed updating config for entity: user-principal 'scram-admin'.
+[2020-01-15 10:19:23,636] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:19:23,636] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:19:23,930] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:19:23,930] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Completed updating config for entity: user-principal 'scram-user'.
+Completed updating config for entity: user-principal 'scram-user2'.
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=DESCRIBE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	Group:testGroup has Allow permission for operations: Describe from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=Group:scram-admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	Group:scram-admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=Group:scram-admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	Group:scram-admin has Allow permission for operations: Read from hosts: * 
+
+Completed updating config for entity: user-principal 'scram-admin'.
+[2020-01-15 10:19:43,692] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Completed updating config for entity: user-principal 'scram-user'.
+Completed updating config for entity: user-principal 'scram-user2'.
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	Group:testGroup has Allow permission for operations: Read from hosts: * 
+
+[2020-01-15 10:19:45,096] ERROR [Producer clientId=producer-12] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:19:45,136] ERROR [Consumer clientId=consumer-group-12, groupId=group] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=topic2, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=CREATE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:topic2`: 
+ 	Group:testGroup has Allow permission for operations: Describe from hosts: *
+	Group:testGroup has Allow permission for operations: Write from hosts: *
+	Group:testGroup has Allow permission for operations: Create from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=topic2, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=READ, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:topic2`: 
+ 	Group:testGroup has Allow permission for operations: Read from hosts: *
+	Group:testGroup has Allow permission for operations: Describe from hosts: *
+	Group:testGroup has Allow permission for operations: Write from hosts: *
+	Group:testGroup has Allow permission for operations: Create from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	Group:testGroup has Allow permission for operations: Read from hosts: * 
+
+[2020-01-15 10:19:45,683] ERROR [Producer clientId=producer-12] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:19:45,788] ERROR [Producer clientId=producer-12] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:19:45,890] ERROR [Producer clientId=producer-12] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:19:45,992] ERROR [Producer clientId=producer-12] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:19:46,095] ERROR [Producer clientId=producer-12] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:19:46,197] ERROR [Producer clientId=producer-12] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:19:46,299] ERROR [Producer clientId=producer-12] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:19:46,303] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition topic2-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:19:46,303] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition topic2-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:19:47,839] ERROR [Consumer clientId=consumer-group-12, groupId=group] Topic authorization failed for topics [e2etopic] (org.apache.kafka.clients.Metadata:281)
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=CREATE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	Group:testGroup has Allow permission for operations: Describe from hosts: *
+	Group:testGroup has Allow permission for operations: Write from hosts: *
+	Group:testGroup has Allow permission for operations: Create from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=READ, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	Group:testGroup has Allow permission for operations: Read from hosts: *
+	Group:testGroup has Allow permission for operations: Describe from hosts: *
+	Group:testGroup has Allow permission for operations: Write from hosts: *
+	Group:testGroup has Allow permission for operations: Create from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	Group:testGroup has Allow permission for operations: Read from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=CLUSTER, name=kafka-cluster, patternType=LITERAL)`: 
+ 	(principal=Group:scram-admin, host=*, operation=CLUSTER_ACTION, permissionType=ALLOW) 
+
+Current ACLs for resource `Cluster:LITERAL:kafka-cluster`: 
+ 	Group:scram-admin has Allow permission for operations: ClusterAction from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=*, patternType=LITERAL)`: 
+ 	(principal=Group:scram-admin, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:*`: 
+ 	Group:scram-admin has Allow permission for operations: Read from hosts: * 
+
+Completed updating config for entity: user-principal 'scram-admin'.
+[2020-01-15 10:19:56,824] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:19:57,340] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition e2etopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Completed updating config for entity: user-principal 'scram-user'.
+Completed updating config for entity: user-principal 'scram-user2'.
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=WRITE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=CREATE, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	Group:testGroup has Allow permission for operations: Describe from hosts: *
+	Group:testGroup has Allow permission for operations: Write from hosts: *
+	Group:testGroup has Allow permission for operations: Create from hosts: * 
+
+Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=e2etopic, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=DESCRIBE, permissionType=ALLOW)
+	(principal=Group:testGroup, host=*, operation=READ, permissionType=ALLOW) 
+
+Adding ACLs for resource `ResourcePattern(resourceType=GROUP, name=group, patternType=LITERAL)`: 
+ 	(principal=Group:testGroup, host=*, operation=READ, permissionType=ALLOW) 
+
+Current ACLs for resource `Topic:LITERAL:e2etopic`: 
+ 	Group:testGroup has Allow permission for operations: Read from hosts: *
+	Group:testGroup has Allow permission for operations: Describe from hosts: *
+	Group:testGroup has Allow permission for operations: Write from hosts: *
+	Group:testGroup has Allow permission for operations: Create from hosts: * 
+
+Current ACLs for resource `Group:LITERAL:group`: 
+ 	Group:testGroup has Allow permission for operations: Read from hosts: * 
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.log.TimeIndexTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:25:20" hostname="localhost" time="0.066">
+  <properties/>
+  <testcase name="testTruncate" classname="kafka.log.TimeIndexTest" time="0.055"/>
+  <testcase name="testEntry" classname="kafka.log.TimeIndexTest" time="0.002"/>
+  <testcase name="testAppend" classname="kafka.log.TimeIndexTest" time="0.004"/>
+  <testcase name="testEntryOverflow" classname="kafka.log.TimeIndexTest" time="0.001"/>
+  <testcase name="testLookUp" classname="kafka.log.TimeIndexTest" time="0.002"/>
+  <testcase name="testSanityCheck" classname="kafka.log.TimeIndexTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.api.SaslSslAdminIntegrationTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:14:35" hostname="localhost" time="228.152">
+  <properties/>
+  <testcase name="testAclDescribe" classname="kafka.api.SaslSslAdminIntegrationTest" time="17.568"/>
+  <testcase name="testLegacyAclOpsNeverAffectOrReturnPrefixed" classname="kafka.api.SaslSslAdminIntegrationTest" time="9.199"/>
+  <testcase name="testCreateTopicsResponseMetadataAndConfig" classname="kafka.api.SaslSslAdminIntegrationTest" time="11.267"/>
+  <testcase name="testAttemptToCreateInvalidAcls" classname="kafka.api.SaslSslAdminIntegrationTest" time="15.05"/>
+  <testcase name="testAclAuthorizationDenied" classname="kafka.api.SaslSslAdminIntegrationTest" time="25.137"/>
+  <testcase name="testAclOperations" classname="kafka.api.SaslSslAdminIntegrationTest" time="44.292"/>
+  <testcase name="testAclOperations2" classname="kafka.api.SaslSslAdminIntegrationTest" time="10.569"/>
+  <testcase name="testAclDelete" classname="kafka.api.SaslSslAdminIntegrationTest" time="14.384"/>
+  <testcase name="testCreateDeleteTopics" classname="kafka.api.SaslSslAdminIntegrationTest" time="31.955"/>
+  <testcase name="testAuthorizedOperations" classname="kafka.api.SaslSslAdminIntegrationTest" time="48.731"/>
+  <system-out><![CDATA[Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka8683710039986873263.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka6956633681326391312.tmp refreshKrb5Config is false principal is client2@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client2@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka3809399279240086731.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka1211376870149346376.tmp refreshKrb5Config is false principal is client2@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client2@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka9073190750617905378.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka3034411948584983743.tmp refreshKrb5Config is false principal is client2@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client2@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka4622588692850420463.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka7234847095685309585.tmp refreshKrb5Config is false principal is client2@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client2@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka6987501388477644326.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka7310201957466161005.tmp refreshKrb5Config is false principal is client2@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client2@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+[2020-01-15 10:15:39,539] ERROR [KafkaApi-1] Error when handling request: clientId=adminclient-13, correlationId=4, api=CREATE_ACLS, version=1, body={creations=[{resource_type=2,resource_name=foobar,resource_pattern_type=3,principal=User:ANONYMOUS,host=*,operation=3,permission_type=3},{resource_type=5,resource_name=transactional_id,resource_pattern_type=3,principal=User:ANONYMOUS,host=*,operation=4,permission_type=3}]} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:61715-127.0.0.1:61788-0, session=Session(User:client2,localhost/127.0.0.1), listenerName=ListenerName(SASL_SSL), securityProtocol=SASL_SSL, buffer=null) is not authorized.
+[2020-01-15 10:15:39,546] ERROR [KafkaApi-1] Error when handling request: clientId=adminclient-13, correlationId=5, api=DELETE_ACLS, version=1, body={filters=[{resource_type=2,resource_name=foobar,resource_pattern_type_filter=3,principal=User:ANONYMOUS,host=*,operation=3,permission_type=3},{resource_type=5,resource_name=transactional_id,resource_pattern_type_filter=3,principal=User:ANONYMOUS,host=*,operation=4,permission_type=3}]} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:61715-127.0.0.1:61788-0, session=Session(User:client2,localhost/127.0.0.1), listenerName=ListenerName(SASL_SSL), securityProtocol=SASL_SSL, buffer=null) is not authorized.
+[2020-01-15 10:15:39,550] ERROR [KafkaApi-1] Error when handling request: clientId=adminclient-13, correlationId=6, api=DESCRIBE_ACLS, version=1, body={resource_type=2,resource_name=*,resource_pattern_type_filter=3,principal=User:*,host=*,operation=2,permission_type=3} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:61715-127.0.0.1:61788-0, session=Session(User:client2,localhost/127.0.0.1), listenerName=ListenerName(SASL_SSL), securityProtocol=SASL_SSL, buffer=null) is not authorized.
+[2020-01-15 10:15:39,551] ERROR [KafkaApi-1] Error when handling request: clientId=adminclient-13, correlationId=7, api=CREATE_ACLS, version=1, body={creations=[{resource_type=2,resource_name=foobar,resource_pattern_type=3,principal=User:ANONYMOUS,host=*,operation=3,permission_type=3},{resource_type=5,resource_name=transactional_id,resource_pattern_type=3,principal=User:ANONYMOUS,host=*,operation=4,permission_type=3}]} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:61715-127.0.0.1:61788-0, session=Session(User:client2,localhost/127.0.0.1), listenerName=ListenerName(SASL_SSL), securityProtocol=SASL_SSL, buffer=null) is not authorized.
+[2020-01-15 10:15:39,553] ERROR [KafkaApi-1] Error when handling request: clientId=adminclient-13, correlationId=8, api=DELETE_ACLS, version=1, body={filters=[{resource_type=2,resource_name=foobar,resource_pattern_type_filter=3,principal=User:ANONYMOUS,host=*,operation=3,permission_type=3},{resource_type=5,resource_name=transactional_id,resource_pattern_type_filter=3,principal=User:ANONYMOUS,host=*,operation=4,permission_type=3}]} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:61715-127.0.0.1:61788-0, session=Session(User:client2,localhost/127.0.0.1), listenerName=ListenerName(SASL_SSL), securityProtocol=SASL_SSL, buffer=null) is not authorized.
+[2020-01-15 10:15:39,687] ERROR [KafkaApi-1] Error when handling request: clientId=adminclient-13, correlationId=17, api=DESCRIBE_ACLS, version=1, body={resource_type=2,resource_name=*,resource_pattern_type_filter=3,principal=User:*,host=*,operation=2,permission_type=3} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:61715-127.0.0.1:61788-0, session=Session(User:client2,localhost/127.0.0.1), listenerName=ListenerName(SASL_SSL), securityProtocol=SASL_SSL, buffer=null) is not authorized.
+[2020-01-15 10:15:39,689] ERROR [KafkaApi-1] Error when handling request: clientId=adminclient-13, correlationId=18, api=CREATE_ACLS, version=1, body={creations=[{resource_type=2,resource_name=foobar,resource_pattern_type=3,principal=User:ANONYMOUS,host=*,operation=3,permission_type=3},{resource_type=5,resource_name=transactional_id,resource_pattern_type=3,principal=User:ANONYMOUS,host=*,operation=4,permission_type=3}]} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:61715-127.0.0.1:61788-0, session=Session(User:client2,localhost/127.0.0.1), listenerName=ListenerName(SASL_SSL), securityProtocol=SASL_SSL, buffer=null) is not authorized.
+[2020-01-15 10:15:39,690] ERROR [KafkaApi-1] Error when handling request: clientId=adminclient-13, correlationId=19, api=DELETE_ACLS, version=1, body={filters=[{resource_type=2,resource_name=foobar,resource_pattern_type_filter=3,principal=User:ANONYMOUS,host=*,operation=3,permission_type=3},{resource_type=5,resource_name=transactional_id,resource_pattern_type_filter=3,principal=User:ANONYMOUS,host=*,operation=4,permission_type=3}]} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:61715-127.0.0.1:61788-0, session=Session(User:client2,localhost/127.0.0.1), listenerName=ListenerName(SASL_SSL), securityProtocol=SASL_SSL, buffer=null) is not authorized.
+[2020-01-15 10:15:39,694] ERROR [KafkaApi-1] Error when handling request: clientId=adminclient-13, correlationId=21, api=CREATE_ACLS, version=1, body={creations=[{resource_type=2,resource_name=foobar,resource_pattern_type=3,principal=User:ANONYMOUS,host=*,operation=3,permission_type=3},{resource_type=5,resource_name=transactional_id,resource_pattern_type=3,principal=User:ANONYMOUS,host=*,operation=4,permission_type=3}]} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:61715-127.0.0.1:61788-0, session=Session(User:client2,localhost/127.0.0.1), listenerName=ListenerName(SASL_SSL), securityProtocol=SASL_SSL, buffer=null) is not authorized.
+[2020-01-15 10:15:39,695] ERROR [KafkaApi-1] Error when handling request: clientId=adminclient-13, correlationId=22, api=DELETE_ACLS, version=1, body={filters=[{resource_type=2,resource_name=foobar,resource_pattern_type_filter=3,principal=User:ANONYMOUS,host=*,operation=3,permission_type=3},{resource_type=5,resource_name=transactional_id,resource_pattern_type_filter=3,principal=User:ANONYMOUS,host=*,operation=4,permission_type=3}]} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:61715-127.0.0.1:61788-0, session=Session(User:client2,localhost/127.0.0.1), listenerName=ListenerName(SASL_SSL), securityProtocol=SASL_SSL, buffer=null) is not authorized.
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka9191503292457147949.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka1118102636856688307.tmp refreshKrb5Config is false principal is client2@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client2@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka8249888241751494773.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka5520027400031296544.tmp refreshKrb5Config is false principal is client2@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client2@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka7724605204449599019.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka900058006917280736.tmp refreshKrb5Config is false principal is client2@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client2@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka8042775081934798000.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka2057676758090644835.tmp refreshKrb5Config is false principal is client2@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client2@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+[2020-01-15 10:17:22,207] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition mytopic2-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:17:22,207] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition mytopic2-2 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:17:22,504] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition mytopic2-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:17:23,179] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition mytopic-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:17:23,398] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition mytopic2-2 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:17:23,721] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition mytopic2-2 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka673343550022625625.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka6348034760976289514.tmp refreshKrb5Config is false principal is client2@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client2@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+[2020-01-15 10:18:16,881] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition mytopic-2 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

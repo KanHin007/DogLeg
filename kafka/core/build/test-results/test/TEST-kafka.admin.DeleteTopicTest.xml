@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.admin.DeleteTopicTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:13:07" hostname="localhost" time="155.759">
+  <properties/>
+  <testcase name="testDeleteTopicWithCleaner" classname="kafka.admin.DeleteTopicTest" time="34.385"/>
+  <testcase name="testResumeDeleteTopicOnControllerFailover" classname="kafka.admin.DeleteTopicTest" time="14.139"/>
+  <testcase name="testResumeDeleteTopicWithRecoveredFollower" classname="kafka.admin.DeleteTopicTest" time="10.317"/>
+  <testcase name="testDeleteTopicAlreadyMarkedAsDeleted" classname="kafka.admin.DeleteTopicTest" time="6.835"/>
+  <testcase name="testIncreasePartitionCountDuringDeleteTopic" classname="kafka.admin.DeleteTopicTest" time="14.16"/>
+  <testcase name="testPartitionReassignmentDuringDeleteTopic" classname="kafka.admin.DeleteTopicTest" time="10.643"/>
+  <testcase name="testDeleteNonExistingTopic" classname="kafka.admin.DeleteTopicTest" time="6.52"/>
+  <testcase name="testRecreateTopicAfterDeletion" classname="kafka.admin.DeleteTopicTest" time="6.96"/>
+  <testcase name="testDisableDeleteTopic" classname="kafka.admin.DeleteTopicTest" time="7.685"/>
+  <testcase name="testAddPartitionDuringDeleteTopic" classname="kafka.admin.DeleteTopicTest" time="5.887"/>
+  <testcase name="testDeleteTopicWithAllAliveReplicas" classname="kafka.admin.DeleteTopicTest" time="6.097"/>
+  <testcase name="testDeleteTopicDuringAddPartition" classname="kafka.admin.DeleteTopicTest" time="11.984"/>
+  <testcase name="testDeletingPartiallyDeletedTopic" classname="kafka.admin.DeleteTopicTest" time="20.147"/>
+  <system-out><![CDATA[[2020-01-15 10:13:08,268] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:13:08,273] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:13:57,587] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:07,899] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:14,572] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+WARNING: If partitions are increased for a topic that has a key, the partition logic or ordering of the messages will be affected
+Adding partitions succeeded!
+[2020-01-15 10:14:28,331] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:28,444] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:39,451] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:39,451] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:53,022] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:15:00,179] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:15:05,805] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:15:12,656] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:15:12,767] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

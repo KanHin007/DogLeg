@@ -18,6 +18,10 @@
         <module>springboot-source</module>
         <module>springcloud-source</module>
         <module>search-engine</module>
+        <module>springcloud-alibaba</module>
+        <module>canal</module>
+        <module>fastjson</module>
+        <module>druid</module>
     </modules>
 
     <parent>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.admin.ConfigCommandTest" tests="45" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:11:58" hostname="localhost" time="43.866">
+  <properties/>
+  <testcase name="testEntityDefaultOptionWithDescribeBrokerLoggerIsNotAllowed" classname="kafka.admin.ConfigCommandTest" time="6.831"/>
+  <testcase name="testNoSpecifiedEntityOptionWithDescribeBrokersInBootstrapServerIsAllowed" classname="kafka.admin.ConfigCommandTest" time="0.459"/>
+  <testcase name="testScramCredentials" classname="kafka.admin.ConfigCommandTest" time="0.973"/>
+  <testcase name="shouldFailIfBrokerEntityTypeIsNotAnIntegerUsingZookeeper" classname="kafka.admin.ConfigCommandTest" time="0.498"/>
+  <testcase name="shouldFailIfUnrecognisedEntityTypeUsingZookeeper" classname="kafka.admin.ConfigCommandTest" time="0.561"/>
+  <testcase name="shouldNotUpdateBrokerConfigIfMalformedConfigUsingZookeeper" classname="kafka.admin.ConfigCommandTest" time="0.473"/>
+  <testcase name="shouldParseArgumentsForTopicsEntityType" classname="kafka.admin.ConfigCommandTest" time="0.522"/>
+  <testcase name="testOptionEntityTypeNames" classname="kafka.admin.ConfigCommandTest" time="0.38"/>
+  <testcase name="shouldFailIfMixedEntityTypeFlagsUsingZookeeper" classname="kafka.admin.ConfigCommandTest" time="0.395"/>
+  <testcase name="shouldFailIfBrokerEntityTypeIsNotAnInteger" classname="kafka.admin.ConfigCommandTest" time="0.826"/>
+  <testcase name="shouldAddBrokerDynamicConfig" classname="kafka.admin.ConfigCommandTest" time="0.731"/>
+  <testcase name="shouldParseArgumentsForBrokersEntityTypeUsingZookeeper" classname="kafka.admin.ConfigCommandTest" time="0.327"/>
+  <testcase name="shouldNotUpdateBrokerConfigIfMalformedEntityNameUsingZookeeper" classname="kafka.admin.ConfigCommandTest" time="0.511"/>
+  <testcase name="shouldExitWithNonZeroStatusOnZkCommandError" classname="kafka.admin.ConfigCommandTest" time="1.021"/>
+  <testcase name="testUserClientQuotaOpts" classname="kafka.admin.ConfigCommandTest" time="1.378"/>
+  <testcase name="shouldAlterTopicConfig" classname="kafka.admin.ConfigCommandTest" time="1.612"/>
+  <testcase name="shouldAddClientConfigUsingZookeeper" classname="kafka.admin.ConfigCommandTest" time="0.433"/>
+  <testcase name="shouldDeleteBrokerConfig" classname="kafka.admin.ConfigCommandTest" time="0.892"/>
+  <testcase name="shouldParseArgumentsForTopicsEntityTypeUsingZookeeper" classname="kafka.admin.ConfigCommandTest" time="0.316"/>
+  <testcase name="shouldSupportCommaSeparatedValuesUsingZookeeper" classname="kafka.admin.ConfigCommandTest" time="0.397"/>
+  <testcase name="shouldAddDefaultBrokerDynamicConfig" classname="kafka.admin.ConfigCommandTest" time="0.343"/>
+  <testcase name="testQuotaConfigEntity" classname="kafka.admin.ConfigCommandTest" time="0.41"/>
+  <testcase name="shouldNotUpdateBrokerConfigIfMalformedBracketConfigUsingZookeeper" classname="kafka.admin.ConfigCommandTest" time="0.707"/>
+  <testcase name="shouldNotUpdateBrokerConfigIfMalformedBracketConfig" classname="kafka.admin.ConfigCommandTest" time="0.957"/>
+  <testcase name="shouldAddBrokerLoggerConfig" classname="kafka.admin.ConfigCommandTest" time="1.443"/>
+  <testcase name="shouldFailIfUnrecognisedEntityType" classname="kafka.admin.ConfigCommandTest" time="1.248"/>
+  <testcase name="shouldFailIfShortBrokerEntityTypeIsNotAnIntegerUsingZookeeper" classname="kafka.admin.ConfigCommandTest" time="1.34"/>
+  <testcase name="shouldAddBrokerQuotaConfig" classname="kafka.admin.ConfigCommandTest" time="0.562"/>
+  <testcase name="shouldParseArgumentsForClientsEntityTypeUsingZookeeper" classname="kafka.admin.ConfigCommandTest" time="0.532"/>
+  <testcase name="shouldNotUpdateConfigIfNonExistingConfigIsDeletedUsingZookeper" classname="kafka.admin.ConfigCommandTest" time="0.588"/>
+  <testcase name="shouldNotUpdateBrokerConfigIfMalformedEntityName" classname="kafka.admin.ConfigCommandTest" time="0.33"/>
+  <testcase name="shouldRaiseInvalidConfigurationExceptionWhenAddingInvalidBrokerLoggerConfig" classname="kafka.admin.ConfigCommandTest" time="0.314"/>
+  <testcase name="shouldParseArgumentsForUsersEntityTypeUsingZookeeper" classname="kafka.admin.ConfigCommandTest" time="0.439"/>
+  <testcase name="testEntityDefaultOptionWithAlterBrokerLoggerIsNotAllowed" classname="kafka.admin.ConfigCommandTest" time="0.868"/>
+  <testcase name="shouldNotUpdateBrokerConfigIfMalformedConfig" classname="kafka.admin.ConfigCommandTest" time="1.288"/>
+  <testcase name="shouldParseArgumentsForBrokerLoggersEntityType" classname="kafka.admin.ConfigCommandTest" time="1.073"/>
+  <testcase name="shouldNotUpdateConfigIfNonExistingConfigIsDeleted" classname="kafka.admin.ConfigCommandTest" time="0.956"/>
+  <testcase name="shouldFailIfShortBrokerEntityTypeIsNotAnInteger" classname="kafka.admin.ConfigCommandTest" time="1.284"/>
+  <testcase name="shouldExitWithNonZeroStatusOnBrokerCommandError" classname="kafka.admin.ConfigCommandTest" time="1.413"/>
+  <testcase name="shouldParseArgumentsForBrokersEntityType" classname="kafka.admin.ConfigCommandTest" time="0.433"/>
+  <testcase name="testDynamicBrokerConfigUpdateUsingZooKeeper" classname="kafka.admin.ConfigCommandTest" time="1.168"/>
+  <testcase name="testNoSpecifiedEntityOptionWithDescribeBrokersInZKIsAllowed" classname="kafka.admin.ConfigCommandTest" time="0.867"/>
+  <testcase name="testQuotaDescribeEntities" classname="kafka.admin.ConfigCommandTest" time="1.2"/>
+  <testcase name="shouldExitWithNonZeroStatusOnArgError" classname="kafka.admin.ConfigCommandTest" time="2.068"/>
+  <testcase name="shouldAddTopicConfigUsingZookeeper" classname="kafka.admin.ConfigCommandTest" time="2.496"/>
+  <system-out><![CDATA[Completed updating config for entity: user-principal 'userA'.
+Completed updating config for entity: user-principal 'userB'.
+Completed updating config for entity: user-principal 'userB'.
+Completed updating config for entity: user-principal 'userB'.
+Completed updating config for broker 1.
+[2020-01-15 10:12:13,241] WARN Unable to read additional data from client sessionid 0x100039bb0700000, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn:366)
+Completed updating config for topic my-topic.
+[2020-01-15 10:12:14,826] WARN Unable to read additional data from client sessionid 0x100039bb6440000, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn:366)
+Completed updating config for entity: client-id 'my-client-id'.
+Completed updating config for entity: brokers '1'.
+Completed updating config for entity: topic 'my-topic'.
+Completed updating default config for brokers in the cluster.
+Completed updating config for broker-logger 1.
+Completed updating config for entity: brokers '1'.
+Completed updating config for entity: brokers '1'.
+Completed updating config for entity: default brokers.
+Completed updating config for entity: brokers '1'.
+Completed updating config for entity: default brokers.
+Completed updating config for entity: brokers '1'.
+Completed updating config for entity: default brokers.
+Completed updating config for entity: brokers '1'.
+Completed updating config for entity: brokers '1'.
+Completed updating config for entity: brokers '1'.
+Completed updating config for entity: brokers '1'.
+Completed updating config for entity: brokers '2'.
+Completed updating config for entity: topic 'my-topic'.
+]]></system-out>
+  <system-err><![CDATA[Error while executing config command with args '--zookeeper 127.0.0.1:56781 --entity-name 1 --entity-type brokers --alter --add-config security.inter.broker.protocol=PLAINTEXT'
+org.apache.kafka.common.config.ConfigException: Cannot update these configs dynamically: Set(security.inter.broker.protocol)
+	at kafka.server.DynamicBrokerConfig$.checkInvalidProps$1(DynamicBrokerConfig.scala:126)
+	at kafka.server.DynamicBrokerConfig$.validateConfigs(DynamicBrokerConfig.scala:128)
+	at kafka.admin.ConfigCommand$.preProcessBrokerConfigs(ConfigCommand.scala:209)
+	at kafka.admin.ConfigCommand$.alterConfigWithZk(ConfigCommand.scala:143)
+	at kafka.admin.ConfigCommand$.processCommandWithZk(ConfigCommand.scala:109)
+	at kafka.admin.ConfigCommand$.main(ConfigCommand.scala:85)
+	at kafka.admin.ConfigCommandTest.assertNonZeroStatusExit(ConfigCommandTest.scala:79)
+	at kafka.admin.ConfigCommandTest.shouldExitWithNonZeroStatusOnZkCommandError(ConfigCommandTest.scala:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.lang.Thread.run(Thread.java:748)
+Error while executing config command with args '--bootstrap-server invalid host --entity-type brokers --entity-name 1 --describe'
+org.apache.kafka.common.KafkaException: Failed to create new KafkaAdminClient
+	at org.apache.kafka.clients.admin.KafkaAdminClient.createInternal(KafkaAdminClient.java:469)
+	at org.apache.kafka.clients.admin.Admin.create(Admin.java:61)
+	at kafka.admin.ConfigCommand$.processCommand(ConfigCommand.scala:279)
+	at kafka.admin.ConfigCommand$.main(ConfigCommand.scala:87)
+	at kafka.admin.ConfigCommandTest.assertNonZeroStatusExit(ConfigCommandTest.scala:79)
+	at kafka.admin.ConfigCommandTest.shouldExitWithNonZeroStatusOnBrokerCommandError(ConfigCommandTest.scala:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.kafka.common.config.ConfigException: Invalid url in bootstrap.servers: invalid host
+	at org.apache.kafka.clients.ClientUtils.parseAndValidateAddresses(ClientUtils.java:59)
+	at org.apache.kafka.clients.ClientUtils.parseAndValidateAddresses(ClientUtils.java:48)
+	at org.apache.kafka.clients.admin.KafkaAdminClient.createInternal(KafkaAdminClient.java:429)
+	... 59 more
+blah is not a recognized option
+]]></system-err>
+</testsuite>

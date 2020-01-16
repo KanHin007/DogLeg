@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class kafka.server.ReplicaManagerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class kafka.server.ReplicaManagerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/kafka.server.html">kafka.server</a> &gt; ReplicaManagerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">24</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">16.053s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testBecomeFollowerWhenLeaderIsUnchangedButMissedLeaderUpdate</td>
+<td class="success">0.029s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testBecomeFollowerWhileNewClientFetchInPurgatory</td>
+<td class="success">0.166s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testBecomeFollowerWhileOldClientFetchInPurgatory</td>
+<td class="success">0.327s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testClearFetchPurgatoryOnStopReplica</td>
+<td class="success">0.204s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testClearProducePurgatoryOnStopReplica</td>
+<td class="success">0.542s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testClearPurgatoryOnBecomingFollower</td>
+<td class="success">1.638s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDefaultReplicaSelector</td>
+<td class="success">0.121s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDelayedFetchIncludesAbortedTransactions</td>
+<td class="success">0.774s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFetchBeyondHighWatermarkReturnEmptyResponse</td>
+<td class="success">0.083s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFetchFollowerNotAllowedForOlderClients</td>
+<td class="success">0.177s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFetchFromLeaderAlwaysAllowed</td>
+<td class="success">0.014s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFetchMessagesWhenNotFollowerForOnePartition</td>
+<td class="success">0.037s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFollowerStateNotUpdatedIfLogReadFails</td>
+<td class="success">0.261s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testHighWaterMarkDirectoryMapping</td>
+<td class="success">0.410s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testHighwaterMarkRelativeDirectoryMapping</td>
+<td class="success">0.810s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testIllegalRequiredAcks</td>
+<td class="success">0.613s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testOldFollowerLosesMetricsWhenReassignPartitions</td>
+<td class="success">4.248s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testOldLeaderLosesMetricsWhenReassignPartitions</td>
+<td class="success">2.804s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPreferredReplicaAsFollower</td>
+<td class="success">0.128s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPreferredReplicaAsLeader</td>
+<td class="success">0.209s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testReadCommittedFetchLimitedAtLSO</td>
+<td class="success">0.194s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testReceiveOutOfOrderSequenceExceptionWithLogStartOffset</td>
+<td class="success">1.168s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testReplicaSelector</td>
+<td class="success">0.016s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUnknownReplicaSelector</td>
+<td class="success">1.080s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>[2020-01-15 10:26:59,317] ERROR [ReplicaManager broker=0] Error processing append operation on partition test-topic-0 (kafka.server.ReplicaManager:76)
+org.apache.kafka.common.errors.OutOfOrderSequenceException: Out of order sequence number for producerId 234 at offset 3 in partition test-topic-0: 13 (incoming seq. number), 2 (current end sequence number)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.2</a> at 2020-1-15 10:48:49</p>
+</div>
+</div>
+</body>
+</html>

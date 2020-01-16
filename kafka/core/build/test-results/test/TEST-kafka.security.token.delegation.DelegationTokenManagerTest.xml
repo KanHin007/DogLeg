@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.security.token.delegation.DelegationTokenManagerTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:45:51" hostname="localhost" time="3.547">
+  <properties/>
+  <testcase name="testPeriodicTokenExpiry" classname="kafka.security.token.delegation.DelegationTokenManagerTest" time="1.201"/>
+  <testcase name="testTokenRequestsWithDelegationTokenDisabled" classname="kafka.security.token.delegation.DelegationTokenManagerTest" time="0.323"/>
+  <testcase name="testDescribeToken" classname="kafka.security.token.delegation.DelegationTokenManagerTest" time="0.564"/>
+  <testcase name="testCreateToken" classname="kafka.security.token.delegation.DelegationTokenManagerTest" time="0.313"/>
+  <testcase name="testExpireToken" classname="kafka.security.token.delegation.DelegationTokenManagerTest" time="0.375"/>
+  <testcase name="testRenewToken" classname="kafka.security.token.delegation.DelegationTokenManagerTest" time="0.433"/>
+  <testcase name="testRemoveTokenHmac" classname="kafka.security.token.delegation.DelegationTokenManagerTest" time="0.338"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

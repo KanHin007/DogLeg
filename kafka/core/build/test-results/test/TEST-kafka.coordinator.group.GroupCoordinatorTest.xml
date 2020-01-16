@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.coordinator.group.GroupCoordinatorTest" tests="136" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:28:16" hostname="localhost" time="0.957">
+  <properties/>
+  <testcase name="testHeartbeatWrongCoordinator" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.075"/>
+  <testcase name="testJoinGroupWithEmptyProtocolType" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.004"/>
+  <testcase name="staticMemberFenceDuplicateRejoinedFollower" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.015"/>
+  <testcase name="testHeartbeatIllegalGeneration" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testDeleteNonEmptyGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="testDescribeGroupStableForStaticMember" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.004"/>
+  <testcase name="testRebalanceCompletesBeforeMemberJoins" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.011"/>
+  <testcase name="testCommitOffsetInCompletingRebalance" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.004"/>
+  <testcase name="testDescribeGroupWrongCoordinator" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="staticMemberHeartbeatLeaderWithInvalidMemberId" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.004"/>
+  <testcase name="testStaticMembersWrongCoordinatorBatchLeaveGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.117"/>
+  <testcase name="testLeaveGroupStaticMemberWithUnknownMemberId" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.085"/>
+  <testcase name="testCommitOffsetInCompletingRebalanceFromIllegalGeneration" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.036"/>
+  <testcase name="testFetchPendingTxnOffsetsWithAbort" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.082"/>
+  <testcase name="testDescribeGroupRebalancing" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.089"/>
+  <testcase name="staticMemberRejoinWithLeaderIdAndUnexpectedDeadGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.004"/>
+  <testcase name="testLeaderFailureInSyncGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.004"/>
+  <testcase name="testCompleteHeartbeatWithGroupDead" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.005"/>
+  <testcase name="staticMemberRejoinWithKnownMemberId" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="testGenerationIdIncrementsOnRebalance" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="staticMemberRejoinWithLeaderIdAndUnknownMemberId" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="testDeleteOffsetOfDeadConsumerGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.004"/>
+  <testcase name="testJoinGroupSecondJoinInconsistentProtocol" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testStaticMembersValidBatchLeaveGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testPendingMemberBatchLeaveGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.005"/>
+  <testcase name="testSyncGroupFromIllegalGeneration" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="staticMemberRejoinAsLeaderWithMismatchedMemberId" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testJoinGroupWithEmptyGroupProtocol" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testInvalidGroupId" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testDeleteOffsetOfConsumerGroupWithUnparsableProtocol" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.005"/>
+  <testcase name="staticMemberReJoinWithExplicitUnknownMemberId" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testHeartbeatUnknownGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testJoinGroupUnknownConsumerNewDeadGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.001"/>
+  <testcase name="testDescribeGroupStableForDynamicMember" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="testOffsetsRetentionMsIntegerOverflow" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="testListGroupsIncludesStableGroups" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.004"/>
+  <testcase name="testHeartbeatDuringRebalanceCausesRebalanceInProgress" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testPendingMemberWithUnexpectedInstanceIdBatchLeaveGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="testSingleLeaveDeadGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testFetchPendingTxnOffsetsWithCommit" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="staticMemberRejoinWithLeaderIdAndKnownMemberId" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="testSyncDeadGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.001"/>
+  <testcase name="testFetchTxnOffsetsMultipleProducersOneGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="testSecondMemberPartiallyJoinAndTimeout" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="shouldDelayInitialRebalanceByGroupInitialRebalanceDelayOnEmptyGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.004"/>
+  <testcase name="testNewMemberTimeoutCompletion" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="staticMemberRejoinAsFollowerWithKnownMemberIdAndNoProtocolChange" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testSessionTimeout" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testJoinGroupInconsistentGroupProtocol" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testDeleteGroupWithInvalidGroupId" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.001"/>
+  <testcase name="staticMemberCommitOffsetWithInvalidMemberId" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.004"/>
+  <testcase name="testJoinGroupSessionTimeoutTooLarge" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.001"/>
+  <testcase name="testJoinGroupSessionTimeoutTooSmall" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testSyncGroupEmptyAssignment" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testDeleteOffsetOfNonEmptyNonConsumerGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.001"/>
+  <testcase name="testJoinGroupShouldReceiveErrorIfGroupOverMaxSize" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.004"/>
+  <testcase name="testCommitOffsetWithDefaultGeneration" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.001"/>
+  <testcase name="testHeartbeatMaintainsSession" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="testFetchAllOffsets" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.004"/>
+  <testcase name="testDeleteGroupWithWrongCoordinator" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.008"/>
+  <testcase name="testJoinGroupFromUnchangedLeaderShouldRebalance" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.005"/>
+  <testcase name="staticMemberReJoinWithIllegalArgumentAsMissingOldMember" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.006"/>
+  <testcase name="testJoinGroupCompletionWhenPendingMemberTimesOut" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.004"/>
+  <testcase name="testHeartbeatRebalanceInProgress" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="staticMemberRejoinWithUnknownMemberIdAndChangeOfProtocol" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.008"/>
+  <testcase name="testLeaveGroupUnknownGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="testListGroupsIncludesRebalancingGroups" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="testSyncGroupFollowerAfterLeader" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.008"/>
+  <testcase name="testDeleteEmptyGroupWithStoredOffsets" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.045"/>
+  <testcase name="testCommitOffsetsAfterGroupIsEmpty" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.005"/>
+  <testcase name="testJoinGroupWrongCoordinator" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testFetchOffsetForUnknownPartition" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testCommitAndFetchOffsetsWithEmptyGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testJoinGroupUnknownConsumerExistingGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testSyncGroupFromUnknownGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.004"/>
+  <testcase name="testStaticMembersUnknownInstanceBatchLeaveGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.004"/>
+  <testcase name="staticMemberRejoinAsFollowerWithUnknownMemberId" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testJoinGroupInconsistentProtocolType" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testFetchTxnOffsetsOneProducerMultipleGroups" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.005"/>
+  <testcase name="testStaticMembersUnknownGroupBatchLeaveGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testJoinGroupCompletionWhenPendingMemberJoins" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.006"/>
+  <testcase name="testStaticMemberFollowerFailToRejoinBeforeRebalanceTimeout" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.005"/>
+  <testcase name="staticMemberRejoinAsFollowerWithMismatchedMemberId" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="staticMemberReJoinWithIllegalStateAsUnknownMember" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.005"/>
+  <testcase name="shouldGetDifferentStaticMemberIdAfterEachRejoin" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.004"/>
+  <testcase name="testCommitOffsetFromUnknownGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="testLeaveGroupWithFencedInstanceId" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testDeleteOffsetOfStableConsumerGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.006"/>
+  <testcase name="testDeleteEmptyGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="staticMemberJoinAsFirstMember" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.001"/>
+  <testcase name="testLeaveGroupWrongCoordinator" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="staticMemberFenceDuplicateSyncingFollowerAfterMemberIdChanged" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="staticMemberRejoinWithKnownLeaderIdToTriggerRebalanceAndFollowerWithChangeofProtocol" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="testLeaderRejoinBeforeFinalRebalanceTimeoutWithLongSessionTimeout" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.004"/>
+  <testcase name="testCommitMaintainsSession" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testLeaderFailToRejoinBeforeFinalRebalanceTimeoutWithLongSessionTimeout" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="testFetchOffsetNotCoordinatorForGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="staticMemberFenceDuplicateRejoiningFollowerAfterMemberIdChanged" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testOffsetCommitDeadGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.001"/>
+  <testcase name="testheartbeatDeadGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testDeleteOffsetOfEmptyNonConsumerGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.004"/>
+  <testcase name="staticMemberJoinWithIllegalStateAsPendingMember" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="staticMemberLeaveWithIllegalStateAsPendingMember" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="testLeaveGroupUnknownConsumerExistingGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testJoinGroupUnknownConsumerNewGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testDeleteOffsetOfEmptyConsumerGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="staticMemberJoinWithUnknownInstanceIdAndKnownMemberId" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="staticMemberSyncAsLeaderWithInvalidMemberId" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="testBatchLeaveDeadGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.001"/>
+  <testcase name="testJoinGroupFromUnchangedFollowerDoesNotRebalance" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="testValidJoinGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.001"/>
+  <testcase name="testCompleteHeartbeatWithMemberAlreadyRemoved" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="shouldDelayRebalanceUptoRebalanceTimeout" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.006"/>
+  <testcase name="testheartbeatEmptyGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testDeleteOffsetOfNonExistingGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.001"/>
+  <testcase name="testFetchOffsets" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="testSessionTimeoutDuringRebalance" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="staticMemberRejoinWithFollowerIdAndChangeOfProtocol" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="testNewMemberJoinExpiration" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.004"/>
+  <testcase name="testFetchTxnOffsetsWithAbort" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testSyncGroupLeaderAfterFollower" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="testSyncGroupFromUnknownMember" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.004"/>
+  <testcase name="testStaticMemberLeaderFailToRejoinBeforeRebalanceTimeout" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="staticMemberRejoinWithLeaderIdAndUnexpectedEmptyGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="testValidLeaveGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="testCommitOffsetInCompletingRebalanceFromUnknownMemberId" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.006"/>
+  <testcase name="testDescribeGroupInactiveGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="testFetchTxnOffsetsIgnoreSpuriousCommit" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testPendingMembersLeavesGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.007"/>
+  <testcase name="testSyncGroupNotCoordinator" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.002"/>
+  <testcase name="testBasicFetchTxnOffsets" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="shouldResetRebalanceDelayWhenNewMemberJoinsGroupInInitialRebalance" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.007"/>
+  <testcase name="testHeartbeatUnknownConsumerExistingGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="testStaticMembersFencedInstanceBatchLeaveGroup" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.006"/>
+  <testcase name="testValidHeartbeat" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.003"/>
+  <testcase name="testRequestHandlingWhileLoadingInProgress" classname="kafka.coordinator.group.GroupCoordinatorTest" time="0.004"/>
+  <system-out><![CDATA[[2020-01-15 10:28:16,971] ERROR given member.id invalidMember is identified as a known static member leader,but not matching the expected member.id leader-65b0ca7f-0bf8-4a62-80e0-3e25efe38c70 (kafka.coordinator.group.GroupMetadata:74)
+[2020-01-15 10:28:17,403] ERROR given member.id leader-02a91ea4-69fc-4222-abe5-12d9ae0eefcb is identified as a known static member leader,but not matching the expected member.id leader-71622ef9-7440-4a43-b7cb-d3f067b1578f (kafka.coordinator.group.GroupMetadata:74)
+[2020-01-15 10:28:17,403] ERROR given member.id leader-02a91ea4-69fc-4222-abe5-12d9ae0eefcb is identified as a known static member leader,but not matching the expected member.id leader-71622ef9-7440-4a43-b7cb-d3f067b1578f (kafka.coordinator.group.GroupMetadata:74)
+[2020-01-15 10:28:17,421] ERROR given member.id leader-7bb387fc-4b35-496e-a199-009f7134a5f7 is identified as a known static member follower,but not matching the expected member.id follower-d700c411-5b82-418a-ad15-e4be93b3797c (kafka.coordinator.group.GroupMetadata:74)
+[2020-01-15 10:28:17,432] ERROR given member.id unknown_member is identified as a known static member groupInstanceId,but not matching the expected member.id groupInstanceId-6e5fb615-484f-4d9d-9f52-1af5a888f08d (kafka.coordinator.group.GroupMetadata:74)
+[2020-01-15 10:28:17,480] ERROR given member.id invalidMember is identified as a known static member leader,but not matching the expected member.id leader-af796578-fadf-465f-bc2a-089f0738f96b (kafka.coordinator.group.GroupMetadata:74)
+[2020-01-15 10:28:17,530] ERROR given member.id follower-7ce66408-ecb2-4778-ac28-ee89701d71b6 is identified as a known static member follower,but not matching the expected member.id follower-2fd7387b-6195-4cbb-99db-ef267ee300f5 (kafka.coordinator.group.GroupMetadata:74)
+[2020-01-15 10:28:17,532] ERROR given member.id follower-7ce66408-ecb2-4778-ac28-ee89701d71b6 is identified as a known static member follower,but not matching the expected member.id follower-2fd7387b-6195-4cbb-99db-ef267ee300f5 (kafka.coordinator.group.GroupMetadata:74)
+[2020-01-15 10:28:17,640] ERROR given member.id follower-60bd2423-59eb-4f98-bb36-a76540440cb8 is identified as a known static member leader,but not matching the expected member.id leader-c10f1b23-ff59-46e4-aa4f-2496d4719d26 (kafka.coordinator.group.GroupMetadata:74)
+[2020-01-15 10:28:17,653] ERROR given member.id some_member is identified as a known static member leader,but not matching the expected member.id leader-fbf4c93a-ddfe-4807-9574-1374bc67eac0 (kafka.coordinator.group.GroupMetadata:74)
+[2020-01-15 10:28:17,674] ERROR [GroupCoordinator 0]: Group groupId could not complete rebalance because no members rejoined (kafka.coordinator.group.GroupCoordinator:74)
+[2020-01-15 10:28:17,680] ERROR [GroupCoordinator 0]: Group groupId could not complete rebalance because no members rejoined (kafka.coordinator.group.GroupCoordinator:74)
+[2020-01-15 10:28:17,684] ERROR given member.id follower-19635c4f-dc8e-4ddf-a75f-c9ccd9a981e7 is identified as a known static member follower,but not matching the expected member.id follower-53bb52a2-e587-49a1-8111-946d5a655bb2 (kafka.coordinator.group.GroupMetadata:74)
+[2020-01-15 10:28:17,710] ERROR given member.id invalid is identified as a known static member leader,but not matching the expected member.id leader-9554b57d-cfda-426c-9394-860633347dd9 (kafka.coordinator.group.GroupMetadata:74)
+[2020-01-15 10:28:17,798] ERROR given member.id invalid-member is identified as a known static member follower,but not matching the expected member.id follower-2fff3748-28c3-4042-8737-fbb648459ce7 (kafka.coordinator.group.GroupMetadata:74)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

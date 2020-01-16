@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class kafka.api.GroupAuthorizerIntegrationTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class kafka.api.GroupAuthorizerIntegrationTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/kafka.api.html">kafka.api</a> &gt; GroupAuthorizerIntegrationTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">78</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">10m11.67s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">shouldInitTransactionsWhenAclSet</td>
+<td class="success">9.151s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldSendSuccessfullyWhenIdempotentAndHasCorrectACL</td>
+<td class="success">6.579s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldSuccessfullyAbortTransactionAfterTopicAuthorizationException</td>
+<td class="success">6.895s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldThrowTransactionalIdAuthorizationExceptionWhenNoTransactionAccessDuringSend</td>
+<td class="success">5.646s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldThrowTransactionalIdAuthorizationExceptionWhenNoTransactionAccessOnEndTransaction</td>
+<td class="success">7.164s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldThrowTransactionalIdAuthorizationExceptionWhenNoTransactionAccessOnSendOffsetsToTxn</td>
+<td class="success">7.077s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAuthorizationWithTopicExisting</td>
+<td class="success">1m12.49s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAuthorizationWithTopicNotExisting</td>
+<td class="success">5.459s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testClusterId</td>
+<td class="success">7.540s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCommitWithNoAccess</td>
+<td class="success">7.088s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCommitWithNoGroupAccess</td>
+<td class="success">7.858s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCommitWithNoTopicAccess</td>
+<td class="success">5.833s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCommitWithTopicAndGroupRead</td>
+<td class="success">7.099s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCommitWithTopicDescribe</td>
+<td class="success">6.891s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCommitWithTopicWrite</td>
+<td class="success">5.928s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testConsumeUsingAssignWithNoAccess</td>
+<td class="success">5.875s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testConsumeWithTopicAndGroupRead</td>
+<td class="success">4.793s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testConsumeWithTopicDescribe</td>
+<td class="success">5.731s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testConsumeWithTopicWrite</td>
+<td class="success">5.685s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testConsumeWithoutTopicDescribeAccess</td>
+<td class="success">6.032s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCreatePartitionsWithWildCardAuth</td>
+<td class="success">5.820s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCreatePermissionMetadataRequestAutoCreate</td>
+<td class="success">5.511s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCreatePermissionOnClusterToReadFromNonExistentTopic</td>
+<td class="success">5.898s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCreatePermissionOnClusterToWriteToNonExistentTopic</td>
+<td class="success">5.737s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCreatePermissionOnTopicToReadFromNonExistentTopic</td>
+<td class="success">5.459s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCreatePermissionOnTopicToWriteToNonExistentTopic</td>
+<td class="success">5.472s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCreateTopicAuthorizationWithClusterCreate</td>
+<td class="success">1m6.09s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteGroupApiWithDeleteGroupAcl</td>
+<td class="success">5.765s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteGroupApiWithNoDeleteGroupAcl</td>
+<td class="success">12.593s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteGroupApiWithNoDeleteGroupAcl2</td>
+<td class="success">5.633s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteGroupOffsetsWithAcl</td>
+<td class="success">6.483s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteGroupOffsetsWithDeleteAclWithoutTopicAcl</td>
+<td class="success">5.782s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteGroupOffsetsWithNoAcl</td>
+<td class="success">6.259s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteGroupOffsetsWithoutDeleteAcl</td>
+<td class="success">5.550s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteRecordsWithWildCardAuth</td>
+<td class="success">6.259s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteTopicsWithWildCardAuth</td>
+<td class="success">5.502s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDescribeGroupApiWithGroupDescribe</td>
+<td class="success">5.739s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDescribeGroupApiWithNoGroupAcl</td>
+<td class="success">7.138s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDescribeGroupCliWithGroupDescribe</td>
+<td class="success">5.633s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFetchAllOffsetsTopicAuthorization</td>
+<td class="success">5.549s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFetchFollowerRequest</td>
+<td class="success">5.609s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testIdempotentProducerNoIdempotentWriteAclInInitProducerId</td>
+<td class="success">7.027s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testIdempotentProducerNoIdempotentWriteAclInProduce</td>
+<td class="success">4.447s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testIncrementalAlterConfigsRequestRequiresClusterPermissionForBrokerLogger</td>
+<td class="success">5.813s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testListGroupApiWithAndWithoutListGroupAcls</td>
+<td class="success">5.128s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testListOffsetsWithNoTopicAccess</td>
+<td class="success">5.842s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testListOffsetsWithTopicDescribe</td>
+<td class="success">5.597s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMetadataWithNoTopicAccess</td>
+<td class="success">4.756s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMetadataWithTopicDescribe</td>
+<td class="success">5.791s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testOffsetFetchTopicDescribe</td>
+<td class="success">7.241s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testOffsetFetchWithNoAccess</td>
+<td class="success">5.628s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testOffsetFetchWithNoGroupAccess</td>
+<td class="success">7.621s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testOffsetFetchWithNoTopicAccess</td>
+<td class="success">5.716s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testOffsetFetchWithTopicAndGroupRead</td>
+<td class="success">6.018s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testOffsetsForLeaderEpochClusterPermission</td>
+<td class="success">6.368s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPatternSubscriptionMatchingInternalTopic</td>
+<td class="success">6.133s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPatternSubscriptionMatchingInternalTopicWithDescribeOnlyPermission</td>
+<td class="success">4.693s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPatternSubscriptionNotMatchingInternalTopic</td>
+<td class="success">4.465s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPatternSubscriptionWithNoTopicAccess</td>
+<td class="success">5.780s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPatternSubscriptionWithTopicAndGroupRead</td>
+<td class="success">9.670s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPatternSubscriptionWithTopicDescribeOnlyAndGroupRead</td>
+<td class="success">6.378s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testProduceWithNoTopicAccess</td>
+<td class="success">5.361s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testProduceWithTopicDescribe</td>
+<td class="success">8.845s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testProduceWithTopicRead</td>
+<td class="success">7.050s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testProduceWithTopicWrite</td>
+<td class="success">5.929s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSendOffsetsWithNoConsumerGroupDescribeAccess</td>
+<td class="success">6.122s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSendOffsetsWithNoConsumerGroupWriteAccess</td>
+<td class="success">5.488s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSimpleConsumeWithExplicitSeekAndNoGroupAccess</td>
+<td class="success">6.341s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSimpleConsumeWithOffsetLookupAndNoGroupAccess</td>
+<td class="success">6.287s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testTransactionalProducerInitTransactionsNoDescribeTransactionalIdAcl</td>
+<td class="success">6.523s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testTransactionalProducerInitTransactionsNoWriteTransactionalIdAcl</td>
+<td class="success">6.618s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testTransactionalProducerTopicAuthorizationExceptionInCommit</td>
+<td class="success">4.742s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testTransactionalProducerTopicAuthorizationExceptionInSendCallback</td>
+<td class="success">6.574s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUnauthorizedCreatePartitions</td>
+<td class="success">5.905s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUnauthorizedDeleteRecordsWithDescribe</td>
+<td class="success">5.830s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUnauthorizedDeleteRecordsWithoutDescribe</td>
+<td class="success">6.648s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUnauthorizedDeleteTopicsWithDescribe</td>
+<td class="success">5.345s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUnauthorizedDeleteTopicsWithoutDescribe</td>
+<td class="success">5.656s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>[2020-01-15 10:28:21,697] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=54404,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:54404-127.0.0.1:54406-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:28:22,689] ERROR [Consumer clientId=consumer-my-group-39, groupId=my-group] Offset commit failed on partition topic-0 at offset 5: Topic authorization failed. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1145)
+[2020-01-15 10:28:22,690] ERROR [Consumer clientId=consumer-my-group-39, groupId=my-group] Not authorized to commit to topics [topic] (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1202)
+[2020-01-15 10:28:37,538] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=54629,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:54629-127.0.0.1:54634-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:28:59,060] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=54885,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:54885-127.0.0.1:54887-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:29:04,847] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=54972,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:54972-127.0.0.1:54974-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:29:05,772] ERROR [Producer clientId=producer-26] Topic authorization failed for topics [topic-new] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:29:10,721] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=55074,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:55074-127.0.0.1:55075-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:29:11,667] ERROR [Consumer clientId=consumer-my-group-43, groupId=my-group] Topic authorization failed for topics [newTopic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:29:16,441] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=55156,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:55156-127.0.0.1:55158-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:29:22,055] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=55228,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:55228-127.0.0.1:55230-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:29:24,429] ERROR [KafkaApi-0] Error when handling request: clientId=broker-0-txn-marker-sender, correlationId=0, api=WRITE_TXN_MARKERS, version=0, body={transaction_markers=[{producer_id=0,producer_epoch=0,transaction_result=false,topics=[{topic=topic,partitions=[0]}],coordinator_epoch=0}]} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:55228-127.0.0.1:55239-1, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:29:24,436] ERROR [TransactionCoordinator id=0] Uncaught error in request completion: (org.apache.kafka.clients.NetworkClient:571)
+java.lang.IllegalStateException: Unexpected error org.apache.kafka.common.errors.ClusterAuthorizationException while sending txn marker for transactional.id
+	at kafka.coordinator.transaction.TransactionMarkerRequestCompletionHandler.$anonfun$onComplete$14(TransactionMarkerRequestCompletionHandler.scala:175)
+	at scala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:877)
+	at scala.collection.Iterator.foreach(Iterator.scala:941)
+	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:876)
+	at kafka.coordinator.transaction.TransactionMarkerRequestCompletionHandler.$anonfun$onComplete$12(TransactionMarkerRequestCompletionHandler.scala:133)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at kafka.coordinator.transaction.TransactionMetadata.inLock(TransactionMetadata.scala:188)
+	at kafka.coordinator.transaction.TransactionMarkerRequestCompletionHandler.$anonfun$onComplete$8(TransactionMarkerRequestCompletionHandler.scala:133)
+	at kafka.coordinator.transaction.TransactionMarkerRequestCompletionHandler.$anonfun$onComplete$8$adapted(TransactionMarkerRequestCompletionHandler.scala:92)
+	at scala.collection.Iterator.foreach(Iterator.scala:941)
+	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at kafka.coordinator.transaction.TransactionMarkerRequestCompletionHandler.onComplete(TransactionMarkerRequestCompletionHandler.scala:92)
+	at org.apache.kafka.clients.ClientResponse.onComplete(ClientResponse.java:109)
+	at org.apache.kafka.clients.NetworkClient.completeResponses(NetworkClient.java:569)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:561)
+	at kafka.common.InterBrokerSendThread.doWork(InterBrokerSendThread.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:96)
+[2020-01-15 10:29:28,748] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=55293,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:55293-127.0.0.1:55295-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:29:34,133] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=55406,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:55406-127.0.0.1:55408-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:29:40,529] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=55476,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:55476-127.0.0.1:55478-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:29:47,054] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=55583,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:55583-127.0.0.1:55590-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+
+Error: Consumer group 'my-group' does not exist.
+[2020-01-15 10:29:52,473] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=55681,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:55681-127.0.0.1:55684-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:29:57,168] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=55742,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:55742-127.0.0.1:55744-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:29:58,103] ERROR [Consumer clientId=consumer-my-group-45, groupId=my-group] Topic authorization failed for topics [topic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:30:03,045] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=55870,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:55870-127.0.0.1:55872-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:30:03,887] ERROR [Consumer clientId=consumer-my-group-46, groupId=my-group] Topic authorization failed for topics [topic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:30:08,663] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=55968,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:55968-127.0.0.1:55970-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:30:15,725] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=56078,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:56078-127.0.0.1:56080-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:30:16,563] ERROR [Consumer clientId=consumer-my-group-47, groupId=my-group] Topic authorization failed for topics [topic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:30:21,617] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=56126,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:56126-127.0.0.1:56128-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:30:27,499] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=56282,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:56282-127.0.0.1:56284-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:30:33,639] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=56349,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:56349-127.0.0.1:56353-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:30:39,214] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=56409,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:56409-127.0.0.1:56411-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:30:44,724] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=56501,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:56501-127.0.0.1:56503-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:30:46,102] ERROR [Producer clientId=producer-30] Aborting producer batches due to fatal error (org.apache.kafka.clients.producer.internals.Sender:492)
+org.apache.kafka.common.errors.ClusterAuthorizationException: The producer is not authorized to do idempotent sends
+[2020-01-15 10:30:49,173] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=56564,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:56564-127.0.0.1:56565-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:30:55,660] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=56614,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:56614-127.0.0.1:56616-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:30:56,294] ERROR [Consumer clientId=consumer-my-group-51, groupId=my-group] Topic authorization failed for topics [newTopic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:31:01,163] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=56773,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:56773-127.0.0.1:56775-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:31:05,817] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=56833,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:56833-127.0.0.1:56834-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:31:12,181] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=56899,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:56899-127.0.0.1:56902-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:31:13,124] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=9, api=STOP_REPLICA, version=2, body={controller_id=0,controller_epoch=1,broker_epoch=25,delete_partitions=true,topics=[{name=topic-delete,partition_indexes=[0],_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:56899-127.0.0.1:56902-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:31:17,609] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=56969,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:56969-127.0.0.1:56971-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:31:23,328] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=57044,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:57044-127.0.0.1:57046-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:31:24,183] ERROR [Producer clientId=producer-transactional.id, transactionalId=transactional.id] Aborting producer batches due to fatal error (org.apache.kafka.clients.producer.internals.Sender:492)
+org.apache.kafka.common.errors.TransactionalIdAuthorizationException: Transactional Id authorization failed.
+[2020-01-15 10:31:29,000] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=57113,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:57113-127.0.0.1:57117-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:31:30,045] ERROR [Consumer clientId=consumer-my-group-55, groupId=my-group] Topic authorization failed for topics [topic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:31:34,756] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=57220,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:57220-127.0.0.1:57222-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:31:35,596] ERROR [Producer clientId=producer-34] Topic authorization failed for topics [topic-new] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:31:40,168] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=57270,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:57270-127.0.0.1:57273-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:31:40,804] ERROR [Consumer clientId=consumer-my-group-56, groupId=my-group] Offset commit failed on partition topic-0 at offset 5: Topic authorization failed. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1145)
+[2020-01-15 10:31:40,804] ERROR [Consumer clientId=consumer-my-group-56, groupId=my-group] Not authorized to commit to topics [topic] (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1202)
+[2020-01-15 10:31:46,058] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=57338,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:57338-127.0.0.1:57339-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:31:50,751] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=57381,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:57381-127.0.0.1:57383-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:31:51,584] ERROR [Producer clientId=producer-35] Topic authorization failed for topics [topic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:31:56,195] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=57430,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:57430-127.0.0.1:57432-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:32:02,241] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=57446,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:57446-127.0.0.1:57447-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:32:07,872] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=57471,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:57471-127.0.0.1:57473-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:32:13,542] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=57489,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:57489-127.0.0.1:57491-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:32:19,253] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=57560,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:57560-127.0.0.1:57561-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:32:24,737] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=57619,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:57619-127.0.0.1:57621-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:32:30,330] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=57684,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:57684-127.0.0.1:57686-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:32:31,000] ERROR [Consumer clientId=consumer-other group-60, groupId=other group] Offset commit failed on partition topic-0 at offset 1: Group authorization failed. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1145)
+[2020-01-15 10:32:31,001] ERROR [Consumer clientId=consumer-other group-60, groupId=other group] LeaveGroup request failed with error: Group authorization failed. (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:972)
+[2020-01-15 10:32:35,517] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=57722,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:57722-127.0.0.1:57723-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:32:40,962] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=57785,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:57785-127.0.0.1:57786-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:32:46,956] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=57827,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:57827-127.0.0.1:57828-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:32:51,414] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=57849,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:57849-127.0.0.1:57851-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:32:55,848] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=57882,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:57882-127.0.0.1:57884-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:33:01,691] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=57900,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:57900-127.0.0.1:57902-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:33:08,318] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=57915,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:57915-127.0.0.1:57917-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:33:13,775] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=57928,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:57928-127.0.0.1:57930-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:33:20,264] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=57945,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:57945-127.0.0.1:57947-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:33:27,026] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=57975,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:57975-127.0.0.1:57978-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:33:33,328] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=57990,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:57990-127.0.0.1:57992-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:33:39,652] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=58006,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:58006-127.0.0.1:58008-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:33:46,964] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=58020,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:58020-127.0.0.1:58022-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:33:54,085] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=58035,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:58035-127.0.0.1:58038-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:33:59,848] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=58046,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:58046-127.0.0.1:58048-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:34:05,964] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=58058,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:58058-127.0.0.1:58062-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:34:07,173] ERROR [Consumer clientId=consumer-my-group-68, groupId=my-group] Topic authorization failed for topics [topic] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:34:11,600] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=58075,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:58075-127.0.0.1:58077-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:34:19,225] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=58090,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:58090-127.0.0.1:58092-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:34:26,633] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=58106,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:58106-127.0.0.1:58109-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:34:33,584] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=58125,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:58125-127.0.0.1:58127-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:34:41,473] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=58137,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:58137-127.0.0.1:58138-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:34:47,864] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=58145,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:58145-127.0.0.1:58147-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:34:53,682] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=58156,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:58156-127.0.0.1:58158-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:34:54,723] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=7, api=LEADER_AND_ISR, version=4, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[{topic_name=topic-new,partition_states=[{partition_index=0,controller_epoch=1,leader=0,leader_epoch=0,isr=[0],zk_version=0,replicas=[0],adding_replicas=[],removing_replicas=[],is_new=true,_tagged_fields={}}],_tagged_fields={}}],live_leaders=[{broker_id=0,host_name=localhost,port=58156,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:58156-127.0.0.1:58158-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:34:54,724] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=8, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[{topic_name=topic-new,partition_states=[{partition_index=0,controller_epoch=1,leader=0,leader_epoch=0,isr=[0],zk_version=0,replicas=[0],offline_replicas=[],_tagged_fields={}}],_tagged_fields={}}],live_brokers=[{id=0,endpoints=[{port=58156,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:58156-127.0.0.1:58158-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:35:59,562] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=58254,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:58254-127.0.0.1:58256-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:36:05,633] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=58289,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:58289-127.0.0.1:58291-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:36:06,269] ERROR [Consumer clientId=consumer-my-group-71, groupId=my-group] Offset commit failed on partition topic-0 at offset 5: Topic authorization failed. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1145)
+[2020-01-15 10:36:06,269] ERROR [Consumer clientId=consumer-my-group-71, groupId=my-group] Not authorized to commit to topics [topic] (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1202)
+[2020-01-15 10:36:12,570] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=58315,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:58315-127.0.0.1:58317-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:36:13,247] ERROR [KafkaApi-0] Error when handling request: clientId=client-id, correlationId=19, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=2147483647,broker_epoch=9223372036854775807,topic_states=[{topic_name=topic,partition_states=[{partition_index=0,controller_epoch=2147483647,leader=0,leader_epoch=2147483647,isr=[0],zk_version=2,replicas=[0],offline_replicas=[],_tagged_fields={}}],_tagged_fields={}}],live_brokers=[{id=0,endpoints=[{port=0,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:58315-127.0.0.1:58337-6, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:36:13,249] ERROR [KafkaApi-0] Error when handling request: clientId=client-id, correlationId=20, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=2147483647,broker_epoch=9223372036854775807,topic_states=[{topic_name=topic,partition_states=[{partition_index=0,controller_epoch=2147483647,leader=0,leader_epoch=2147483647,isr=[0],zk_version=2,replicas=[0],offline_replicas=[],_tagged_fields={}}],_tagged_fields={}}],live_brokers=[{id=0,endpoints=[{port=0,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+java.lang.IllegalStateException: Epoch 9223372036854775807 larger than current broker epoch 25
+	at kafka.server.KafkaApis.isBrokerEpochStale(KafkaApis.scala:2952)
+	at kafka.server.KafkaApis.handleUpdateMetadataRequest(KafkaApis.scala:269)
+	at kafka.server.KafkaApis.handle(KafkaApis.scala:134)
+	at kafka.server.KafkaRequestHandler.run(KafkaRequestHandler.scala:70)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-01-15 10:36:13,271] ERROR [KafkaApi-0] Error when handling request: clientId=client-id, correlationId=34, api=LEADER_AND_ISR, version=4, body={controller_id=0,controller_epoch=2147483647,broker_epoch=9223372036854775807,topic_states=[{topic_name=topic,partition_states=[{partition_index=0,controller_epoch=2147483647,leader=0,leader_epoch=2147483647,isr=[0],zk_version=2,replicas=[0],adding_replicas=[],removing_replicas=[],is_new=false,_tagged_fields={}}],_tagged_fields={}}],live_leaders=[{broker_id=0,host_name=localhost,port=0,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:58315-127.0.0.1:58352-11, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:36:13,272] ERROR [KafkaApi-0] Error when handling request: clientId=client-id, correlationId=35, api=LEADER_AND_ISR, version=4, body={controller_id=0,controller_epoch=2147483647,broker_epoch=9223372036854775807,topic_states=[{topic_name=topic,partition_states=[{partition_index=0,controller_epoch=2147483647,leader=0,leader_epoch=2147483647,isr=[0],zk_version=2,replicas=[0],adding_replicas=[],removing_replicas=[],is_new=false,_tagged_fields={}}],_tagged_fields={}}],live_leaders=[{broker_id=0,host_name=localhost,port=0,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+java.lang.IllegalStateException: Epoch 9223372036854775807 larger than current broker epoch 25
+	at kafka.server.KafkaApis.isBrokerEpochStale(KafkaApis.scala:2952)
+	at kafka.server.KafkaApis.handleLeaderAndIsrRequest(KafkaApis.scala:212)
+	at kafka.server.KafkaApis.handle(KafkaApis.scala:132)
+	at kafka.server.KafkaRequestHandler.run(KafkaRequestHandler.scala:70)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-01-15 10:36:13,274] ERROR [KafkaApi-0] Error when handling request: clientId=client-id, correlationId=36, api=CONTROLLED_SHUTDOWN, version=3, body={broker_id=0,broker_epoch=9223372036854775807,_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:58315-127.0.0.1:58354-12, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:37:13,290] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=7, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[{topic_name=topic-delete,partition_states=[{partition_index=0,controller_epoch=1,leader=-2,leader_epoch=0,isr=[0],zk_version=0,replicas=[0],offline_replicas=[0],_tagged_fields={}}],_tagged_fields={}}],live_brokers=[{id=0,endpoints=[{port=58315,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:58315-127.0.0.1:58317-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:37:18,317] ERROR [KafkaApi-0] Error when handling request: clientId=client-id, correlationId=53, api=CREATE_ACLS, version=1, body={creations=[{resource_type=2,resource_name=mytopic,resource_pattern_type=3,principal=Group:testGroup,host=*,operation=4,permission_type=2}]} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=2, connectionId=127.0.0.1:58315-127.0.0.1:58600-17, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:37:18,321] ERROR [KafkaApi-0] Error when handling request: clientId=client-id, correlationId=55, api=DELETE_ACLS, version=1, body={filters=[{resource_type=2,resource_name=null,resource_pattern_type_filter=3,principal=Group:testGroup,host=*,operation=1,permission_type=2}]} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:58315-127.0.0.1:58602-18, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:37:18,325] ERROR [KafkaApi-0] Error when handling request: clientId=client-id, correlationId=57, api=DESCRIBE_ACLS, version=1, body={resource_type=1,resource_name=null,resource_pattern_type_filter=1,principal=null,host=null,operation=1,permission_type=1} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:58315-127.0.0.1:58604-19, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:37:18,360] ERROR [KafkaApi-0] Error when handling request: clientId=client-id, correlationId=76, api=ALTER_PARTITION_REASSIGNMENTS, version=0, body={timeout_ms=60000,topics=[{name=topic,partitions=[{partition_index=0,replicas=null,_tagged_fields={}}],_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:58315-127.0.0.1:58623-25, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:37:18,363] ERROR [KafkaApi-0] Error when handling request: clientId=client-id, correlationId=78, api=LIST_PARTITION_REASSIGNMENTS, version=0, body={timeout_ms=60000,topics=[{name=topic,partition_indexes=[0],_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:58315-127.0.0.1:58625-26, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:37:18,366] ERROR [KafkaApi-0] Error when handling request: clientId=client-id, correlationId=80, api=STOP_REPLICA, version=2, body={controller_id=0,controller_epoch=2147483647,broker_epoch=9223372036854775807,delete_partitions=true,topics=[{name=topic,partition_indexes=[0],_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=2, connectionId=127.0.0.1:58315-127.0.0.1:58627-26, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:37:18,368] ERROR [KafkaApi-0] Error when handling request: clientId=client-id, correlationId=81, api=STOP_REPLICA, version=2, body={controller_id=0,controller_epoch=2147483647,broker_epoch=9223372036854775807,delete_partitions=true,topics=[{name=topic,partition_indexes=[0],_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+java.lang.IllegalStateException: Epoch 9223372036854775807 larger than current broker epoch 25
+	at kafka.server.KafkaApis.isBrokerEpochStale(KafkaApis.scala:2952)
+	at kafka.server.KafkaApis.handleStopReplicaRequest(KafkaApis.scala:230)
+	at kafka.server.KafkaApis.handle(KafkaApis.scala:133)
+	at kafka.server.KafkaRequestHandler.run(KafkaRequestHandler.scala:70)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-01-15 10:37:25,587] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=58640,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:58640-127.0.0.1:58642-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:37:31,630] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=58685,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:58685-127.0.0.1:58687-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:37:37,895] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=58720,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:58720-127.0.0.1:58722-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:37:46,498] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=58753,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:58753-127.0.0.1:58756-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:37:53,551] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=58780,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:58780-127.0.0.1:58782-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:37:59,666] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=58802,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:58802-127.0.0.1:58804-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:38:05,622] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=58848,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:58848-127.0.0.1:58850-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:38:12,949] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=58866,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:58866-127.0.0.1:58869-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:38:19,992] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=58897,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:58897-127.0.0.1:58899-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:38:20,625] ERROR [Producer clientId=producer-45] Aborting producer batches due to fatal error (org.apache.kafka.clients.producer.internals.Sender:492)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Cluster authorization failed.
+[2020-01-15 10:38:20,625] ERROR [Producer clientId=producer-45] Aborting producer batches due to fatal error (org.apache.kafka.clients.producer.internals.Sender:492)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Cluster authorization failed.
+[2020-01-15 10:38:27,112] ERROR [KafkaApi-0] Error when handling request: clientId=0, correlationId=0, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=1,broker_epoch=25,topic_states=[],live_brokers=[{id=0,endpoints=[{port=58927,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=null,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:58927-127.0.0.1:58929-0, session=Session(Group:testGroup,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.2</a> at 2020-1-15 10:48:49</p>
+</div>
+</div>
+</body>
+</html>

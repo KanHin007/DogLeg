@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.ReplicaManagerTest" tests="24" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:26:44" hostname="localhost" time="16.055">
+  <properties/>
+  <testcase name="testPreferredReplicaAsLeader" classname="kafka.server.ReplicaManagerTest" time="0.209"/>
+  <testcase name="testReplicaSelector" classname="kafka.server.ReplicaManagerTest" time="0.016"/>
+  <testcase name="testHighWaterMarkDirectoryMapping" classname="kafka.server.ReplicaManagerTest" time="0.41"/>
+  <testcase name="testBecomeFollowerWhenLeaderIsUnchangedButMissedLeaderUpdate" classname="kafka.server.ReplicaManagerTest" time="0.029"/>
+  <testcase name="testFollowerStateNotUpdatedIfLogReadFails" classname="kafka.server.ReplicaManagerTest" time="0.261"/>
+  <testcase name="testClearFetchPurgatoryOnStopReplica" classname="kafka.server.ReplicaManagerTest" time="0.204"/>
+  <testcase name="testFetchFromLeaderAlwaysAllowed" classname="kafka.server.ReplicaManagerTest" time="0.014"/>
+  <testcase name="testFetchBeyondHighWatermarkReturnEmptyResponse" classname="kafka.server.ReplicaManagerTest" time="0.083"/>
+  <testcase name="testFetchMessagesWhenNotFollowerForOnePartition" classname="kafka.server.ReplicaManagerTest" time="0.037"/>
+  <testcase name="testIllegalRequiredAcks" classname="kafka.server.ReplicaManagerTest" time="0.613"/>
+  <testcase name="testClearPurgatoryOnBecomingFollower" classname="kafka.server.ReplicaManagerTest" time="1.638"/>
+  <testcase name="testFetchFollowerNotAllowedForOlderClients" classname="kafka.server.ReplicaManagerTest" time="0.177"/>
+  <testcase name="testOldLeaderLosesMetricsWhenReassignPartitions" classname="kafka.server.ReplicaManagerTest" time="2.804"/>
+  <testcase name="testClearProducePurgatoryOnStopReplica" classname="kafka.server.ReplicaManagerTest" time="0.542"/>
+  <testcase name="testHighwaterMarkRelativeDirectoryMapping" classname="kafka.server.ReplicaManagerTest" time="0.81"/>
+  <testcase name="testOldFollowerLosesMetricsWhenReassignPartitions" classname="kafka.server.ReplicaManagerTest" time="4.248"/>
+  <testcase name="testUnknownReplicaSelector" classname="kafka.server.ReplicaManagerTest" time="1.08"/>
+  <testcase name="testReceiveOutOfOrderSequenceExceptionWithLogStartOffset" classname="kafka.server.ReplicaManagerTest" time="1.168"/>
+  <testcase name="testBecomeFollowerWhileOldClientFetchInPurgatory" classname="kafka.server.ReplicaManagerTest" time="0.327"/>
+  <testcase name="testPreferredReplicaAsFollower" classname="kafka.server.ReplicaManagerTest" time="0.128"/>
+  <testcase name="testDefaultReplicaSelector" classname="kafka.server.ReplicaManagerTest" time="0.121"/>
+  <testcase name="testBecomeFollowerWhileNewClientFetchInPurgatory" classname="kafka.server.ReplicaManagerTest" time="0.166"/>
+  <testcase name="testReadCommittedFetchLimitedAtLSO" classname="kafka.server.ReplicaManagerTest" time="0.194"/>
+  <testcase name="testDelayedFetchIncludesAbortedTransactions" classname="kafka.server.ReplicaManagerTest" time="0.774"/>
+  <system-out><![CDATA[[2020-01-15 10:26:59,317] ERROR [ReplicaManager broker=0] Error processing append operation on partition test-topic-0 (kafka.server.ReplicaManager:76)
+org.apache.kafka.common.errors.OutOfOrderSequenceException: Out of order sequence number for producerId 234 at offset 3 in partition test-topic-0: 13 (incoming seq. number), 2 (current end sequence number)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

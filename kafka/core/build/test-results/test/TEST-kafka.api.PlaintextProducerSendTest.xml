@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.api.PlaintextProducerSendTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:38:33" hostname="localhost" time="97.093">
+  <properties/>
+  <testcase name="testSendCompressedMessageWithLogAppendTime" classname="kafka.api.PlaintextProducerSendTest" time="7.645"/>
+  <testcase name="testNonBlockingProducer" classname="kafka.api.PlaintextProducerSendTest" time="5.507"/>
+  <testcase name="testAutoCreateTopic" classname="kafka.api.PlaintextProducerSendTest" time="5.847"/>
+  <testcase name="testSendWithInvalidCreateTime" classname="kafka.api.PlaintextProducerSendTest" time="5.9"/>
+  <testcase name="testBatchSizeZero" classname="kafka.api.PlaintextProducerSendTest" time="4.833"/>
+  <testcase name="testWrongSerializer" classname="kafka.api.PlaintextProducerSendTest" time="4.552"/>
+  <testcase name="testSendNonCompressedMessageWithLogAppendTime" classname="kafka.api.PlaintextProducerSendTest" time="4.693"/>
+  <testcase name="testSendNonCompressedMessageWithCreateTime" classname="kafka.api.PlaintextProducerSendTest" time="6.249"/>
+  <testcase name="testClose" classname="kafka.api.PlaintextProducerSendTest" time="5.837"/>
+  <testcase name="testFlush" classname="kafka.api.PlaintextProducerSendTest" time="4.69"/>
+  <testcase name="testSendToPartition" classname="kafka.api.PlaintextProducerSendTest" time="6.607"/>
+  <testcase name="testSendOffset" classname="kafka.api.PlaintextProducerSendTest" time="4.756"/>
+  <testcase name="testSendCompressedMessageWithCreateTime" classname="kafka.api.PlaintextProducerSendTest" time="6.088"/>
+  <testcase name="testCloseWithZeroTimeoutFromCallerThread" classname="kafka.api.PlaintextProducerSendTest" time="8.062"/>
+  <testcase name="testCloseWithZeroTimeoutFromSenderThread" classname="kafka.api.PlaintextProducerSendTest" time="5.775"/>
+  <testcase name="testSendBeforeAndAfterPartitionExpansion" classname="kafka.api.PlaintextProducerSendTest" time="10.052"/>
+  <system-out><![CDATA[[2020-01-15 10:38:33,874] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:38:52,793] ERROR [ReplicaManager broker=0] Error processing append operation on partition topic-0 (kafka.server.ReplicaManager:76)
+org.apache.kafka.common.errors.InvalidTimestampException: One or more records have been rejected due to invalid timestamp
+[2020-01-15 10:38:52,800] ERROR [ReplicaManager broker=0] Error processing append operation on partition topic-0 (kafka.server.ReplicaManager:76)
+org.apache.kafka.common.errors.InvalidTimestampException: One or more records have been rejected due to invalid timestamp
+[2020-01-15 10:39:12,491] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:39:18,772] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:39:40,761] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

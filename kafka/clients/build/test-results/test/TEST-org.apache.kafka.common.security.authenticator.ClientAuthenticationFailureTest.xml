@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.kafka.common.security.authenticator.ClientAuthenticationFailureTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:09:03" hostname="localhost" time="0.67">
+  <properties/>
+  <testcase name="testProducerWithInvalidCredentials" classname="org.apache.kafka.common.security.authenticator.ClientAuthenticationFailureTest" time="0.246"/>
+  <testcase name="testTransactionalProducerWithInvalidCredentials" classname="org.apache.kafka.common.security.authenticator.ClientAuthenticationFailureTest" time="0.124"/>
+  <testcase name="testConsumerWithInvalidCredentials" classname="org.apache.kafka.common.security.authenticator.ClientAuthenticationFailureTest" time="0.161"/>
+  <testcase name="testAdminClientWithInvalidCredentials" classname="org.apache.kafka.common.security.authenticator.ClientAuthenticationFailureTest" time="0.139"/>
+  <system-out><![CDATA[[2020-01-15 10:09:03,391] ERROR [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:56478) failed authentication due to: Authentication failed: Invalid username or password (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:09:03,517] ERROR [Producer clientId=producer-txclient-1, transactionalId=txclient-1] Connection to node -1 (localhost/127.0.0.1:56482) failed authentication due to: Authentication failed: Invalid username or password (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:09:03,677] ERROR [Consumer clientId=consumer-1, groupId=] Connection to node -1 (localhost/127.0.0.1:56484) failed authentication due to: Authentication failed: Invalid username or password (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:09:03,817] ERROR [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:56488) failed authentication due to: Authentication failed: Invalid username or password (org.apache.kafka.clients.NetworkClient:745)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.admin.LeaderElectionCommandTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:12:30" hostname="localhost" time="96.098">
+  <properties/>
+  <testcase name="testAllTopicPartition" classname="kafka.admin.LeaderElectionCommandTest" time="17.349"/>
+  <testcase name="testTopicWithoutPartition" classname="kafka.admin.LeaderElectionCommandTest" time="5.195"/>
+  <testcase name="testPathToJsonFile" classname="kafka.admin.LeaderElectionCommandTest" time="15.049"/>
+  <testcase name="testTopicDoesNotExist" classname="kafka.admin.LeaderElectionCommandTest" time="5.287"/>
+  <testcase name="testPreferredReplicaElection" classname="kafka.admin.LeaderElectionCommandTest" time="16.036"/>
+  <testcase name="testInvalidBroker" classname="kafka.admin.LeaderElectionCommandTest" time="7.295"/>
+  <testcase name="testPartitionWithoutTopic" classname="kafka.admin.LeaderElectionCommandTest" time="5.081"/>
+  <testcase name="testMissingElectionType" classname="kafka.admin.LeaderElectionCommandTest" time="4.811"/>
+  <testcase name="testMissingTopicPartitionSelection" classname="kafka.admin.LeaderElectionCommandTest" time="5.112"/>
+  <testcase name="testTopicPartition" classname="kafka.admin.LeaderElectionCommandTest" time="14.882"/>
+  <system-out><![CDATA[Successfully completed leader election (UNCLEAN) for partitions unclean-topic-0
+Successfully completed leader election (UNCLEAN) for partitions unclean-topic-0
+Error completing leader election (PREFERRED) for partition: unknown-topic-name-0: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: The partition does not exist.
+Successfully completed leader election (PREFERRED) for partitions unclean-topic-0
+[2020-01-15 10:13:24,973] ERROR [RequestSendThread controllerId=0] Controller 0 fails to send a request to broker localhost:58392 (id: 2 rack: null) (kafka.controller.RequestSendThread:76)
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1326)
+	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:277)
+	at kafka.utils.ShutdownableThread.pause(ShutdownableThread.scala:82)
+	at kafka.controller.RequestSendThread.backoff$1(ControllerChannelManager.scala:230)
+	at kafka.controller.RequestSendThread.doWork(ControllerChannelManager.scala:258)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:96)
+Timeout waiting for election results
+Successfully completed leader election (UNCLEAN) for partitions unclean-topic-0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

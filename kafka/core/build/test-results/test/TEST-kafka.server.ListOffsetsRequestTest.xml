@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.ListOffsetsRequestTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:29:30" hostname="localhost" time="24.573">
+  <properties/>
+  <testcase name="testListOffsetsErrorCodes" classname="kafka.server.ListOffsetsRequestTest" time="5.702"/>
+  <testcase name="testCurrentEpochValidation" classname="kafka.server.ListOffsetsRequestTest" time="9.481"/>
+  <testcase name="testResponseIncludesLeaderEpoch" classname="kafka.server.ListOffsetsRequestTest" time="9.39"/>
+  <system-out><![CDATA[[2020-01-15 10:29:31,868] ERROR [KafkaApi-0] Error while responding to offset request (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ReplicaNotAvailableException: Error while fetching partition state for topic-0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

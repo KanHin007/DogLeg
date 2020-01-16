@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.log.LogCleanerIntegrationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:32:58" hostname="localhost" time="2.12">
+  <properties/>
+  <testcase name="testMarksPartitionsAsOfflineAndPopulatesUncleanableMetrics" classname="kafka.log.LogCleanerIntegrationTest" time="0.318"/>
+  <testcase name="testIsThreadFailed" classname="kafka.log.LogCleanerIntegrationTest" time="0.114"/>
+  <testcase name="testMaxLogCompactionLag" classname="kafka.log.LogCleanerIntegrationTest" time="1.688"/>
+  <system-out><![CDATA[[2020-01-15 10:32:58,723] ERROR [kafka-log-cleaner-thread-0]: Error due to (kafka.log.LogCleaner:76)
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedNanos(AbstractQueuedSynchronizer.java:1039)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1328)
+	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:277)
+	at kafka.utils.ShutdownableThread.pause(ShutdownableThread.scala:82)
+	at kafka.log.LogCleaner$CleanerThread.doWork(LogCleaner.scala:304)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:96)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

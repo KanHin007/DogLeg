@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.admin.TopicCommandTest" tests="28" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:12:28" hostname="localhost" time="32.533">
+  <properties/>
+  <testcase name="testAlterPartitionCount" classname="kafka.admin.TopicCommandTest" time="1.568"/>
+  <testcase name="testAlterInternalTopicPartitionCount" classname="kafka.admin.TopicCommandTest" time="1.348"/>
+  <testcase name="testCreateWithNegativeReplicationFactor" classname="kafka.admin.TopicCommandTest" time="0.701"/>
+  <testcase name="testCreateWithInvalidReplicationFactor" classname="kafka.admin.TopicCommandTest" time="1.357"/>
+  <testcase name="testListTopicsWithExcludeInternal" classname="kafka.admin.TopicCommandTest" time="1.114"/>
+  <testcase name="testCreateWithNegativePartitionCount" classname="kafka.admin.TopicCommandTest" time="0.614"/>
+  <testcase name="testCreateIfNotExists" classname="kafka.admin.TopicCommandTest" time="1.014"/>
+  <testcase name="testCreateAlterTopicWithRackAware" classname="kafka.admin.TopicCommandTest" time="0.862"/>
+  <testcase name="testTopicDeletion" classname="kafka.admin.TopicCommandTest" time="1.304"/>
+  <testcase name="testDescribeIfTopicNotExists" classname="kafka.admin.TopicCommandTest" time="1.791"/>
+  <testcase name="testDescribeReportOverriddenConfigs" classname="kafka.admin.TopicCommandTest" time="2.477"/>
+  <testcase name="testListTopicsWithWhitelist" classname="kafka.admin.TopicCommandTest" time="1.926"/>
+  <testcase name="testListTopics" classname="kafka.admin.TopicCommandTest" time="2.075"/>
+  <testcase name="testDeleteInternalTopic" classname="kafka.admin.TopicCommandTest" time="1.25"/>
+  <testcase name="testInvalidTopicLevelConfig" classname="kafka.admin.TopicCommandTest" time="1.724"/>
+  <testcase name="testAlterConfigs" classname="kafka.admin.TopicCommandTest" time="1.176"/>
+  <testcase name="testConfigPreservationAcrossPartitionAlteration" classname="kafka.admin.TopicCommandTest" time="3.038"/>
+  <testcase name="testTopicOperationsWithRegexSymbolInTopicName" classname="kafka.admin.TopicCommandTest" time="0.438"/>
+  <testcase name="testCreateWithConfigs" classname="kafka.admin.TopicCommandTest" time="0.353"/>
+  <testcase name="testAlterIfExists" classname="kafka.admin.TopicCommandTest" time="0.431"/>
+  <testcase name="testDescribeAndListTopicsWithoutInternalTopics" classname="kafka.admin.TopicCommandTest" time="0.445"/>
+  <testcase name="testCreateWithReplicaAssignment" classname="kafka.admin.TopicCommandTest" time="0.58"/>
+  <testcase name="testAlterWithInvalidPartitionCount" classname="kafka.admin.TopicCommandTest" time="0.636"/>
+  <testcase name="testCreate" classname="kafka.admin.TopicCommandTest" time="0.732"/>
+  <testcase name="testDescribeAndListTopicsMarkedForDeletion" classname="kafka.admin.TopicCommandTest" time="0.824"/>
+  <testcase name="testDeleteIfExists" classname="kafka.admin.TopicCommandTest" time="1.322"/>
+  <testcase name="testDescribe" classname="kafka.admin.TopicCommandTest" time="0.675"/>
+  <testcase name="testAlterAssignment" classname="kafka.admin.TopicCommandTest" time="0.754"/>
+  <system-out><![CDATA[WARNING: If partitions are increased for a topic that has a key, the partition logic or ordering of the messages will be affected
+Adding partitions succeeded!
+Created topic testCreateIfNotExists-P24uuCWdnZ.
+Created topic testCreateAlterTopicWithRackAware-8nojJy6wgO.
+WARNING: If partitions are increased for a topic that has a key, the partition logic or ordering of the messages will be affected
+Adding partitions succeeded!
+Created topic testTopicDeletion-iiqtC2phGM.
+Topic testTopicDeletion-iiqtC2phGM is marked for deletion.
+Note: This will have no impact if delete.topic.enable is not set to true.
+WARNING: Due to limitations in metric names, topics with a period ('.') or underscore ('_') could collide. To avoid issues it is best to use either, but not both.
+Created topic __consumer_offsets.
+Created topic testDescribeReportOverriddenConfigs-lQLXnfN9o6.
+Created topic testListTopics-jULaHXxSnm.
+WARNING: Due to limitations in metric names, topics with a period ('.') or underscore ('_') could collide. To avoid issues it is best to use either, but not both.
+Created topic __consumer_offsets.
+Created topic testAlterConfigs-XES0UTwXJ4.
+WARNING: Altering topic configuration from this script has been deprecated and may be removed in future releases.
+         Going forward, please use kafka-configs.sh for this functionality
+Updated config for topic testAlterConfigs-XES0UTwXJ4.
+WARNING: Altering topic configuration from this script has been deprecated and may be removed in future releases.
+         Going forward, please use kafka-configs.sh for this functionality
+Updated config for topic testAlterConfigs-XES0UTwXJ4.
+Created topic testConfigPreservationAcrossPartitionAlteration-fLe0lj1Wfi.
+WARNING: If partitions are increased for a topic that has a key, the partition logic or ordering of the messages will be affected
+Adding partitions succeeded!
+WARNING: Due to limitations in metric names, topics with a period ('.') or underscore ('_') could collide. To avoid issues it is best to use either, but not both.
+Created topic test.topic.
+Created topic test-topic.
+Created topic testCreateWithConfigs-Oax1O6uZcr.
+Created topic testDescribeAndListTopicsWithoutInternalTopics-WhVNFWfiCN.
+WARNING: Due to limitations in metric names, topics with a period ('.') or underscore ('_') could collide. To avoid issues it is best to use either, but not both.
+Created topic __consumer_offsets.
+Created topic testCreateWithReplicaAssignment-fm5G8gVmIb.
+Created topic testAlterWithInvalidPartitionCount-8mBShP3QB2.
+WARNING: If partitions are increased for a topic that has a key, the partition logic or ordering of the messages will be affected
+Created topic testCreate-8FULaDNhrN.
+Created topic testDescribeAndListTopicsMarkedForDeletion-WKZCw9pH18.
+Topic testDescribeAndListTopicsMarkedForDeletion-WKZCw9pH18 is marked for deletion.
+Note: This will have no impact if delete.topic.enable is not set to true.
+WARNING: If partitions are increased for a topic that has a key, the partition logic or ordering of the messages will be affected
+Adding partitions succeeded!
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

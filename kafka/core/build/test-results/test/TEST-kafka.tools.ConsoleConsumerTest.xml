@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.tools.ConsoleConsumerTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:48:12" hostname="localhost" time="0.232">
+  <properties/>
+  <testcase name="shouldLimitReadsToMaxMessageLimit" classname="kafka.tools.ConsoleConsumerTest" time="0.074"/>
+  <testcase name="shouldParseGroupIdFromBeginningGivenTogether" classname="kafka.tools.ConsoleConsumerTest" time="0.004"/>
+  <testcase name="shouldExitOnOffsetWithoutPartition" classname="kafka.tools.ConsoleConsumerTest" time="0.012"/>
+  <testcase name="shouldStopWhenOutputCheckErrorFails" classname="kafka.tools.ConsoleConsumerTest" time="0.1"/>
+  <testcase name="shouldExitOnInvalidConfigWithAutoOffsetResetAndConflictingFromBeginning" classname="kafka.tools.ConsoleConsumerTest" time="0.003"/>
+  <testcase name="shouldResetUnConsumedOffsetsBeforeExit" classname="kafka.tools.ConsoleConsumerTest" time="0.013"/>
+  <testcase name="shouldParseConfigsFromFile" classname="kafka.tools.ConsoleConsumerTest" time="0.002"/>
+  <testcase name="shouldParseValidConsumerConfigWithAutoOffsetResetLatest" classname="kafka.tools.ConsoleConsumerTest" time="0.0"/>
+  <testcase name="groupIdsProvidedInDifferentPlacesMustMatch" classname="kafka.tools.ConsoleConsumerTest" time="0.01"/>
+  <testcase name="shouldParseValidConsumerConfigWithAutoOffsetResetAndMatchingFromBeginning" classname="kafka.tools.ConsoleConsumerTest" time="0.001"/>
+  <testcase name="shouldExitOnGroupIdAndPartitionGivenTogether" classname="kafka.tools.ConsoleConsumerTest" time="0.002"/>
+  <testcase name="shouldExitOnUnrecognizedNewConsumerOption" classname="kafka.tools.ConsoleConsumerTest" time="0.004"/>
+  <testcase name="shouldParseValidSimpleConsumerValidConfigWithNumericOffset" classname="kafka.tools.ConsoleConsumerTest" time="0.001"/>
+  <testcase name="shouldParseValidConsumerConfigWithAutoOffsetResetEarliest" classname="kafka.tools.ConsoleConsumerTest" time="0.001"/>
+  <testcase name="shouldParseValidSimpleConsumerValidConfigWithStringOffset" classname="kafka.tools.ConsoleConsumerTest" time="0.0"/>
+  <testcase name="testCustomPropertyShouldBePassedToConfigureMethod" classname="kafka.tools.ConsoleConsumerTest" time="0.003"/>
+  <testcase name="shouldParseValidConsumerValidConfig" classname="kafka.tools.ConsoleConsumerTest" time="0.001"/>
+  <testcase name="shouldParseValidConsumerConfigWithNoOffsetReset" classname="kafka.tools.ConsoleConsumerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[The partition is required when offset is specified.
+Option                                   Description                            
+------                                   -----------                            
+--bootstrap-server <String: server to    REQUIRED: The server(s) to connect to. 
+  connect to>                                                                   
+--consumer-property <String:             A mechanism to pass user-defined       
+  consumer_prop>                           properties in the form key=value to  
+                                           the consumer.                        
+--consumer.config <String: config file>  Consumer config properties file. Note  
+                                           that [consumer-property] takes       
+                                           precedence over this config.         
+--enable-systest-events                  Log lifecycle events of the consumer   
+                                           in addition to logging consumed      
+                                           messages. (This is specific for      
+                                           system tests.)                       
+--formatter <String: class>              The name of a class to use for         
+                                           formatting kafka messages for        
+                                           display. (default: kafka.tools.      
+                                           DefaultMessageFormatter)             
+--from-beginning                         If the consumer does not already have  
+                                           an established offset to consume     
+                                           from, start with the earliest        
+                                           message present in the log rather    
+                                           than the latest message.             
+--group <String: consumer group id>      The consumer group id of the consumer. 
+--help                                   Print usage information.               
+--isolation-level <String>               Set to read_committed in order to      
+                                           filter out transactional messages    
+                                           which are not committed. Set to      
+                                           read_uncommitted to read all         
+                                           messages. (default: read_uncommitted)
+--key-deserializer <String:                                                     
+  deserializer for key>                                                         
+--max-messages <Integer: num_messages>   The maximum number of messages to      
+                                           consume before exiting. If not set,  
+                                           consumption is continual.            
+--offset <String: consume offset>        The offset id to consume from (a non-  
+                                           negative number), or 'earliest'      
+                                           which means from beginning, or       
+                                           'latest' which means from end        
+                                           (default: latest)                    
+--partition <Integer: partition>         The partition to consume from.         
+                                           Consumption starts from the end of   
+                                           the partition unless '--offset' is   
+                                           specified.                           
+--property <String: prop>                The properties to initialize the       
+                                           message formatter. Default           
+                                           properties include:                  
+                                         	print.timestamp=true|false            
+                                         	print.key=true|false                  
+                                         	print.value=true|false                
+                                         	key.separator=<key.separator>         
+                                         	line.separator=<line.separator>       
+                                         	key.deserializer=<key.deserializer>   
+                                         	value.deserializer=<value.            
+                                           deserializer>                        
+                                         Users can also pass in customized      
+                                           properties for their formatter; more 
+                                           specifically, users can pass in      
+                                           properties keyed with 'key.          
+                                           deserializer.' and 'value.           
+                                           deserializer.' prefixes to configure 
+                                           their deserializers.                 
+--skip-message-on-error                  If there is an error when processing a 
+                                           message, skip it instead of halt.    
+--timeout-ms <Integer: timeout_ms>       If specified, exit if no message is    
+                                           available for consumption for the    
+                                           specified interval.                  
+--topic <String: topic>                  The topic id to consume on.            
+--value-deserializer <String:                                                   
+  deserializer for values>                                                      
+--version                                Display Kafka version.                 
+--whitelist <String: whitelist>          Regular expression specifying          
+                                           whitelist of topics to include for   
+                                           consumption.                         
+Unable to write to standard out, closing consumer.
+Can't simultaneously specify --from-beginning and 'auto.offset.reset=latest', please remove one option
+The group ids provided in different places (directly using '--group', via '--consumer-property', or via '--consumer.config') do not match. Detected group ids: 'group-from-arguments', 'group-from-file', 'group-from-properties'
+Option                                   Description                            
+------                                   -----------                            
+--bootstrap-server <String: server to    REQUIRED: The server(s) to connect to. 
+  connect to>                                                                   
+--consumer-property <String:             A mechanism to pass user-defined       
+  consumer_prop>                           properties in the form key=value to  
+                                           the consumer.                        
+--consumer.config <String: config file>  Consumer config properties file. Note  
+                                           that [consumer-property] takes       
+                                           precedence over this config.         
+--enable-systest-events                  Log lifecycle events of the consumer   
+                                           in addition to logging consumed      
+                                           messages. (This is specific for      
+                                           system tests.)                       
+--formatter <String: class>              The name of a class to use for         
+                                           formatting kafka messages for        
+                                           display. (default: kafka.tools.      
+                                           DefaultMessageFormatter)             
+--from-beginning                         If the consumer does not already have  
+                                           an established offset to consume     
+                                           from, start with the earliest        
+                                           message present in the log rather    
+                                           than the latest message.             
+--group <String: consumer group id>      The consumer group id of the consumer. 
+--help                                   Print usage information.               
+--isolation-level <String>               Set to read_committed in order to      
+                                           filter out transactional messages    
+                                           which are not committed. Set to      
+                                           read_uncommitted to read all         
+                                           messages. (default: read_uncommitted)
+--key-deserializer <String:                                                     
+  deserializer for key>                                                         
+--max-messages <Integer: num_messages>   The maximum number of messages to      
+                                           consume before exiting. If not set,  
+                                           consumption is continual.            
+--offset <String: consume offset>        The offset id to consume from (a non-  
+                                           negative number), or 'earliest'      
+                                           which means from beginning, or       
+                                           'latest' which means from end        
+                                           (default: latest)                    
+--partition <Integer: partition>         The partition to consume from.         
+                                           Consumption starts from the end of   
+                                           the partition unless '--offset' is   
+                                           specified.                           
+--property <String: prop>                The properties to initialize the       
+                                           message formatter. Default           
+                                           properties include:                  
+                                         	print.timestamp=true|false            
+                                         	print.key=true|false                  
+                                         	print.value=true|false                
+                                         	key.separator=<key.separator>         
+                                         	line.separator=<line.separator>       
+                                         	key.deserializer=<key.deserializer>   
+                                         	value.deserializer=<value.            
+                                           deserializer>                        
+                                         Users can also pass in customized      
+                                           properties for their formatter; more 
+                                           specifically, users can pass in      
+                                           properties keyed with 'key.          
+                                           deserializer.' and 'value.           
+                                           deserializer.' prefixes to configure 
+                                           their deserializers.                 
+--skip-message-on-error                  If there is an error when processing a 
+                                           message, skip it instead of halt.    
+--timeout-ms <Integer: timeout_ms>       If specified, exit if no message is    
+                                           available for consumption for the    
+                                           specified interval.                  
+--topic <String: topic>                  The topic id to consume on.            
+--value-deserializer <String:                                                   
+  deserializer for values>                                                      
+--version                                Display Kafka version.                 
+--whitelist <String: whitelist>          Regular expression specifying          
+                                           whitelist of topics to include for   
+                                           consumption.                         
+The group ids provided in different places (directly using '--group', via '--consumer-property', or via '--consumer.config') do not match. Detected group ids: 'group-from-file', 'group-from-properties'
+Option                                   Description                            
+------                                   -----------                            
+--bootstrap-server <String: server to    REQUIRED: The server(s) to connect to. 
+  connect to>                                                                   
+--consumer-property <String:             A mechanism to pass user-defined       
+  consumer_prop>                           properties in the form key=value to  
+                                           the consumer.                        
+--consumer.config <String: config file>  Consumer config properties file. Note  
+                                           that [consumer-property] takes       
+                                           precedence over this config.         
+--enable-systest-events                  Log lifecycle events of the consumer   
+                                           in addition to logging consumed      
+                                           messages. (This is specific for      
+                                           system tests.)                       
+--formatter <String: class>              The name of a class to use for         
+                                           formatting kafka messages for        
+                                           display. (default: kafka.tools.      
+                                           DefaultMessageFormatter)             
+--from-beginning                         If the consumer does not already have  
+                                           an established offset to consume     
+                                           from, start with the earliest        
+                                           message present in the log rather    
+                                           than the latest message.             
+--group <String: consumer group id>      The consumer group id of the consumer. 
+--help                                   Print usage information.               
+--isolation-level <String>               Set to read_committed in order to      
+                                           filter out transactional messages    
+                                           which are not committed. Set to      
+                                           read_uncommitted to read all         
+                                           messages. (default: read_uncommitted)
+--key-deserializer <String:                                                     
+  deserializer for key>                                                         
+--max-messages <Integer: num_messages>   The maximum number of messages to      
+                                           consume before exiting. If not set,  
+                                           consumption is continual.            
+--offset <String: consume offset>        The offset id to consume from (a non-  
+                                           negative number), or 'earliest'      
+                                           which means from beginning, or       
+                                           'latest' which means from end        
+                                           (default: latest)                    
+--partition <Integer: partition>         The partition to consume from.         
+                                           Consumption starts from the end of   
+                                           the partition unless '--offset' is   
+                                           specified.                           
+--property <String: prop>                The properties to initialize the       
+                                           message formatter. Default           
+                                           properties include:                  
+                                         	print.timestamp=true|false            
+                                         	print.key=true|false                  
+                                         	print.value=true|false                
+                                         	key.separator=<key.separator>         
+                                         	line.separator=<line.separator>       
+                                         	key.deserializer=<key.deserializer>   
+                                         	value.deserializer=<value.            
+                                           deserializer>                        
+                                         Users can also pass in customized      
+                                           properties for their formatter; more 
+                                           specifically, users can pass in      
+                                           properties keyed with 'key.          
+                                           deserializer.' and 'value.           
+                                           deserializer.' prefixes to configure 
+                                           their deserializers.                 
+--skip-message-on-error                  If there is an error when processing a 
+                                           message, skip it instead of halt.    
+--timeout-ms <Integer: timeout_ms>       If specified, exit if no message is    
+                                           available for consumption for the    
+                                           specified interval.                  
+--topic <String: topic>                  The topic id to consume on.            
+--value-deserializer <String:                                                   
+  deserializer for values>                                                      
+--version                                Display Kafka version.                 
+--whitelist <String: whitelist>          Regular expression specifying          
+                                           whitelist of topics to include for   
+                                           consumption.                         
+The group ids provided in different places (directly using '--group', via '--consumer-property', or via '--consumer.config') do not match. Detected group ids: 'group-from-arguments', 'group-from-properties'
+Option                                   Description                            
+------                                   -----------                            
+--bootstrap-server <String: server to    REQUIRED: The server(s) to connect to. 
+  connect to>                                                                   
+--consumer-property <String:             A mechanism to pass user-defined       
+  consumer_prop>                           properties in the form key=value to  
+                                           the consumer.                        
+--consumer.config <String: config file>  Consumer config properties file. Note  
+                                           that [consumer-property] takes       
+                                           precedence over this config.         
+--enable-systest-events                  Log lifecycle events of the consumer   
+                                           in addition to logging consumed      
+                                           messages. (This is specific for      
+                                           system tests.)                       
+--formatter <String: class>              The name of a class to use for         
+                                           formatting kafka messages for        
+                                           display. (default: kafka.tools.      
+                                           DefaultMessageFormatter)             
+--from-beginning                         If the consumer does not already have  
+                                           an established offset to consume     
+                                           from, start with the earliest        
+                                           message present in the log rather    
+                                           than the latest message.             
+--group <String: consumer group id>      The consumer group id of the consumer. 
+--help                                   Print usage information.               
+--isolation-level <String>               Set to read_committed in order to      
+                                           filter out transactional messages    
+                                           which are not committed. Set to      
+                                           read_uncommitted to read all         
+                                           messages. (default: read_uncommitted)
+--key-deserializer <String:                                                     
+  deserializer for key>                                                         
+--max-messages <Integer: num_messages>   The maximum number of messages to      
+                                           consume before exiting. If not set,  
+                                           consumption is continual.            
+--offset <String: consume offset>        The offset id to consume from (a non-  
+                                           negative number), or 'earliest'      
+                                           which means from beginning, or       
+                                           'latest' which means from end        
+                                           (default: latest)                    
+--partition <Integer: partition>         The partition to consume from.         
+                                           Consumption starts from the end of   
+                                           the partition unless '--offset' is   
+                                           specified.                           
+--property <String: prop>                The properties to initialize the       
+                                           message formatter. Default           
+                                           properties include:                  
+                                         	print.timestamp=true|false            
+                                         	print.key=true|false                  
+                                         	print.value=true|false                
+                                         	key.separator=<key.separator>         
+                                         	line.separator=<line.separator>       
+                                         	key.deserializer=<key.deserializer>   
+                                         	value.deserializer=<value.            
+                                           deserializer>                        
+                                         Users can also pass in customized      
+                                           properties for their formatter; more 
+                                           specifically, users can pass in      
+                                           properties keyed with 'key.          
+                                           deserializer.' and 'value.           
+                                           deserializer.' prefixes to configure 
+                                           their deserializers.                 
+--skip-message-on-error                  If there is an error when processing a 
+                                           message, skip it instead of halt.    
+--timeout-ms <Integer: timeout_ms>       If specified, exit if no message is    
+                                           available for consumption for the    
+                                           specified interval.                  
+--topic <String: topic>                  The topic id to consume on.            
+--value-deserializer <String:                                                   
+  deserializer for values>                                                      
+--version                                Display Kafka version.                 
+--whitelist <String: whitelist>          Regular expression specifying          
+                                           whitelist of topics to include for   
+                                           consumption.                         
+The group ids provided in different places (directly using '--group', via '--consumer-property', or via '--consumer.config') do not match. Detected group ids: 'group-from-arguments', 'group-from-file'
+Option                                   Description                            
+------                                   -----------                            
+--bootstrap-server <String: server to    REQUIRED: The server(s) to connect to. 
+  connect to>                                                                   
+--consumer-property <String:             A mechanism to pass user-defined       
+  consumer_prop>                           properties in the form key=value to  
+                                           the consumer.                        
+--consumer.config <String: config file>  Consumer config properties file. Note  
+                                           that [consumer-property] takes       
+                                           precedence over this config.         
+--enable-systest-events                  Log lifecycle events of the consumer   
+                                           in addition to logging consumed      
+                                           messages. (This is specific for      
+                                           system tests.)                       
+--formatter <String: class>              The name of a class to use for         
+                                           formatting kafka messages for        
+                                           display. (default: kafka.tools.      
+                                           DefaultMessageFormatter)             
+--from-beginning                         If the consumer does not already have  
+                                           an established offset to consume     
+                                           from, start with the earliest        
+                                           message present in the log rather    
+                                           than the latest message.             
+--group <String: consumer group id>      The consumer group id of the consumer. 
+--help                                   Print usage information.               
+--isolation-level <String>               Set to read_committed in order to      
+                                           filter out transactional messages    
+                                           which are not committed. Set to      
+                                           read_uncommitted to read all         
+                                           messages. (default: read_uncommitted)
+--key-deserializer <String:                                                     
+  deserializer for key>                                                         
+--max-messages <Integer: num_messages>   The maximum number of messages to      
+                                           consume before exiting. If not set,  
+                                           consumption is continual.            
+--offset <String: consume offset>        The offset id to consume from (a non-  
+                                           negative number), or 'earliest'      
+                                           which means from beginning, or       
+                                           'latest' which means from end        
+                                           (default: latest)                    
+--partition <Integer: partition>         The partition to consume from.         
+                                           Consumption starts from the end of   
+                                           the partition unless '--offset' is   
+                                           specified.                           
+--property <String: prop>                The properties to initialize the       
+                                           message formatter. Default           
+                                           properties include:                  
+                                         	print.timestamp=true|false            
+                                         	print.key=true|false                  
+                                         	print.value=true|false                
+                                         	key.separator=<key.separator>         
+                                         	line.separator=<line.separator>       
+                                         	key.deserializer=<key.deserializer>   
+                                         	value.deserializer=<value.            
+                                           deserializer>                        
+                                         Users can also pass in customized      
+                                           properties for their formatter; more 
+                                           specifically, users can pass in      
+                                           properties keyed with 'key.          
+                                           deserializer.' and 'value.           
+                                           deserializer.' prefixes to configure 
+                                           their deserializers.                 
+--skip-message-on-error                  If there is an error when processing a 
+                                           message, skip it instead of halt.    
+--timeout-ms <Integer: timeout_ms>       If specified, exit if no message is    
+                                           available for consumption for the    
+                                           specified interval.                  
+--topic <String: topic>                  The topic id to consume on.            
+--value-deserializer <String:                                                   
+  deserializer for values>                                                      
+--version                                Display Kafka version.                 
+--whitelist <String: whitelist>          Regular expression specifying          
+                                           whitelist of topics to include for   
+                                           consumption.                         
+Options group and partition cannot be specified together.
+Option                                   Description                            
+------                                   -----------                            
+--bootstrap-server <String: server to    REQUIRED: The server(s) to connect to. 
+  connect to>                                                                   
+--consumer-property <String:             A mechanism to pass user-defined       
+  consumer_prop>                           properties in the form key=value to  
+                                           the consumer.                        
+--consumer.config <String: config file>  Consumer config properties file. Note  
+                                           that [consumer-property] takes       
+                                           precedence over this config.         
+--enable-systest-events                  Log lifecycle events of the consumer   
+                                           in addition to logging consumed      
+                                           messages. (This is specific for      
+                                           system tests.)                       
+--formatter <String: class>              The name of a class to use for         
+                                           formatting kafka messages for        
+                                           display. (default: kafka.tools.      
+                                           DefaultMessageFormatter)             
+--from-beginning                         If the consumer does not already have  
+                                           an established offset to consume     
+                                           from, start with the earliest        
+                                           message present in the log rather    
+                                           than the latest message.             
+--group <String: consumer group id>      The consumer group id of the consumer. 
+--help                                   Print usage information.               
+--isolation-level <String>               Set to read_committed in order to      
+                                           filter out transactional messages    
+                                           which are not committed. Set to      
+                                           read_uncommitted to read all         
+                                           messages. (default: read_uncommitted)
+--key-deserializer <String:                                                     
+  deserializer for key>                                                         
+--max-messages <Integer: num_messages>   The maximum number of messages to      
+                                           consume before exiting. If not set,  
+                                           consumption is continual.            
+--offset <String: consume offset>        The offset id to consume from (a non-  
+                                           negative number), or 'earliest'      
+                                           which means from beginning, or       
+                                           'latest' which means from end        
+                                           (default: latest)                    
+--partition <Integer: partition>         The partition to consume from.         
+                                           Consumption starts from the end of   
+                                           the partition unless '--offset' is   
+                                           specified.                           
+--property <String: prop>                The properties to initialize the       
+                                           message formatter. Default           
+                                           properties include:                  
+                                         	print.timestamp=true|false            
+                                         	print.key=true|false                  
+                                         	print.value=true|false                
+                                         	key.separator=<key.separator>         
+                                         	line.separator=<line.separator>       
+                                         	key.deserializer=<key.deserializer>   
+                                         	value.deserializer=<value.            
+                                           deserializer>                        
+                                         Users can also pass in customized      
+                                           properties for their formatter; more 
+                                           specifically, users can pass in      
+                                           properties keyed with 'key.          
+                                           deserializer.' and 'value.           
+                                           deserializer.' prefixes to configure 
+                                           their deserializers.                 
+--skip-message-on-error                  If there is an error when processing a 
+                                           message, skip it instead of halt.    
+--timeout-ms <Integer: timeout_ms>       If specified, exit if no message is    
+                                           available for consumption for the    
+                                           specified interval.                  
+--topic <String: topic>                  The topic id to consume on.            
+--value-deserializer <String:                                                   
+  deserializer for values>                                                      
+--version                                Display Kafka version.                 
+--whitelist <String: whitelist>          Regular expression specifying          
+                                           whitelist of topics to include for   
+                                           consumption.                         
+new-consumer is not a recognized option
+Option                                   Description                            
+------                                   -----------                            
+--bootstrap-server <String: server to    REQUIRED: The server(s) to connect to. 
+  connect to>                                                                   
+--consumer-property <String:             A mechanism to pass user-defined       
+  consumer_prop>                           properties in the form key=value to  
+                                           the consumer.                        
+--consumer.config <String: config file>  Consumer config properties file. Note  
+                                           that [consumer-property] takes       
+                                           precedence over this config.         
+--enable-systest-events                  Log lifecycle events of the consumer   
+                                           in addition to logging consumed      
+                                           messages. (This is specific for      
+                                           system tests.)                       
+--formatter <String: class>              The name of a class to use for         
+                                           formatting kafka messages for        
+                                           display. (default: kafka.tools.      
+                                           DefaultMessageFormatter)             
+--from-beginning                         If the consumer does not already have  
+                                           an established offset to consume     
+                                           from, start with the earliest        
+                                           message present in the log rather    
+                                           than the latest message.             
+--group <String: consumer group id>      The consumer group id of the consumer. 
+--help                                   Print usage information.               
+--isolation-level <String>               Set to read_committed in order to      
+                                           filter out transactional messages    
+                                           which are not committed. Set to      
+                                           read_uncommitted to read all         
+                                           messages. (default: read_uncommitted)
+--key-deserializer <String:                                                     
+  deserializer for key>                                                         
+--max-messages <Integer: num_messages>   The maximum number of messages to      
+                                           consume before exiting. If not set,  
+                                           consumption is continual.            
+--offset <String: consume offset>        The offset id to consume from (a non-  
+                                           negative number), or 'earliest'      
+                                           which means from beginning, or       
+                                           'latest' which means from end        
+                                           (default: latest)                    
+--partition <Integer: partition>         The partition to consume from.         
+                                           Consumption starts from the end of   
+                                           the partition unless '--offset' is   
+                                           specified.                           
+--property <String: prop>                The properties to initialize the       
+                                           message formatter. Default           
+                                           properties include:                  
+                                         	print.timestamp=true|false            
+                                         	print.key=true|false                  
+                                         	print.value=true|false                
+                                         	key.separator=<key.separator>         
+                                         	line.separator=<line.separator>       
+                                         	key.deserializer=<key.deserializer>   
+                                         	value.deserializer=<value.            
+                                           deserializer>                        
+                                         Users can also pass in customized      
+                                           properties for their formatter; more 
+                                           specifically, users can pass in      
+                                           properties keyed with 'key.          
+                                           deserializer.' and 'value.           
+                                           deserializer.' prefixes to configure 
+                                           their deserializers.                 
+--skip-message-on-error                  If there is an error when processing a 
+                                           message, skip it instead of halt.    
+--timeout-ms <Integer: timeout_ms>       If specified, exit if no message is    
+                                           available for consumption for the    
+                                           specified interval.                  
+--topic <String: topic>                  The topic id to consume on.            
+--value-deserializer <String:                                                   
+  deserializer for values>                                                      
+--version                                Display Kafka version.                 
+--whitelist <String: whitelist>          Regular expression specifying          
+                                           whitelist of topics to include for   
+                                           consumption.                         
+]]></system-err>
+</testsuite>

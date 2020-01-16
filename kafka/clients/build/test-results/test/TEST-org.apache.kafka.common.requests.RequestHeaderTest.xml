@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.kafka.common.requests.RequestHeaderTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:08:36" hostname="localhost" time="0.008">
+  <properties/>
+  <testcase name="testSerdeControlledShutdownV0" classname="org.apache.kafka.common.requests.RequestHeaderTest" time="0.006"/>
+  <testcase name="testRequestHeaderV1" classname="org.apache.kafka.common.requests.RequestHeaderTest" time="0.001"/>
+  <testcase name="testRequestHeaderV2" classname="org.apache.kafka.common.requests.RequestHeaderTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

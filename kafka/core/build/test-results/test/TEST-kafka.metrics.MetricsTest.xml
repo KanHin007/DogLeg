@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.metrics.MetricsTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:35:27" hostname="localhost" time="42.834">
+  <properties/>
+  <testcase name="testGeneralBrokerTopicMetricsAreGreedilyRegistered" classname="kafka.metrics.MetricsTest" time="6.408"/>
+  <testcase name="testMetricsReporterAfterDeletingTopic" classname="kafka.metrics.MetricsTest" time="4.778"/>
+  <testcase name="testSessionExpireListenerMetrics" classname="kafka.metrics.MetricsTest" time="5.038"/>
+  <testcase name="testBrokerTopicMetricsUnregisteredAfterDeletingTopic" classname="kafka.metrics.MetricsTest" time="5.556"/>
+  <testcase name="testClusterIdMetric" classname="kafka.metrics.MetricsTest" time="5.175"/>
+  <testcase name="testControllerMetrics" classname="kafka.metrics.MetricsTest" time="4.636"/>
+  <testcase name="testWindowsStyleTagNames" classname="kafka.metrics.MetricsTest" time="4.985"/>
+  <testcase name="testBrokerTopicMetricsBytesInOut" classname="kafka.metrics.MetricsTest" time="6.258"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

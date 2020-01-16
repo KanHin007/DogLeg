@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.coordinator.transaction.TransactionStateManagerTest" tests="25" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:21:07" hostname="localhost" time="0.222">
+  <properties/>
+  <testcase name="testAppendTransactionToLogWhileProducerFenced" classname="kafka.coordinator.transaction.TransactionStateManagerTest" time="0.044"/>
+  <testcase name="testCompleteTransitionWhenAppendSucceeded" classname="kafka.coordinator.transaction.TransactionStateManagerTest" time="0.006"/>
+  <testcase name="testAppendFailToCoordinatorNotAvailableError" classname="kafka.coordinator.transaction.TransactionStateManagerTest" time="0.003"/>
+  <testcase name="testLoadTransactionMetadataWithCorruptedLog" classname="kafka.coordinator.transaction.TransactionStateManagerTest" time="0.028"/>
+  <testcase name="testAppendFailToUnknownError" classname="kafka.coordinator.transaction.TransactionStateManagerTest" time="0.001"/>
+  <testcase name="shouldReturnNotCooridnatorErrorIfTransactionIdPartitionNotOwned" classname="kafka.coordinator.transaction.TransactionStateManagerTest" time="0.001"/>
+  <testcase name="testValidateTransactionTimeout" classname="kafka.coordinator.transaction.TransactionStateManagerTest" time="0.001"/>
+  <testcase name="shouldWriteTxnMarkersForTransactionInPreparedCommitState" classname="kafka.coordinator.transaction.TransactionStateManagerTest" time="0.014"/>
+  <testcase name="shouldOnlyConsiderTransactionsInTheOngoingStateToAbort" classname="kafka.coordinator.transaction.TransactionStateManagerTest" time="0.004"/>
+  <testcase name="shouldRemoveCompleteAbortExpiredTransactionalIds" classname="kafka.coordinator.transaction.TransactionStateManagerTest" time="0.045"/>
+  <testcase name="testPartitionLoadMetric" classname="kafka.coordinator.transaction.TransactionStateManagerTest" time="0.011"/>
+  <testcase name="testAppendTransactionToLogWhilePendingStateChanged" classname="kafka.coordinator.transaction.TransactionStateManagerTest" time="0.037"/>
+  <testcase name="testLoadAndRemoveTransactionsForPartition" classname="kafka.coordinator.transaction.TransactionStateManagerTest" time="0.003"/>
+  <testcase name="testAppendFailToNotCoordinatorError" classname="kafka.coordinator.transaction.TransactionStateManagerTest" time="0.004"/>
+  <testcase name="shouldNotRemovePrepareCommitTransactionalIds" classname="kafka.coordinator.transaction.TransactionStateManagerTest" time="0.0"/>
+  <testcase name="testAppendFailToCoordinatorLoadingError" classname="kafka.coordinator.transaction.TransactionStateManagerTest" time="0.003"/>
+  <testcase name="shouldNotRemoveOngoingTransactionalIds" classname="kafka.coordinator.transaction.TransactionStateManagerTest" time="0.0"/>
+  <testcase name="testAddGetPids" classname="kafka.coordinator.transaction.TransactionStateManagerTest" time="0.001"/>
+  <testcase name="shouldWriteTxnMarkersForTransactionInPreparedAbortState" classname="kafka.coordinator.transaction.TransactionStateManagerTest" time="0.001"/>
+  <testcase name="shouldRemoveEmptyExpiredTransactionalIds" classname="kafka.coordinator.transaction.TransactionStateManagerTest" time="0.001"/>
+  <testcase name="testPendingStateNotResetOnRetryAppend" classname="kafka.coordinator.transaction.TransactionStateManagerTest" time="0.002"/>
+  <testcase name="shouldNotRemoveExpiredTransactionalIdsIfLogAppendFails" classname="kafka.coordinator.transaction.TransactionStateManagerTest" time="0.001"/>
+  <testcase name="shouldNotRemovePrepareAbortTransactionalIds" classname="kafka.coordinator.transaction.TransactionStateManagerTest" time="0.001"/>
+  <testcase name="shouldRemoveCompleteCommmitExpiredTransactionalIds" classname="kafka.coordinator.transaction.TransactionStateManagerTest" time="0.001"/>
+  <testcase name="testSuccessfulReimmigration" classname="kafka.coordinator.transaction.TransactionStateManagerTest" time="0.006"/>
+  <system-out><![CDATA[[2020-01-15 10:21:07,957] ERROR TransactionMetadata(transactionalId=one, producerId=1, producerEpoch=0, txnTimeoutMs=1000, state=Empty, pendingState=None, topicPartitions=Set(), txnStartTimestamp=1579054867920, txnLastUpdateTimestamp=1579054867920)'s transition to TxnTransitMetadata(producerId=1, lastProducerId=1, producerEpoch=0, lastProducerEpoch=-1, txnTimeoutMs=1000, txnState=Ongoing, topicPartitions=Set(topic1-1, topic1-0), txnStartTimestamp=1579054867920, txnLastUpdateTimestamp=1579054867920) failed since pendingState is not defined: this should not happen (kafka.coordinator.transaction.TransactionMetadata:143)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

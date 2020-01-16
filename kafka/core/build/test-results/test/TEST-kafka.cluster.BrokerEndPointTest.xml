@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.cluster.BrokerEndPointTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:28:34" hostname="localhost" time="0.004">
+  <properties/>
+  <testcase name="testEndpointFromUri" classname="kafka.cluster.BrokerEndPointTest" time="0.001"/>
+  <testcase name="testHashAndEquals" classname="kafka.cluster.BrokerEndPointTest" time="0.0"/>
+  <testcase name="testFromJsonV4WithNoRack" classname="kafka.cluster.BrokerEndPointTest" time="0.001"/>
+  <testcase name="testFromJsonFutureVersion" classname="kafka.cluster.BrokerEndPointTest" time="0.0"/>
+  <testcase name="testFromJsonV4WithNullRack" classname="kafka.cluster.BrokerEndPointTest" time="0.001"/>
+  <testcase name="testBrokerEndpointFromUri" classname="kafka.cluster.BrokerEndPointTest" time="0.0"/>
+  <testcase name="testFromJsonV1" classname="kafka.cluster.BrokerEndPointTest" time="0.0"/>
+  <testcase name="testFromJsonV2" classname="kafka.cluster.BrokerEndPointTest" time="0.0"/>
+  <testcase name="testFromJsonV3" classname="kafka.cluster.BrokerEndPointTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

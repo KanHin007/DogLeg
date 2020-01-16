@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class kafka.tools.ConsoleProducerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class kafka.tools.ConsoleProducerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/kafka.tools.html">kafka.tools</a> &gt; ConsoleProducerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.026s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testInvalidConfigs</td>
+<td class="success">0.015s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testParseKeyProp</td>
+<td class="success">0.010s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testValidConfigs</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>t is not a recognized option
+Option                                   Description                            
+------                                   -----------                            
+--batch-size &lt;Integer: size&gt;             Number of messages to send in a single 
+                                           batch if they are not being sent     
+                                           synchronously. (default: 200)        
+--broker-list &lt;String: broker-list&gt;      REQUIRED: The broker list string in    
+                                           the form HOST1:PORT1,HOST2:PORT2.    
+--compression-codec [String:             The compression codec: either 'none',  
+  compression-codec]                       'gzip', 'snappy', 'lz4', or 'zstd'.  
+                                           If specified without value, then it  
+                                           defaults to 'gzip'                   
+--help                                   Print usage information.               
+--line-reader &lt;String: reader_class&gt;     The class name of the class to use for 
+                                           reading lines from standard in. By   
+                                           default each line is read as a       
+                                           separate message. (default: kafka.   
+                                           tools.                               
+                                           ConsoleProducer$LineMessageReader)   
+--max-block-ms &lt;Long: max block on       The max time that the producer will    
+  send&gt;                                    block for during a send request      
+                                           (default: 60000)                     
+--max-memory-bytes &lt;Long: total memory   The total memory used by the producer  
+  in bytes&gt;                                to buffer records waiting to be sent 
+                                           to the server. (default: 33554432)   
+--max-partition-memory-bytes &lt;Long:      The buffer size allocated for a        
+  memory in bytes per partition&gt;           partition. When records are received 
+                                           which are smaller than this size the 
+                                           producer will attempt to             
+                                           optimistically group them together   
+                                           until this size is reached.          
+                                           (default: 16384)                     
+--message-send-max-retries &lt;Integer&gt;     Brokers can fail receiving the message 
+                                           for multiple reasons, and being      
+                                           unavailable transiently is just one  
+                                           of them. This property specifies the 
+                                           number of retires before the         
+                                           producer give up and drop this       
+                                           message. (default: 3)                
+--metadata-expiry-ms &lt;Long: metadata     The period of time in milliseconds     
+  expiration interval&gt;                     after which we force a refresh of    
+                                           metadata even if we haven't seen any 
+                                           leadership changes. (default: 300000)
+--producer-property &lt;String:             A mechanism to pass user-defined       
+  producer_prop&gt;                           properties in the form key=value to  
+                                           the producer.                        
+--producer.config &lt;String: config file&gt;  Producer config properties file. Note  
+                                           that [producer-property] takes       
+                                           precedence over this config.         
+--property &lt;String: prop&gt;                A mechanism to pass user-defined       
+                                           properties in the form key=value to  
+                                           the message reader. This allows      
+                                           custom configuration for a user-     
+                                           defined message reader. Default      
+                                           properties include:                  
+                                         	parse.key=true|false                  
+                                         	key.separator=&lt;key.separator&gt;         
+                                         	ignore.error=true|false               
+--request-required-acks &lt;String:         The required acks of the producer      
+  request required acks&gt;                   requests (default: 1)                
+--request-timeout-ms &lt;Integer: request   The ack timeout of the producer        
+  timeout ms&gt;                              requests. Value must be non-negative 
+                                           and non-zero (default: 1500)         
+--retry-backoff-ms &lt;Integer&gt;             Before each retry, the producer        
+                                           refreshes the metadata of relevant   
+                                           topics. Since leader election takes  
+                                           a bit of time, this property         
+                                           specifies the amount of time that    
+                                           the producer waits before refreshing 
+                                           the metadata. (default: 100)         
+--socket-buffer-size &lt;Integer: size&gt;     The size of the tcp RECV size.         
+                                           (default: 102400)                    
+--sync                                   If set message send requests to the    
+                                           brokers are synchronously, one at a  
+                                           time as they arrive.                 
+--timeout &lt;Integer: timeout_ms&gt;          If set and the producer is running in  
+                                           asynchronous mode, this gives the    
+                                           maximum amount of time a message     
+                                           will queue awaiting sufficient batch 
+                                           size. The value is given in ms.      
+                                           (default: 1000)                      
+--topic &lt;String: topic&gt;                  REQUIRED: The topic id to produce      
+                                           messages to.                         
+--version                                Display Kafka version.                 
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.2</a> at 2020-1-15 10:48:49</p>
+</div>
+</div>
+</body>
+</html>

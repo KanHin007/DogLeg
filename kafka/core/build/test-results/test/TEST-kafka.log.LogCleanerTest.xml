@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.log.LogCleanerTest" tests="39" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:27:42" hostname="localhost" time="23.023">
+  <properties/>
+  <testcase name="testCleanCorruptMessageSet" classname="kafka.log.LogCleanerTest" time="2.137"/>
+  <testcase name="testAbortedTransactionSpanningSegments" classname="kafka.log.LogCleanerTest" time="1.275"/>
+  <testcase name="testLogCleanerRetainsLastSequenceEvenIfTransactionAborted" classname="kafka.log.LogCleanerTest" time="1.055"/>
+  <testcase name="testBuildOffsetMap" classname="kafka.log.LogCleanerTest" time="7.677"/>
+  <testcase name="testAbortMarkerRemoval" classname="kafka.log.LogCleanerTest" time="0.022"/>
+  <testcase name="testBuildOffsetMapFakeLarge" classname="kafka.log.LogCleanerTest" time="0.008"/>
+  <testcase name="testSegmentGrouping" classname="kafka.log.LogCleanerTest" time="0.028"/>
+  <testcase name="testCorruptMessageSizeLargerThanBytesAvailable" classname="kafka.log.LogCleanerTest" time="1.412"/>
+  <testcase name="testSizeTrimmedForPreallocatedAndCompactedTopic" classname="kafka.log.LogCleanerTest" time="0.015"/>
+  <testcase name="testCommitMarkerRetentionWithEmptyBatch" classname="kafka.log.LogCleanerTest" time="0.115"/>
+  <testcase name="testLogCleanerRetainsProducerLastSequence" classname="kafka.log.LogCleanerTest" time="0.007"/>
+  <testcase name="testCleanSegmentsWithAbort" classname="kafka.log.LogCleanerTest" time="0.014"/>
+  <testcase name="testDeletedBatchesWithNoMessagesRead" classname="kafka.log.LogCleanerTest" time="0.012"/>
+  <testcase name="testSegmentGroupingWithSparseOffsets" classname="kafka.log.LogCleanerTest" time="0.008"/>
+  <testcase name="testLargeMessage" classname="kafka.log.LogCleanerTest" time="1.574"/>
+  <testcase name="testCleanEmptyControlBatch" classname="kafka.log.LogCleanerTest" time="0.086"/>
+  <testcase name="testRecoveryAfterCrash" classname="kafka.log.LogCleanerTest" time="0.775"/>
+  <testcase name="testCleanTombstone" classname="kafka.log.LogCleanerTest" time="1.183"/>
+  <testcase name="testDuplicateCheckAfterCleaning" classname="kafka.log.LogCleanerTest" time="0.614"/>
+  <testcase name="testAbortMarkerRetentionWithEmptyBatch" classname="kafka.log.LogCleanerTest" time="0.189"/>
+  <testcase name="testCleaningWithUncleanableSection" classname="kafka.log.LogCleanerTest" time="0.028"/>
+  <testcase name="testLogToClean" classname="kafka.log.LogCleanerTest" time="0.014"/>
+  <testcase name="testCleaningWithDeletes" classname="kafka.log.LogCleanerTest" time="0.036"/>
+  <testcase name="testClientHandlingOfCorruptMessageSet" classname="kafka.log.LogCleanerTest" time="0.047"/>
+  <testcase name="testCleanWithTransactionsSpanningSegments" classname="kafka.log.LogCleanerTest" time="0.019"/>
+  <testcase name="testEmptyBatchRemovalWithSequenceReuse" classname="kafka.log.LogCleanerTest" time="0.016"/>
+  <testcase name="testCommittedTransactionSpanningSegments" classname="kafka.log.LogCleanerTest" time="0.015"/>
+  <testcase name="testMessageLargerThanMaxMessageSize" classname="kafka.log.LogCleanerTest" time="2.159"/>
+  <testcase name="testMessageLargerThanMaxMessageSizeWithCorruptHeader" classname="kafka.log.LogCleanerTest" time="2.245"/>
+  <testcase name="testCleanSegments" classname="kafka.log.LogCleanerTest" time="0.032"/>
+  <testcase name="testBasicTransactionAwareCleaning" classname="kafka.log.LogCleanerTest" time="0.025"/>
+  <testcase name="testSegmentGroupingFollowingLoadOfZeroIndex" classname="kafka.log.LogCleanerTest" time="0.008"/>
+  <testcase name="testLogToCleanWithUncleanableSection" classname="kafka.log.LogCleanerTest" time="0.021"/>
+  <testcase name="testBuildPartialOffsetMap" classname="kafka.log.LogCleanerTest" time="0.011"/>
+  <testcase name="testCleaningWithUnkeyedMessages" classname="kafka.log.LogCleanerTest" time="0.02"/>
+  <testcase name="testSegmentWithOffsetOverflow" classname="kafka.log.LogCleanerTest" time="0.052"/>
+  <testcase name="testPartialSegmentClean" classname="kafka.log.LogCleanerTest" time="0.018"/>
+  <testcase name="testCommitMarkerRemoval" classname="kafka.log.LogCleanerTest" time="0.036"/>
+  <testcase name="testCleanSegmentsWithConcurrentSegmentDeletion" classname="kafka.log.LogCleanerTest" time="0.014"/>
+  <system-out><![CDATA[[2020-01-15 10:27:58,173] ERROR [Log partition=kafka-563031, dir=/var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka-2424505222220646759] Could not find offset index file corresponding to log file /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka-2424505222220646759/kafka-563031/00000000000000000000.log, recovering segment and rebuilding index files... (kafka.log.Log:74)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

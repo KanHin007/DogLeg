@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class kafka.api.SslAdminIntegrationTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class kafka.api.SslAdminIntegrationTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/kafka.api.html">kafka.api</a> &gt; SslAdminIntegrationTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">14</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2m17.78s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testAclAuthorizationDenied</td>
+<td class="success">8.690s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAclDelete</td>
+<td class="success">7.845s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAclDescribe</td>
+<td class="success">7.080s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAclOperations</td>
+<td class="success">8.775s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAclOperations2</td>
+<td class="success">7.777s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAclUpdatesUsingAsynchronousAuthorizer</td>
+<td class="success">7.690s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAclUpdatesUsingSynchronousAuthorizer</td>
+<td class="success">9.115s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAsynchronousAuthorizerAclUpdatesDontBlockRequestThreads</td>
+<td class="success">13.652s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAttemptToCreateInvalidAcls</td>
+<td class="success">8.748s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAuthorizedOperations</td>
+<td class="success">6.940s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCreateDeleteTopics</td>
+<td class="success">9.685s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCreateTopicsResponseMetadataAndConfig</td>
+<td class="success">9.504s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testLegacyAclOpsNeverAffectOrReturnPrefixed</td>
+<td class="success">7.755s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSynchronousAuthorizerAclUpdatesBlockRequestThreads</td>
+<td class="success">24.528s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>[2020-01-15 10:30:57,494] ERROR [KafkaApi-2] Error when handling request: clientId=adminclient-192, correlationId=4, api=CREATE_ACLS, version=1, body={creations=[{resource_type=2,resource_name=foobar,resource_pattern_type=3,principal=User:ANONYMOUS,host=*,operation=3,permission_type=3},{resource_type=5,resource_name=transactional_id,resource_pattern_type=3,principal=User:ANONYMOUS,host=*,operation=4,permission_type=3}]} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:56627-127.0.0.1:56691-0, session=Session(User:ANONYMOUS,/127.0.0.1), listenerName=ListenerName(SSL), securityProtocol=SSL, buffer=null) is not authorized.
+[2020-01-15 10:30:57,496] ERROR [KafkaApi-2] Error when handling request: clientId=adminclient-192, correlationId=5, api=DELETE_ACLS, version=1, body={filters=[{resource_type=2,resource_name=foobar,resource_pattern_type_filter=3,principal=User:ANONYMOUS,host=*,operation=3,permission_type=3},{resource_type=5,resource_name=transactional_id,resource_pattern_type_filter=3,principal=User:ANONYMOUS,host=*,operation=4,permission_type=3}]} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:56627-127.0.0.1:56691-0, session=Session(User:ANONYMOUS,/127.0.0.1), listenerName=ListenerName(SSL), securityProtocol=SSL, buffer=null) is not authorized.
+[2020-01-15 10:30:57,602] ERROR [KafkaApi-2] Error when handling request: clientId=adminclient-192, correlationId=7, api=DESCRIBE_ACLS, version=1, body={resource_type=2,resource_name=*,resource_pattern_type_filter=3,principal=User:*,host=*,operation=2,permission_type=3} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:56627-127.0.0.1:56691-0, session=Session(User:ANONYMOUS,/127.0.0.1), listenerName=ListenerName(SSL), securityProtocol=SSL, buffer=null) is not authorized.
+[2020-01-15 10:30:57,604] ERROR [KafkaApi-2] Error when handling request: clientId=adminclient-192, correlationId=8, api=CREATE_ACLS, version=1, body={creations=[{resource_type=2,resource_name=foobar,resource_pattern_type=3,principal=User:ANONYMOUS,host=*,operation=3,permission_type=3},{resource_type=5,resource_name=transactional_id,resource_pattern_type=3,principal=User:ANONYMOUS,host=*,operation=4,permission_type=3}]} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:56627-127.0.0.1:56691-0, session=Session(User:ANONYMOUS,/127.0.0.1), listenerName=ListenerName(SSL), securityProtocol=SSL, buffer=null) is not authorized.
+[2020-01-15 10:30:57,605] ERROR [KafkaApi-2] Error when handling request: clientId=adminclient-192, correlationId=9, api=DELETE_ACLS, version=1, body={filters=[{resource_type=2,resource_name=foobar,resource_pattern_type_filter=3,principal=User:ANONYMOUS,host=*,operation=3,permission_type=3},{resource_type=5,resource_name=transactional_id,resource_pattern_type_filter=3,principal=User:ANONYMOUS,host=*,operation=4,permission_type=3}]} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:56627-127.0.0.1:56691-0, session=Session(User:ANONYMOUS,/127.0.0.1), listenerName=ListenerName(SSL), securityProtocol=SSL, buffer=null) is not authorized.
+[2020-01-15 10:30:57,725] ERROR [KafkaApi-2] Error when handling request: clientId=adminclient-192, correlationId=18, api=DESCRIBE_ACLS, version=1, body={resource_type=2,resource_name=*,resource_pattern_type_filter=3,principal=User:*,host=*,operation=2,permission_type=3} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:56627-127.0.0.1:56691-0, session=Session(User:ANONYMOUS,/127.0.0.1), listenerName=ListenerName(SSL), securityProtocol=SSL, buffer=null) is not authorized.
+[2020-01-15 10:30:57,725] ERROR [KafkaApi-2] Error when handling request: clientId=adminclient-192, correlationId=19, api=CREATE_ACLS, version=1, body={creations=[{resource_type=2,resource_name=foobar,resource_pattern_type=3,principal=User:ANONYMOUS,host=*,operation=3,permission_type=3},{resource_type=5,resource_name=transactional_id,resource_pattern_type=3,principal=User:ANONYMOUS,host=*,operation=4,permission_type=3}]} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:56627-127.0.0.1:56691-0, session=Session(User:ANONYMOUS,/127.0.0.1), listenerName=ListenerName(SSL), securityProtocol=SSL, buffer=null) is not authorized.
+[2020-01-15 10:30:57,726] ERROR [KafkaApi-2] Error when handling request: clientId=adminclient-192, correlationId=20, api=DELETE_ACLS, version=1, body={filters=[{resource_type=2,resource_name=foobar,resource_pattern_type_filter=3,principal=User:ANONYMOUS,host=*,operation=3,permission_type=3},{resource_type=5,resource_name=transactional_id,resource_pattern_type_filter=3,principal=User:ANONYMOUS,host=*,operation=4,permission_type=3}]} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:56627-127.0.0.1:56691-0, session=Session(User:ANONYMOUS,/127.0.0.1), listenerName=ListenerName(SSL), securityProtocol=SSL, buffer=null) is not authorized.
+[2020-01-15 10:30:57,728] ERROR [KafkaApi-2] Error when handling request: clientId=adminclient-192, correlationId=21, api=DESCRIBE_ACLS, version=1, body={resource_type=2,resource_name=*,resource_pattern_type_filter=3,principal=User:*,host=*,operation=2,permission_type=3} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:56627-127.0.0.1:56691-0, session=Session(User:ANONYMOUS,/127.0.0.1), listenerName=ListenerName(SSL), securityProtocol=SSL, buffer=null) is not authorized.
+[2020-01-15 10:30:57,829] ERROR [KafkaApi-2] Error when handling request: clientId=adminclient-192, correlationId=23, api=CREATE_ACLS, version=1, body={creations=[{resource_type=2,resource_name=foobar,resource_pattern_type=3,principal=User:ANONYMOUS,host=*,operation=3,permission_type=3},{resource_type=5,resource_name=transactional_id,resource_pattern_type=3,principal=User:ANONYMOUS,host=*,operation=4,permission_type=3}]} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:56627-127.0.0.1:56691-0, session=Session(User:ANONYMOUS,/127.0.0.1), listenerName=ListenerName(SSL), securityProtocol=SSL, buffer=null) is not authorized.
+[2020-01-15 10:30:57,830] ERROR [KafkaApi-2] Error when handling request: clientId=adminclient-192, correlationId=24, api=DELETE_ACLS, version=1, body={filters=[{resource_type=2,resource_name=foobar,resource_pattern_type_filter=3,principal=User:ANONYMOUS,host=*,operation=3,permission_type=3},{resource_type=5,resource_name=transactional_id,resource_pattern_type_filter=3,principal=User:ANONYMOUS,host=*,operation=4,permission_type=3}]} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:56627-127.0.0.1:56691-0, session=Session(User:ANONYMOUS,/127.0.0.1), listenerName=ListenerName(SSL), securityProtocol=SSL, buffer=null) is not authorized.
+[2020-01-15 10:31:31,710] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition mytopic2-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.2</a> at 2020-1-15 10:48:49</p>
+</div>
+</div>
+</body>
+</html>

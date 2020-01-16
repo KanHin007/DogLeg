@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class kafka.security.auth.SimpleAclAuthorizerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class kafka.security.auth.SimpleAclAuthorizerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/kafka.security.auth.html">kafka.security.auth</a> &gt; SimpleAclAuthorizerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">36</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1m1.23s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testAccessAllowedIfAllowAclExistsOnPrefixedResource</td>
+<td class="success">0.954s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAccessAllowedIfAllowAclExistsOnWildcardResource</td>
+<td class="success">2.705s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAclInheritance</td>
+<td class="success">1.394s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAclManagementAPIs</td>
+<td class="success">2.482s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAddAclsOnLiteralResource</td>
+<td class="success">1.257s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAddAclsOnPrefiexedResource</td>
+<td class="success">1.524s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAddAclsOnWildcardResource</td>
+<td class="success">0.961s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAllowAccessWithCustomPrincipal</td>
+<td class="success">1.018s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAllowAllAccess</td>
+<td class="success">3.039s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAuthorizeThrowsOnNonLiteralResource</td>
+<td class="success">1.807s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAuthorizeWithEmptyResourceName</td>
+<td class="success">1.062s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAuthorizeWithPrefixedResource</td>
+<td class="success">1.690s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteAclOnPrefixedResource</td>
+<td class="success">1.365s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteAclOnWildcardResource</td>
+<td class="success">2.615s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteAllAclOnPrefixedResource</td>
+<td class="success">1.924s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteAllAclOnWildcardResource</td>
+<td class="success">1.027s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDenyTakesPrecedence</td>
+<td class="success">2.487s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDistributedConcurrentModificationOfResourceAcls</td>
+<td class="success">2.876s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEmptyAclThrowsException</td>
+<td class="success">2.219s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetAclsPrincipal</td>
+<td class="success">1.841s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testHighConcurrencyDeletionOfResourceAcls</td>
+<td class="success">3.192s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testHighConcurrencyModificationOfResourceAcls</td>
+<td class="success">2.530s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testLoadCache</td>
+<td class="success">1.866s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testLocalConcurrentModificationOfResourceAcls</td>
+<td class="success">0.832s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testNoAclFound</td>
+<td class="success">1.274s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testNoAclFoundOverride</td>
+<td class="success">1.485s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSingleCharacterResourceAcls</td>
+<td class="success">0.942s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSuperUserHasAccess</td>
+<td class="success">1.557s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSuperUserWithCustomPrincipalHasAccess</td>
+<td class="success">0.986s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testThrowsOnAddPrefixedAclIfInterBrokerProtocolVersionTooLow</td>
+<td class="success">1.372s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testTopicAcl</td>
+<td class="success">2.751s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testWildCardAcls</td>
+<td class="success">0.958s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testWritesExtendedAclChangeEventIfInterBrokerProtocolNotSet</td>
+<td class="success">1.329s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testWritesExtendedAclChangeEventWhenInterBrokerProtocolAtLeastKafkaV2</td>
+<td class="success">1.430s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testWritesLiteralAclChangeEventWhenInterBrokerProtocolIsKafkaV2</td>
+<td class="success">1.203s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testWritesLiteralWritesLiteralAclChangeEventWhenInterBrokerProtocolLessThanKafkaV2eralAclChangesForOlderProtocolVersions</td>
+<td class="success">1.276s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.2</a> at 2020-1-15 10:48:49</p>
+</div>
+</div>
+</body>
+</html>

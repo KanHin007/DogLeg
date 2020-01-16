@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.zk.KafkaZkClientTest" tests="47" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:40:38" hostname="localhost" time="53.662">
+  <properties/>
+  <testcase name="testZNodeChangeHandlerForDataChange" classname="kafka.zk.KafkaZkClientTest" time="1.199"/>
+  <testcase name="testCreateAndGetTopicPartitionStatesRaw" classname="kafka.zk.KafkaZkClientTest" time="1.375"/>
+  <testcase name="testLogDirGetters" classname="kafka.zk.KafkaZkClientTest" time="1.028"/>
+  <testcase name="testSetGetAndDeletePartitionReassignment" classname="kafka.zk.KafkaZkClientTest" time="0.805"/>
+  <testcase name="testIsrChangeNotificationsDeletion" classname="kafka.zk.KafkaZkClientTest" time="1.792"/>
+  <testcase name="testGetDataAndVersion" classname="kafka.zk.KafkaZkClientTest" time="1.102"/>
+  <testcase name="testGetChildren" classname="kafka.zk.KafkaZkClientTest" time="0.798"/>
+  <testcase name="testSetAndGetConsumerOffset" classname="kafka.zk.KafkaZkClientTest" time="1.281"/>
+  <testcase name="testClusterIdMethods" classname="kafka.zk.KafkaZkClientTest" time="1.006"/>
+  <testcase name="testEntityConfigManagementMethods" classname="kafka.zk.KafkaZkClientTest" time="1.462"/>
+  <testcase name="testUpdateLeaderAndIsr" classname="kafka.zk.KafkaZkClientTest" time="1.619"/>
+  <testcase name="testUpdateBrokerInfo" classname="kafka.zk.KafkaZkClientTest" time="0.566"/>
+  <testcase name="testCreateRecursive" classname="kafka.zk.KafkaZkClientTest" time="0.813"/>
+  <testcase name="testGetConsumerOffsetNoData" classname="kafka.zk.KafkaZkClientTest" time="0.986"/>
+  <testcase name="testDeleteTopicPathMethods" classname="kafka.zk.KafkaZkClientTest" time="0.562"/>
+  <testcase name="testSetTopicPartitionStatesRaw" classname="kafka.zk.KafkaZkClientTest" time="0.969"/>
+  <testcase name="testAclManagementMethods" classname="kafka.zk.KafkaZkClientTest" time="1.458"/>
+  <testcase name="testPreferredReplicaElectionMethods" classname="kafka.zk.KafkaZkClientTest" time="1.171"/>
+  <testcase name="testPropagateLogDir" classname="kafka.zk.KafkaZkClientTest" time="1.412"/>
+  <testcase name="testGetDataAndStat" classname="kafka.zk.KafkaZkClientTest" time="1.152"/>
+  <testcase name="testReassignPartitionsInProgress" classname="kafka.zk.KafkaZkClientTest" time="0.679"/>
+  <testcase name="testCreateTopLevelPaths" classname="kafka.zk.KafkaZkClientTest" time="1.634"/>
+  <testcase name="testIsrChangeNotificationGetters" classname="kafka.zk.KafkaZkClientTest" time="0.833"/>
+  <testcase name="testLogDirEventNotificationsDeletion" classname="kafka.zk.KafkaZkClientTest" time="1.802"/>
+  <testcase name="testGetLogConfigs" classname="kafka.zk.KafkaZkClientTest" time="1.198"/>
+  <testcase name="testBrokerSequenceIdMethods" classname="kafka.zk.KafkaZkClientTest" time="0.752"/>
+  <testcase name="testAclMethods" classname="kafka.zk.KafkaZkClientTest" time="0.967"/>
+  <testcase name="testCreateSequentialPersistentPath" classname="kafka.zk.KafkaZkClientTest" time="1.112"/>
+  <testcase name="testConditionalUpdatePath" classname="kafka.zk.KafkaZkClientTest" time="0.531"/>
+  <testcase name="testDeleteTopicZNode" classname="kafka.zk.KafkaZkClientTest" time="1.564"/>
+  <testcase name="testDeletePath" classname="kafka.zk.KafkaZkClientTest" time="1.305"/>
+  <testcase name="testGetBrokerMethods" classname="kafka.zk.KafkaZkClientTest" time="1.346"/>
+  <testcase name="testCreateTokenChangeNotification" classname="kafka.zk.KafkaZkClientTest" time="0.814"/>
+  <testcase name="testGetTopicsAndPartitions" classname="kafka.zk.KafkaZkClientTest" time="0.819"/>
+  <testcase name="testRegisterBrokerInfo" classname="kafka.zk.KafkaZkClientTest" time="1.589"/>
+  <testcase name="testRetryRegisterBrokerInfo" classname="kafka.zk.KafkaZkClientTest" time="0.772"/>
+  <testcase name="testConsumerOffsetPath" classname="kafka.zk.KafkaZkClientTest" time="1.686"/>
+  <testcase name="testDeleteRecursiveWithControllerEpochVersionCheck" classname="kafka.zk.KafkaZkClientTest" time="1.235"/>
+  <testcase name="testTopicAssignments" classname="kafka.zk.KafkaZkClientTest" time="0.952"/>
+  <testcase name="testControllerManagementMethods" classname="kafka.zk.KafkaZkClientTest" time="1.072"/>
+  <testcase name="testTopicAssignmentMethods" classname="kafka.zk.KafkaZkClientTest" time="0.93"/>
+  <testcase name="testPropagateIsrChanges" classname="kafka.zk.KafkaZkClientTest" time="0.833"/>
+  <testcase name="testControllerEpochMethods" classname="kafka.zk.KafkaZkClientTest" time="1.562"/>
+  <testcase name="testDeleteRecursive" classname="kafka.zk.KafkaZkClientTest" time="1.099"/>
+  <testcase name="testGetTopicPartitionStates" classname="kafka.zk.KafkaZkClientTest" time="1.308"/>
+  <testcase name="testCreateConfigChangeNotification" classname="kafka.zk.KafkaZkClientTest" time="1.351"/>
+  <testcase name="testDelegationTokenMethods" classname="kafka.zk.KafkaZkClientTest" time="1.358"/>
+  <system-out><![CDATA[[2020-01-15 10:41:16,694] ERROR Error while creating ephemeral at /brokers/ids/1, node already exists and owner '72061675498504192' does not match current session '72061675498504193' (kafka.zk.KafkaZkClient$CheckedEphemeral:74)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

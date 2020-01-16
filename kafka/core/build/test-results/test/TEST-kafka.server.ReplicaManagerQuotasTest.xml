@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.ReplicaManagerQuotasTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:31:38" hostname="localhost" time="3.109">
+  <properties/>
+  <testcase name="shouldGetBothMessagesIfQuotasAllow" classname="kafka.server.ReplicaManagerQuotasTest" time="0.835"/>
+  <testcase name="testCompleteInDelayedFetchWithReplicaThrottling" classname="kafka.server.ReplicaManagerQuotasTest" time="0.027"/>
+  <testcase name="shouldExcludeSubsequentThrottledPartitions" classname="kafka.server.ReplicaManagerQuotasTest" time="0.811"/>
+  <testcase name="shouldGetNoMessagesIfQuotasExceededOnSubsequentPartitions" classname="kafka.server.ReplicaManagerQuotasTest" time="0.616"/>
+  <testcase name="shouldIncludeInSyncThrottledReplicas" classname="kafka.server.ReplicaManagerQuotasTest" time="0.82"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

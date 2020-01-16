@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.api.SslProducerSendTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:42:02" hostname="localhost" time="78.967">
+  <properties/>
+  <testcase name="testSendNonCompressedMessageWithCreateTime" classname="kafka.api.SslProducerSendTest" time="6.283"/>
+  <testcase name="testClose" classname="kafka.api.SslProducerSendTest" time="5.306"/>
+  <testcase name="testFlush" classname="kafka.api.SslProducerSendTest" time="5.92"/>
+  <testcase name="testSendToPartition" classname="kafka.api.SslProducerSendTest" time="6.955"/>
+  <testcase name="testSendOffset" classname="kafka.api.SslProducerSendTest" time="5.145"/>
+  <testcase name="testSendCompressedMessageWithCreateTime" classname="kafka.api.SslProducerSendTest" time="5.941"/>
+  <testcase name="testCloseWithZeroTimeoutFromCallerThread" classname="kafka.api.SslProducerSendTest" time="17.761"/>
+  <testcase name="testCloseWithZeroTimeoutFromSenderThread" classname="kafka.api.SslProducerSendTest" time="14.24"/>
+  <testcase name="testSendBeforeAndAfterPartitionExpansion" classname="kafka.api.SslProducerSendTest" time="11.416"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

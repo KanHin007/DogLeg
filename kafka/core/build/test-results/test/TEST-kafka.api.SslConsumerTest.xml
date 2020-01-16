@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.api.SslConsumerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:28:12" hostname="localhost" time="21.474">
+  <properties/>
+  <testcase name="testCoordinatorFailover" classname="kafka.api.SslConsumerTest" time="11.4"/>
+  <testcase name="testSimpleConsumption" classname="kafka.api.SslConsumerTest" time="10.074"/>
+  <system-out><![CDATA[[2020-01-15 10:28:14,103] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:28:25,741] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:28:25,833] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:28:26,582] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:28:26,586] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

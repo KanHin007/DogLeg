@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.epoch.LeaderEpochFileCacheTest" tests="37" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:29:28" hostname="localhost" time="0.035">
+  <properties/>
+  <testcase name="shouldFetchLatestEpochOfEmptyCache" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.021"/>
+  <testcase name="shouldNotUpdateEpochAndStartOffsetIfItDidNotChange" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.0"/>
+  <testcase name="shouldDropEntriesBetweenEpochBoundaryWhenRemovingNewest" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.001"/>
+  <testcase name="shouldReturnLogEndOffsetIfLatestEpochRequested" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.0"/>
+  <testcase name="shouldNotClearAnythingIfOffsetToEarly" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.0"/>
+  <testcase name="shouldIncreaseAndTrackEpochsAsFollowerReceivesManyMessages" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.001"/>
+  <testcase name="shouldTruncateIfMatchingEpochButEarlierStartingOffset" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.0"/>
+  <testcase name="shouldNotOverwriteOffsetForALeaderEpochOnceItHasBeenAssigned" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.0"/>
+  <testcase name="shouldNotOverwriteLogEndOffsetForALeaderEpochOnceItHasBeenAssigned" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.0"/>
+  <testcase name="shouldReturnUndefinedOffsetIfUndefinedEpochRequested" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.0"/>
+  <testcase name="shouldIncreaseAndTrackEpochsAsLeadersChangeManyTimes" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.0"/>
+  <testcase name="shouldReturnFirstEpochIfRequestedEpochLessThanFirstEpoch" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.0"/>
+  <testcase name="shouldSupportEpochsThatDoNotStartFromZero" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.0"/>
+  <testcase name="shouldReturnNextAvailableEpochIfThereIsNoExactEpochForTheOneRequested" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.0"/>
+  <testcase name="shouldAddEpochAndMessageOffsetToCache" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.001"/>
+  <testcase name="shouldDropEntriesOnEpochBoundaryWhenRemovingLatestEntries" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.0"/>
+  <testcase name="shouldUpdateSavedOffsetWhenOffsetToClearToIsBetweenEpochs" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.001"/>
+  <testcase name="shouldNotResetEpochHistoryTailIfUndefinedPassed" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.0"/>
+  <testcase name="shouldReturnUnsupportedIfNoEpochRecorded" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.0"/>
+  <testcase name="shouldReturnUnsupportedIfNoEpochRecordedAndUndefinedEpochRequested" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.0"/>
+  <testcase name="shouldRetainLatestEpochOnClearAllEarliest" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.0"/>
+  <testcase name="shouldPersistEpochsBetweenInstances" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.006"/>
+  <testcase name="shouldEnforceMonotonicallyIncreasingEpochs" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.0"/>
+  <testcase name="shouldNotClearAnythingIfOffsetToFirstOffset" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.0"/>
+  <testcase name="shouldGetFirstOffsetOfSubsequentEpochWhenOffsetRequestedForPreviousEpoch" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.0"/>
+  <testcase name="shouldEnforceOffsetsIncreaseMonotonically" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.0"/>
+  <testcase name="shouldUpdateOffsetBetweenEpochBoundariesOnClearEarliest2" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.001"/>
+  <testcase name="shouldClearEarliestOnEmptyCache" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.0"/>
+  <testcase name="shouldPreserveResetOffsetOnClearEarliestIfOneExists" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.0"/>
+  <testcase name="shouldUpdateOffsetBetweenEpochBoundariesOnClearEarliest" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.0"/>
+  <testcase name="shouldReturnInvalidOffsetIfEpochIsRequestedWhichIsNotCurrentlyTracked" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.0"/>
+  <testcase name="shouldEnforceMonotonicallyIncreasingStartOffsets" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.0"/>
+  <testcase name="shouldFetchEndOffsetOfEmptyCache" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.0"/>
+  <testcase name="shouldRetainLatestEpochOnClearAllEarliestAndUpdateItsOffset" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.0"/>
+  <testcase name="shouldClearAllEntries" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.0"/>
+  <testcase name="shouldClearLatestOnEmptyCache" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.0"/>
+  <testcase name="shouldNotResetEpochHistoryHeadIfUndefinedPassed" classname="kafka.server.epoch.LeaderEpochFileCacheTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

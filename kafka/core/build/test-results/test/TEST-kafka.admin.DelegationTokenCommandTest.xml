@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.admin.DelegationTokenCommandTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:11:58" hostname="localhost" time="17.253">
+  <properties/>
+  <testcase name="testDelegationTokenRequests" classname="kafka.admin.DelegationTokenCommandTest" time="17.253"/>
+  <system-out><![CDATA[[2020-01-15 10:12:04,500] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka2108722308536694716.tmp'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn:1094)
+[2020-01-15 10:12:04,508] ERROR [ZooKeeperClient] Auth failed. (kafka.zookeeper.ZooKeeperClient:74)
+[2020-01-15 10:12:04,791] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka2108722308536694716.tmp'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn:1094)
+[2020-01-15 10:12:04,791] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient:74)
+Calling create token operation with renewers :[User:renewer1] , max-life-time-period :-1
+Created delegation token with tokenId : 2LL_4II8RLKSNK5tUVtZdA
+
+TOKENID         HMAC                           OWNER           RENEWERS                  ISSUEDATE       EXPIRYDATE      MAXDATE        
+2LL_4II8RLKSNK5tUVtZdA g+Jk8i90iMqM67zN/cglxr6Ci1NXRoNCJfWCtpOb8V3rhOXDeULqdKar6kO6T2i15fs25gKh9O3YXvrOFc0FLg== User:plain-user2 [User:renewer1]           2020-01-15T10:12 2020-01-16T10:12 2020-01-22T10:12
+Calling describe token operation for current user.
+Total number of tokens : 1
+
+TOKENID         HMAC                           OWNER           RENEWERS                  ISSUEDATE       EXPIRYDATE      MAXDATE        
+2LL_4II8RLKSNK5tUVtZdA g+Jk8i90iMqM67zN/cglxr6Ci1NXRoNCJfWCtpOb8V3rhOXDeULqdKar6kO6T2i15fs25gKh9O3YXvrOFc0FLg== User:plain-user2 [User:renewer1]           2020-01-15T10:12 2020-01-16T10:12 2020-01-22T10:12
+Calling create token operation with renewers :[User:renewer2] , max-life-time-period :-1
+Created delegation token with tokenId : BaWX4WhoSHSSxlltu1CMRw
+
+TOKENID         HMAC                           OWNER           RENEWERS                  ISSUEDATE       EXPIRYDATE      MAXDATE        
+BaWX4WhoSHSSxlltu1CMRw 6qoz7jjipbhFRu7hniFa62z2m0WmzpG8PElUdhSO9SB59i+PIlPNBkG5ZcRRlZt9aG/QWSKgxD/bMQQccJF8nw== User:plain-user2 [User:renewer2]           2020-01-15T10:12 2020-01-16T10:12 2020-01-22T10:12
+Calling describe token operation for current user.
+Total number of tokens : 2
+
+TOKENID         HMAC                           OWNER           RENEWERS                  ISSUEDATE       EXPIRYDATE      MAXDATE        
+2LL_4II8RLKSNK5tUVtZdA g+Jk8i90iMqM67zN/cglxr6Ci1NXRoNCJfWCtpOb8V3rhOXDeULqdKar6kO6T2i15fs25gKh9O3YXvrOFc0FLg== User:plain-user2 [User:renewer1]           2020-01-15T10:12 2020-01-16T10:12 2020-01-22T10:12
+
+BaWX4WhoSHSSxlltu1CMRw 6qoz7jjipbhFRu7hniFa62z2m0WmzpG8PElUdhSO9SB59i+PIlPNBkG5ZcRRlZt9aG/QWSKgxD/bMQQccJF8nw== User:plain-user2 [User:renewer2]           2020-01-15T10:12 2020-01-16T10:12 2020-01-22T10:12
+Calling describe token operation for owners :[User:renewer2]
+Total number of tokens : 1
+
+TOKENID         HMAC                           OWNER           RENEWERS                  ISSUEDATE       EXPIRYDATE      MAXDATE        
+BaWX4WhoSHSSxlltu1CMRw 6qoz7jjipbhFRu7hniFa62z2m0WmzpG8PElUdhSO9SB59i+PIlPNBkG5ZcRRlZt9aG/QWSKgxD/bMQQccJF8nw== User:plain-user2 [User:renewer2]           2020-01-15T10:12 2020-01-16T10:12 2020-01-22T10:12
+Calling renew token operation with hmac :g+Jk8i90iMqM67zN/cglxr6Ci1NXRoNCJfWCtpOb8V3rhOXDeULqdKar6kO6T2i15fs25gKh9O3YXvrOFc0FLg== , renew-time-period :-1
+Completed renew operation. New expiry date : 2020-01-16T10:12
+Calling describe token operation for owners :[User:renewer1]
+Total number of tokens : 1
+
+TOKENID         HMAC                           OWNER           RENEWERS                  ISSUEDATE       EXPIRYDATE      MAXDATE        
+2LL_4II8RLKSNK5tUVtZdA g+Jk8i90iMqM67zN/cglxr6Ci1NXRoNCJfWCtpOb8V3rhOXDeULqdKar6kO6T2i15fs25gKh9O3YXvrOFc0FLg== User:plain-user2 [User:renewer1]           2020-01-15T10:12 2020-01-16T10:12 2020-01-22T10:12
+Calling expire token operation with hmac :g+Jk8i90iMqM67zN/cglxr6Ci1NXRoNCJfWCtpOb8V3rhOXDeULqdKar6kO6T2i15fs25gKh9O3YXvrOFc0FLg== , expire-time-period : -1
+Completed expire operation. New expiry date : 2020-01-15T10:12
+Calling expire token operation with hmac :6qoz7jjipbhFRu7hniFa62z2m0WmzpG8PElUdhSO9SB59i+PIlPNBkG5ZcRRlZt9aG/QWSKgxD/bMQQccJF8nw== , expire-time-period : -1
+Completed expire operation. New expiry date : 2020-01-15T10:12
+Calling describe token operation for current user.
+Total number of tokens : 0
+
+TOKENID         HMAC                           OWNER           RENEWERS                  ISSUEDATE       EXPIRYDATE      MAXDATE        Calling create token operation with renewers :[Group:Renewer3] , max-life-time-period :-1
+Calling describe token operation for owners :[User:Unknown]
+Total number of tokens : 0
+
+TOKENID         HMAC                           OWNER           RENEWERS                  ISSUEDATE       EXPIRYDATE      MAXDATE        ]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

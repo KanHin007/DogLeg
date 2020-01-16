@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.api.ProducerFailureHandlingTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:24:21" hostname="localhost" time="104.053">
+  <properties/>
+  <testcase name="testCannotSendToInternalTopic" classname="kafka.api.ProducerFailureHandlingTest" time="8.477"/>
+  <testcase name="testTooLargeRecordWithAckOne" classname="kafka.api.ProducerFailureHandlingTest" time="8.518"/>
+  <testcase name="testWrongBrokerList" classname="kafka.api.ProducerFailureHandlingTest" time="15.742"/>
+  <testcase name="testNotEnoughReplicas" classname="kafka.api.ProducerFailureHandlingTest" time="5.478"/>
+  <testcase name="testResponseTooLargeForReplicationWithAckAll" classname="kafka.api.ProducerFailureHandlingTest" time="7.005"/>
+  <testcase name="testNonExistentTopic" classname="kafka.api.ProducerFailureHandlingTest" time="15.481"/>
+  <testcase name="testInvalidPartition" classname="kafka.api.ProducerFailureHandlingTest" time="15.08"/>
+  <testcase name="testSendAfterClosed" classname="kafka.api.ProducerFailureHandlingTest" time="7.241"/>
+  <testcase name="testTooLargeRecordWithAckZero" classname="kafka.api.ProducerFailureHandlingTest" time="5.468"/>
+  <testcase name="testPartitionTooLargeForReplicationWithAckAll" classname="kafka.api.ProducerFailureHandlingTest" time="5.439"/>
+  <testcase name="testNotEnoughReplicasAfterBrokerShutdown" classname="kafka.api.ProducerFailureHandlingTest" time="10.124"/>
+  <system-out><![CDATA[[2020-01-15 10:24:55,102] ERROR [ReplicaManager broker=1] Error processing append operation on partition minisrtest-0 (kafka.server.ReplicaManager:76)
+org.apache.kafka.common.errors.NotEnoughReplicasException: The size of the current ISR Set(1, 0) is insufficient to satisfy the min.isr requirement of 3 for partition minisrtest-0
+[2020-01-15 10:25:00,436] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition topic10-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:00,436] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition topic10-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:22,915] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition topic-1-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:39,425] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition topic-1-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:50,673] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition topic10-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:50,673] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition topic10-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:00,859] ERROR [ReplicaManager broker=1] Error processing append operation on partition minisrtest2-0 (kafka.server.ReplicaManager:76)
+org.apache.kafka.common.errors.NotEnoughReplicasException: The size of the current ISR Set(1) is insufficient to satisfy the min.isr requirement of 2 for partition minisrtest2-0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

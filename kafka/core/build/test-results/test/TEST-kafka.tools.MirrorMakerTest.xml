@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.tools.MirrorMakerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:34:37" hostname="localhost" time="0.075">
+  <properties/>
+  <testcase name="testDefaultMirrorMakerMessageHandlerWithNoTimestampInSourceMessage" classname="kafka.tools.MirrorMakerTest" time="0.075"/>
+  <testcase name="testDefaultMirrorMakerMessageHandler" classname="kafka.tools.MirrorMakerTest" time="0.0"/>
+  <testcase name="testDefaultMirrorMakerMessageHandlerWithHeaders" classname="kafka.tools.MirrorMakerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

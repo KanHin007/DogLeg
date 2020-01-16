@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.kafka.common.utils.UtilsTest" tests="24" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:09:04" hostname="localhost" time="0.503">
+  <properties/>
+  <testcase name="testAbs" classname="org.apache.kafka.common.utils.UtilsTest" time="0.0"/>
+  <testcase name="testMin" classname="org.apache.kafka.common.utils.UtilsTest" time="0.0"/>
+  <testcase name="toArray" classname="org.apache.kafka.common.utils.UtilsTest" time="0.002"/>
+  <testcase name="utf8ByteBufferSerde" classname="org.apache.kafka.common.utils.UtilsTest" time="0.0"/>
+  <testcase name="testJoin" classname="org.apache.kafka.common.utils.UtilsTest" time="0.0"/>
+  <testcase name="testReadFullyOrFailWithPartialFileChannelReads" classname="org.apache.kafka.common.utils.UtilsTest" time="0.463"/>
+  <testcase name="toArrayDirectByteBuffer" classname="org.apache.kafka.common.utils.UtilsTest" time="0.001"/>
+  <testcase name="testReadBytes" classname="org.apache.kafka.common.utils.UtilsTest" time="0.002"/>
+  <testcase name="testGetHost" classname="org.apache.kafka.common.utils.UtilsTest" time="0.001"/>
+  <testcase name="testGetPort" classname="org.apache.kafka.common.utils.UtilsTest" time="0.0"/>
+  <testcase name="testReadFullyWithPartialFileChannelReads" classname="org.apache.kafka.common.utils.UtilsTest" time="0.003"/>
+  <testcase name="testRecursiveDelete" classname="org.apache.kafka.common.utils.UtilsTest" time="0.009"/>
+  <testcase name="testReadFullyOrFailWithRealFile" classname="org.apache.kafka.common.utils.UtilsTest" time="0.004"/>
+  <testcase name="writeToBuffer" classname="org.apache.kafka.common.utils.UtilsTest" time="0.0"/>
+  <testcase name="testFileAsStringNamedPipe" classname="org.apache.kafka.common.utils.UtilsTest" time="0.011"/>
+  <testcase name="testConvertTo32BitField" classname="org.apache.kafka.common.utils.UtilsTest" time="0.001"/>
+  <testcase name="testReadFullyIfEofIsReached" classname="org.apache.kafka.common.utils.UtilsTest" time="0.001"/>
+  <testcase name="testHostPattern" classname="org.apache.kafka.common.utils.UtilsTest" time="0.0"/>
+  <testcase name="testFormatBytes" classname="org.apache.kafka.common.utils.UtilsTest" time="0.001"/>
+  <testcase name="testMurmur2" classname="org.apache.kafka.common.utils.UtilsTest" time="0.0"/>
+  <testcase name="utf8ByteArraySerde" classname="org.apache.kafka.common.utils.UtilsTest" time="0.0"/>
+  <testcase name="testFileAsStringSimpleFile" classname="org.apache.kafka.common.utils.UtilsTest" time="0.001"/>
+  <testcase name="testCloseAll" classname="org.apache.kafka.common.utils.UtilsTest" time="0.001"/>
+  <testcase name="testFormatAddress" classname="org.apache.kafka.common.utils.UtilsTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

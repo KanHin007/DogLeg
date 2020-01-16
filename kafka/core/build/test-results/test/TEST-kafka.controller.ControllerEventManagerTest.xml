@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.controller.ControllerEventManagerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:28:15" hostname="localhost" time="0.734">
+  <properties/>
+  <testcase name="testEventQueueTime" classname="kafka.controller.ControllerEventManagerTest" time="0.166"/>
+  <testcase name="testEventThatThrowsException" classname="kafka.controller.ControllerEventManagerTest" time="0.222"/>
+  <testcase name="testEventWithoutRateMetrics" classname="kafka.controller.ControllerEventManagerTest" time="0.124"/>
+  <testcase name="testSuccessfulEvent" classname="kafka.controller.ControllerEventManagerTest" time="0.208"/>
+  <testcase name="testMetricsCleanedOnClose" classname="kafka.controller.ControllerEventManagerTest" time="0.014"/>
+  <system-out><![CDATA[[2020-01-15 10:28:16,259] ERROR [ControllerEventThread controllerId=0] Uncaught error processing event BrokerChange (kafka.controller.ControllerEventManager$ControllerEventThread:76)
+java.lang.NullPointerException
+	at kafka.controller.ControllerEventManagerTest.$anonfun$testEventThatThrowsException$1(ControllerEventManagerTest.scala:144)
+	at scala.Function0.apply$mcV$sp(Function0.scala:39)
+	at kafka.controller.ControllerEventManagerTest$$anon$4.process(ControllerEventManagerTest.scala:158)
+	at kafka.controller.QueuedEvent.process(ControllerEventManager.scala:52)
+	at kafka.controller.ControllerEventManager$ControllerEventThread.process$1(ControllerEventManager.scala:128)
+	at kafka.controller.ControllerEventManager$ControllerEventThread.$anonfun$doWork$1(ControllerEventManager.scala:131)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at kafka.metrics.KafkaTimer.time(KafkaTimer.scala:31)
+	at kafka.controller.ControllerEventManager$ControllerEventThread.doWork(ControllerEventManager.scala:131)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:96)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

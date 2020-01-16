@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.coordinator.group.GroupMetadataManagerTest" tests="54" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:32:57" hostname="localhost" time="0.644">
+  <properties/>
+  <testcase name="testLoadOffsetsWithEmptyControlBatch" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.218"/>
+  <testcase name="testLoadConsumerGroupWithFaultyConsumerProtocol" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.003"/>
+  <testcase name="testStoreNonEmptyGroup" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.04"/>
+  <testcase name="testLoadOffsetsWithTombstones" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.013"/>
+  <testcase name="testLoadWithCommittedAndAbortedTransactionalOffsetCommits" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.007"/>
+  <testcase name="testTransactionalCommitOffsetCommitted" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.003"/>
+  <testcase name="testLoadConsumerGroup" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.002"/>
+  <testcase name="testLoadOffsetsWithoutGroup" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.004"/>
+  <testcase name="testGroupMetadataTombstoneParsing" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.002"/>
+  <testcase name="testGroupNotExists" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.003"/>
+  <testcase name="testLoadEmptyGroupWithOffsets" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.004"/>
+  <testcase name="testSerdeOffsetCommitValue" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.003"/>
+  <testcase name="testLoadTransactionalOffsetCommitsFromMultipleProducers" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.003"/>
+  <testcase name="testStoreEmptySimpleGroup" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.001"/>
+  <testcase name="testLoadOffsetWithExplicitRetention" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.003"/>
+  <testcase name="testGroupMetadataParsingWithNullUserData" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.004"/>
+  <testcase name="testLoadOffsetFromOldCommit" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.003"/>
+  <testcase name="testAddGroup" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.001"/>
+  <testcase name="testPartitionLoadMetric" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.003"/>
+  <testcase name="testLoadEmptyConsumerGroup" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.002"/>
+  <testcase name="testLoadGroupWithLargeGroupMetadataRecord" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.013"/>
+  <testcase name="testGroupMetadataRemovalWithLogAppendTime" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.004"/>
+  <testcase name="testGroupLoadWithConsumerAndTransactionalOffsetCommitsTransactionWins" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.004"/>
+  <testcase name="testOffsetWriteAfterGroupRemoved" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.005"/>
+  <testcase name="testLoadTransactionalOffsetsWithoutGroup" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.002"/>
+  <testcase name="testCommitOffsetWhenCoordinatorHasMoved" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.002"/>
+  <testcase name="testCommittedOffsetTombstoneParsing" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.002"/>
+  <testcase name="testStoreNonEmptyGroupWhenCoordinatorHasMoved" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.002"/>
+  <testcase name="testGroupLoadWithConsumerAndTransactionalOffsetCommitsConsumerWins" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.003"/>
+  <testcase name="testloadGroupWithStaticMember" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.001"/>
+  <testcase name="testCommitOffset" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.002"/>
+  <testcase name="testTransactionalCommitOffsetAborted" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.001"/>
+  <testcase name="testMetrics" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.001"/>
+  <testcase name="testSerdeOffsetCommitValueWithNoneExpireTimestamp" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.002"/>
+  <testcase name="testReadFromOldGroupMetadata" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.002"/>
+  <testcase name="testTransactionalCommitOffsetAppendFailure" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.002"/>
+  <testcase name="testCommittedOffsetParsing" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.002"/>
+  <testcase name="testOffsetExpirationOfSimpleConsumer" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.002"/>
+  <testcase name="testGroupMetadataRemoval" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.002"/>
+  <testcase name="testLoadGroupWithTombstone" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.002"/>
+  <testcase name="testOffsetExpirationOfActiveGroupSemantics" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.003"/>
+  <testcase name="testLoadWithCommittedAndAbortedAndPendingTransactionalOffsetCommits" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.008"/>
+  <testcase name="testSerdeOffsetCommitValueWithExpireTimestamp" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.003"/>
+  <testcase name="testLoadOffsetsAndGroup" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.003"/>
+  <testcase name="testLoadGroupAndOffsetsWithCorruptedLog" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.002"/>
+  <testcase name="testGroupLoadedWithPendingCommits" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.003"/>
+  <testcase name="testStoreGroupErrorMapping" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.212"/>
+  <testcase name="testCommitOffsetFailure" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.004"/>
+  <testcase name="testLoadGroupAndOffsetsFromDifferentSegments" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.006"/>
+  <testcase name="testOffsetExpirationSemantics" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.006"/>
+  <testcase name="testExpireOffset" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.003"/>
+  <testcase name="testExpireGroupWithOffsetsOnly" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.003"/>
+  <testcase name="testDoNotLoadAbortedTransactionalOffsetCommits" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.003"/>
+  <testcase name="testStoreEmptyGroup" classname="kafka.coordinator.group.GroupMetadataManagerTest" time="0.003"/>
+  <system-out><![CDATA[[2020-01-15 10:32:58,307] ERROR [GroupMetadataManager brokerId=0] Appending metadata message for group foo generation 0 failed due to org.apache.kafka.common.errors.RecordTooLargeException, returning UNKNOWN error code to the client (kafka.coordinator.group.GroupMetadataManager:74)
+[2020-01-15 10:32:58,311] ERROR [GroupMetadataManager brokerId=0] Appending metadata message for group foo generation 0 failed due to org.apache.kafka.common.errors.RecordBatchTooLargeException, returning UNKNOWN error code to the client (kafka.coordinator.group.GroupMetadataManager:74)
+[2020-01-15 10:32:58,312] ERROR [GroupMetadataManager brokerId=0] Appending metadata message for group foo generation 0 failed due to org.apache.kafka.common.errors.InvalidFetchSizeException, returning UNKNOWN error code to the client (kafka.coordinator.group.GroupMetadataManager:74)
+[2020-01-15 10:32:58,313] ERROR [GroupMetadataManager brokerId=0] Appending metadata message for group foo generation 0 failed due to unexpected error: org.apache.kafka.common.errors.CorruptRecordException (kafka.coordinator.group.GroupMetadataManager:74)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

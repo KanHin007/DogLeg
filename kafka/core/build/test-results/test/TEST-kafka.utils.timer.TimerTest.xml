@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.utils.timer.TimerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:27:01" hostname="localhost" time="2.511">
+  <properties/>
+  <testcase name="testAlreadyExpiredTask" classname="kafka.utils.timer.TimerTest" time="0.002"/>
+  <testcase name="testTaskExpiration" classname="kafka.utils.timer.TimerTest" time="2.509"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

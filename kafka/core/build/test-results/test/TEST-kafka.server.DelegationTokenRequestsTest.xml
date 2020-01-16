@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.DelegationTokenRequestsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:28:05" hostname="localhost" time="6.18">
+  <properties/>
+  <testcase name="testDelegationTokenRequests" classname="kafka.server.DelegationTokenRequestsTest" time="6.18"/>
+  <system-out><![CDATA[[2020-01-15 10:28:05,999] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka7567234605328681242.tmp'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn:1094)
+[2020-01-15 10:28:06,000] ERROR [ZooKeeperClient] Auth failed. (kafka.zookeeper.ZooKeeperClient:74)
+[2020-01-15 10:28:06,069] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka7567234605328681242.tmp'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn:1094)
+[2020-01-15 10:28:06,069] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient:74)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

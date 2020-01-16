@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.utils.ReplicationUtilsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:34:37" hostname="localhost" time="2.582">
+  <properties/>
+  <testcase name="testUpdateLeaderAndIsr" classname="kafka.utils.ReplicationUtilsTest" time="2.582"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

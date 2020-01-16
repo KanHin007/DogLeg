@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.log.LogCleanerLagIntegrationTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:32:08" hostname="localhost" time="7.211">
+  <properties/>
+  <testcase name="cleanerTest[0]" classname="kafka.log.LogCleanerLagIntegrationTest" time="1.299"/>
+  <testcase name="cleanerTest[1]" classname="kafka.log.LogCleanerLagIntegrationTest" time="1.426"/>
+  <testcase name="cleanerTest[2]" classname="kafka.log.LogCleanerLagIntegrationTest" time="1.366"/>
+  <testcase name="cleanerTest[3]" classname="kafka.log.LogCleanerLagIntegrationTest" time="1.526"/>
+  <testcase name="cleanerTest[4]" classname="kafka.log.LogCleanerLagIntegrationTest" time="1.594"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

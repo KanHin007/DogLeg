@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.common.InterBrokerSendThreadTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:27:34" hostname="localhost" time="0.104">
+  <properties/>
+  <testcase name="shouldCreateClientRequestAndSendWhenNodeIsReady" classname="kafka.common.InterBrokerSendThreadTest" time="0.101"/>
+  <testcase name="testFailingExpiredRequests" classname="kafka.common.InterBrokerSendThreadTest" time="0.001"/>
+  <testcase name="shouldCallCompletionHandlerWithDisconnectedResponseWhenNodeNotReady" classname="kafka.common.InterBrokerSendThreadTest" time="0.001"/>
+  <testcase name="shouldNotSendAnythingWhenNoRequests" classname="kafka.common.InterBrokerSendThreadTest" time="0.001"/>
+  <system-out><![CDATA[[2020-01-15 10:27:34,764] ERROR [name]: Failed to send the following request due to authentication error: ClientRequest(expectResponse=true, callback=kafka.common.InterBrokerSendThreadTest$StubCompletionHandler@572c156b, destination=dest, correlationId=0, clientId=1, createdTimeMs=0, requestBuilder=kafka.common.InterBrokerSendThreadTest$StubRequestBuilder@74de7137) (kafka.common.InterBrokerSendThreadTest$$anon$3:74)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

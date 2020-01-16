@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class kafka.api.PlaintextProducerSendTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class kafka.api.PlaintextProducerSendTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/kafka.api.html">kafka.api</a> &gt; PlaintextProducerSendTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">16</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1m37.09s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testAutoCreateTopic</td>
+<td class="success">5.847s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testBatchSizeZero</td>
+<td class="success">4.833s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testClose</td>
+<td class="success">5.837s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCloseWithZeroTimeoutFromCallerThread</td>
+<td class="success">8.062s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCloseWithZeroTimeoutFromSenderThread</td>
+<td class="success">5.775s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFlush</td>
+<td class="success">4.690s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testNonBlockingProducer</td>
+<td class="success">5.507s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSendBeforeAndAfterPartitionExpansion</td>
+<td class="success">10.052s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSendCompressedMessageWithCreateTime</td>
+<td class="success">6.088s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSendCompressedMessageWithLogAppendTime</td>
+<td class="success">7.645s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSendNonCompressedMessageWithCreateTime</td>
+<td class="success">6.249s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSendNonCompressedMessageWithLogAppendTime</td>
+<td class="success">4.693s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSendOffset</td>
+<td class="success">4.756s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSendToPartition</td>
+<td class="success">6.607s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSendWithInvalidCreateTime</td>
+<td class="success">5.900s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testWrongSerializer</td>
+<td class="success">4.552s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>[2020-01-15 10:38:33,874] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:38:52,793] ERROR [ReplicaManager broker=0] Error processing append operation on partition topic-0 (kafka.server.ReplicaManager:76)
+org.apache.kafka.common.errors.InvalidTimestampException: One or more records have been rejected due to invalid timestamp
+[2020-01-15 10:38:52,800] ERROR [ReplicaManager broker=0] Error processing append operation on partition topic-0 (kafka.server.ReplicaManager:76)
+org.apache.kafka.common.errors.InvalidTimestampException: One or more records have been rejected due to invalid timestamp
+[2020-01-15 10:39:12,491] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:39:18,772] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:39:40,761] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.2</a> at 2020-1-15 10:48:49</p>
+</div>
+</div>
+</body>
+</html>

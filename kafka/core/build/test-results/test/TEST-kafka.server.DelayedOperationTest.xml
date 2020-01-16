@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.DelayedOperationTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:23:23" hostname="localhost" time="5.876">
+  <properties/>
+  <testcase name="testRequestPurge" classname="kafka.server.DelayedOperationTest" time="0.202"/>
+  <testcase name="testRequestExpiry" classname="kafka.server.DelayedOperationTest" time="0.226"/>
+  <testcase name="shouldReturnNilOperationsOnCancelForKeyWhenKeyDoesntExist" classname="kafka.server.DelayedOperationTest" time="0.203"/>
+  <testcase name="testDelayedOperationLockOverride" classname="kafka.server.DelayedOperationTest" time="0.2"/>
+  <testcase name="testTryCompleteLockContention" classname="kafka.server.DelayedOperationTest" time="0.202"/>
+  <testcase name="testTryCompleteWithMultipleThreads" classname="kafka.server.DelayedOperationTest" time="1.823"/>
+  <testcase name="shouldCancelForKeyReturningCancelledOperations" classname="kafka.server.DelayedOperationTest" time="0.205"/>
+  <testcase name="testDelayedFuture" classname="kafka.server.DelayedOperationTest" time="2.412"/>
+  <testcase name="testRequestSatisfaction" classname="kafka.server.DelayedOperationTest" time="0.201"/>
+  <testcase name="testDelayedOperationLock" classname="kafka.server.DelayedOperationTest" time="0.202"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

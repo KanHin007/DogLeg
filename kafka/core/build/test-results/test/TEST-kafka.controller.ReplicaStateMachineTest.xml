@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.controller.ReplicaStateMachineTest" tests="45" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:27:34" hostname="localhost" time="0.116">
+  <properties/>
+  <testcase name="testInvalidOnlineReplicaToReplicaDeletionStartedTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.05"/>
+  <testcase name="testNonexistentReplicaToNewReplicaTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.002"/>
+  <testcase name="testInvalidNonexistentReplicaToReplicaDeletionIneligibleTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.001"/>
+  <testcase name="testInvalidReplicaDeletionIneligibleToReplicaDeletionSuccessfulTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.003"/>
+  <testcase name="testOnlineReplicaToOfflineReplicaTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.003"/>
+  <testcase name="testInvalidReplicaDeletionSuccessfulToReplicaDeletionIneligibleTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.001"/>
+  <testcase name="testInvalidOfflineReplicaToNewReplicaTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.001"/>
+  <testcase name="testOfflineReplicaToReplicaDeletionIneligibleTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.001"/>
+  <testcase name="testInvalidNewReplicaToNonexistentReplicaTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.001"/>
+  <testcase name="testInvalidReplicaDeletionStartedToOnlineReplicaTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.002"/>
+  <testcase name="testInvalidOfflineReplicaToReplicaDeletionSuccessfulTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.001"/>
+  <testcase name="testOfflineReplicaToOnlineReplicaTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.001"/>
+  <testcase name="testInvalidReplicaDeletionStartedToNonexistentReplicaTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.001"/>
+  <testcase name="testOfflineReplicaToReplicaDeletionStartedTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.002"/>
+  <testcase name="testInvalidReplicaDeletionSuccessfulToNewReplicaTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.001"/>
+  <testcase name="testInvalidReplicaDeletionIneligibleToNonexistentReplicaTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.002"/>
+  <testcase name="testReplicaDeletionSuccessfulToNonexistentReplicaTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.002"/>
+  <testcase name="testInvalidOnlineReplicaToNonexistentReplicaTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.001"/>
+  <testcase name="testNewReplicaToOfflineReplicaTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.001"/>
+  <testcase name="testInvalidReplicaDeletionSuccessfulToOnlineReplicaTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.001"/>
+  <testcase name="testInvalidNonexistentReplicaToReplicaDeletionStartedTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.002"/>
+  <testcase name="testInvalidOnlineReplicaToReplicaDeletionSuccessfulTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.001"/>
+  <testcase name="testInvalidOfflineReplicaToNonexistentReplicaTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.002"/>
+  <testcase name="testInvalidOnlineReplicaToReplicaDeletionIneligibleTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.001"/>
+  <testcase name="testStartupOnlinePartition" classname="kafka.controller.ReplicaStateMachineTest" time="0.002"/>
+  <testcase name="testInvalidReplicaDeletionSuccessfulToReplicaDeletionStartedTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.002"/>
+  <testcase name="testStartupOfflinePartition" classname="kafka.controller.ReplicaStateMachineTest" time="0.001"/>
+  <testcase name="testInvalidNewReplicaToReplicaDeletionSuccessfulTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.002"/>
+  <testcase name="testStartupWithReplicaWithoutLeader" classname="kafka.controller.ReplicaStateMachineTest" time="0.001"/>
+  <testcase name="testInvalidReplicaDeletionIneligibleToReplicaDeletionStartedTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.001"/>
+  <testcase name="testInvalidReplicaDeletionStartedToOfflineReplicaTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.002"/>
+  <testcase name="testInvalidNewReplicaToReplicaDeletionStartedTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.001"/>
+  <testcase name="testOnlineReplicaToOnlineReplicaTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.001"/>
+  <testcase name="testInvalidNewReplicaToReplicaDeletionIneligibleTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.001"/>
+  <testcase name="testInvalidNonexistentReplicaToOfflineReplicaTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.001"/>
+  <testcase name="testReplicaDeletionStartedToReplicaDeletionSuccessfulTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.002"/>
+  <testcase name="testInvalidNonexistentReplicaToOnlineReplicaTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.001"/>
+  <testcase name="testInvalidOnlineReplicaToNewReplicaTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.002"/>
+  <testcase name="testReplicaDeletionStartedToReplicaDeletionIneligibleTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.001"/>
+  <testcase name="testInvalidReplicaDeletionSuccessfulToOfflineReplicaTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.001"/>
+  <testcase name="testInvalidReplicaDeletionIneligibleToNewReplicaTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.001"/>
+  <testcase name="testReplicaDeletionIneligibleToOnlineReplicaTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.001"/>
+  <testcase name="testInvalidReplicaDeletionStartedToNewReplicaTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.002"/>
+  <testcase name="testInvalidNonexistentReplicaToReplicaDeletionSuccessfulTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.001"/>
+  <testcase name="testNewReplicaToOnlineReplicaTransition" classname="kafka.controller.ReplicaStateMachineTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

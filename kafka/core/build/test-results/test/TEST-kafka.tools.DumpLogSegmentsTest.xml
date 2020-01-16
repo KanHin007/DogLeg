@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.tools.DumpLogSegmentsTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:31:30" hostname="localhost" time="1.323">
+  <properties/>
+  <testcase name="testPrintDataLog" classname="kafka.tools.DumpLogSegmentsTest" time="0.766"/>
+  <testcase name="testDumpIndexMismatches" classname="kafka.tools.DumpLogSegmentsTest" time="0.362"/>
+  <testcase name="testDumpTimeIndexErrors" classname="kafka.tools.DumpLogSegmentsTest" time="0.195"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

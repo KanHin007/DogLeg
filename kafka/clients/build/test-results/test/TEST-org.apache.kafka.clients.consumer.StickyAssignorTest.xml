@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.kafka.clients.consumer.StickyAssignorTest" tests="27" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:08:26" hostname="localhost" time="14.134">
+  <properties/>
+  <testcase name="testAssignmentWithConflictingPreviousGenerations" classname="org.apache.kafka.clients.consumer.StickyAssignorTest" time="0.029"/>
+  <testcase name="testSchemaBackwardCompatibility" classname="org.apache.kafka.clients.consumer.StickyAssignorTest" time="0.002"/>
+  <testcase name="testAssignmentWithMultipleGenerations1" classname="org.apache.kafka.clients.consumer.StickyAssignorTest" time="0.002"/>
+  <testcase name="testAssignmentWithMultipleGenerations2" classname="org.apache.kafka.clients.consumer.StickyAssignorTest" time="0.003"/>
+  <testcase name="testNoExceptionThrownWhenOnlySubscribedTopicDeleted" classname="org.apache.kafka.clients.consumer.StickyAssignorTest" time="0.001"/>
+  <testcase name="testStickiness" classname="org.apache.kafka.clients.consumer.StickyAssignorTest" time="0.022"/>
+  <testcase name="testOneConsumerNoTopic" classname="org.apache.kafka.clients.consumer.StickyAssignorTest" time="0.0"/>
+  <testcase name="testAddRemoveConsumerOneTopic" classname="org.apache.kafka.clients.consumer.StickyAssignorTest" time="0.002"/>
+  <testcase name="testTwoConsumersTwoTopicsSixPartitions" classname="org.apache.kafka.clients.consumer.StickyAssignorTest" time="0.002"/>
+  <testcase name="testAssignmentUpdatedForDeletedTopic" classname="org.apache.kafka.clients.consumer.StickyAssignorTest" time="0.006"/>
+  <testcase name="testReassignmentWithRandomSubscriptionsAndChanges" classname="org.apache.kafka.clients.consumer.StickyAssignorTest" time="9.256"/>
+  <testcase name="testNewSubscription" classname="org.apache.kafka.clients.consumer.StickyAssignorTest" time="0.001"/>
+  <testcase name="testAddRemoveTopicTwoConsumers" classname="org.apache.kafka.clients.consumer.StickyAssignorTest" time="0.001"/>
+  <testcase name="testMoveExistingAssignments" classname="org.apache.kafka.clients.consumer.StickyAssignorTest" time="0.001"/>
+  <testcase name="testConflictingPreviousAssignments" classname="org.apache.kafka.clients.consumer.StickyAssignorTest" time="0.001"/>
+  <testcase name="testMultipleConsumersMixedTopicSubscriptions" classname="org.apache.kafka.clients.consumer.StickyAssignorTest" time="0.001"/>
+  <testcase name="testOneConsumerOneTopic" classname="org.apache.kafka.clients.consumer.StickyAssignorTest" time="0.001"/>
+  <testcase name="testPoorRoundRobinAssignmentScenario" classname="org.apache.kafka.clients.consumer.StickyAssignorTest" time="0.0"/>
+  <testcase name="testReassignmentAfterOneConsumerLeaves" classname="org.apache.kafka.clients.consumer.StickyAssignorTest" time="0.05"/>
+  <testcase name="testSameSubscriptions" classname="org.apache.kafka.clients.consumer.StickyAssignorTest" time="0.005"/>
+  <testcase name="testLargeAssignmentWithMultipleConsumersLeaving" classname="org.apache.kafka.clients.consumer.StickyAssignorTest" time="4.723"/>
+  <testcase name="testReassignmentAfterOneConsumerAdded" classname="org.apache.kafka.clients.consumer.StickyAssignorTest" time="0.002"/>
+  <testcase name="testTwoConsumersOneTopicOnePartition" classname="org.apache.kafka.clients.consumer.StickyAssignorTest" time="0.001"/>
+  <testcase name="testOneConsumerMultipleTopics" classname="org.apache.kafka.clients.consumer.StickyAssignorTest" time="0.0"/>
+  <testcase name="testOnlyAssignsPartitionsFromSubscribedTopics" classname="org.apache.kafka.clients.consumer.StickyAssignorTest" time="0.0"/>
+  <testcase name="testTwoConsumersOneTopicTwoPartitions" classname="org.apache.kafka.clients.consumer.StickyAssignorTest" time="0.006"/>
+  <testcase name="testOneConsumerNonexistentTopic" classname="org.apache.kafka.clients.consumer.StickyAssignorTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

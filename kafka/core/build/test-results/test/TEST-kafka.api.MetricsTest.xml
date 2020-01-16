@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.api.MetricsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:22:56" hostname="localhost" time="8.457">
+  <properties/>
+  <testcase name="testMetrics" classname="kafka.api.MetricsTest" time="8.457"/>
+  <system-out><![CDATA[[2020-01-15 10:22:56,829] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka7358828109289621102.tmp'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn:1094)
+[2020-01-15 10:22:56,829] ERROR [ZooKeeperClient] Auth failed. (kafka.zookeeper.ZooKeeperClient:74)
+[2020-01-15 10:22:56,897] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka7358828109289621102.tmp'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn:1094)
+[2020-01-15 10:22:56,898] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient:74)
+[2020-01-15 10:22:59,966] ERROR [Producer clientId=producer-5] Connection to node -1 (localhost/127.0.0.1:63576) failed authentication due to: Client SASL mechanism 'SCRAM-SHA-256' not enabled in the server, enabled mechanisms are [PLAIN] (org.apache.kafka.clients.NetworkClient:745)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

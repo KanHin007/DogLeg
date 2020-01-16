@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class kafka.log.LogCleanerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class kafka.log.LogCleanerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/kafka.log.html">kafka.log</a> &gt; LogCleanerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">39</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">23.022s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testAbortMarkerRemoval</td>
+<td class="success">0.022s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAbortMarkerRetentionWithEmptyBatch</td>
+<td class="success">0.189s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAbortedTransactionSpanningSegments</td>
+<td class="success">1.275s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testBasicTransactionAwareCleaning</td>
+<td class="success">0.025s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testBuildOffsetMap</td>
+<td class="success">7.677s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testBuildOffsetMapFakeLarge</td>
+<td class="success">0.008s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testBuildPartialOffsetMap</td>
+<td class="success">0.011s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCleanCorruptMessageSet</td>
+<td class="success">2.137s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCleanEmptyControlBatch</td>
+<td class="success">0.086s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCleanSegments</td>
+<td class="success">0.032s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCleanSegmentsWithAbort</td>
+<td class="success">0.014s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCleanSegmentsWithConcurrentSegmentDeletion</td>
+<td class="success">0.014s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCleanTombstone</td>
+<td class="success">1.183s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCleanWithTransactionsSpanningSegments</td>
+<td class="success">0.019s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCleaningWithDeletes</td>
+<td class="success">0.036s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCleaningWithUncleanableSection</td>
+<td class="success">0.028s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCleaningWithUnkeyedMessages</td>
+<td class="success">0.020s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testClientHandlingOfCorruptMessageSet</td>
+<td class="success">0.047s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCommitMarkerRemoval</td>
+<td class="success">0.036s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCommitMarkerRetentionWithEmptyBatch</td>
+<td class="success">0.115s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCommittedTransactionSpanningSegments</td>
+<td class="success">0.015s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCorruptMessageSizeLargerThanBytesAvailable</td>
+<td class="success">1.412s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeletedBatchesWithNoMessagesRead</td>
+<td class="success">0.012s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDuplicateCheckAfterCleaning</td>
+<td class="success">0.614s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEmptyBatchRemovalWithSequenceReuse</td>
+<td class="success">0.016s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testLargeMessage</td>
+<td class="success">1.574s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testLogCleanerRetainsLastSequenceEvenIfTransactionAborted</td>
+<td class="success">1.055s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testLogCleanerRetainsProducerLastSequence</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testLogToClean</td>
+<td class="success">0.014s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testLogToCleanWithUncleanableSection</td>
+<td class="success">0.021s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMessageLargerThanMaxMessageSize</td>
+<td class="success">2.159s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMessageLargerThanMaxMessageSizeWithCorruptHeader</td>
+<td class="success">2.245s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPartialSegmentClean</td>
+<td class="success">0.018s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRecoveryAfterCrash</td>
+<td class="success">0.775s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSegmentGrouping</td>
+<td class="success">0.028s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSegmentGroupingFollowingLoadOfZeroIndex</td>
+<td class="success">0.008s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSegmentGroupingWithSparseOffsets</td>
+<td class="success">0.008s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSegmentWithOffsetOverflow</td>
+<td class="success">0.052s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSizeTrimmedForPreallocatedAndCompactedTopic</td>
+<td class="success">0.015s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>[2020-01-15 10:27:58,173] ERROR [Log partition=kafka-563031, dir=/var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka-2424505222220646759] Could not find offset index file corresponding to log file /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka-2424505222220646759/kafka-563031/00000000000000000000.log, recovering segment and rebuilding index files... (kafka.log.Log:74)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.2</a> at 2020-1-15 10:48:49</p>
+</div>
+</div>
+</body>
+</html>

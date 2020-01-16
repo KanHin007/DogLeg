@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.kafka.common.record.FileRecordsTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:08:22" hostname="localhost" time="5.867">
+  <properties/>
+  <testcase name="testTruncate" classname="org.apache.kafka.common.record.FileRecordsTest" time="5.229"/>
+  <testcase name="testIterationOverPartialAndTruncation" classname="org.apache.kafka.common.record.FileRecordsTest" time="0.001"/>
+  <testcase name="testRead" classname="org.apache.kafka.common.record.FileRecordsTest" time="0.002"/>
+  <testcase name="testDownconversionAfterMessageFormatDowngrade" classname="org.apache.kafka.common.record.FileRecordsTest" time="0.034"/>
+  <testcase name="testAppendProtectsFromOverflow" classname="org.apache.kafka.common.record.FileRecordsTest" time="0.42"/>
+  <testcase name="testTruncateNotCalledIfSizeIsBiggerThanTargetSize" classname="org.apache.kafka.common.record.FileRecordsTest" time="0.039"/>
+  <testcase name="testOutOfRangeSlice" classname="org.apache.kafka.common.record.FileRecordsTest" time="0.002"/>
+  <testcase name="testFileSize" classname="org.apache.kafka.common.record.FileRecordsTest" time="0.004"/>
+  <testcase name="testIteratorWithLimits" classname="org.apache.kafka.common.record.FileRecordsTest" time="0.001"/>
+  <testcase name="testTruncateNotCalledIfSizeIsSameAsTargetSize" classname="org.apache.kafka.common.record.FileRecordsTest" time="0.006"/>
+  <testcase name="testPreallocateTrue" classname="org.apache.kafka.common.record.FileRecordsTest" time="0.009"/>
+  <testcase name="testOpenOversizeFile" classname="org.apache.kafka.common.record.FileRecordsTest" time="0.004"/>
+  <testcase name="testTruncateIfSizeIsDifferentToTargetSize" classname="org.apache.kafka.common.record.FileRecordsTest" time="0.003"/>
+  <testcase name="testFormatConversionWithPartialMessage" classname="org.apache.kafka.common.record.FileRecordsTest" time="0.002"/>
+  <testcase name="testIterationDoesntChangePosition" classname="org.apache.kafka.common.record.FileRecordsTest" time="0.001"/>
+  <testcase name="testPreallocateFalse" classname="org.apache.kafka.common.record.FileRecordsTest" time="0.002"/>
+  <testcase name="testPreallocateClearShutdown" classname="org.apache.kafka.common.record.FileRecordsTest" time="0.004"/>
+  <testcase name="testConversion" classname="org.apache.kafka.common.record.FileRecordsTest" time="0.095"/>
+  <testcase name="testSearchForTimestamp" classname="org.apache.kafka.common.record.FileRecordsTest" time="0.004"/>
+  <testcase name="testSearch" classname="org.apache.kafka.common.record.FileRecordsTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

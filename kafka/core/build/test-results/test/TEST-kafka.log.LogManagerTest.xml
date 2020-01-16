@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.log.LogManagerTest" tests="21" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:21:49" hostname="localhost" time="3.654">
+  <properties/>
+  <testcase name="testFileReferencesAfterAsyncDelete" classname="kafka.log.LogManagerTest" time="0.133"/>
+  <testcase name="testCreateLogWithLogDirFallback" classname="kafka.log.LogManagerTest" time="0.741"/>
+  <testcase name="testCleanupSegmentsToMaintainSize" classname="kafka.log.LogManagerTest" time="1.443"/>
+  <testcase name="testRecoveryDirectoryMappingWithRelativeDirectory" classname="kafka.log.LogManagerTest" time="0.086"/>
+  <testcase name="testCreateLogWithInvalidLogDir" classname="kafka.log.LogManagerTest" time="0.038"/>
+  <testcase name="testTopicConfigChangeUpdatesLogConfig" classname="kafka.log.LogManagerTest" time="0.029"/>
+  <testcase name="testGetNonExistentLog" classname="kafka.log.LogManagerTest" time="0.003"/>
+  <testcase name="testConfigChangeGetsCleanedUp" classname="kafka.log.LogManagerTest" time="0.003"/>
+  <testcase name="testTwoLogManagersUsingSameDirFails" classname="kafka.log.LogManagerTest" time="0.003"/>
+  <testcase name="testLeastLoadedAssignment" classname="kafka.log.LogManagerTest" time="0.079"/>
+  <testcase name="testCleanupExpiredSegments" classname="kafka.log.LogManagerTest" time="0.494"/>
+  <testcase name="testCheckpointRecoveryPoints" classname="kafka.log.LogManagerTest" time="0.02"/>
+  <testcase name="testBrokerConfigChangeDeliveredToAllLogs" classname="kafka.log.LogManagerTest" time="0.005"/>
+  <testcase name="testCheckpointForOnlyAffectedLogs" classname="kafka.log.LogManagerTest" time="0.09"/>
+  <testcase name="testTimeBasedFlush" classname="kafka.log.LogManagerTest" time="0.034"/>
+  <testcase name="testCreateLog" classname="kafka.log.LogManagerTest" time="0.007"/>
+  <testcase name="testDoesntCleanLogsWithCompactPolicy" classname="kafka.log.LogManagerTest" time="0.097"/>
+  <testcase name="testRecoveryDirectoryMappingWithTrailingSlash" classname="kafka.log.LogManagerTest" time="0.015"/>
+  <testcase name="testCreateAndDeleteOverlyLongTopic" classname="kafka.log.LogManagerTest" time="0.006"/>
+  <testcase name="testDoesntCleanLogsWithCompactDeletePolicy" classname="kafka.log.LogManagerTest" time="0.325"/>
+  <testcase name="testConfigChangesWithNoLogGettingInitialized" classname="kafka.log.LogManagerTest" time="0.002"/>
+  <system-out><![CDATA[[2020-01-15 10:21:51,754] ERROR Failed to create or validate data directory /Users/nuoee/IdeaProjects/DogLeg/kafka/core/? (kafka.server.LogDirFailureChannel:76)
+java.io.IOException: Failed to create data directory /Users/nuoee/IdeaProjects/DogLeg/kafka/core/?
+	at kafka.log.LogManager.$anonfun$createAndValidateLogDirs$1(LogManager.scala:155)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at kafka.log.LogManager.createAndValidateLogDirs(LogManager.scala:146)
+	at kafka.log.LogManager.<init>(LogManager.scala:80)
+	at kafka.utils.TestUtils$.createLogManager(TestUtils.scala:1057)
+	at kafka.log.LogManagerTest.createLogManager(LogManagerTest.scala:389)
+	at kafka.log.LogManagerTest.testCreateLogWithInvalidLogDir(LogManagerTest.scala:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.lang.Thread.run(Thread.java:748)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.AbstractFetcherManagerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:28:05" hostname="localhost" time="0.047">
+  <properties/>
+  <testcase name="testAddAndRemovePartition" classname="kafka.server.AbstractFetcherManagerTest" time="0.042"/>
+  <testcase name="testMetricFailedPartitionCount" classname="kafka.server.AbstractFetcherManagerTest" time="0.003"/>
+  <testcase name="testDeadThreadCountMetric" classname="kafka.server.AbstractFetcherManagerTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

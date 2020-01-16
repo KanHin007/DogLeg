@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.kafka.clients.MetadataTest" tests="19" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:08:22" hostname="localhost" time="0.147">
+  <properties/>
+  <testcase name="testMaybeRequestUpdate" classname="org.apache.kafka.clients.MetadataTest" time="0.003"/>
+  <testcase name="testClusterCopy" classname="org.apache.kafka.clients.MetadataTest" time="0.002"/>
+  <testcase name="testMetadataTopicErrors" classname="org.apache.kafka.clients.MetadataTest" time="0.067"/>
+  <testcase name="testInvalidTopicError" classname="org.apache.kafka.clients.MetadataTest" time="0.003"/>
+  <testcase name="testOutOfBandEpochUpdate" classname="org.apache.kafka.clients.MetadataTest" time="0.023"/>
+  <testcase name="testUpdateMetadataAllowedImmediatelyAfterBootstrap" classname="org.apache.kafka.clients.MetadataTest" time="0.0"/>
+  <testcase name="testFailedUpdate" classname="org.apache.kafka.clients.MetadataTest" time="0.001"/>
+  <testcase name="testRequestUpdate" classname="org.apache.kafka.clients.MetadataTest" time="0.002"/>
+  <testcase name="testTopicAuthorizationError" classname="org.apache.kafka.clients.MetadataTest" time="0.011"/>
+  <testcase name="testClusterListenerGetsNotifiedOfUpdate" classname="org.apache.kafka.clients.MetadataTest" time="0.011"/>
+  <testcase name="testStaleMetadata" classname="org.apache.kafka.clients.MetadataTest" time="0.002"/>
+  <testcase name="testTimeToNextUpdate_RetryBackoff" classname="org.apache.kafka.clients.MetadataTest" time="0.0"/>
+  <testcase name="testMetadataUpdateAfterClose" classname="org.apache.kafka.clients.MetadataTest" time="0.0"/>
+  <testcase name="testRejectOldMetadata" classname="org.apache.kafka.clients.MetadataTest" time="0.004"/>
+  <testcase name="testIgnoreLeaderEpochInOlderMetadataResponse" classname="org.apache.kafka.clients.MetadataTest" time="0.003"/>
+  <testcase name="testRequestVersion" classname="org.apache.kafka.clients.MetadataTest" time="0.003"/>
+  <testcase name="testTimeToNextUpdate" classname="org.apache.kafka.clients.MetadataTest" time="0.001"/>
+  <testcase name="testNoEpoch" classname="org.apache.kafka.clients.MetadataTest" time="0.0"/>
+  <testcase name="testNodeIfOffline" classname="org.apache.kafka.clients.MetadataTest" time="0.005"/>
+  <system-out><![CDATA[[2020-01-15 10:08:22,326] ERROR Metadata response reported invalid topics [topic3] (org.apache.kafka.clients.Metadata:274)
+[2020-01-15 10:08:22,327] ERROR Topic authorization failed for topics [topic4] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:08:22,389] ERROR Metadata response reported invalid topics [invalidTopic] (org.apache.kafka.clients.Metadata:274)
+[2020-01-15 10:08:22,389] ERROR Topic authorization failed for topics [sensitiveTopic2, sensitiveTopic1] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:08:22,391] ERROR Metadata response reported invalid topics [invalidTopic] (org.apache.kafka.clients.Metadata:274)
+[2020-01-15 10:08:22,392] ERROR Topic authorization failed for topics [sensitiveTopic2, sensitiveTopic1] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:08:22,393] ERROR Metadata response reported invalid topics [invalidTopic] (org.apache.kafka.clients.Metadata:274)
+[2020-01-15 10:08:22,393] ERROR Topic authorization failed for topics [sensitiveTopic2, sensitiveTopic1] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:08:22,394] ERROR Metadata response reported invalid topics [invalidTopic] (org.apache.kafka.clients.Metadata:274)
+[2020-01-15 10:08:22,394] ERROR Topic authorization failed for topics [sensitiveTopic2, sensitiveTopic1] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:08:22,396] ERROR Metadata response reported invalid topics [topic dfsa] (org.apache.kafka.clients.Metadata:274)
+[2020-01-15 10:08:22,397] ERROR Metadata response reported invalid topics [topic dfsa] (org.apache.kafka.clients.Metadata:274)
+[2020-01-15 10:08:22,427] ERROR Topic authorization failed for topics [foo] (org.apache.kafka.clients.Metadata:281)
+[2020-01-15 10:08:22,437] ERROR Topic authorization failed for topics [foo] (org.apache.kafka.clients.Metadata:281)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

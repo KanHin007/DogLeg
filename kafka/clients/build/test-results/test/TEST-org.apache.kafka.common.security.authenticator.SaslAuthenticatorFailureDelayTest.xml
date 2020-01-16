@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.kafka.common.security.authenticator.SaslAuthenticatorFailureDelayTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:08:28" hostname="localhost" time="7.214">
+  <properties/>
+  <testcase name="testInvalidPasswordSaslPlain[failedAuthenticationDelayMs=0]" classname="org.apache.kafka.common.security.authenticator.SaslAuthenticatorFailureDelayTest" time="4.464"/>
+  <testcase name="testClientConnectionClose[failedAuthenticationDelayMs=0]" classname="org.apache.kafka.common.security.authenticator.SaslAuthenticatorFailureDelayTest" time="0.401"/>
+  <testcase name="testInvalidPasswordSaslPlain[failedAuthenticationDelayMs=200]" classname="org.apache.kafka.common.security.authenticator.SaslAuthenticatorFailureDelayTest" time="0.896"/>
+  <testcase name="testClientConnectionClose[failedAuthenticationDelayMs=200]" classname="org.apache.kafka.common.security.authenticator.SaslAuthenticatorFailureDelayTest" time="1.452"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.kafka.clients.admin.KafkaAdminClientTest" tests="56" skipped="1" failures="0" errors="0" timestamp="2020-01-15T02:08:10" hostname="localhost" time="8.451">
+  <properties/>
+  <testcase name="testGetOrCreateListValue" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.446"/>
+  <testcase name="testListOffsets" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="2.769"/>
+  <testcase name="testIncrementalAlterConfigs" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.019"/>
+  <testcase name="testCreateTopics" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.015"/>
+  <testcase name="testDescribeNonConsumerGroups" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.015"/>
+  <testcase name="testDeleteRecords" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.007"/>
+  <testcase name="testConnectionFailureOnMetadataUpdate" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.138"/>
+  <testcase name="testGetSubLevelError" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.0"/>
+  <testcase name="testDeleteConsumerGroupOffsets" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.012"/>
+  <testcase name="testInvalidTopicNames" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.007"/>
+  <testcase name="testAlterConsumerGroupOffsetsRetriableErrors" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.013"/>
+  <testcase name="testDescribeAcls" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.008"/>
+  <testcase name="testAlterConsumerGroupOffsetsFindCoordinatorRetriableErrors" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.302"/>
+  <testcase name="testDeleteConsumerGroupOffsetsFindCoordinatorNonRetriableErrors" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.005"/>
+  <testcase name="testListOffsetsMetadataNonRetriableErrors" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.029"/>
+  <testcase name="testCreateTopicsHandleNotControllerException" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.146"/>
+  <testcase name="testPrettyPrintException" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.001"/>
+  <testcase name="testDescribeMultipleConsumerGroups" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.009"/>
+  <testcase name="testAlterPartitionReassignments" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.113"/>
+  <testcase name="testDescribeConsumerGroupsWithAuthorizedOperationsOmitted" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.004"/>
+  <testcase name="testTimeoutWithoutMetadata" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="1.02"/>
+  <testcase name="testDeleteConsumerGroupOffsetsFindCoordinatorRetriableErrors" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.203"/>
+  <testcase name="testDeleteRecordsTopicAuthorizationError" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.003"/>
+  <testcase name="testListOffsetsRetriableErrors" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.005"/>
+  <testcase name="testListOffsetsMetadataRetriableErrors" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.215"/>
+  <testcase name="testListConsumerGroupsMetadataFailure" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.005"/>
+  <testcase name="testCloseAdminClientInCallback" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.005"/>
+  <testcase name="testListPartitionReassignments" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.105"/>
+  <testcase name="testDescribeConsumerGroups" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.422"/>
+  <testcase name="testDeleteTopics" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.006"/>
+  <testcase name="testAlterConsumerGroupOffsetsNonRetriableErrors" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.003"/>
+  <testcase name="testDescribeCluster" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.003"/>
+  <testcase name="testAlterConsumerGroupOffsetsFindCoordinatorNonRetriableErrors" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.001"/>
+  <testcase name="testDescribeConfigs" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.004"/>
+  <testcase name="testCreateAcls" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.005"/>
+  <testcase name="testCloseAdminClient" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.001"/>
+  <testcase name="testPropagatedMetadataFetchException" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.002"/>
+  <testcase name="testCreatePartitions" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.005"/>
+  <testcase name="testAdminClientApisAuthenticationFailure" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.006"/>
+  <testcase name="testListConsumerGroups" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.32"/>
+  <testcase name="testDeleteConsumerGroups" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.429"/>
+  <testcase name="testMetadataRetries" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.106"/>
+  <testcase name="testCreateTopicsRetryBackoff" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.007"/>
+  <testcase name="testDeleteAcls" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.005"/>
+  <testcase name="testAlterConsumerGroupOffsets" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.002"/>
+  <testcase name="testHandleTimeout" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testElectLeaders" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.254"/>
+  <testcase name="testDeleteRecordsMultipleSends" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.003"/>
+  <testcase name="testDeleteConsumerGroupOffsetsRetriableErrors" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.204"/>
+  <testcase name="testListOffsetsNonRetriableErrors" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.002"/>
+  <testcase name="testGenerateClientId" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.001"/>
+  <testcase name="testDescribeConsumerGroupOffsets" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.314"/>
+  <testcase name="testRemoveMembersFromGroup" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.507"/>
+  <testcase name="testCalcTimeoutMsRemainingAsInt" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.0"/>
+  <testcase name="testUnreachableBootstrapServer" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.207"/>
+  <testcase name="testDeleteConsumerGroupOffsetsNonRetriableErrors" classname="org.apache.kafka.clients.admin.KafkaAdminClientTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

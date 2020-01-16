@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.log.LogValidatorTest" tests="52" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:32:15" hostname="localhost" time="0.167">
+  <properties/>
+  <testcase name="testRecompressedBatchWithoutRecordsNotAllowed" classname="kafka.log.LogValidatorTest" time="0.001"/>
+  <testcase name="testCompressedV1" classname="kafka.log.LogValidatorTest" time="0.019"/>
+  <testcase name="testCompressedV2" classname="kafka.log.LogValidatorTest" time="0.002"/>
+  <testcase name="testDownConversionOfIdempotentRecordsNotPermitted" classname="kafka.log.LogValidatorTest" time="0.0"/>
+  <testcase name="testOffsetAssignmentAfterUpConversionV0ToV2NonCompressed" classname="kafka.log.LogValidatorTest" time="0.003"/>
+  <testcase name="testInvalidRecordExceptionHasBatchIndex" classname="kafka.log.LogValidatorTest" time="0.007"/>
+  <testcase name="testAbsoluteOffsetAssignmentCompressed" classname="kafka.log.LogValidatorTest" time="0.002"/>
+  <testcase name="testLogAppendTimeWithRecompressionV1" classname="kafka.log.LogValidatorTest" time="0.002"/>
+  <testcase name="testLogAppendTimeWithRecompressionV2" classname="kafka.log.LogValidatorTest" time="0.001"/>
+  <testcase name="testCreateTimeUpConversionV0ToV1" classname="kafka.log.LogValidatorTest" time="0.002"/>
+  <testcase name="testCreateTimeUpConversionV0ToV2" classname="kafka.log.LogValidatorTest" time="0.001"/>
+  <testcase name="testCreateTimeUpConversionV1ToV2" classname="kafka.log.LogValidatorTest" time="0.003"/>
+  <testcase name="testOffsetAssignmentAfterDownConversionV2ToV0Compressed" classname="kafka.log.LogValidatorTest" time="0.001"/>
+  <testcase name="testZStdCompressedWithUnavailableIBPVersion" classname="kafka.log.LogValidatorTest" time="0.001"/>
+  <testcase name="testOffsetAssignmentAfterUpConversionV1ToV2Compressed" classname="kafka.log.LogValidatorTest" time="0.001"/>
+  <testcase name="testOffsetAssignmentAfterUpConversionV0ToV1NonCompressed" classname="kafka.log.LogValidatorTest" time="0.001"/>
+  <testcase name="testDownConversionOfTransactionalRecordsNotPermitted" classname="kafka.log.LogValidatorTest" time="0.001"/>
+  <testcase name="testOffsetAssignmentAfterUpConversionV0ToV1Compressed" classname="kafka.log.LogValidatorTest" time="0.001"/>
+  <testcase name="testInvalidTimestampExceptionHasBatchIndex" classname="kafka.log.LogValidatorTest" time="0.002"/>
+  <testcase name="testRelativeOffsetAssignmentNonCompressedV1" classname="kafka.log.LogValidatorTest" time="0.0"/>
+  <testcase name="testRelativeOffsetAssignmentNonCompressedV2" classname="kafka.log.LogValidatorTest" time="0.0"/>
+  <testcase name="testControlRecordsNotAllowedFromClients" classname="kafka.log.LogValidatorTest" time="0.003"/>
+  <testcase name="testRelativeOffsetAssignmentCompressedV1" classname="kafka.log.LogValidatorTest" time="0.001"/>
+  <testcase name="testRelativeOffsetAssignmentCompressedV2" classname="kafka.log.LogValidatorTest" time="0.0"/>
+  <testcase name="testOffsetAssignmentAfterDownConversionV2ToV1NonCompressed" classname="kafka.log.LogValidatorTest" time="0.001"/>
+  <testcase name="testMisMatchMagic" classname="kafka.log.LogValidatorTest" time="0.017"/>
+  <testcase name="testLogAppendTimeNonCompressedV1" classname="kafka.log.LogValidatorTest" time="0.002"/>
+  <testcase name="testOffsetAssignmentAfterDownConversionV2ToV0NonCompressed" classname="kafka.log.LogValidatorTest" time="0.001"/>
+  <testcase name="testControlRecordsNotCompressed" classname="kafka.log.LogValidatorTest" time="0.0"/>
+  <testcase name="testInvalidCreateTimeNonCompressedV1" classname="kafka.log.LogValidatorTest" time="0.001"/>
+  <testcase name="testInvalidCreateTimeNonCompressedV2" classname="kafka.log.LogValidatorTest" time="0.001"/>
+  <testcase name="testCompressedBatchWithoutRecordsNotAllowed" classname="kafka.log.LogValidatorTest" time="0.001"/>
+  <testcase name="testOnlyOneBatch" classname="kafka.log.LogValidatorTest" time="0.005"/>
+  <testcase name="testBatchWithInvalidRecordsAndInvalidTimestamp" classname="kafka.log.LogValidatorTest" time="0.003"/>
+  <testcase name="testAllowMultiBatch" classname="kafka.log.LogValidatorTest" time="0.0"/>
+  <testcase name="testInvalidOffsetRangeAndRecordCount" classname="kafka.log.LogValidatorTest" time="0.003"/>
+  <testcase name="testLogAppendTimeWithoutRecompressionV1" classname="kafka.log.LogValidatorTest" time="0.002"/>
+  <testcase name="testLogAppendTimeWithoutRecompressionV2" classname="kafka.log.LogValidatorTest" time="0.001"/>
+  <testcase name="testUncompressedBatchWithoutRecordsNotAllowed" classname="kafka.log.LogValidatorTest" time="0.0"/>
+  <testcase name="testOffsetAssignmentAfterDownConversionV1ToV0NonCompressed" classname="kafka.log.LogValidatorTest" time="0.001"/>
+  <testcase name="testAbsoluteOffsetAssignmentNonCompressed" classname="kafka.log.LogValidatorTest" time="0.0"/>
+  <testcase name="testOffsetAssignmentAfterDownConversionV2ToV1Compressed" classname="kafka.log.LogValidatorTest" time="0.002"/>
+  <testcase name="testOffsetAssignmentAfterDownConversionV1ToV0Compressed" classname="kafka.log.LogValidatorTest" time="0.002"/>
+  <testcase name="testOffsetAssignmentAfterUpConversionV0ToV2Compressed" classname="kafka.log.LogValidatorTest" time="0.0"/>
+  <testcase name="testNonCompressedV1" classname="kafka.log.LogValidatorTest" time="0.033"/>
+  <testcase name="testNonCompressedV2" classname="kafka.log.LogValidatorTest" time="0.001"/>
+  <testcase name="testOffsetAssignmentAfterUpConversionV1ToV2NonCompressed" classname="kafka.log.LogValidatorTest" time="0.001"/>
+  <testcase name="testInvalidCreateTimeCompressedV1" classname="kafka.log.LogValidatorTest" time="0.002"/>
+  <testcase name="testInvalidCreateTimeCompressedV2" classname="kafka.log.LogValidatorTest" time="0.001"/>
+  <testcase name="testNonIncreasingOffsetRecordBatchHasMetricsLogged" classname="kafka.log.LogValidatorTest" time="0.008"/>
+  <testcase name="testRecompressionV1" classname="kafka.log.LogValidatorTest" time="0.003"/>
+  <testcase name="testRecompressionV2" classname="kafka.log.LogValidatorTest" time="0.003"/>
+  <system-out><![CDATA[0 Record LegacyRecordBatch(offset=1234567, Record(magic=1, attributes=0, compression=NONE, crc=1105009589, NoTimestampType=-1, key=1 bytes, value=1 bytes))'s magic does not match outer magic 0 in topic partition topic-0.
+1 Record LegacyRecordBatch(offset=1234568, Record(magic=1, attributes=0, compression=NONE, crc=4253481094, NoTimestampType=-1, key=1 bytes, value=1 bytes))'s magic does not match outer magic 0 in topic partition topic-0.
+2 Record LegacyRecordBatch(offset=1234569, Record(magic=1, attributes=0, compression=NONE, crc=3793476498, NoTimestampType=-1, key=1 bytes, value=1 bytes))'s magic does not match outer magic 0 in topic partition topic-0.
+3 Record LegacyRecordBatch(offset=1234570, Record(magic=1, attributes=0, compression=NONE, crc=1581267105, NoTimestampType=-1, key=1 bytes, value=1 bytes))'s magic does not match outer magic 0 in topic partition topic-0.
+4 Record LegacyRecordBatch(offset=1234571, Record(magic=1, attributes=0, compression=NONE, crc=3709967802, NoTimestampType=-1, key=1 bytes, value=1 bytes))'s magic does not match outer magic 0 in topic partition topic-0.
+5 Record LegacyRecordBatch(offset=1234572, Record(magic=1, attributes=0, compression=NONE, crc=1635417737, NoTimestampType=-1, key=1 bytes, value=1 bytes))'s magic does not match outer magic 0 in topic partition topic-0.
+6 Record LegacyRecordBatch(offset=1234573, Record(magic=1, attributes=0, compression=NONE, crc=2129091997, NoTimestampType=-1, key=1 bytes, value=1 bytes))'s magic does not match outer magic 0 in topic partition topic-0.
+7 Record LegacyRecordBatch(offset=1234574, Record(magic=1, attributes=0, compression=NONE, crc=3267149486, NoTimestampType=-1, key=1 bytes, value=1 bytes))'s magic does not match outer magic 0 in topic partition topic-0.
+8 Record LegacyRecordBatch(offset=1234575, Record(magic=1, attributes=0, compression=NONE, crc=2740261354, NoTimestampType=-1, key=1 bytes, value=1 bytes))'s magic does not match outer magic 0 in topic partition topic-0.
+9 Record LegacyRecordBatch(offset=1234576, Record(magic=1, attributes=0, compression=NONE, crc=521073369, NoTimestampType=-1, key=1 bytes, value=1 bytes))'s magic does not match outer magic 0 in topic partition topic-0.
+10 Record LegacyRecordBatch(offset=1234577, Record(magic=1, attributes=0, compression=NONE, crc=1889351871, NoTimestampType=-1, key=2 bytes, value=2 bytes))'s magic does not match outer magic 0 in topic partition topic-0.
+11 Record LegacyRecordBatch(offset=1234578, Record(magic=1, attributes=0, compression=NONE, crc=2716664733, NoTimestampType=-1, key=2 bytes, value=2 bytes))'s magic does not match outer magic 0 in topic partition topic-0.
+12 Record LegacyRecordBatch(offset=1234579, Record(magic=1, attributes=0, compression=NONE, crc=151799994, NoTimestampType=-1, key=2 bytes, value=2 bytes))'s magic does not match outer magic 0 in topic partition topic-0.
+13 Record LegacyRecordBatch(offset=1234580, Record(magic=1, attributes=0, compression=NONE, crc=3632034712, NoTimestampType=-1, key=2 bytes, value=2 bytes))'s magic does not match outer magic 0 in topic partition topic-0.
+14 Record LegacyRecordBatch(offset=1234581, Record(magic=1, attributes=0, compression=NONE, crc=2210388149, NoTimestampType=-1, key=2 bytes, value=2 bytes))'s magic does not match outer magic 0 in topic partition topic-0.
+15 Record LegacyRecordBatch(offset=1234582, Record(magic=1, attributes=0, compression=NONE, crc=1389355927, NoTimestampType=-1, key=2 bytes, value=2 bytes))'s magic does not match outer magic 0 in topic partition topic-0.
+16 Record LegacyRecordBatch(offset=1234583, Record(magic=1, attributes=0, compression=NONE, crc=4197361840, NoTimestampType=-1, key=2 bytes, value=2 bytes))'s magic does not match outer magic 0 in topic partition topic-0.
+17 Record LegacyRecordBatch(offset=1234584, Record(magic=1, attributes=0, compression=NONE, crc=727618450, NoTimestampType=-1, key=2 bytes, value=2 bytes))'s magic does not match outer magic 0 in topic partition topic-0.
+18 Record LegacyRecordBatch(offset=1234585, Record(magic=1, attributes=0, compression=NONE, crc=1302986474, NoTimestampType=-1, key=2 bytes, value=2 bytes))'s magic does not match outer magic 0 in topic partition topic-0.
+19 Record LegacyRecordBatch(offset=1234586, Record(magic=1, attributes=0, compression=NONE, crc=2631517640, NoTimestampType=-1, key=2 bytes, value=2 bytes))'s magic does not match outer magic 0 in topic partition topic-0.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

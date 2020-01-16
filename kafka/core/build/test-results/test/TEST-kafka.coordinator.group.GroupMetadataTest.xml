@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.coordinator.group.GroupMetadataTest" tests="45" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:32:08" hostname="localhost" time="0.018">
+  <properties/>
+  <testcase name="testTransactionBeatsConsumerOffsetCommit" classname="kafka.coordinator.group.GroupMetadataTest" time="0.002"/>
+  <testcase name="testOffsetCommitFailure" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testPreparingRebalanceToStableIllegalTransition" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testReplaceGroupInstanceWithNonExistingMember" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testHasPendingNonTxnOffsets" classname="kafka.coordinator.group.GroupMetadataTest" time="0.001"/>
+  <testcase name="testConsumerBeatsTransactionalOffsetCommit" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testAwaitingRebalanceToAwaitingRebalanceIllegalTransition" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testStableToDeadTransition" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testInitNextGenerationEmptyGroup" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testCannotRebalanceWhenDead" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testInitNextGeneration" classname="kafka.coordinator.group.GroupMetadataTest" time="0.002"/>
+  <testcase name="testPreparingRebalanceToEmptyTransition" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testSelectProtocol" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testCannotRebalanceWhenPreparingRebalance" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testEmptyToAwaitingRebalanceIllegalTransition" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testDeadToPreparingRebalanceIllegalTransition" classname="kafka.coordinator.group.GroupMetadataTest" time="0.001"/>
+  <testcase name="testFailedTxnOffsetCommitLeavesNoPendingState" classname="kafka.coordinator.group.GroupMetadataTest" time="0.001"/>
+  <testcase name="testNotInvokeJoinCallback" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testCanRebalanceWhenCompletingRebalance" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testDeadToAwaitingRebalanceIllegalTransition" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testInvokeJoinCallback" classname="kafka.coordinator.group.GroupMetadataTest" time="0.001"/>
+  <testcase name="testEmptyToDeadTransition" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testSelectProtocolRaisesIfNoMembers" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testStableToPreparingRebalanceTransition" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testSubscribedTopicsNonConsumerGroup" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testReplaceGroupInstance" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testTransactionalCommitIsAbortedAndConsumerCommitWins" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testAwaitingRebalanceToPreparingRebalanceTransition" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testPreparingRebalanceToDeadTransition" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testStableToStableIllegalTransition" classname="kafka.coordinator.group.GroupMetadataTest" time="0.001"/>
+  <testcase name="testOffsetCommitFailureWithAnotherPending" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testSubscribedTopics" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testDeadToStableIllegalTransition" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testOffsetCommit" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testAwaitingRebalanceToStableTransition" classname="kafka.coordinator.group.GroupMetadataTest" time="0.001"/>
+  <testcase name="testSupportsProtocols" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testEmptyToStableIllegalTransition" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testCanRebalanceWhenStable" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testNotInvokeSyncCallback" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testHasPendingTxnOffsets" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testOffsetCommitWithAnotherPending" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testReplaceGroupInstanceWithEmptyGroupInstanceId" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testPreparingRebalanceToPreparingRebalanceIllegalTransition" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <testcase name="testInvokeSyncCallback" classname="kafka.coordinator.group.GroupMetadataTest" time="0.001"/>
+  <testcase name="testSelectProtocolChoosesCompatibleProtocol" classname="kafka.coordinator.group.GroupMetadataTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

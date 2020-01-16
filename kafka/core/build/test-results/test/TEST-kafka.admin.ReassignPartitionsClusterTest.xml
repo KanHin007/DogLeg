@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.admin.ReassignPartitionsClusterTest" tests="31" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:12:15" hostname="localhost" time="281.515">
+  <properties/>
+  <testcase name="shouldListMovingPartitionsThroughApi" classname="kafka.admin.ReassignPartitionsClusterTest" time="9.232"/>
+  <testcase name="shouldExecuteThrottledReassignment" classname="kafka.admin.ReassignPartitionsClusterTest" time="13.083"/>
+  <testcase name="testProduceAndConsumeWithReassignmentInProgress" classname="kafka.admin.ReassignPartitionsClusterTest" time="11.197"/>
+  <testcase name="shouldUseLatestOrderingIfTwoConsecutiveReassignmentsHaveSameSetButDifferentOrdering" classname="kafka.admin.ReassignPartitionsClusterTest" time="8.044"/>
+  <testcase name="shouldMoveSinglePartitionWithinBroker" classname="kafka.admin.ReassignPartitionsClusterTest" time="4.842"/>
+  <testcase name="znodeReassignmentShouldOverrideApiTriggeredReassignment" classname="kafka.admin.ReassignPartitionsClusterTest" time="6.836"/>
+  <testcase name="shouldFailIfProposedDoesNotMatchExisting" classname="kafka.admin.ReassignPartitionsClusterTest" time="5.981"/>
+  <testcase name="shouldTriggerReassignmentOnControllerStartup" classname="kafka.admin.ReassignPartitionsClusterTest" time="20.597"/>
+  <testcase name="shouldReassignThroughApi" classname="kafka.admin.ReassignPartitionsClusterTest" time="6.347"/>
+  <testcase name="shouldFailIfProposedHasInconsistentReplicasAndLogDirs" classname="kafka.admin.ReassignPartitionsClusterTest" time="5.432"/>
+  <testcase name="shouldOnlyThrottleMovingReplicas" classname="kafka.admin.ReassignPartitionsClusterTest" time="9.21"/>
+  <testcase name="shouldExpandCluster" classname="kafka.admin.ReassignPartitionsClusterTest" time="8.016"/>
+  <testcase name="shouldBeAbleToCancelZkTriggeredReassignmentThroughApi" classname="kafka.admin.ReassignPartitionsClusterTest" time="5.391"/>
+  <testcase name="shouldFailIfProposedHasInvalidLogDir" classname="kafka.admin.ReassignPartitionsClusterTest" time="5.165"/>
+  <testcase name="shouldFailIfProposedHasEmptyReplicaList" classname="kafka.admin.ReassignPartitionsClusterTest" time="4.611"/>
+  <testcase name="shouldDeleteReassignmentZnodeAfterApiReassignmentForPartitionCompletes" classname="kafka.admin.ReassignPartitionsClusterTest" time="7.976"/>
+  <testcase name="shouldFailIfProposedHasInvalidBrokerID" classname="kafka.admin.ReassignPartitionsClusterTest" time="5.612"/>
+  <testcase name="shouldMoveSinglePartition" classname="kafka.admin.ReassignPartitionsClusterTest" time="5.894"/>
+  <testcase name="shouldPerformMultipleReassignmentOperationsOverVariousTopics" classname="kafka.admin.ReassignPartitionsClusterTest" time="11.003"/>
+  <testcase name="shouldShrinkCluster" classname="kafka.admin.ReassignPartitionsClusterTest" time="7.401"/>
+  <testcase name="testReassignmentMatchesCurrentAssignment" classname="kafka.admin.ReassignPartitionsClusterTest" time="5.847"/>
+  <testcase name="shouldListReassignmentsTriggeredByZk" classname="kafka.admin.ReassignPartitionsClusterTest" time="7.761"/>
+  <testcase name="shouldBeAbleToIncrementallyStackDifferentReassignments" classname="kafka.admin.ReassignPartitionsClusterTest" time="7.757"/>
+  <testcase name="testHwAfterPartitionReassignment" classname="kafka.admin.ReassignPartitionsClusterTest" time="7.03"/>
+  <testcase name="shouldPerformThrottledReassignmentOverVariousTopics" classname="kafka.admin.ReassignPartitionsClusterTest" time="10.897"/>
+  <testcase name="shouldBeAbleToCancelThroughApi" classname="kafka.admin.ReassignPartitionsClusterTest" time="16.165"/>
+  <testcase name="shouldTriggerReassignmentWithZnodePrecedenceOnControllerStartup" classname="kafka.admin.ReassignPartitionsClusterTest" time="32.408"/>
+  <testcase name="shouldCreatePartitionsForTopicNotInReassignment" classname="kafka.admin.ReassignPartitionsClusterTest" time="6.407"/>
+  <testcase name="testCancelAndSetSomeReassignments" classname="kafka.admin.ReassignPartitionsClusterTest" time="11.983"/>
+  <testcase name="shouldChangeThrottleOnRerunAndRemoveOnVerify" classname="kafka.admin.ReassignPartitionsClusterTest" time="6.871"/>
+  <testcase name="shouldMoveSubsetOfPartitions" classname="kafka.admin.ReassignPartitionsClusterTest" time="6.519"/>
+  <system-out><![CDATA[[2020-01-15 10:12:25,571] ERROR [ReplicaFetcher replicaId=101, leaderId=100, fetcherId=0] Error for partition my-topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Current partition replica assignment
+
+{"version":1,"partitions":[{"topic":"my-topic","partition":0,"replicas":[100,101],"log_dirs":["any","any"]}]}
+
+Save this to use as the --reassignment-json-file option during rollback
+Warning: You must run Verify periodically, until the reassignment completes, to ensure the throttle is removed. You can also alter the throttle by rerunning the Execute command passing a new value.
+The inter-broker throttle limit was set to 10000000 B/s
+Successfully started reassignment of partitions.
+[2020-01-15 10:12:50,298] ERROR [ReplicaFetcher replicaId=101, leaderId=100, fetcherId=0] Error for partition my-topic-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:12:50,299] ERROR [ReplicaFetcher replicaId=101, leaderId=100, fetcherId=0] Error for partition my-topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:12:50,405] ERROR [ReplicaFetcher replicaId=101, leaderId=100, fetcherId=0] Error for partition my-topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:12:50,405] ERROR [ReplicaFetcher replicaId=101, leaderId=100, fetcherId=0] Error for partition my-topic-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Current partition replica assignment
+
+{"version":1,"partitions":[{"topic":"my-topic","partition":0,"replicas":[100],"log_dirs":["any"]}]}
+
+Save this to use as the --reassignment-json-file option during rollback
+Successfully started reassignment of partitions.
+Current partition replica assignment
+
+{"version":1,"partitions":[{"topic":"my-topic","partition":1,"replicas":[101,100],"log_dirs":["any","any"]},{"topic":"my-topic","partition":0,"replicas":[101,100],"log_dirs":["any","any"]}]}
+
+Save this to use as the --reassignment-json-file option during rollback
+Warning: You must run Verify periodically, until the reassignment completes, to ensure the throttle is removed. You can also alter the throttle by rerunning the Execute command passing a new value.
+The inter-broker throttle limit was set to 1000000 B/s
+Successfully started reassignment of partitions.
+[2020-01-15 10:13:16,425] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition orders-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:13:16,529] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition orders-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:13:16,635] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition orders-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:13:16,740] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition orders-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:13:30,773] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition orders-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:13:48,573] ERROR [ReplicaFetcher replicaId=104, leaderId=103, fetcherId=0] Error for partition topic1-2 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:13:49,937] ERROR [ReplicaFetcher replicaId=105, leaderId=104, fetcherId=0] Error for partition topic2-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:13:49,939] ERROR [ReplicaFetcher replicaId=105, leaderId=104, fetcherId=0] Error for partition topic2-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:13:50,045] ERROR [ReplicaFetcher replicaId=105, leaderId=104, fetcherId=0] Error for partition topic2-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:13:50,046] ERROR [ReplicaFetcher replicaId=105, leaderId=104, fetcherId=0] Error for partition topic2-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:13:50,153] ERROR [ReplicaFetcher replicaId=105, leaderId=104, fetcherId=0] Error for partition topic2-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:13:50,153] ERROR [ReplicaFetcher replicaId=105, leaderId=104, fetcherId=0] Error for partition topic2-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:13:50,257] ERROR [ReplicaFetcher replicaId=105, leaderId=104, fetcherId=0] Error for partition topic2-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:13:50,258] ERROR [ReplicaFetcher replicaId=105, leaderId=104, fetcherId=0] Error for partition topic2-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Current partition replica assignment
+
+{"version":1,"partitions":[{"topic":"topic1","partition":2,"replicas":[103,104],"log_dirs":["any","any"]},{"topic":"topic2","partition":0,"replicas":[104,105],"log_dirs":["any","any"]},{"topic":"topic2","partition":1,"replicas":[104,105],"log_dirs":["any","any"]},{"topic":"topic1","partition":0,"replicas":[100,101],"log_dirs":["any","any"]},{"topic":"topic1","partition":1,"replicas":[100,101],"log_dirs":["any","any"]},{"topic":"topic2","partition":2,"replicas":[103,104],"log_dirs":["any","any"]}]}
+
+Save this to use as the --reassignment-json-file option during rollback
+Warning: You must run Verify periodically, until the reassignment completes, to ensure the throttle is removed. You can also alter the throttle by rerunning the Execute command passing a new value.
+The inter-broker throttle limit was set to 1000000 B/s
+Successfully started reassignment of partitions.
+[2020-01-15 10:13:58,635] ERROR [ReplicaFetcher replicaId=101, leaderId=100, fetcherId=0] Error for partition my-topic-2 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:13:58,636] ERROR [ReplicaFetcher replicaId=101, leaderId=100, fetcherId=0] Error for partition my-topic-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:13:58,636] ERROR [ReplicaFetcher replicaId=101, leaderId=100, fetcherId=0] Error for partition my-topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Current partition replica assignment
+
+{"version":1,"partitions":[{"topic":"my-topic","partition":2,"replicas":[100,101],"log_dirs":["any","any"]},{"topic":"my-topic","partition":1,"replicas":[100,101],"log_dirs":["any","any"]},{"topic":"my-topic","partition":0,"replicas":[100,101],"log_dirs":["any","any"]}]}
+
+Save this to use as the --reassignment-json-file option during rollback
+Successfully started reassignment of partitions.
+Current partition replica assignment
+
+{"version":1,"partitions":[{"topic":"my-topic","partition":0,"replicas":[100],"log_dirs":["any"]}]}
+
+Save this to use as the --reassignment-json-file option during rollback
+Current partition replica assignment
+
+{"version":1,"partitions":[{"topic":"A","partition":1,"replicas":[100],"log_dirs":["any"]},{"topic":"A","partition":0,"replicas":[100],"log_dirs":["any"]}]}
+
+Save this to use as the --reassignment-json-file option during rollback
+Successfully started reassignment of partitions.
+Current partition replica assignment
+
+{"version":1,"partitions":[{"topic":"my-topic","partition":0,"replicas":[100],"log_dirs":["any"]}]}
+
+Save this to use as the --reassignment-json-file option during rollback
+Successfully started reassignment of partitions.
+[2020-01-15 10:14:40,891] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition orders-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:40,892] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition orders-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:40,931] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition orders-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:40,931] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition orders-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:40,998] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition orders-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:40,999] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition orders-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:41,037] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition orders-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:41,037] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition orders-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:52,446] ERROR [ReplicaFetcher replicaId=101, leaderId=100, fetcherId=0] Error for partition my-topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:52,551] ERROR [ReplicaFetcher replicaId=101, leaderId=100, fetcherId=0] Error for partition my-topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:52,655] ERROR [ReplicaFetcher replicaId=101, leaderId=100, fetcherId=0] Error for partition my-topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Current partition replica assignment
+
+{"version":1,"partitions":[{"topic":"my-topic","partition":2,"replicas":[102,100],"log_dirs":["any","any"]},{"topic":"my-topic","partition":1,"replicas":[101,102],"log_dirs":["any","any"]},{"topic":"my-topic","partition":0,"replicas":[100,101],"log_dirs":["any","any"]}]}
+
+Save this to use as the --reassignment-json-file option during rollback
+Successfully started reassignment of partitions.
+Current partition replica assignment
+
+{"version":1,"partitions":[{"topic":"my-topic","partition":0,"replicas":[100],"log_dirs":["any"]}]}
+
+Save this to use as the --reassignment-json-file option during rollback
+Successfully started reassignment of partitions.
+Current partition replica assignment
+
+{"version":1,"partitions":[{"topic":"my-topic","partition":0,"replicas":[100],"log_dirs":["any"]}]}
+
+Save this to use as the --reassignment-json-file option during rollback
+Warning: You must run Verify periodically, until the reassignment completes, to ensure the throttle is removed. You can also alter the throttle by rerunning the Execute command passing a new value.
+The inter-broker throttle limit was set to 1000000 B/s
+Successfully started reassignment of partitions.
+Current partition replica assignment
+
+{"version":1,"partitions":[{"topic":"my-topic","partition":0,"replicas":[100],"log_dirs":["any"]}]}
+
+Save this to use as the --reassignment-json-file option during rollback
+Successfully started reassignment of partitions.
+[2020-01-15 10:15:27,884] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition orders-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:15:27,884] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition orders-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:15:27,884] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition orders-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:15:27,885] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition orders-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+The inter-broker throttle limit was set to 1000 B/s
+[2020-01-15 10:15:59,513] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition orders-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:15:59,626] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition orders-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:15:59,730] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition orders-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:15:59,835] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition orders-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:15:59,942] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition orders-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:16:00,047] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition orders-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:16:00,153] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition orders-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:16:00,255] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition orders-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:16:00,359] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition orders-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:16:00,462] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition orders-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:16:00,564] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition orders-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:16:00,669] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition orders-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:16:00,775] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition orders-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:16:00,880] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition orders-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:16:00,985] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition orders-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:16:01,088] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition orders-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:16:01,191] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition orders-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:16:01,296] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition orders-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:16:01,397] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition orders-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:16:01,503] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition orders-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:16:44,946] ERROR [ReplicaFetcher replicaId=101, leaderId=100, fetcherId=0] Error for partition my-topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Current partition replica assignment
+
+{"version":1,"partitions":[{"topic":"my-topic","partition":0,"replicas":[100,101],"log_dirs":["any","any"]}]}
+
+Save this to use as the --reassignment-json-file option during rollback
+Warning: You must run Verify periodically, until the reassignment completes, to ensure the throttle is removed. You can also alter the throttle by rerunning the Execute command passing a new value.
+The inter-broker throttle limit was set to 1000000 B/s
+Successfully started reassignment of partitions.
+Status of partition reassignment: 
+Reassignment of partition my-topic-0 is still in progress
+There is an existing assignment running.
+Status of partition reassignment: 
+Reassignment of partition my-topic-0 completed successfully
+Throttle was removed.
+[2020-01-15 10:16:51,637] ERROR [ReplicaFetcher replicaId=102, leaderId=101, fetcherId=0] Error for partition topic1-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Current partition replica assignment
+
+{"version":1,"partitions":[{"topic":"topic1","partition":2,"replicas":[102,100],"log_dirs":["any","any"]},{"topic":"topic2","partition":0,"replicas":[100,101],"log_dirs":["any","any"]},{"topic":"topic2","partition":1,"replicas":[101,102],"log_dirs":["any","any"]},{"topic":"topic1","partition":0,"replicas":[100,101],"log_dirs":["any","any"]},{"topic":"topic1","partition":1,"replicas":[101,102],"log_dirs":["any","any"]},{"topic":"topic2","partition":2,"replicas":[102,100],"log_dirs":["any","any"]}]}
+
+Save this to use as the --reassignment-json-file option during rollback
+Successfully started reassignment of partitions.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

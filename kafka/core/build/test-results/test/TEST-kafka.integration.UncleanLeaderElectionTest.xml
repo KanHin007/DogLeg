@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.integration.UncleanLeaderElectionTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:23:24" hostname="localhost" time="115.932">
+  <properties/>
+  <testcase name="testTopicUncleanLeaderElectionEnable" classname="kafka.integration.UncleanLeaderElectionTest" time="16.949"/>
+  <testcase name="testUncleanLeaderElectionEnabled" classname="kafka.integration.UncleanLeaderElectionTest" time="17.841"/>
+  <testcase name="testUncleanLeaderElectionDisabled" classname="kafka.integration.UncleanLeaderElectionTest" time="28.421"/>
+  <testcase name="testUncleanLeaderElectionInvalidTopicOverride" classname="kafka.integration.UncleanLeaderElectionTest" time="5.132"/>
+  <testcase name="testUncleanLeaderElectionEnabledByTopicOverride" classname="kafka.integration.UncleanLeaderElectionTest" time="17.33"/>
+  <testcase name="testUncleanLeaderElectionDisabledByTopicOverride" classname="kafka.integration.UncleanLeaderElectionTest" time="30.259"/>
+  <system-out><![CDATA[[2020-01-15 10:24:51,249] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition topic4673886096265767883-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

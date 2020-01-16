@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class kafka.admin.PreferredReplicaLeaderElectionCommandTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class kafka.admin.PreferredReplicaLeaderElectionCommandTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/kafka.admin.html">kafka.admin</a> &gt; PreferredReplicaLeaderElectionCommandTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">12</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2m31.05s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testAuthzFailure</td>
+<td class="success">19.361s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testBasicPreferredReplicaElection</td>
+<td class="success">14.402s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testInvalidBrokerGiven</td>
+<td class="success">2.404s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMultipleBrokersGiven</td>
+<td class="success">14.800s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMultiplePartitionsSameAssignment</td>
+<td class="success">18.177s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testNoPartitionsGiven</td>
+<td class="success">16.170s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testNoopElection</td>
+<td class="success">5.506s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPreferredReplicaJsonData</td>
+<td class="success">0.521s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSingletonPartitionGiven</td>
+<td class="success">17.036s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testTimeout</td>
+<td class="success">21.291s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testTopicDoesNotExist</td>
+<td class="success">5.538s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testWithOfflinePreferredReplica</td>
+<td class="success">15.846s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Created preferred replica election path with test-0
+Successfully started preferred replica election for partitions Set(test-0)
+[2020-01-15 10:12:47,583] ERROR [Controller id=2] Error completing replica leader election (PREFERRED) for partition test-0 (kafka.controller.KafkaController:76)
+kafka.common.StateChangeFailedException: Failed to elect leader for partition test-0 under strategy PreferredReplicaPartitionLeaderElectionStrategy
+	at kafka.controller.ZkPartitionStateMachine.$anonfun$doElectLeaderForPartitions$7(PartitionStateMachine.scala:427)
+	at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)
+	at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)
+	at kafka.controller.ZkPartitionStateMachine.doElectLeaderForPartitions(PartitionStateMachine.scala:424)
+	at kafka.controller.ZkPartitionStateMachine.electLeaderForPartitions(PartitionStateMachine.scala:335)
+	at kafka.controller.ZkPartitionStateMachine.doHandleStateChanges(PartitionStateMachine.scala:236)
+	at kafka.controller.ZkPartitionStateMachine.handleStateChanges(PartitionStateMachine.scala:157)
+	at kafka.controller.KafkaController.onReplicaElection(KafkaController.scala:702)
+	at kafka.controller.KafkaController.processReplicaLeaderElection(KafkaController.scala:1754)
+	at kafka.controller.KafkaController.process(KafkaController.scala:1813)
+	at kafka.controller.QueuedEvent.process(ControllerEventManager.scala:52)
+	at kafka.controller.ControllerEventManager$ControllerEventThread.process$1(ControllerEventManager.scala:128)
+	at kafka.controller.ControllerEventManager$ControllerEventThread.$anonfun$doWork$1(ControllerEventManager.scala:131)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at kafka.metrics.KafkaTimer.time(KafkaTimer.scala:31)
+	at kafka.controller.ControllerEventManager$ControllerEventThread.doWork(ControllerEventManager.scala:131)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:96)
+This tool is deprecated. Please use kafka-leader-election tool. Tracking issue: KAFKA-8405
+Timeout waiting for election results
+Created preferred replica election path with test-1,test2-1
+This tool is deprecated. Please use kafka-leader-election tool. Tracking issue: KAFKA-8405
+Timeout waiting for election results
+[2020-01-15 10:13:22,875] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:13:22,950] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+This tool is deprecated. Please use kafka-leader-election tool. Tracking issue: KAFKA-8405
+Not authorized to perform leader election
+[2020-01-15 10:13:41,085] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:13:41,085] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+This tool is deprecated. Please use kafka-leader-election tool. Tracking issue: KAFKA-8405
+Preferred replica already elected for partitions 
+[2020-01-15 10:13:47,078] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:13:47,096] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+This tool is deprecated. Please use kafka-leader-election tool. Tracking issue: KAFKA-8405
+Successfully completed preferred leader election for partitions test-0
+This tool is deprecated. Please use kafka-leader-election tool. Tracking issue: KAFKA-8405
+Successfully completed preferred leader election for partitions testA-0, testB-0
+This tool is deprecated. Please use kafka-leader-election tool. Tracking issue: KAFKA-8405
+Error completing preferred leader election for partition: does.not.exist-0: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: The partition does not exist.
+[2020-01-15 10:14:27,599] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:27,599] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+This tool is deprecated. Please use kafka-leader-election tool. Tracking issue: KAFKA-8405
+Error completing preferred leader election for partition: test-0: org.apache.kafka.common.errors.PreferredLeaderNotAvailableException: Failed to elect leader for partition test-0 under strategy PreferredReplicaPartitionLeaderElectionStrategy
+[2020-01-15 10:14:43,834] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:43,930] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+This tool is deprecated. Please use kafka-leader-election tool. Tracking issue: KAFKA-8405
+Successfully completed preferred leader election for partitions test-0
+This tool is deprecated. Please use kafka-leader-election tool. Tracking issue: KAFKA-8405
+Successfully completed preferred leader election for partitions test-0
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.2</a> at 2020-1-15 10:48:49</p>
+</div>
+</div>
+</body>
+</html>

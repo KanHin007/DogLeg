@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.controller.PartitionStateMachineTest" tests="22" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:43:21" hostname="localhost" time="0.554">
+  <properties/>
+  <testcase name="testNonexistentPartitionToNewPartitionTransition" classname="kafka.controller.PartitionStateMachineTest" time="0.147"/>
+  <testcase name="testNewPartitionToOnlinePartitionTransitionErrorCodeFromCreateStates" classname="kafka.controller.PartitionStateMachineTest" time="0.003"/>
+  <testcase name="testOfflinePartitionToUncleanOnlinePartitionTransition" classname="kafka.controller.PartitionStateMachineTest" time="0.003"/>
+  <testcase name="testOfflinePartitionToNonexistentPartitionTransition" classname="kafka.controller.PartitionStateMachineTest" time="0.001"/>
+  <testcase name="testOfflinePartitionToOnlinePartitionTransitionZooKeeperClientExceptionFromStateLookup" classname="kafka.controller.PartitionStateMachineTest" time="0.002"/>
+  <testcase name="testOnlinePartitionToOfflineTransition" classname="kafka.controller.PartitionStateMachineTest" time="0.001"/>
+  <testcase name="testNewPartitionToOfflinePartitionTransition" classname="kafka.controller.PartitionStateMachineTest" time="0.001"/>
+  <testcase name="testUpdatingOfflinePartitionsCount" classname="kafka.controller.PartitionStateMachineTest" time="0.003"/>
+  <testcase name="testInvalidNonexistentPartitionToOnlinePartitionTransition" classname="kafka.controller.PartitionStateMachineTest" time="0.002"/>
+  <testcase name="testInvalidNonexistentPartitionToOfflinePartitionTransition" classname="kafka.controller.PartitionStateMachineTest" time="0.001"/>
+  <testcase name="testOnlinePartitionToOnlineTransition" classname="kafka.controller.PartitionStateMachineTest" time="0.002"/>
+  <testcase name="testInvalidNewPartitionToNonexistentPartitionTransition" classname="kafka.controller.PartitionStateMachineTest" time="0.002"/>
+  <testcase name="testNewPartitionToOnlinePartitionTransition" classname="kafka.controller.PartitionStateMachineTest" time="0.001"/>
+  <testcase name="testInvalidOnlinePartitionToNewPartitionTransition" classname="kafka.controller.PartitionStateMachineTest" time="0.001"/>
+  <testcase name="testUpdatingOfflinePartitionsCountDuringTopicDeletion" classname="kafka.controller.PartitionStateMachineTest" time="0.369"/>
+  <testcase name="testOfflinePartitionToOnlinePartitionTransitionErrorCodeFromStateLookup" classname="kafka.controller.PartitionStateMachineTest" time="0.002"/>
+  <testcase name="testOnlinePartitionToOnlineTransitionForControlledShutdown" classname="kafka.controller.PartitionStateMachineTest" time="0.003"/>
+  <testcase name="testNewPartitionToOnlinePartitionTransitionZooKeeperClientExceptionFromCreateStates" classname="kafka.controller.PartitionStateMachineTest" time="0.002"/>
+  <testcase name="testNoOfflinePartitionsChangeForTopicsBeingDeleted" classname="kafka.controller.PartitionStateMachineTest" time="0.001"/>
+  <testcase name="testInvalidOnlinePartitionToNonexistentPartitionTransition" classname="kafka.controller.PartitionStateMachineTest" time="0.001"/>
+  <testcase name="testInvalidOfflinePartitionToNewPartitionTransition" classname="kafka.controller.PartitionStateMachineTest" time="0.001"/>
+  <testcase name="testOfflinePartitionToOnlinePartitionTransition" classname="kafka.controller.PartitionStateMachineTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

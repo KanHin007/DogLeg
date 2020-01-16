@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="unit.kafka.cluster.AssignmentStateTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:32:47" hostname="localhost" time="0.138">
+  <properties/>
+  <testcase name="testPartitionAssignmentStatus[0]" classname="unit.kafka.cluster.AssignmentStateTest" time="0.042"/>
+  <testcase name="testPartitionAssignmentStatus[1]" classname="unit.kafka.cluster.AssignmentStateTest" time="0.01"/>
+  <testcase name="testPartitionAssignmentStatus[2]" classname="unit.kafka.cluster.AssignmentStateTest" time="0.022"/>
+  <testcase name="testPartitionAssignmentStatus[3]" classname="unit.kafka.cluster.AssignmentStateTest" time="0.011"/>
+  <testcase name="testPartitionAssignmentStatus[4]" classname="unit.kafka.cluster.AssignmentStateTest" time="0.01"/>
+  <testcase name="testPartitionAssignmentStatus[5]" classname="unit.kafka.cluster.AssignmentStateTest" time="0.012"/>
+  <testcase name="testPartitionAssignmentStatus[6]" classname="unit.kafka.cluster.AssignmentStateTest" time="0.011"/>
+  <testcase name="testPartitionAssignmentStatus[7]" classname="unit.kafka.cluster.AssignmentStateTest" time="0.01"/>
+  <testcase name="testPartitionAssignmentStatus[8]" classname="unit.kafka.cluster.AssignmentStateTest" time="0.009"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

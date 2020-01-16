@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.ReplicaFetchTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:47:15" hostname="localhost" time="4.37">
+  <properties/>
+  <testcase name="testReplicaFetcherThread" classname="kafka.server.ReplicaFetchTest" time="4.37"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

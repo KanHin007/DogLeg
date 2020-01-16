@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.admin.AdminRackAwareTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:11:57" hostname="localhost" time="1.164">
+  <properties/>
+  <testcase name="testAssignmentWithRackAwareWithUnevenRacks" classname="kafka.admin.AdminRackAwareTest" time="1.001"/>
+  <testcase name="testAssignmentWith2ReplicasRackAware" classname="kafka.admin.AdminRackAwareTest" time="0.015"/>
+  <testcase name="testAssignmentWithRackAwareWithUnevenReplicas" classname="kafka.admin.AdminRackAwareTest" time="0.012"/>
+  <testcase name="testSkipBrokerWithReplicaAlreadyAssigned" classname="kafka.admin.AdminRackAwareTest" time="0.008"/>
+  <testcase name="testAssignmentWithRackAware" classname="kafka.admin.AdminRackAwareTest" time="0.008"/>
+  <testcase name="testRackAwareExpansion" classname="kafka.admin.AdminRackAwareTest" time="0.006"/>
+  <testcase name="testAssignmentWith2ReplicasRackAwareWith6Partitions" classname="kafka.admin.AdminRackAwareTest" time="0.038"/>
+  <testcase name="testAssignmentWith2ReplicasRackAwareWith6PartitionsAnd3Brokers" classname="kafka.admin.AdminRackAwareTest" time="0.004"/>
+  <testcase name="testReplicaAssignment" classname="kafka.admin.AdminRackAwareTest" time="0.017"/>
+  <testcase name="testGetRackAlternatedBrokerListAndAssignReplicasToBrokers" classname="kafka.admin.AdminRackAwareTest" time="0.003"/>
+  <testcase name="testMoreReplicasThanRacks" classname="kafka.admin.AdminRackAwareTest" time="0.004"/>
+  <testcase name="testSingleRack" classname="kafka.admin.AdminRackAwareTest" time="0.004"/>
+  <testcase name="testAssignmentWithRackAwareWithRandomStartIndex" classname="kafka.admin.AdminRackAwareTest" time="0.004"/>
+  <testcase name="testLargeNumberPartitionsAssignment" classname="kafka.admin.AdminRackAwareTest" time="0.025"/>
+  <testcase name="testLessReplicasThanRacks" classname="kafka.admin.AdminRackAwareTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.utils.json.JsonValueTest" tests="19" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:27:01" hostname="localhost" time="0.21">
+  <properties/>
+  <testcase name="testJsonObjectIterator" classname="kafka.utils.json.JsonValueTest" time="0.004"/>
+  <testcase name="testDecodeLong" classname="kafka.utils.json.JsonValueTest" time="0.119"/>
+  <testcase name="testAsJsonObject" classname="kafka.utils.json.JsonValueTest" time="0.002"/>
+  <testcase name="testDecodeDouble" classname="kafka.utils.json.JsonValueTest" time="0.021"/>
+  <testcase name="testDecodeOption" classname="kafka.utils.json.JsonValueTest" time="0.002"/>
+  <testcase name="testDecodeString" classname="kafka.utils.json.JsonValueTest" time="0.003"/>
+  <testcase name="testJsonValueToString" classname="kafka.utils.json.JsonValueTest" time="0.0"/>
+  <testcase name="testAsJsonObjectOption" classname="kafka.utils.json.JsonValueTest" time="0.0"/>
+  <testcase name="testAsJsonArrayOption" classname="kafka.utils.json.JsonValueTest" time="0.0"/>
+  <testcase name="testAsJsonArray" classname="kafka.utils.json.JsonValueTest" time="0.003"/>
+  <testcase name="testJsonValueHashCode" classname="kafka.utils.json.JsonValueTest" time="0.001"/>
+  <testcase name="testDecodeInt" classname="kafka.utils.json.JsonValueTest" time="0.001"/>
+  <testcase name="testDecodeMap" classname="kafka.utils.json.JsonValueTest" time="0.039"/>
+  <testcase name="testDecodeSeq" classname="kafka.utils.json.JsonValueTest" time="0.004"/>
+  <testcase name="testJsonObjectGet" classname="kafka.utils.json.JsonValueTest" time="0.001"/>
+  <testcase name="testJsonValueEquals" classname="kafka.utils.json.JsonValueTest" time="0.001"/>
+  <testcase name="testJsonArrayIterator" classname="kafka.utils.json.JsonValueTest" time="0.001"/>
+  <testcase name="testJsonObjectApply" classname="kafka.utils.json.JsonValueTest" time="0.003"/>
+  <testcase name="testDecodeBoolean" classname="kafka.utils.json.JsonValueTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

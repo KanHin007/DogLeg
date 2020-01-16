@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.LeaderElectionTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:27:15" hostname="localhost" time="21.162">
+  <properties/>
+  <testcase name="testLeaderElectionWithStaleControllerEpoch" classname="kafka.server.LeaderElectionTest" time="5.415"/>
+  <testcase name="testLeaderElectionAndEpoch" classname="kafka.server.LeaderElectionTest" time="15.747"/>
+  <system-out><![CDATA[[2020-01-15 10:27:16,118] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition new-topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

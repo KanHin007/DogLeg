@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.kafka.common.config.ConfigDefTest" tests="37" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:08:19" hostname="localhost" time="0.103">
+  <properties/>
+  <testcase name="testBasicTypes" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.012"/>
+  <testcase name="testNullDefault" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.0"/>
+  <testcase name="testParseForValidate" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.002"/>
+  <testcase name="testInvalidDefaultRange" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.0"/>
+  <testcase name="testNames" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.0"/>
+  <testcase name="testGroupInference" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.0"/>
+  <testcase name="testConvertValueToStringNestedClass" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.002"/>
+  <testcase name="testConvertValueToStringInt" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.001"/>
+  <testcase name="testValidators" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.007"/>
+  <testcase name="testValidateCannotParse" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.0"/>
+  <testcase name="testValidate" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.001"/>
+  <testcase name="testInternalConfigDoesntShowUpInDocs" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.001"/>
+  <testcase name="testInvalidDefaultString" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.0"/>
+  <testcase name="testClassWithAlias" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.0"/>
+  <testcase name="testSslPasswords" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.058"/>
+  <testcase name="testDynamicUpdateModeInDocs" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.002"/>
+  <testcase name="testBaseConfigDefDependents" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.0"/>
+  <testcase name="testConvertValueToStringClass" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.001"/>
+  <testcase name="testConvertValueToStringShort" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.0"/>
+  <testcase name="testInvalidDefault" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.001"/>
+  <testcase name="toRst" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.0"/>
+  <testcase name="testCanAddInternalConfig" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.0"/>
+  <testcase name="testMissingRequired" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.0"/>
+  <testcase name="testParsingEmptyDefaultValueForStringFieldShouldSucceed" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.0"/>
+  <testcase name="testConvertValueToStringPassword" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.0"/>
+  <testcase name="testConvertValueToStringList" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.0"/>
+  <testcase name="testConvertValueToStringLong" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.0"/>
+  <testcase name="testConvertValueToStringBoolean" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.0"/>
+  <testcase name="testNullDefaultWithValidator" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.001"/>
+  <testcase name="testMissingDependentConfigs" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.0"/>
+  <testcase name="testConvertValueToStringDouble" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.0"/>
+  <testcase name="toEnrichedRst" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.0"/>
+  <testcase name="testDefinedTwice" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.0"/>
+  <testcase name="testConvertValueToStringString" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.0"/>
+  <testcase name="testNestedClass" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.0"/>
+  <testcase name="testBadInputs" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.001"/>
+  <testcase name="testValidateMissingConfigKey" classname="org.apache.kafka.common.config.ConfigDefTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

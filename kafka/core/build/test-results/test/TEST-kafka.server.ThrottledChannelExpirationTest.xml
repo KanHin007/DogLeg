@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.ThrottledChannelExpirationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:29:20" hostname="localhost" time="2.011">
+  <properties/>
+  <testcase name="testThrottledChannelDelay" classname="kafka.server.ThrottledChannelExpirationTest" time="0.006"/>
+  <testcase name="testCallbackInvocationAfterExpiration" classname="kafka.server.ThrottledChannelExpirationTest" time="2.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

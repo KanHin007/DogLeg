@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.api.UserQuotaTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:31:44" hostname="localhost" time="68.927">
+  <properties/>
+  <testcase name="testProducerConsumerOverrideUnthrottled" classname="kafka.api.UserQuotaTest" time="9.069"/>
+  <testcase name="testThrottledProducerConsumer" classname="kafka.api.UserQuotaTest" time="18.832"/>
+  <testcase name="testQuotaOverrideDelete" classname="kafka.api.UserQuotaTest" time="29.923"/>
+  <testcase name="testThrottledRequest" classname="kafka.api.UserQuotaTest" time="11.103"/>
+  <system-out><![CDATA[[2020-01-15 10:31:45,230] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka4148824287819087421.tmp'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn:1094)
+[2020-01-15 10:31:45,230] ERROR [ZooKeeperClient] Auth failed. (kafka.zookeeper.ZooKeeperClient:74)
+[2020-01-15 10:31:45,439] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka4148824287819087421.tmp'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn:1094)
+[2020-01-15 10:31:45,439] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient:74)
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka7539430647995890725.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+[2020-01-15 10:31:45,548] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka4148824287819087421.tmp'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn:1094)
+[2020-01-15 10:31:45,548] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient:74)
+[2020-01-15 10:31:46,408] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition topic-1-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka836635558243308901.tmp refreshKrb5Config is false principal is client2@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client2@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+[2020-01-15 10:31:54,344] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka7118145027872685386.tmp'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn:1094)
+[2020-01-15 10:31:54,344] ERROR [ZooKeeperClient] Auth failed. (kafka.zookeeper.ZooKeeperClient:74)
+[2020-01-15 10:31:54,545] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka7118145027872685386.tmp'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn:1094)
+[2020-01-15 10:31:54,545] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient:74)
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka3750005906608093611.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+[2020-01-15 10:31:54,636] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka7118145027872685386.tmp'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn:1094)
+[2020-01-15 10:31:54,636] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient:74)
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka6955548753619821691.tmp refreshKrb5Config is false principal is client2@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client2@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+[2020-01-15 10:32:14,099] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka5231753432033990771.tmp'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn:1094)
+[2020-01-15 10:32:14,099] ERROR [ZooKeeperClient] Auth failed. (kafka.zookeeper.ZooKeeperClient:74)
+[2020-01-15 10:32:14,425] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka5231753432033990771.tmp'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn:1094)
+[2020-01-15 10:32:14,425] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient:74)
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka5369577368961721087.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+[2020-01-15 10:32:14,521] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka5231753432033990771.tmp'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn:1094)
+[2020-01-15 10:32:14,521] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient:74)
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka2911783591723957154.tmp refreshKrb5Config is false principal is client2@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client2@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+[2020-01-15 10:32:43,139] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka8136471180465652173.tmp'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn:1094)
+[2020-01-15 10:32:43,139] ERROR [ZooKeeperClient] Auth failed. (kafka.zookeeper.ZooKeeperClient:74)
+[2020-01-15 10:32:43,966] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka8136471180465652173.tmp'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn:1094)
+[2020-01-15 10:32:43,966] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient:74)
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka5988589018929708086.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+[2020-01-15 10:32:44,065] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka8136471180465652173.tmp'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn:1094)
+[2020-01-15 10:32:44,066] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient:74)
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka1321545614063343170.tmp refreshKrb5Config is false principal is client2@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client2@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

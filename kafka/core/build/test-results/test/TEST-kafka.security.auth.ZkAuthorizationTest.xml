@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.security.auth.ZkAuthorizationTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:32:31" hostname="localhost" time="6.584">
+  <properties/>
+  <testcase name="testIsZkSecurityEnabled" classname="kafka.security.auth.ZkAuthorizationTest" time="0.665"/>
+  <testcase name="testKafkaZkClient" classname="kafka.security.auth.ZkAuthorizationTest" time="0.676"/>
+  <testcase name="testZkAntiMigration" classname="kafka.security.auth.ZkAuthorizationTest" time="1.112"/>
+  <testcase name="testConsumerOffsetPathAcls" classname="kafka.security.auth.ZkAuthorizationTest" time="0.367"/>
+  <testcase name="testZkMigration" classname="kafka.security.auth.ZkAuthorizationTest" time="1.328"/>
+  <testcase name="testChroot" classname="kafka.security.auth.ZkAuthorizationTest" time="1.137"/>
+  <testcase name="testDelete" classname="kafka.security.auth.ZkAuthorizationTest" time="0.862"/>
+  <testcase name="testDeleteRecursive" classname="kafka.security.auth.ZkAuthorizationTest" time="0.437"/>
+  <system-out><![CDATA[Warning: The following secure root paths do not exist in ZooKeeper: /admin,/brokers,/cluster,/config,/controller,/controller_epoch,/isr_change_notification,/latest_producer_id_block,/log_dir_event_notification,/delegation_token,/kafka-acl-extended,/kafka-acl,/kafka-acl-changes,/kafka-acl-extended/prefixed,/kafka-acl-extended-changes
+That might be due to an incorrect chroot is specified when executing the command.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

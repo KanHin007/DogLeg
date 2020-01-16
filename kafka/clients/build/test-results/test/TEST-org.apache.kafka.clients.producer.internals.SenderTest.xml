@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.kafka.clients.producer.internals.SenderTest" tests="52" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:08:41" hostname="localhost" time="0.338">
+  <properties/>
+  <testcase name="testIdempotenceWithMultipleInflightsWhereFirstFailsFatallyAndSequenceOfFutureBatchesIsAdjusted" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.038"/>
+  <testcase name="testCancelInFlightRequestAfterFatalError" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.015"/>
+  <testcase name="testIdempotentSplitBatchAndSend" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.008"/>
+  <testcase name="testUnknownProducerErrorShouldBeRetriedWhenLogStartOffsetIsUnknown" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.001"/>
+  <testcase name="testMetadataTopicExpiry" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.003"/>
+  <testcase name="testTransactionalRequestsSentOnShutdown" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.008"/>
+  <testcase name="testMessageFormatDownConversion" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.004"/>
+  <testcase name="testUnknownProducerHandlingWhenRetentionLimitReached" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.003"/>
+  <testcase name="testExpiryOfAllSentBatchesShouldCauseUnresolvedSequences" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.002"/>
+  <testcase name="testDoNotPollWhenNoRequestSent" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.162"/>
+  <testcase name="testExpiryOfFirstBatchShouldCauseResetIfFutureBatchesFail" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.002"/>
+  <testcase name="testNoDoubleDeallocation" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.002"/>
+  <testcase name="testQuotaMetrics" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.003"/>
+  <testcase name="testExpiryOfUnsentBatchesShouldNotCauseUnresolvedSequences" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.002"/>
+  <testcase name="testTransactionalSplitBatchAndSend" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.003"/>
+  <testcase name="testClusterAuthorizationExceptionInProduceRequest" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.003"/>
+  <testcase name="testCorrectHandlingOfDuplicateSequenceError" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.002"/>
+  <testcase name="testWhenFirstBatchExpireNoSendSecondBatchIfGuaranteeOrder" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.001"/>
+  <testcase name="testAppendInExpiryCallback" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.002"/>
+  <testcase name="testBatchesDrainedWithOldProducerIdShouldFailWithOutOfOrderSequenceOnSubsequentRetry" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.003"/>
+  <testcase name="testExpiredBatchDoesNotSplitOnMessageTooLargeError" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.001"/>
+  <testcase name="testIdempotenceWithMultipleInflights" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.001"/>
+  <testcase name="testCloseWithProducerIdReset" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.005"/>
+  <testcase name="testAbortRetryWhenProducerIdChanges" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.001"/>
+  <testcase name="testShouldRaiseOutOfOrderSequenceExceptionToUserIfLogWasNotTruncated" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.002"/>
+  <testcase name="testSenderMetricsTemplates" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.001"/>
+  <testcase name="testInitProducerIdRequest" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.001"/>
+  <testcase name="testForceCloseWithProducerIdReset" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.002"/>
+  <testcase name="testTooLargeBatchesAreSafelyRemoved" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.001"/>
+  <testcase name="testResetWhenOutOfOrderSequenceReceived" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.002"/>
+  <testcase name="testCorrectHandlingOfOutOfOrderResponses" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.001"/>
+  <testcase name="testCanRetryWithoutIdempotence" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.001"/>
+  <testcase name="testMustNotRetryOutOfOrderSequenceForNextBatch" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.002"/>
+  <testcase name="testRetries" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.002"/>
+  <testcase name="testInflightBatchesExpireOnDeliveryTimeout" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.001"/>
+  <testcase name="testResetOfProducerStateShouldAllowQueuedBatchesToDrain" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.002"/>
+  <testcase name="testDownConversionForMismatchedMagicValues" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.002"/>
+  <testcase name="testExpiryOfFirstBatchShouldNotCauseUnresolvedSequencesIfFutureBatchesSucceed" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.002"/>
+  <testcase name="testSendInOrder" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.001"/>
+  <testcase name="testClusterAuthorizationExceptionInInitProducerIdRequest" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.001"/>
+  <testcase name="testUnsupportedVersionInProduceRequest" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.002"/>
+  <testcase name="testForceShutdownWithIncompleteTransaction" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.003"/>
+  <testcase name="testCorrectHandlingOfOutOfOrderResponsesWhenSecondSucceeds" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.001"/>
+  <testcase name="testResetNextBatchExpiry" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.013"/>
+  <testcase name="testUnknownProducerErrorShouldBeRetriedForFutureBatchesWhenFirstFails" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.002"/>
+  <testcase name="testUnsupportedForMessageFormatInProduceRequest" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.002"/>
+  <testcase name="testIncompleteTransactionAbortOnShutdown" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.002"/>
+  <testcase name="testSimple" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.001"/>
+  <testcase name="testSequenceNumberIncrement" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.002"/>
+  <testcase name="testExpiredBatchesInMultiplePartitions" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.001"/>
+  <testcase name="testIdempotenceWithMultipleInflightsRetriedInOrder" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.002"/>
+  <testcase name="testExpiredBatchDoesNotRetry" classname="org.apache.kafka.clients.producer.internals.SenderTest" time="0.001"/>
+  <system-out><![CDATA[[2020-01-15 10:08:41,705] ERROR Aborting producer batches due to fatal error (org.apache.kafka.clients.producer.internals.Sender:492)
+org.apache.kafka.common.errors.ClusterAuthorizationException: The producer is not authorized to do idempotent sends
+[2020-01-15 10:08:41,909] ERROR The broker returned org.apache.kafka.common.errors.OutOfOrderSequenceException: The broker received an out of order sequence number. for topic-partition test-0 with producerId 343434, epoch 0, and sequence number 1 (org.apache.kafka.clients.producer.internals.TransactionManager:614)
+[2020-01-15 10:08:41,922] ERROR Aborting producer batches due to fatal error (org.apache.kafka.clients.producer.internals.Sender:492)
+org.apache.kafka.common.errors.ClusterAuthorizationException: The producer is not authorized to do idempotent sends
+[2020-01-15 10:08:41,929] ERROR The broker returned org.apache.kafka.common.errors.OutOfOrderSequenceException: The broker received an out of order sequence number. for topic-partition test-0 with producerId 343434, epoch 0, and sequence number 0 (org.apache.kafka.clients.producer.internals.TransactionManager:614)
+[2020-01-15 10:08:41,934] ERROR The broker returned org.apache.kafka.common.errors.OutOfOrderSequenceException: The broker received an out of order sequence number. for topic-partition test-0 with producerId 343434, epoch 0, and sequence number 0 (org.apache.kafka.clients.producer.internals.TransactionManager:614)
+[2020-01-15 10:08:41,941] ERROR The broker returned org.apache.kafka.common.errors.UnknownProducerIdException: This exception is raised by the broker if it could not locate the producer metadata associated with the producerId in question. This could happen if, for instance, the producer's records were deleted because their retention time had elapsed. Once the last records of the producerId are removed, the producer's metadata is removed from the broker, and future appends by the producer will return this exception. for topic-partition test-0 with producerId 343434, epoch 0, and sequence number 1 (org.apache.kafka.clients.producer.internals.TransactionManager:614)
+[2020-01-15 10:08:41,945] ERROR The broker returned org.apache.kafka.common.errors.OutOfOrderSequenceException: The broker received an out of order sequence number. for topic-partition test-0 with producerId 1, epoch 0, and sequence number 0 (org.apache.kafka.clients.producer.internals.TransactionManager:614)
+[2020-01-15 10:08:41,949] ERROR The broker returned org.apache.kafka.common.errors.OutOfOrderSequenceException: The broker received an out of order sequence number. for topic-partition test-0 with producerId 343434, epoch 0, and sequence number 0 (org.apache.kafka.clients.producer.internals.TransactionManager:614)
+[2020-01-15 10:08:41,954] ERROR The broker returned org.apache.kafka.common.errors.OutOfOrderSequenceException: The broker received an out of order sequence number. for topic-partition test-0 with producerId 343434, epoch 0, and sequence number 2 (org.apache.kafka.clients.producer.internals.TransactionManager:614)
+[2020-01-15 10:08:41,959] ERROR The broker returned org.apache.kafka.common.errors.OutOfOrderSequenceException: The broker received an out of order sequence number. for topic-partition test-0 with producerId 343434, epoch 0, and sequence number 0 (org.apache.kafka.clients.producer.internals.TransactionManager:614)
+[2020-01-15 10:08:41,965] ERROR Aborting producer batches due to fatal error (org.apache.kafka.clients.producer.internals.Sender:492)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Cluster authorization failed.
+[2020-01-15 10:08:41,968] ERROR Aborting producer batches due to fatal error (org.apache.kafka.clients.producer.internals.Sender:492)
+org.apache.kafka.common.errors.UnsupportedVersionException: The version of API is not supported.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

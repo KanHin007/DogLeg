@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.log.LogCleanerManagerTest" tests="22" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:21:08" hostname="localhost" time="15.598">
+  <properties/>
+  <testcase name="testUndecidedTransactionalDataNotCleanable" classname="kafka.log.LogCleanerManagerTest" time="0.118"/>
+  <testcase name="testLogsUnderCleanupIneligibleForCompaction" classname="kafka.log.LogCleanerManagerTest" time="0.19"/>
+  <testcase name="testGrabFilthiestCompactedLogIgnoresInProgressPartitions" classname="kafka.log.LogCleanerManagerTest" time="2.255"/>
+  <testcase name="testDirtyOffsetLargerThanActiveSegmentBaseOffset" classname="kafka.log.LogCleanerManagerTest" time="0.021"/>
+  <testcase name="testCleanableOffsetsForNone" classname="kafka.log.LogCleanerManagerTest" time="0.406"/>
+  <testcase name="testCleanableOffsetsForTime" classname="kafka.log.LogCleanerManagerTest" time="0.077"/>
+  <testcase name="testGrabFilthiestCompactedLogIgnoresUncleanablePartitions" classname="kafka.log.LogCleanerManagerTest" time="0.412"/>
+  <testcase name="testLogsWithSegmentsToDeleteShouldConsiderCleanupPolicyCompactLogs" classname="kafka.log.LogCleanerManagerTest" time="0.004"/>
+  <testcase name="testLogsWithSegmentsToDeleteShouldConsiderCleanupPolicyCompactDeleteLogs" classname="kafka.log.LogCleanerManagerTest" time="0.005"/>
+  <testcase name="testConcurrentLogCleanupAndLogTruncation" classname="kafka.log.LogCleanerManagerTest" time="0.005"/>
+  <testcase name="testGrabFilthiestCompactedLogThrowsException" classname="kafka.log.LogCleanerManagerTest" time="0.19"/>
+  <testcase name="testLogsWithSegmentsToDeleteShouldNotConsiderUncleanablePartitions" classname="kafka.log.LogCleanerManagerTest" time="0.008"/>
+  <testcase name="testLogStartOffsetLargerThanActiveSegmentBaseOffset" classname="kafka.log.LogCleanerManagerTest" time="0.253"/>
+  <testcase name="testDirtyOffsetResetIfSmallerThanStartOffset" classname="kafka.log.LogCleanerManagerTest" time="3.098"/>
+  <testcase name="testLogsWithSegmentsToDeleteShouldNotConsiderCleanupPolicyDeleteLogs" classname="kafka.log.LogCleanerManagerTest" time="1.701"/>
+  <testcase name="testConcurrentLogCleanupAndTopicDeletion" classname="kafka.log.LogCleanerManagerTest" time="0.161"/>
+  <testcase name="testCleanableOffsetsForShortTime" classname="kafka.log.LogCleanerManagerTest" time="0.105"/>
+  <testcase name="testGrabFilthiestCompactedLogReturnsLogWithDirtiestRatio" classname="kafka.log.LogCleanerManagerTest" time="2.255"/>
+  <testcase name="testDirtyOffsetResetIfLargerThanEndOffset" classname="kafka.log.LogCleanerManagerTest" time="0.511"/>
+  <testcase name="testGrabFilthiestCompactedLogIgnoresBothInProgressPartitionsAndUncleanablePartitions" classname="kafka.log.LogCleanerManagerTest" time="3.654"/>
+  <testcase name="testDoneCleaning" classname="kafka.log.LogCleanerManagerTest" time="0.034"/>
+  <testcase name="testDoneDeleting" classname="kafka.log.LogCleanerManagerTest" time="0.134"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class kafka.server.FetchRequestTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class kafka.server.FetchRequestTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/kafka.server.html">kafka.server</a> &gt; FetchRequestTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">10</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1m39.06s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testBrokerRespectsPartitionsOrderAndSizeLimits</td>
+<td class="success">29.024s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCreateIncrementalFetchWithPartitionsInError</td>
+<td class="success">7.051s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCurrentEpochValidation</td>
+<td class="success">9.728s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDownConversionFromBatchedToUnbatchedRespectsOffset</td>
+<td class="success">6.587s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDownConversionWithConnectionFailure</td>
+<td class="success">8.737s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFetchRequestToNonReplica</td>
+<td class="success">6.882s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFetchRequestV2WithOversizedMessage</td>
+<td class="success">7.663s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFetchRequestV4WithReadCommitted</td>
+<td class="success">6.723s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testZStdCompressedRecords</td>
+<td class="success">8.016s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testZStdCompressedTopic</td>
+<td class="success">8.651s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>[2020-01-15 10:28:32,989] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition topic0-3 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:28:32,989] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition topic0-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:28:39,559] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition topic2-2 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:28:39,559] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition topic2-4 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:28:44,076] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition topic4-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:29:00,307] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition topic0-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:29:41,197] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition foo-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:29:41,197] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition foo-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:29:41,773] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition bar-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.2</a> at 2020-1-15 10:48:49</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.KafkaTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:21:48" hostname="localhost" time="0.36">
+  <properties/>
+  <testcase name="testConnectionsMaxReauthMsExplicit" classname="kafka.KafkaTest" time="0.195"/>
+  <testcase name="testKafkaSslPasswordsWithSymbols" classname="kafka.KafkaTest" time="0.038"/>
+  <testcase name="testConnectionsMaxReauthMsDefault" classname="kafka.KafkaTest" time="0.01"/>
+  <testcase name="testKafkaSslPasswords" classname="kafka.KafkaTest" time="0.009"/>
+  <testcase name="testGetKafkaConfigFromArgs" classname="kafka.KafkaTest" time="0.056"/>
+  <testcase name="testGetKafkaConfigFromArgsNonArgsAtTheEnd" classname="kafka.KafkaTest" time="0.013"/>
+  <testcase name="testGetKafkaConfigFromArgsNonArgsOnly" classname="kafka.KafkaTest" time="0.027"/>
+  <testcase name="testGetKafkaConfigFromArgsNonArgsAtTheBegging" classname="kafka.KafkaTest" time="0.01"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Found non argument parameters: broker.id=2
+Option               Description                                         
+------               -----------                                         
+--override <String>  Optional property that should override values set in
+                       server.properties file                            
+--version            Print version information and exit.                 
+Found non argument parameters: broker.id=1,broker.id=2
+Option               Description                                         
+------               -----------                                         
+--override <String>  Optional property that should override values set in
+                       server.properties file                            
+--version            Print version information and exit.                 
+Found non argument parameters: broker.id=1
+Option               Description                                         
+------               -----------                                         
+--override <String>  Optional property that should override values set in
+                       server.properties file                            
+--version            Print version information and exit.                 
+]]></system-err>
+</testsuite>

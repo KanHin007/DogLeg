@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.StopReplicaRequestTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:34:28" hostname="localhost" time="8.657">
+  <properties/>
+  <testcase name="testStopReplicaRequest" classname="kafka.server.StopReplicaRequestTest" time="8.657"/>
+  <system-out><![CDATA[[2020-01-15 10:34:28,854] INFO [ControllerEventThread controllerId=0] Starting (kafka.controller.ControllerEventManager$ControllerEventThread:66)
+[2020-01-15 10:34:28,856] INFO [Controller id=0] 0 successfully elected as the controller. Epoch incremented to 1 and epoch zk version is now 1 (kafka.controller.KafkaController:66)
+[2020-01-15 10:34:28,856] INFO [Controller id=0] Registering handlers (kafka.controller.KafkaController:66)
+[2020-01-15 10:34:28,856] INFO [Controller id=0] Deleting log dir event notifications (kafka.controller.KafkaController:66)
+[2020-01-15 10:34:28,857] INFO [Controller id=0] Deleting isr change notifications (kafka.controller.KafkaController:66)
+[2020-01-15 10:34:28,858] INFO [Controller id=0] Initializing controller context (kafka.controller.KafkaController:66)
+[2020-01-15 10:34:28,858] INFO [Controller id=0] Initialized broker epochs cache: Map(0 -> 25) (kafka.controller.KafkaController:66)
+[2020-01-15 10:34:28,860] INFO [Controller id=0] Currently active brokers in the cluster: Set(0) (kafka.controller.KafkaController:66)
+[2020-01-15 10:34:28,861] INFO [Controller id=0] Currently shutting brokers in the cluster: Set() (kafka.controller.KafkaController:66)
+[2020-01-15 10:34:28,861] INFO [Controller id=0] Current list of topics in the cluster: Set() (kafka.controller.KafkaController:66)
+[2020-01-15 10:34:28,862] INFO [Controller id=0] Fetching topic deletions in progress (kafka.controller.KafkaController:66)
+[2020-01-15 10:34:28,862] INFO [Controller id=0] List of topics to be deleted:  (kafka.controller.KafkaController:66)
+[2020-01-15 10:34:28,862] INFO [Controller id=0] List of topics ineligible for deletion:  (kafka.controller.KafkaController:66)
+[2020-01-15 10:34:28,862] INFO [Controller id=0] Initializing topic deletion manager (kafka.controller.KafkaController:66)
+[2020-01-15 10:34:28,862] INFO [Controller id=0] Sending update metadata request (kafka.controller.KafkaController:66)
+[2020-01-15 10:34:28,862] INFO [Controller id=0] Ready to serve as the new controller with epoch 1 (kafka.controller.KafkaController:66)
+[2020-01-15 10:34:28,863] INFO [Controller id=0] Partitions undergoing preferred replica election:  (kafka.controller.KafkaController:66)
+[2020-01-15 10:34:28,863] INFO [Controller id=0] Partitions that completed preferred replica election:  (kafka.controller.KafkaController:66)
+[2020-01-15 10:34:28,863] INFO [Controller id=0] Skipping preferred replica election for partitions due to topic deletion:  (kafka.controller.KafkaController:66)
+[2020-01-15 10:34:28,864] INFO [Controller id=0] Resuming preferred replica election for partitions:  (kafka.controller.KafkaController:66)
+[2020-01-15 10:34:28,864] INFO [Controller id=0] Starting replica leader election (PREFERRED) for partitions  triggered by ZkTriggered (kafka.controller.KafkaController:66)
+[2020-01-15 10:34:28,864] INFO [Controller id=0] Starting the controller scheduler (kafka.controller.KafkaController:66)
+[2020-01-15 10:34:28,865] INFO [Controller id=0] New topics: [Set(__consumer_offsets)], deleted topics: [Set()], new partition replica assignment [Map(__consumer_offsets-4 -> ReplicaAssignment(replicas=0, addingReplicas=, removingReplicas=), __consumer_offsets-3 -> ReplicaAssignment(replicas=0, addingReplicas=, removingReplicas=), __consumer_offsets-2 -> ReplicaAssignment(replicas=0, addingReplicas=, removingReplicas=), __consumer_offsets-0 -> ReplicaAssignment(replicas=0, addingReplicas=, removingReplicas=), __consumer_offsets-1 -> ReplicaAssignment(replicas=0, addingReplicas=, removingReplicas=))] (kafka.controller.KafkaController:66)
+[2020-01-15 10:34:28,865] INFO [Controller id=0] New partition creation callback for __consumer_offsets-4,__consumer_offsets-3,__consumer_offsets-2,__consumer_offsets-0,__consumer_offsets-1 (kafka.controller.KafkaController:66)
+[2020-01-15 10:34:30,208] INFO [Controller id=0] New topics: [Set(topic)], deleted topics: [Set()], new partition replica assignment [Map(topic-1 -> ReplicaAssignment(replicas=0, addingReplicas=, removingReplicas=), topic-0 -> ReplicaAssignment(replicas=0, addingReplicas=, removingReplicas=))] (kafka.controller.KafkaController:66)
+[2020-01-15 10:34:30,208] INFO [Controller id=0] New partition creation callback for topic-1,topic-0 (kafka.controller.KafkaController:66)
+[2020-01-15 10:34:32,825] INFO [ControllerEventThread controllerId=0] Shutting down (kafka.controller.ControllerEventManager$ControllerEventThread:66)
+[2020-01-15 10:34:32,825] INFO [ControllerEventThread controllerId=0] Stopped (kafka.controller.ControllerEventManager$ControllerEventThread:66)
+[2020-01-15 10:34:32,825] INFO [ControllerEventThread controllerId=0] Shutdown completed (kafka.controller.ControllerEventManager$ControllerEventThread:66)
+[2020-01-15 10:34:32,826] INFO [Controller id=0] Resigned (kafka.controller.KafkaController:66)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.coordinator.group.GroupCoordinatorConcurrencyTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:21:45" hostname="localhost" time="3.465">
+  <properties/>
+  <testcase name="testConcurrentGoodPathSequence" classname="kafka.coordinator.group.GroupCoordinatorConcurrencyTest" time="0.67"/>
+  <testcase name="testConcurrentTxnGoodPathSequence" classname="kafka.coordinator.group.GroupCoordinatorConcurrencyTest" time="0.23"/>
+  <testcase name="testConcurrentRandomSequence" classname="kafka.coordinator.group.GroupCoordinatorConcurrencyTest" time="2.564"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

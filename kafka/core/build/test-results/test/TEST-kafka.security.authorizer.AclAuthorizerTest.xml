@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.security.authorizer.AclAuthorizerTest" tests="38" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:21:43" hostname="localhost" time="71.238">
+  <properties/>
+  <testcase name="testAuthorizeWithPrefixedResource" classname="kafka.security.authorizer.AclAuthorizerTest" time="1.865"/>
+  <testcase name="testAllowAllAccess" classname="kafka.security.authorizer.AclAuthorizerTest" time="0.941"/>
+  <testcase name="testLocalConcurrentModificationOfResourceAcls" classname="kafka.security.authorizer.AclAuthorizerTest" time="0.751"/>
+  <testcase name="testDeleteAllAclOnWildcardResource" classname="kafka.security.authorizer.AclAuthorizerTest" time="0.774"/>
+  <testcase name="testAddAclsOnPrefixedResource" classname="kafka.security.authorizer.AclAuthorizerTest" time="2.591"/>
+  <testcase name="testHighConcurrencyDeletionOfResourceAcls" classname="kafka.security.authorizer.AclAuthorizerTest" time="1.433"/>
+  <testcase name="testNoAclFound" classname="kafka.security.authorizer.AclAuthorizerTest" time="0.686"/>
+  <testcase name="testAclInheritance" classname="kafka.security.authorizer.AclAuthorizerTest" time="0.858"/>
+  <testcase name="testDistributedConcurrentModificationOfResourceAcls" classname="kafka.security.authorizer.AclAuthorizerTest" time="1.186"/>
+  <testcase name="testAddAclsOnWildcardResource" classname="kafka.security.authorizer.AclAuthorizerTest" time="1.067"/>
+  <testcase name="testWritesExtendedAclChangeEventWhenInterBrokerProtocolAtLeastKafkaV2" classname="kafka.security.authorizer.AclAuthorizerTest" time="1.869"/>
+  <testcase name="testAclsFilter" classname="kafka.security.authorizer.AclAuthorizerTest" time="0.732"/>
+  <testcase name="testAclManagementAPIs" classname="kafka.security.authorizer.AclAuthorizerTest" time="0.781"/>
+  <testcase name="testWildCardAcls" classname="kafka.security.authorizer.AclAuthorizerTest" time="0.841"/>
+  <testcase name="testWritesLiteralAclChangeEventWhenInterBrokerProtocolIsKafkaV2" classname="kafka.security.authorizer.AclAuthorizerTest" time="1.01"/>
+  <testcase name="testTopicAcl" classname="kafka.security.authorizer.AclAuthorizerTest" time="1.222"/>
+  <testcase name="testSuperUserHasAccess" classname="kafka.security.authorizer.AclAuthorizerTest" time="1.141"/>
+  <testcase name="testDeleteAclOnPrefixedResource" classname="kafka.security.authorizer.AclAuthorizerTest" time="1.241"/>
+  <testcase name="testDenyTakesPrecedence" classname="kafka.security.authorizer.AclAuthorizerTest" time="1.678"/>
+  <testcase name="testSingleCharacterResourceAcls" classname="kafka.security.authorizer.AclAuthorizerTest" time="1.048"/>
+  <testcase name="testNoAclFoundOverride" classname="kafka.security.authorizer.AclAuthorizerTest" time="4.391"/>
+  <testcase name="testEmptyAclThrowsException" classname="kafka.security.authorizer.AclAuthorizerTest" time="1.972"/>
+  <testcase name="testSuperUserWithCustomPrincipalHasAccess" classname="kafka.security.authorizer.AclAuthorizerTest" time="1.371"/>
+  <testcase name="testAllowAccessWithCustomPrincipal" classname="kafka.security.authorizer.AclAuthorizerTest" time="4.003"/>
+  <testcase name="testDeleteAclOnWildcardResource" classname="kafka.security.authorizer.AclAuthorizerTest" time="3.682"/>
+  <testcase name="testChangeListenerTiming" classname="kafka.security.authorizer.AclAuthorizerTest" time="2.015"/>
+  <testcase name="testWritesLiteralWritesLiteralAclChangeEventWhenInterBrokerProtocolLessThanKafkaV2eralAclChangesForOlderProtocolVersions" classname="kafka.security.authorizer.AclAuthorizerTest" time="1.307"/>
+  <testcase name="testThrowsOnAddPrefixedAclIfInterBrokerProtocolVersionTooLow" classname="kafka.security.authorizer.AclAuthorizerTest" time="1.942"/>
+  <testcase name="testAccessAllowedIfAllowAclExistsOnPrefixedResource" classname="kafka.security.authorizer.AclAuthorizerTest" time="4.332"/>
+  <testcase name="testHighConcurrencyModificationOfResourceAcls" classname="kafka.security.authorizer.AclAuthorizerTest" time="1.755"/>
+  <testcase name="testAuthorizeWithEmptyResourceName" classname="kafka.security.authorizer.AclAuthorizerTest" time="8.903"/>
+  <testcase name="testAuthorizeThrowsOnNonLiteralResource" classname="kafka.security.authorizer.AclAuthorizerTest" time="4.023"/>
+  <testcase name="testDeleteAllAclOnPrefixedResource" classname="kafka.security.authorizer.AclAuthorizerTest" time="1.173"/>
+  <testcase name="testAddAclsOnLiteralResource" classname="kafka.security.authorizer.AclAuthorizerTest" time="1.62"/>
+  <testcase name="testGetAclsPrincipal" classname="kafka.security.authorizer.AclAuthorizerTest" time="1.914"/>
+  <testcase name="testWritesExtendedAclChangeEventIfInterBrokerProtocolNotSet" classname="kafka.security.authorizer.AclAuthorizerTest" time="1.574"/>
+  <testcase name="testAccessAllowedIfAllowAclExistsOnWildcardResource" classname="kafka.security.authorizer.AclAuthorizerTest" time="0.707"/>
+  <testcase name="testLoadCache" classname="kafka.security.authorizer.AclAuthorizerTest" time="0.836"/>
+  <system-out><![CDATA[[2020-01-15 10:21:45,858] WARN Unable to read additional data from client sessionid 0x10003a46cdc0002, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn:366)
+[2020-01-15 10:22:34,650] WARN Unable to read additional data from client sessionid 0x10003a52acd0003, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn:366)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

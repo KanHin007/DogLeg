@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.kafka.clients.ClusterConnectionStatesTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:08:10" hostname="localhost" time="0.093">
+  <properties/>
+  <testcase name="testIsPreparingConnection" classname="org.apache.kafka.clients.ClusterConnectionStatesTest" time="0.009"/>
+  <testcase name="testNodeWithNewHostname" classname="org.apache.kafka.clients.ClusterConnectionStatesTest" time="0.042"/>
+  <testcase name="testHostResolveChange" classname="org.apache.kafka.clients.ClusterConnectionStatesTest" time="0.001"/>
+  <testcase name="testAuthorizationFailed" classname="org.apache.kafka.clients.ClusterConnectionStatesTest" time="0.0"/>
+  <testcase name="testMultipleIPsWithDefault" classname="org.apache.kafka.clients.ClusterConnectionStatesTest" time="0.0"/>
+  <testcase name="testThrottled" classname="org.apache.kafka.clients.ClusterConnectionStatesTest" time="0.001"/>
+  <testcase name="testExponentialReconnectBackoff" classname="org.apache.kafka.clients.ClusterConnectionStatesTest" time="0.0"/>
+  <testcase name="testRemoveNode" classname="org.apache.kafka.clients.ClusterConnectionStatesTest" time="0.0"/>
+  <testcase name="testSingleIPWithUseAll" classname="org.apache.kafka.clients.ClusterConnectionStatesTest" time="0.0"/>
+  <testcase name="testMultipleIPsWithUseAll" classname="org.apache.kafka.clients.ClusterConnectionStatesTest" time="0.0"/>
+  <testcase name="testMultipleNodeConnectionStates" classname="org.apache.kafka.clients.ClusterConnectionStatesTest" time="0.001"/>
+  <testcase name="testClusterConnectionStateChanges" classname="org.apache.kafka.clients.ClusterConnectionStatesTest" time="0.001"/>
+  <testcase name="testMaxReconnectBackoff" classname="org.apache.kafka.clients.ClusterConnectionStatesTest" time="0.002"/>
+  <testcase name="testSingleIPWithDefault" classname="org.apache.kafka.clients.ClusterConnectionStatesTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

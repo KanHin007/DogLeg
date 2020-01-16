@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class kafka.coordinator.group.GroupCoordinatorTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class kafka.coordinator.group.GroupCoordinatorTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/kafka.coordinator.group.html">kafka.coordinator.group</a> &gt; GroupCoordinatorTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">136</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.950s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">shouldDelayInitialRebalanceByGroupInitialRebalanceDelayOnEmptyGroup</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldDelayRebalanceUptoRebalanceTimeout</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldGetDifferentStaticMemberIdAfterEachRejoin</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldResetRebalanceDelayWhenNewMemberJoinsGroupInInitialRebalance</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">staticMemberCommitOffsetWithInvalidMemberId</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">staticMemberFenceDuplicateRejoinedFollower</td>
+<td class="success">0.015s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">staticMemberFenceDuplicateRejoiningFollowerAfterMemberIdChanged</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">staticMemberFenceDuplicateSyncingFollowerAfterMemberIdChanged</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">staticMemberHeartbeatLeaderWithInvalidMemberId</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">staticMemberJoinAsFirstMember</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">staticMemberJoinWithIllegalStateAsPendingMember</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">staticMemberJoinWithUnknownInstanceIdAndKnownMemberId</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">staticMemberLeaveWithIllegalStateAsPendingMember</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">staticMemberReJoinWithExplicitUnknownMemberId</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">staticMemberReJoinWithIllegalArgumentAsMissingOldMember</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">staticMemberReJoinWithIllegalStateAsUnknownMember</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">staticMemberRejoinAsFollowerWithKnownMemberIdAndNoProtocolChange</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">staticMemberRejoinAsFollowerWithMismatchedMemberId</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">staticMemberRejoinAsFollowerWithUnknownMemberId</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">staticMemberRejoinAsLeaderWithMismatchedMemberId</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">staticMemberRejoinWithFollowerIdAndChangeOfProtocol</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">staticMemberRejoinWithKnownLeaderIdToTriggerRebalanceAndFollowerWithChangeofProtocol</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">staticMemberRejoinWithKnownMemberId</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">staticMemberRejoinWithLeaderIdAndKnownMemberId</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">staticMemberRejoinWithLeaderIdAndUnexpectedDeadGroup</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">staticMemberRejoinWithLeaderIdAndUnexpectedEmptyGroup</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">staticMemberRejoinWithLeaderIdAndUnknownMemberId</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">staticMemberRejoinWithUnknownMemberIdAndChangeOfProtocol</td>
+<td class="success">0.008s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">staticMemberSyncAsLeaderWithInvalidMemberId</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testBasicFetchTxnOffsets</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testBatchLeaveDeadGroup</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCommitAndFetchOffsetsWithEmptyGroup</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCommitMaintainsSession</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCommitOffsetFromUnknownGroup</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCommitOffsetInCompletingRebalance</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCommitOffsetInCompletingRebalanceFromIllegalGeneration</td>
+<td class="success">0.036s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCommitOffsetInCompletingRebalanceFromUnknownMemberId</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCommitOffsetWithDefaultGeneration</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCommitOffsetsAfterGroupIsEmpty</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCompleteHeartbeatWithGroupDead</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCompleteHeartbeatWithMemberAlreadyRemoved</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteEmptyGroup</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteEmptyGroupWithStoredOffsets</td>
+<td class="success">0.045s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteGroupWithInvalidGroupId</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteGroupWithWrongCoordinator</td>
+<td class="success">0.008s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteNonEmptyGroup</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteOffsetOfConsumerGroupWithUnparsableProtocol</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteOffsetOfDeadConsumerGroup</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteOffsetOfEmptyConsumerGroup</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteOffsetOfEmptyNonConsumerGroup</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteOffsetOfNonEmptyNonConsumerGroup</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteOffsetOfNonExistingGroup</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteOffsetOfStableConsumerGroup</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDescribeGroupInactiveGroup</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDescribeGroupRebalancing</td>
+<td class="success">0.089s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDescribeGroupStableForDynamicMember</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDescribeGroupStableForStaticMember</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDescribeGroupWrongCoordinator</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFetchAllOffsets</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFetchOffsetForUnknownPartition</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFetchOffsetNotCoordinatorForGroup</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFetchOffsets</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFetchPendingTxnOffsetsWithAbort</td>
+<td class="success">0.082s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFetchPendingTxnOffsetsWithCommit</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFetchTxnOffsetsIgnoreSpuriousCommit</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFetchTxnOffsetsMultipleProducersOneGroup</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFetchTxnOffsetsOneProducerMultipleGroups</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFetchTxnOffsetsWithAbort</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGenerationIdIncrementsOnRebalance</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testHeartbeatDuringRebalanceCausesRebalanceInProgress</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testHeartbeatIllegalGeneration</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testHeartbeatMaintainsSession</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testHeartbeatRebalanceInProgress</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testHeartbeatUnknownConsumerExistingGroup</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testHeartbeatUnknownGroup</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testHeartbeatWrongCoordinator</td>
+<td class="success">0.075s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testInvalidGroupId</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testJoinGroupCompletionWhenPendingMemberJoins</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testJoinGroupCompletionWhenPendingMemberTimesOut</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testJoinGroupFromUnchangedFollowerDoesNotRebalance</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testJoinGroupFromUnchangedLeaderShouldRebalance</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testJoinGroupInconsistentGroupProtocol</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testJoinGroupInconsistentProtocolType</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testJoinGroupSecondJoinInconsistentProtocol</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testJoinGroupSessionTimeoutTooLarge</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testJoinGroupSessionTimeoutTooSmall</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testJoinGroupShouldReceiveErrorIfGroupOverMaxSize</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testJoinGroupUnknownConsumerExistingGroup</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testJoinGroupUnknownConsumerNewDeadGroup</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testJoinGroupUnknownConsumerNewGroup</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testJoinGroupWithEmptyGroupProtocol</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testJoinGroupWithEmptyProtocolType</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testJoinGroupWrongCoordinator</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testLeaderFailToRejoinBeforeFinalRebalanceTimeoutWithLongSessionTimeout</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testLeaderFailureInSyncGroup</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testLeaderRejoinBeforeFinalRebalanceTimeoutWithLongSessionTimeout</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testLeaveGroupStaticMemberWithUnknownMemberId</td>
+<td class="success">0.085s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testLeaveGroupUnknownConsumerExistingGroup</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testLeaveGroupUnknownGroup</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testLeaveGroupWithFencedInstanceId</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testLeaveGroupWrongCoordinator</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testListGroupsIncludesRebalancingGroups</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testListGroupsIncludesStableGroups</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testNewMemberJoinExpiration</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testNewMemberTimeoutCompletion</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testOffsetCommitDeadGroup</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testOffsetsRetentionMsIntegerOverflow</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPendingMemberBatchLeaveGroup</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPendingMemberWithUnexpectedInstanceIdBatchLeaveGroup</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPendingMembersLeavesGroup</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRebalanceCompletesBeforeMemberJoins</td>
+<td class="success">0.011s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRequestHandlingWhileLoadingInProgress</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSecondMemberPartiallyJoinAndTimeout</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSessionTimeout</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSessionTimeoutDuringRebalance</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSingleLeaveDeadGroup</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testStaticMemberFollowerFailToRejoinBeforeRebalanceTimeout</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testStaticMemberLeaderFailToRejoinBeforeRebalanceTimeout</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testStaticMembersFencedInstanceBatchLeaveGroup</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testStaticMembersUnknownGroupBatchLeaveGroup</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testStaticMembersUnknownInstanceBatchLeaveGroup</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testStaticMembersValidBatchLeaveGroup</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testStaticMembersWrongCoordinatorBatchLeaveGroup</td>
+<td class="success">0.117s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSyncDeadGroup</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSyncGroupEmptyAssignment</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSyncGroupFollowerAfterLeader</td>
+<td class="success">0.008s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSyncGroupFromIllegalGeneration</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSyncGroupFromUnknownGroup</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSyncGroupFromUnknownMember</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSyncGroupLeaderAfterFollower</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSyncGroupNotCoordinator</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testValidHeartbeat</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testValidJoinGroup</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testValidLeaveGroup</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testheartbeatDeadGroup</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testheartbeatEmptyGroup</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>[2020-01-15 10:28:16,971] ERROR given member.id invalidMember is identified as a known static member leader,but not matching the expected member.id leader-65b0ca7f-0bf8-4a62-80e0-3e25efe38c70 (kafka.coordinator.group.GroupMetadata:74)
+[2020-01-15 10:28:17,403] ERROR given member.id leader-02a91ea4-69fc-4222-abe5-12d9ae0eefcb is identified as a known static member leader,but not matching the expected member.id leader-71622ef9-7440-4a43-b7cb-d3f067b1578f (kafka.coordinator.group.GroupMetadata:74)
+[2020-01-15 10:28:17,403] ERROR given member.id leader-02a91ea4-69fc-4222-abe5-12d9ae0eefcb is identified as a known static member leader,but not matching the expected member.id leader-71622ef9-7440-4a43-b7cb-d3f067b1578f (kafka.coordinator.group.GroupMetadata:74)
+[2020-01-15 10:28:17,421] ERROR given member.id leader-7bb387fc-4b35-496e-a199-009f7134a5f7 is identified as a known static member follower,but not matching the expected member.id follower-d700c411-5b82-418a-ad15-e4be93b3797c (kafka.coordinator.group.GroupMetadata:74)
+[2020-01-15 10:28:17,432] ERROR given member.id unknown_member is identified as a known static member groupInstanceId,but not matching the expected member.id groupInstanceId-6e5fb615-484f-4d9d-9f52-1af5a888f08d (kafka.coordinator.group.GroupMetadata:74)
+[2020-01-15 10:28:17,480] ERROR given member.id invalidMember is identified as a known static member leader,but not matching the expected member.id leader-af796578-fadf-465f-bc2a-089f0738f96b (kafka.coordinator.group.GroupMetadata:74)
+[2020-01-15 10:28:17,530] ERROR given member.id follower-7ce66408-ecb2-4778-ac28-ee89701d71b6 is identified as a known static member follower,but not matching the expected member.id follower-2fd7387b-6195-4cbb-99db-ef267ee300f5 (kafka.coordinator.group.GroupMetadata:74)
+[2020-01-15 10:28:17,532] ERROR given member.id follower-7ce66408-ecb2-4778-ac28-ee89701d71b6 is identified as a known static member follower,but not matching the expected member.id follower-2fd7387b-6195-4cbb-99db-ef267ee300f5 (kafka.coordinator.group.GroupMetadata:74)
+[2020-01-15 10:28:17,640] ERROR given member.id follower-60bd2423-59eb-4f98-bb36-a76540440cb8 is identified as a known static member leader,but not matching the expected member.id leader-c10f1b23-ff59-46e4-aa4f-2496d4719d26 (kafka.coordinator.group.GroupMetadata:74)
+[2020-01-15 10:28:17,653] ERROR given member.id some_member is identified as a known static member leader,but not matching the expected member.id leader-fbf4c93a-ddfe-4807-9574-1374bc67eac0 (kafka.coordinator.group.GroupMetadata:74)
+[2020-01-15 10:28:17,674] ERROR [GroupCoordinator 0]: Group groupId could not complete rebalance because no members rejoined (kafka.coordinator.group.GroupCoordinator:74)
+[2020-01-15 10:28:17,680] ERROR [GroupCoordinator 0]: Group groupId could not complete rebalance because no members rejoined (kafka.coordinator.group.GroupCoordinator:74)
+[2020-01-15 10:28:17,684] ERROR given member.id follower-19635c4f-dc8e-4ddf-a75f-c9ccd9a981e7 is identified as a known static member follower,but not matching the expected member.id follower-53bb52a2-e587-49a1-8111-946d5a655bb2 (kafka.coordinator.group.GroupMetadata:74)
+[2020-01-15 10:28:17,710] ERROR given member.id invalid is identified as a known static member leader,but not matching the expected member.id leader-9554b57d-cfda-426c-9394-860633347dd9 (kafka.coordinator.group.GroupMetadata:74)
+[2020-01-15 10:28:17,798] ERROR given member.id invalid-member is identified as a known static member follower,but not matching the expected member.id follower-2fff3748-28c3-4042-8737-fbb648459ce7 (kafka.coordinator.group.GroupMetadata:74)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.2</a> at 2020-1-15 10:48:49</p>
+</div>
+</div>
+</body>
+</html>

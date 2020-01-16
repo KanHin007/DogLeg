@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.BrokerEpochIntegrationTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:22:55" hostname="localhost" time="28.203">
+  <properties/>
+  <testcase name="testControlRequestWithStaleBrokerEpoch" classname="kafka.server.BrokerEpochIntegrationTest" time="7.495"/>
+  <testcase name="testControlRequestWithCorrectBrokerEpoch" classname="kafka.server.BrokerEpochIntegrationTest" time="6.045"/>
+  <testcase name="testReplicaManagerBrokerEpochMatchesWithZk" classname="kafka.server.BrokerEpochIntegrationTest" time="5.288"/>
+  <testcase name="testControllerBrokerEpochCacheMatchesWithZk" classname="kafka.server.BrokerEpochIntegrationTest" time="9.375"/>
+  <system-out><![CDATA[[2020-01-15 10:22:55,426] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition new-topic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

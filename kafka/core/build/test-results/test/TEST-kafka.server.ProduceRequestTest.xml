@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.ProduceRequestTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:39:15" hostname="localhost" time="32.466">
+  <properties/>
+  <testcase name="testSimpleProduceRequest" classname="kafka.server.ProduceRequestTest" time="6.532"/>
+  <testcase name="testCorruptLz4ProduceRequest" classname="kafka.server.ProduceRequestTest" time="6.524"/>
+  <testcase name="testProduceToNonReplica" classname="kafka.server.ProduceRequestTest" time="5.974"/>
+  <testcase name="testZSTDProduceRequest" classname="kafka.server.ProduceRequestTest" time="7.266"/>
+  <testcase name="testProduceWithInvalidTimestamp" classname="kafka.server.ProduceRequestTest" time="6.17"/>
+  <system-out><![CDATA[[2020-01-15 10:39:42,863] ERROR [ReplicaManager broker=2] Error processing append operation on partition topic-0 (kafka.server.ReplicaManager:76)
+org.apache.kafka.common.errors.InvalidTimestampException: One or more records have been rejected due to invalid timestamp
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

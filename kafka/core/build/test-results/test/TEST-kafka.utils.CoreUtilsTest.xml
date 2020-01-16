@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.utils.CoreUtilsTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:32:47" hostname="localhost" time="0.024">
+  <properties/>
+  <testcase name="testGenerateUuidAsBase64" classname="kafka.utils.CoreUtilsTest" time="0.0"/>
+  <testcase name="testAbs" classname="kafka.utils.CoreUtilsTest" time="0.0"/>
+  <testcase name="testReplaceSuffix" classname="kafka.utils.CoreUtilsTest" time="0.0"/>
+  <testcase name="testCircularIterator" classname="kafka.utils.CoreUtilsTest" time="0.003"/>
+  <testcase name="testReadBytes" classname="kafka.utils.CoreUtilsTest" time="0.0"/>
+  <testcase name="testCsvList" classname="kafka.utils.CoreUtilsTest" time="0.001"/>
+  <testcase name="testReadInt" classname="kafka.utils.CoreUtilsTest" time="0.0"/>
+  <testcase name="testAtomicGetOrUpdate" classname="kafka.utils.CoreUtilsTest" time="0.014"/>
+  <testcase name="testUrlSafeBase64EncodeUUID" classname="kafka.utils.CoreUtilsTest" time="0.0"/>
+  <testcase name="testCsvMap" classname="kafka.utils.CoreUtilsTest" time="0.002"/>
+  <testcase name="testInLock" classname="kafka.utils.CoreUtilsTest" time="0.0"/>
+  <testcase name="testTryAll" classname="kafka.utils.CoreUtilsTest" time="0.004"/>
+  <testcase name="testSwallow" classname="kafka.utils.CoreUtilsTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

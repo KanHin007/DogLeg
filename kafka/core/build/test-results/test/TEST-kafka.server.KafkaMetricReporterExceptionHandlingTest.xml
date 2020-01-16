@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.KafkaMetricReporterExceptionHandlingTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:29:53" hostname="localhost" time="4.671">
+  <properties/>
+  <testcase name="testBothReportersAreInvoked" classname="kafka.server.KafkaMetricReporterExceptionHandlingTest" time="4.671"/>
+  <system-out><![CDATA[[2020-01-15 10:29:54,332] ERROR Error when registering metric on kafka.server.KafkaMetricReporterExceptionHandlingTest$BadReporter (org.apache.kafka.common.metrics.Metrics:556)
+java.lang.RuntimeException: MetricName [name=request-time, group=Request, description=Tracking request-time per user/client-id, tags={user=, client-id=client-id}]
+	at kafka.server.KafkaMetricReporterExceptionHandlingTest$BadReporter.metricChange(KafkaMetricReporterExceptionHandlingTest.scala:115)
+	at org.apache.kafka.common.metrics.Metrics.registerMetric(Metrics.java:554)
+	at org.apache.kafka.common.metrics.Sensor.add(Sensor.java:284)
+	at org.apache.kafka.common.metrics.Sensor.add(Sensor.java:260)
+	at kafka.server.SensorAccess.getOrCreate(SensorAccess.scala:65)
+	at kafka.server.ClientQuotaManager.getOrCreateQuotaSensors(ClientQuotaManager.scala:360)
+	at kafka.server.ClientQuotaManager.recordAndGetThrottleTimeMs(ClientQuotaManager.scala:238)
+	at kafka.server.ClientRequestQuotaManager.maybeRecordAndGetThrottleTimeMs(ClientRequestQuotaManager.scala:59)
+	at kafka.server.KafkaApis.handleListGroupsRequest(KafkaApis.scala:2877)
+	at kafka.server.KafkaApis.handle(KafkaApis.scala:144)
+	at kafka.server.KafkaRequestHandler.run(KafkaRequestHandler.scala:70)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-01-15 10:29:54,332] ERROR Error when registering metric on kafka.server.KafkaMetricReporterExceptionHandlingTest$BadReporter (org.apache.kafka.common.metrics.Metrics:556)
+java.lang.RuntimeException: MetricName [name=throttle-time, group=Request, description=Tracking average throttle-time per user/client-id, tags={user=, client-id=client-id}]
+	at kafka.server.KafkaMetricReporterExceptionHandlingTest$BadReporter.metricChange(KafkaMetricReporterExceptionHandlingTest.scala:115)
+	at org.apache.kafka.common.metrics.Metrics.registerMetric(Metrics.java:554)
+	at org.apache.kafka.common.metrics.Sensor.add(Sensor.java:284)
+	at org.apache.kafka.common.metrics.Sensor.add(Sensor.java:260)
+	at kafka.server.SensorAccess.getOrCreate(SensorAccess.scala:65)
+	at kafka.server.ClientQuotaManager.getOrCreateQuotaSensors(ClientQuotaManager.scala:366)
+	at kafka.server.ClientQuotaManager.recordAndGetThrottleTimeMs(ClientQuotaManager.scala:238)
+	at kafka.server.ClientRequestQuotaManager.maybeRecordAndGetThrottleTimeMs(ClientRequestQuotaManager.scala:59)
+	at kafka.server.KafkaApis.handleListGroupsRequest(KafkaApis.scala:2877)
+	at kafka.server.KafkaApis.handle(KafkaApis.scala:144)
+	at kafka.server.KafkaRequestHandler.run(KafkaRequestHandler.scala:70)
+	at java.lang.Thread.run(Thread.java:748)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

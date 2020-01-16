@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.controller.PartitionLeaderElectionAlgorithmsTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:21:07" hostname="localhost" time="0.006">
+  <properties/>
+  <testcase name="testPreferredReplicaPartitionLeaderElectionPreferredReplicaNotInIsrLive" classname="kafka.controller.PartitionLeaderElectionAlgorithmsTest" time="0.0"/>
+  <testcase name="testControlledShutdownPartitionLeaderElectionLastIsrShuttingDown" classname="kafka.controller.PartitionLeaderElectionAlgorithmsTest" time="0.001"/>
+  <testcase name="testControlledShutdownPartitionLeaderElection" classname="kafka.controller.PartitionLeaderElectionAlgorithmsTest" time="0.0"/>
+  <testcase name="testPreferredReplicaPartitionLeaderElectionPreferredReplicaInIsrNotLive" classname="kafka.controller.PartitionLeaderElectionAlgorithmsTest" time="0.0"/>
+  <testcase name="testReassignPartitionLeaderElectionWithNoLiveIsr" classname="kafka.controller.PartitionLeaderElectionAlgorithmsTest" time="0.0"/>
+  <testcase name="testReassignPartitionLeaderElection" classname="kafka.controller.PartitionLeaderElectionAlgorithmsTest" time="0.001"/>
+  <testcase name="testOfflinePartitionLeaderElection" classname="kafka.controller.PartitionLeaderElectionAlgorithmsTest" time="0.0"/>
+  <testcase name="testPreferredReplicaPartitionLeaderElection" classname="kafka.controller.PartitionLeaderElectionAlgorithmsTest" time="0.0"/>
+  <testcase name="testReassignPartitionLeaderElectionWithEmptyIsr" classname="kafka.controller.PartitionLeaderElectionAlgorithmsTest" time="0.0"/>
+  <testcase name="testControlledShutdownPartitionLeaderElectionAllIsrSimultaneouslyShutdown" classname="kafka.controller.PartitionLeaderElectionAlgorithmsTest" time="0.001"/>
+  <testcase name="testOfflinePartitionLeaderElectionLastIsrOfflineUncleanLeaderElectionEnabled" classname="kafka.controller.PartitionLeaderElectionAlgorithmsTest" time="0.001"/>
+  <testcase name="testPreferredReplicaPartitionLeaderElectionPreferredReplicaNotInIsrNotLive" classname="kafka.controller.PartitionLeaderElectionAlgorithmsTest" time="0.0"/>
+  <testcase name="testOfflinePartitionLeaderElectionLastIsrOfflineUncleanLeaderElectionDisabled" classname="kafka.controller.PartitionLeaderElectionAlgorithmsTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

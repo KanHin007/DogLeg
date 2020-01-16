@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.coordinator.transaction.TransactionCoordinatorConcurrencyTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:27:34" hostname="localhost" time="2.743">
+  <properties/>
+  <testcase name="testConcurrentNewInitProducerIdRequests" classname="kafka.coordinator.transaction.TransactionCoordinatorConcurrencyTest" time="1.045"/>
+  <testcase name="testConcurrentGoodPathSequence" classname="kafka.coordinator.transaction.TransactionCoordinatorConcurrencyTest" time="0.282"/>
+  <testcase name="testConcurrentTransactionExpiration" classname="kafka.coordinator.transaction.TransactionCoordinatorConcurrencyTest" time="0.39"/>
+  <testcase name="testConcurrentRandomSequences" classname="kafka.coordinator.transaction.TransactionCoordinatorConcurrencyTest" time="0.191"/>
+  <testcase name="testConcurrentInitProducerIdRequestsWithRetry" classname="kafka.coordinator.transaction.TransactionCoordinatorConcurrencyTest" time="0.098"/>
+  <testcase name="testConcurrentInitProducerRequestsAtPidBoundary" classname="kafka.coordinator.transaction.TransactionCoordinatorConcurrencyTest" time="0.047"/>
+  <testcase name="testConcurrentInitProducerIdRequestsOneNewOneContinuing" classname="kafka.coordinator.transaction.TransactionCoordinatorConcurrencyTest" time="0.078"/>
+  <testcase name="testConcurrentLoadUnloadPartitions" classname="kafka.coordinator.transaction.TransactionCoordinatorConcurrencyTest" time="0.135"/>
+  <testcase name="testConcurrentInitProducerRequestsWithRetryAtPidBoundary" classname="kafka.coordinator.transaction.TransactionCoordinatorConcurrencyTest" time="0.066"/>
+  <testcase name="testConcurrentContinuingInitProducerIdRequests" classname="kafka.coordinator.transaction.TransactionCoordinatorConcurrencyTest" time="0.411"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

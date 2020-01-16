@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.KafkaApisTest" tests="36" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:33:00" hostname="localhost" time="0.598">
+  <properties/>
+  <testcase name="shouldRespondWithUnsupportedForMessageFormatOnHandleWriteTxnMarkersWhenMagicLowerThanRequired" classname="kafka.server.KafkaApisTest" time="0.346"/>
+  <testcase name="shouldThrowUnsupportedVersionExceptionOnHandleTxnOffsetCommitRequestWhenInterBrokerProtocolNotSupported" classname="kafka.server.KafkaApisTest" time="0.002"/>
+  <testcase name="testOffsetCommitWithInvalidPartition" classname="kafka.server.KafkaApisTest" time="0.006"/>
+  <testcase name="testLeaderReplicaIfLocalRaisesNotLeaderForPartition" classname="kafka.server.KafkaApisTest" time="0.002"/>
+  <testcase name="testOffsetDeleteWithInvalidGroup" classname="kafka.server.KafkaApisTest" time="0.067"/>
+  <testcase name="testJoinGroupProtocolsOrder" classname="kafka.server.KafkaApisTest" time="0.003"/>
+  <testcase name="shouldThrowUnsupportedVersionExceptionOnHandleAddPartitionsToTxnRequestWhenInterBrokerProtocolNotSupported" classname="kafka.server.KafkaApisTest" time="0.002"/>
+  <testcase name="testReadUncommittedConsumerListOffsetLatest" classname="kafka.server.KafkaApisTest" time="0.002"/>
+  <testcase name="testMetadataRequestOnDistinctListenerWithInconsistentListenersAcrossBrokers" classname="kafka.server.KafkaApisTest" time="0.005"/>
+  <testcase name="shouldAppendToLogOnWriteTxnMarkersWhenCorrectMagicVersion" classname="kafka.server.KafkaApisTest" time="0.007"/>
+  <testcase name="testDescribeGroups" classname="kafka.server.KafkaApisTest" time="0.003"/>
+  <testcase name="shouldThrowUnsupportedVersionExceptionOnHandleWriteTxnMarkersRequestWhenInterBrokerProtocolNotSupported" classname="kafka.server.KafkaApisTest" time="0.003"/>
+  <testcase name="testLeaderReplicaIfLocalRaisesFencedLeaderEpoch" classname="kafka.server.KafkaApisTest" time="0.003"/>
+  <testcase name="testFetchRequestV9WithNoLogConfig" classname="kafka.server.KafkaApisTest" time="0.015"/>
+  <testcase name="shouldRespondWithUnknownTopicWhenPartitionIsNotHosted" classname="kafka.server.KafkaApisTest" time="0.002"/>
+  <testcase name="rejectSyncGroupRequestWhenStaticMembershipNotSupported" classname="kafka.server.KafkaApisTest" time="0.003"/>
+  <testcase name="rejectHeartbeatRequestWhenStaticMembershipNotSupported" classname="kafka.server.KafkaApisTest" time="0.002"/>
+  <testcase name="testReadCommittedConsumerListOffsetLatest" classname="kafka.server.KafkaApisTest" time="0.002"/>
+  <testcase name="testMetadataRequestOnSharedListenerWithInconsistentListenersAcrossBrokers" classname="kafka.server.KafkaApisTest" time="0.003"/>
+  <testcase name="testAddPartitionsToTxnWithInvalidPartition" classname="kafka.server.KafkaApisTest" time="0.018"/>
+  <testcase name="testOffsetDeleteWithInvalidPartition" classname="kafka.server.KafkaApisTest" time="0.027"/>
+  <testcase name="testLeaderReplicaIfLocalRaisesUnknownTopicOrPartition" classname="kafka.server.KafkaApisTest" time="0.002"/>
+  <testcase name="shouldThrowUnsupportedVersionExceptionOnHandleAddOffsetToTxnRequestWhenInterBrokerProtocolNotSupported" classname="kafka.server.KafkaApisTest" time="0.002"/>
+  <testcase name="testLeaderReplicaIfLocalRaisesUnknownLeaderEpoch" classname="kafka.server.KafkaApisTest" time="0.003"/>
+  <testcase name="testReassignmentAndReplicationBytesOutRateWhenReassigning" classname="kafka.server.KafkaApisTest" time="0.035"/>
+  <testcase name="testTxnOffsetCommitWithInvalidPartition" classname="kafka.server.KafkaApisTest" time="0.005"/>
+  <testcase name="rejectInitProducerIdWhenEpochButNotIdProvided" classname="kafka.server.KafkaApisTest" time="0.003"/>
+  <testcase name="testSingleLeaveGroup" classname="kafka.server.KafkaApisTest" time="0.002"/>
+  <testcase name="rejectJoinGroupRequestWhenStaticMembershipNotSupported" classname="kafka.server.KafkaApisTest" time="0.002"/>
+  <testcase name="shouldRespondWithUnsupportedMessageFormatForBadPartitionAndNoErrorsForGoodPartition" classname="kafka.server.KafkaApisTest" time="0.005"/>
+  <testcase name="shouldThrowUnsupportedVersionExceptionOnHandleEndTxnRequestWhenInterBrokerProtocolNotSupported" classname="kafka.server.KafkaApisTest" time="0.002"/>
+  <testcase name="testMultipleLeaveGroup" classname="kafka.server.KafkaApisTest" time="0.002"/>
+  <testcase name="testReassignmentAndReplicationBytesOutRateWhenNotReassigning" classname="kafka.server.KafkaApisTest" time="0.003"/>
+  <testcase name="rejectInitProducerIdWhenIdButNotEpochProvided" classname="kafka.server.KafkaApisTest" time="0.002"/>
+  <testcase name="shouldRespondWithUnknownTopicOrPartitionForBadPartitionAndNoErrorsForGoodPartition" classname="kafka.server.KafkaApisTest" time="0.003"/>
+  <testcase name="rejectOffsetCommitRequestWhenStaticMembershipNotSupported" classname="kafka.server.KafkaApisTest" time="0.003"/>
+  <system-out><![CDATA[[2020-01-15 10:33:01,062] ERROR [MetadataCache brokerId=1] Listeners are not identical across brokers: Map(0 -> Map(ListenerName(PLAINTEXT) -> broker0:9092 (id: 0 rack: null), ListenerName(LISTENER2) -> broker0:9093 (id: 0 rack: null)), 1 -> Map(ListenerName(PLAINTEXT) -> broker1:9092 (id: 1 rack: null))) (kafka.server.MetadataCache:74)
+[2020-01-15 10:33:01,106] ERROR [MetadataCache brokerId=1] Listeners are not identical across brokers: Map(0 -> Map(ListenerName(PLAINTEXT) -> broker0:9092 (id: 0 rack: null), ListenerName(LISTENER2) -> broker0:9093 (id: 0 rack: null)), 1 -> Map(ListenerName(PLAINTEXT) -> broker1:9092 (id: 1 rack: null))) (kafka.server.MetadataCache:74)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

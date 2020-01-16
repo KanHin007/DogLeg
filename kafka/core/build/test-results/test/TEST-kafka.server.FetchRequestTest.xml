@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.FetchRequestTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:28:14" hostname="localhost" time="99.062">
+  <properties/>
+  <testcase name="testZStdCompressedRecords" classname="kafka.server.FetchRequestTest" time="8.016"/>
+  <testcase name="testFetchRequestToNonReplica" classname="kafka.server.FetchRequestTest" time="6.882"/>
+  <testcase name="testBrokerRespectsPartitionsOrderAndSizeLimits" classname="kafka.server.FetchRequestTest" time="29.024"/>
+  <testcase name="testZStdCompressedTopic" classname="kafka.server.FetchRequestTest" time="8.651"/>
+  <testcase name="testDownConversionFromBatchedToUnbatchedRespectsOffset" classname="kafka.server.FetchRequestTest" time="6.587"/>
+  <testcase name="testFetchRequestV2WithOversizedMessage" classname="kafka.server.FetchRequestTest" time="7.663"/>
+  <testcase name="testDownConversionWithConnectionFailure" classname="kafka.server.FetchRequestTest" time="8.737"/>
+  <testcase name="testCurrentEpochValidation" classname="kafka.server.FetchRequestTest" time="9.728"/>
+  <testcase name="testCreateIncrementalFetchWithPartitionsInError" classname="kafka.server.FetchRequestTest" time="7.051"/>
+  <testcase name="testFetchRequestV4WithReadCommitted" classname="kafka.server.FetchRequestTest" time="6.723"/>
+  <system-out><![CDATA[[2020-01-15 10:28:32,989] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition topic0-3 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:28:32,989] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition topic0-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:28:39,559] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition topic2-2 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:28:39,559] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition topic2-4 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:28:44,076] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition topic4-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:29:00,307] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition topic0-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:29:41,197] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition foo-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:29:41,197] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition foo-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:29:41,773] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition bar-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.ScramServerStartupTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:29:13" hostname="localhost" time="6.966">
+  <properties/>
+  <testcase name="testAuthentications" classname="kafka.server.ScramServerStartupTest" time="6.966"/>
+  <system-out><![CDATA[Completed updating config for entity: user-principal 'scram-admin'.
+[2020-01-15 10:29:13,436] WARN SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: '/var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka1708990459519780822.tmp'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it. (org.apache.zookeeper.ClientCnxn:1094)
+[2020-01-15 10:29:13,437] ERROR [ZooKeeperClient Kafka server] Auth failed. (kafka.zookeeper.ZooKeeperClient:74)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

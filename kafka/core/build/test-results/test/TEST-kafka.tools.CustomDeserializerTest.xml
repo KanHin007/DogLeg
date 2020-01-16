@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.tools.CustomDeserializerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:29:01" hostname="localhost" time="0.102">
+  <properties/>
+  <testcase name="checkDeserializerTopicIsNotNull" classname="kafka.tools.CustomDeserializerTest" time="0.096"/>
+  <testcase name="checkFormatterCallDeserializerWithHeaders" classname="kafka.tools.CustomDeserializerTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

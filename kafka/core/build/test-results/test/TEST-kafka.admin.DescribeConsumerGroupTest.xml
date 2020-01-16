@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.admin.DescribeConsumerGroupTest" tests="31" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:11:59" hostname="localhost" time="259.52">
+  <properties/>
+  <testcase name="testDescribeMembersOfNonExistingGroup" classname="kafka.admin.DescribeConsumerGroupTest" time="17.22"/>
+  <testcase name="testDescribeStateOfExistingGroup" classname="kafka.admin.DescribeConsumerGroupTest" time="5.803"/>
+  <testcase name="testDescribeExistingGroup" classname="kafka.admin.DescribeConsumerGroupTest" time="7.6"/>
+  <testcase name="testDescribeStateWithConsumersWithoutAssignedPartitions" classname="kafka.admin.DescribeConsumerGroupTest" time="8.749"/>
+  <testcase name="testDescribeWithMultipleSubActions" classname="kafka.admin.DescribeConsumerGroupTest" time="7.897"/>
+  <testcase name="testDescribeGroupOffsetsWithShortInitializationTimeout" classname="kafka.admin.DescribeConsumerGroupTest" time="6.488"/>
+  <testcase name="testDescribeOffsetsOfExistingGroupWithNoMembers" classname="kafka.admin.DescribeConsumerGroupTest" time="6.415"/>
+  <testcase name="testDescribeGroupMembersWithShortInitializationTimeout" classname="kafka.admin.DescribeConsumerGroupTest" time="4.74"/>
+  <testcase name="testDescribeMembersOfExistingGroup" classname="kafka.admin.DescribeConsumerGroupTest" time="6.011"/>
+  <testcase name="testDescribeOffsetsOfExistingGroup" classname="kafka.admin.DescribeConsumerGroupTest" time="8.733"/>
+  <testcase name="testDescribeOffsetsWithConsumersWithoutAssignedPartitions" classname="kafka.admin.DescribeConsumerGroupTest" time="8.878"/>
+  <testcase name="testDescribeWithMultiPartitionTopicAndMultipleConsumers" classname="kafka.admin.DescribeConsumerGroupTest" time="15.726"/>
+  <testcase name="testDescribeSimpleConsumerGroup" classname="kafka.admin.DescribeConsumerGroupTest" time="11.421"/>
+  <testcase name="testDescribeStateOfNonExistingGroup" classname="kafka.admin.DescribeConsumerGroupTest" time="6.673"/>
+  <testcase name="testDescribeMembersWithConsumersWithoutAssignedPartitions" classname="kafka.admin.DescribeConsumerGroupTest" time="4.483"/>
+  <testcase name="testDescribeMembersOfExistingGroupWithNoMembers" classname="kafka.admin.DescribeConsumerGroupTest" time="7.185"/>
+  <testcase name="testDescribeWithUnrecognizedNewConsumerOption" classname="kafka.admin.DescribeConsumerGroupTest" time="5.246"/>
+  <testcase name="testDescribeGroupStateWithShortInitializationTimeout" classname="kafka.admin.DescribeConsumerGroupTest" time="4.637"/>
+  <testcase name="testDescribeMembersWithMultiPartitionTopicAndMultipleConsumers" classname="kafka.admin.DescribeConsumerGroupTest" time="5.749"/>
+  <testcase name="testDescribeExistingGroups" classname="kafka.admin.DescribeConsumerGroupTest" time="5.663"/>
+  <testcase name="testDescribeNonOffsetCommitGroup" classname="kafka.admin.DescribeConsumerGroupTest" time="5.692"/>
+  <testcase name="testDescribeNonExistingGroup" classname="kafka.admin.DescribeConsumerGroupTest" time="8.278"/>
+  <testcase name="testDescribeStateWithMultiPartitionTopicAndMultipleConsumers" classname="kafka.admin.DescribeConsumerGroupTest" time="7.588"/>
+  <testcase name="testDescribeStateOfExistingGroupWithRoundRobinAssignor" classname="kafka.admin.DescribeConsumerGroupTest" time="5.892"/>
+  <testcase name="testDescribeOffsetsOfNonExistingGroup" classname="kafka.admin.DescribeConsumerGroupTest" time="6.629"/>
+  <testcase name="testDescribeExistingGroupWithNoMembers" classname="kafka.admin.DescribeConsumerGroupTest" time="8.4"/>
+  <testcase name="testDescribeAllExistingGroups" classname="kafka.admin.DescribeConsumerGroupTest" time="6.714"/>
+  <testcase name="testDescribeWithConsumersWithoutAssignedPartitions" classname="kafka.admin.DescribeConsumerGroupTest" time="16.255"/>
+  <testcase name="testDescribeGroupWithShortInitializationTimeout" classname="kafka.admin.DescribeConsumerGroupTest" time="7.349"/>
+  <testcase name="testDescribeOffsetsWithMultiPartitionTopicAndMultipleConsumers" classname="kafka.admin.DescribeConsumerGroupTest" time="14.84"/>
+  <testcase name="testDescribeStateOfExistingGroupWithNoMembers" classname="kafka.admin.DescribeConsumerGroupTest" time="16.566"/>
+  <system-out><![CDATA[
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+test.group      foo             0          0               0               0               -               -               -
+
+GROUP               TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+test.group--offsets foo             0          0               0               0               -               -               -
+
+GROUP                     COORDINATOR (ID)          ASSIGNMENT-STRATEGY  STATE           #MEMBERS
+test.group--state         localhost:60887 (0)                            Empty           0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.kafka.common.config.AbstractConfigTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:08:30" hostname="localhost" time="0.05">
+  <properties/>
+  <testcase name="testOriginalsWithPrefix" classname="org.apache.kafka.common.config.AbstractConfigTest" time="0.014"/>
+  <testcase name="testConfigProvidersPropsAsParam" classname="org.apache.kafka.common.config.AbstractConfigTest" time="0.008"/>
+  <testcase name="testConfiguredInstances" classname="org.apache.kafka.common.config.AbstractConfigTest" time="0.002"/>
+  <testcase name="testAutoConfigResolutionWithDuplicateConfigProvider" classname="org.apache.kafka.common.config.AbstractConfigTest" time="0.001"/>
+  <testcase name="testOriginalsWithConfigProvidersProps" classname="org.apache.kafka.common.config.AbstractConfigTest" time="0.001"/>
+  <testcase name="testEmptyList" classname="org.apache.kafka.common.config.AbstractConfigTest" time="0.002"/>
+  <testcase name="testValuesWithSecondaryPrefix" classname="org.apache.kafka.common.config.AbstractConfigTest" time="0.006"/>
+  <testcase name="testConfigProviderConfigurationWithConfigParams" classname="org.apache.kafka.common.config.AbstractConfigTest" time="0.0"/>
+  <testcase name="testImmutableOriginalsWithConfigProvidersProps" classname="org.apache.kafka.common.config.AbstractConfigTest" time="0.002"/>
+  <testcase name="testAutoConfigResolutionWithMultipleConfigProviders" classname="org.apache.kafka.common.config.AbstractConfigTest" time="0.001"/>
+  <testcase name="testValuesWithPrefixOverride" classname="org.apache.kafka.common.config.AbstractConfigTest" time="0.001"/>
+  <testcase name="testAutoConfigResolutionWithMissingConfigKey" classname="org.apache.kafka.common.config.AbstractConfigTest" time="0.001"/>
+  <testcase name="testAutoConfigResolutionWithInvalidConfigProviderClass" classname="org.apache.kafka.common.config.AbstractConfigTest" time="0.002"/>
+  <testcase name="testValuesWithPrefixAllOrNothing" classname="org.apache.kafka.common.config.AbstractConfigTest" time="0.0"/>
+  <testcase name="testAutoConfigResolutionWithMissingConfigProvider" classname="org.apache.kafka.common.config.AbstractConfigTest" time="0.001"/>
+  <testcase name="testUnused" classname="org.apache.kafka.common.config.AbstractConfigTest" time="0.001"/>
+  <testcase name="testClassConfigs" classname="org.apache.kafka.common.config.AbstractConfigTest" time="0.005"/>
+  <system-out><![CDATA[[2020-01-15 10:08:30,423] ERROR ClassNotFoundException exception occurred: org.apache.kafka.common.config.provider.InvalidConfigProvider (org.apache.kafka.common.config.AbstractConfigTest$TestIndirectConfigResolution:536)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

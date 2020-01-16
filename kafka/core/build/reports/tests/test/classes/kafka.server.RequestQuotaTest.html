@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class kafka.server.RequestQuotaTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class kafka.server.RequestQuotaTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/kafka.server.html">kafka.server</a> &gt; RequestQuotaTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">32.046s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testExemptRequestTime</td>
+<td class="success">6.430s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testResponseThrottleTime</td>
+<td class="success">4.207s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testResponseThrottleTimeWhenBothFetchAndRequestQuotasViolated</td>
+<td class="success">5.604s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testResponseThrottleTimeWhenBothProduceAndRequestQuotasViolated</td>
+<td class="success">5.876s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUnauthorizedThrottle</td>
+<td class="success">5.158s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUnthrottledClient</td>
+<td class="success">4.771s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>[2020-01-15 10:39:48,758] ERROR [KafkaApi-0] Error when handling request: clientId=unauthorized-STOP_REPLICA, correlationId=1, api=STOP_REPLICA, version=2, body={controller_id=0,controller_epoch=2147483647,broker_epoch=9223372036854775807,delete_partitions=true,topics=[{name=topic-1,partition_indexes=[0],_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:59410-127.0.0.1:59429-3, session=Session(User:Unauthorized,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:39:48,759] ERROR [KafkaApi-0] Error when handling request: clientId=unauthorized-UPDATE_METADATA, correlationId=1, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=2147483647,broker_epoch=9223372036854775807,topic_states=[{topic_name=topic-1,partition_states=[{partition_index=0,controller_epoch=2147483647,leader=0,leader_epoch=2147483647,isr=[0],zk_version=2,replicas=[0],offline_replicas=[],_tagged_fields={}}],_tagged_fields={}}],live_brokers=[{id=0,endpoints=[{port=0,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:59410-127.0.0.1:59426-2, session=Session(User:Unauthorized,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:39:48,759] ERROR [KafkaApi-0] Error when handling request: clientId=unauthorized-CONTROLLED_SHUTDOWN, correlationId=1, api=CONTROLLED_SHUTDOWN, version=3, body={broker_id=0,broker_epoch=9223372036854775807,_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=2, connectionId=127.0.0.1:59410-127.0.0.1:59434-4, session=Session(User:Unauthorized,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:39:48,761] ERROR [KafkaApi-0] Error when handling request: clientId=unauthorized-LEADER_AND_ISR, correlationId=1, api=LEADER_AND_ISR, version=4, body={controller_id=0,controller_epoch=2147483647,broker_epoch=9223372036854775807,topic_states=[{topic_name=topic-1,partition_states=[{partition_index=0,controller_epoch=2147483647,leader=0,leader_epoch=2147483647,isr=[0],zk_version=2,replicas=[0],adding_replicas=[],removing_replicas=[],is_new=true,_tagged_fields={}}],_tagged_fields={}}],live_leaders=[{broker_id=0,host_name=localhost,port=0,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=2, connectionId=127.0.0.1:59410-127.0.0.1:59440-6, session=Session(User:Unauthorized,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:39:48,764] ERROR [KafkaApi-0] Error when handling request: clientId=unauthorized-STOP_REPLICA, correlationId=2, api=STOP_REPLICA, version=2, body={controller_id=0,controller_epoch=2147483647,broker_epoch=9223372036854775807,delete_partitions=true,topics=[{name=topic-1,partition_indexes=[0],_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:59410-127.0.0.1:59429-3, session=Session(User:Unauthorized,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:39:48,765] ERROR [KafkaApi-0] Error when handling request: clientId=unauthorized-UPDATE_METADATA, correlationId=2, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=2147483647,broker_epoch=9223372036854775807,topic_states=[{topic_name=topic-1,partition_states=[{partition_index=0,controller_epoch=2147483647,leader=0,leader_epoch=2147483647,isr=[0],zk_version=2,replicas=[0],offline_replicas=[],_tagged_fields={}}],_tagged_fields={}}],live_brokers=[{id=0,endpoints=[{port=0,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:59410-127.0.0.1:59426-2, session=Session(User:Unauthorized,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:39:48,765] ERROR [KafkaApi-0] Error when handling request: clientId=unauthorized-DESCRIBE_ACLS, correlationId=1, api=DESCRIBE_ACLS, version=1, body={resource_type=1,resource_name=null,resource_pattern_type_filter=1,principal=null,host=null,operation=1,permission_type=1} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:59410-127.0.0.1:59450-10, session=Session(User:Unauthorized,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:39:48,764] ERROR [KafkaApi-0] Error when handling request: clientId=unauthorized-CONTROLLED_SHUTDOWN, correlationId=2, api=CONTROLLED_SHUTDOWN, version=3, body={broker_id=0,broker_epoch=9223372036854775807,_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=2, connectionId=127.0.0.1:59410-127.0.0.1:59434-4, session=Session(User:Unauthorized,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:39:48,768] ERROR [KafkaApi-0] Error when handling request: clientId=unauthorized-WRITE_TXN_MARKERS, correlationId=1, api=WRITE_TXN_MARKERS, version=0, body={transaction_markers=[]} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:59410-127.0.0.1:59448-9, session=Session(User:Unauthorized,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:39:48,767] ERROR [KafkaApi-0] Error when handling request: clientId=unauthorized-CREATE_ACLS, correlationId=1, api=CREATE_ACLS, version=1, body={creations=[{resource_type=2,resource_name=mytopic,resource_pattern_type=3,principal=User:ANONYMOUS,host=*,operation=4,permission_type=2}]} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:59410-127.0.0.1:59451-10, session=Session(User:Unauthorized,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:39:48,770] ERROR [KafkaApi-0] Error when handling request: clientId=unauthorized-STOP_REPLICA, correlationId=3, api=STOP_REPLICA, version=2, body={controller_id=0,controller_epoch=2147483647,broker_epoch=9223372036854775807,delete_partitions=true,topics=[{name=topic-1,partition_indexes=[0],_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:59410-127.0.0.1:59429-3, session=Session(User:Unauthorized,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:39:48,770] ERROR [KafkaApi-0] Error when handling request: clientId=unauthorized-ALTER_PARTITION_REASSIGNMENTS, correlationId=1, api=ALTER_PARTITION_REASSIGNMENTS, version=0, body={timeout_ms=60000,topics=[],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:59410-127.0.0.1:59466-15, session=Session(User:Unauthorized,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:39:48,770] ERROR [KafkaApi-0] Error when handling request: clientId=unauthorized-UPDATE_METADATA, correlationId=3, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=2147483647,broker_epoch=9223372036854775807,topic_states=[{topic_name=topic-1,partition_states=[{partition_index=0,controller_epoch=2147483647,leader=0,leader_epoch=2147483647,isr=[0],zk_version=2,replicas=[0],offline_replicas=[],_tagged_fields={}}],_tagged_fields={}}],live_brokers=[{id=0,endpoints=[{port=0,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:59410-127.0.0.1:59426-2, session=Session(User:Unauthorized,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:39:48,771] ERROR [KafkaApi-0] Error when handling request: clientId=unauthorized-WRITE_TXN_MARKERS, correlationId=2, api=WRITE_TXN_MARKERS, version=0, body={transaction_markers=[]} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:59410-127.0.0.1:59448-9, session=Session(User:Unauthorized,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:39:48,771] ERROR [KafkaApi-0] Error when handling request: clientId=unauthorized-DELETE_ACLS, correlationId=1, api=DELETE_ACLS, version=1, body={filters=[{resource_type=2,resource_name=null,resource_pattern_type_filter=3,principal=User:ANONYMOUS,host=*,operation=1,permission_type=2}]} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=2, connectionId=127.0.0.1:59410-127.0.0.1:59452-10, session=Session(User:Unauthorized,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:39:48,772] ERROR [KafkaApi-0] Error when handling request: clientId=unauthorized-LIST_PARTITION_REASSIGNMENTS, correlationId=1, api=LIST_PARTITION_REASSIGNMENTS, version=0, body={timeout_ms=60000,topics=null,_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=2, connectionId=127.0.0.1:59410-127.0.0.1:59467-15, session=Session(User:Unauthorized,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:39:48,774] ERROR [KafkaApi-0] Error when handling request: clientId=unauthorized-DESCRIBE_ACLS, correlationId=2, api=DESCRIBE_ACLS, version=1, body={resource_type=1,resource_name=null,resource_pattern_type_filter=1,principal=null,host=null,operation=1,permission_type=1} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:59410-127.0.0.1:59450-10, session=Session(User:Unauthorized,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:39:48,775] ERROR [KafkaApi-0] Error when handling request: clientId=unauthorized-STOP_REPLICA, correlationId=4, api=STOP_REPLICA, version=2, body={controller_id=0,controller_epoch=2147483647,broker_epoch=9223372036854775807,delete_partitions=true,topics=[{name=topic-1,partition_indexes=[0],_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=0, connectionId=127.0.0.1:59410-127.0.0.1:59429-3, session=Session(User:Unauthorized,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:39:48,775] ERROR [KafkaApi-0] Error when handling request: clientId=unauthorized-DELETE_ACLS, correlationId=2, api=DELETE_ACLS, version=1, body={filters=[{resource_type=2,resource_name=null,resource_pattern_type_filter=3,principal=User:ANONYMOUS,host=*,operation=1,permission_type=2}]} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=2, connectionId=127.0.0.1:59410-127.0.0.1:59452-10, session=Session(User:Unauthorized,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:39:48,778] ERROR [KafkaApi-0] Error when handling request: clientId=unauthorized-WRITE_TXN_MARKERS, correlationId=3, api=WRITE_TXN_MARKERS, version=0, body={transaction_markers=[]} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:59410-127.0.0.1:59448-9, session=Session(User:Unauthorized,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:39:48,778] ERROR [KafkaApi-0] Error when handling request: clientId=unauthorized-ALTER_PARTITION_REASSIGNMENTS, correlationId=2, api=ALTER_PARTITION_REASSIGNMENTS, version=0, body={timeout_ms=60000,topics=[],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:59410-127.0.0.1:59466-15, session=Session(User:Unauthorized,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:39:48,783] ERROR [KafkaApi-0] Error when handling request: clientId=unauthorized-WRITE_TXN_MARKERS, correlationId=4, api=WRITE_TXN_MARKERS, version=0, body={transaction_markers=[]} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:59410-127.0.0.1:59448-9, session=Session(User:Unauthorized,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:39:48,783] ERROR [KafkaApi-0] Error when handling request: clientId=unauthorized-ALTER_PARTITION_REASSIGNMENTS, correlationId=3, api=ALTER_PARTITION_REASSIGNMENTS, version=0, body={timeout_ms=60000,topics=[],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:59410-127.0.0.1:59466-15, session=Session(User:Unauthorized,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:39:48,786] ERROR [KafkaApi-0] Error when handling request: clientId=unauthorized-WRITE_TXN_MARKERS, correlationId=5, api=WRITE_TXN_MARKERS, version=0, body={transaction_markers=[]} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:59410-127.0.0.1:59448-9, session=Session(User:Unauthorized,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:39:48,787] ERROR [KafkaApi-0] Error when handling request: clientId=unauthorized-ALTER_PARTITION_REASSIGNMENTS, correlationId=4, api=ALTER_PARTITION_REASSIGNMENTS, version=0, body={timeout_ms=60000,topics=[],_tagged_fields={}} (kafka.server.KafkaApis:76)
+org.apache.kafka.common.errors.ClusterAuthorizationException: Request Request(processor=1, connectionId=127.0.0.1:59410-127.0.0.1:59466-15, session=Session(User:Unauthorized,/127.0.0.1), listenerName=ListenerName(PLAINTEXT), securityProtocol=PLAINTEXT, buffer=null) is not authorized.
+[2020-01-15 10:40:04,152] ERROR [KafkaApi-0] Error when handling request: clientId=STOP_REPLICA, correlationId=1, api=STOP_REPLICA, version=2, body={controller_id=0,controller_epoch=2147483647,broker_epoch=9223372036854775807,delete_partitions=true,topics=[{name=topic-1,partition_indexes=[0],_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+java.lang.IllegalStateException: Epoch 9223372036854775807 larger than current broker epoch 25
+	at kafka.server.KafkaApis.isBrokerEpochStale(KafkaApis.scala:2952)
+	at kafka.server.KafkaApis.handleStopReplicaRequest(KafkaApis.scala:230)
+	at kafka.server.KafkaApis.handle(KafkaApis.scala:133)
+	at kafka.server.KafkaRequestHandler.run(KafkaRequestHandler.scala:70)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-01-15 10:40:04,152] ERROR [KafkaApi-0] Error when handling request: clientId=UPDATE_METADATA, correlationId=1, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=2147483647,broker_epoch=9223372036854775807,topic_states=[{topic_name=topic-1,partition_states=[{partition_index=0,controller_epoch=2147483647,leader=0,leader_epoch=2147483647,isr=[0],zk_version=2,replicas=[0],offline_replicas=[],_tagged_fields={}}],_tagged_fields={}}],live_brokers=[{id=0,endpoints=[{port=0,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+java.lang.IllegalStateException: Epoch 9223372036854775807 larger than current broker epoch 25
+	at kafka.server.KafkaApis.isBrokerEpochStale(KafkaApis.scala:2952)
+	at kafka.server.KafkaApis.handleUpdateMetadataRequest(KafkaApis.scala:269)
+	at kafka.server.KafkaApis.handle(KafkaApis.scala:134)
+	at kafka.server.KafkaRequestHandler.run(KafkaRequestHandler.scala:70)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-01-15 10:40:04,152] ERROR [KafkaApi-0] Error when handling request: clientId=LEADER_AND_ISR, correlationId=1, api=LEADER_AND_ISR, version=4, body={controller_id=0,controller_epoch=2147483647,broker_epoch=9223372036854775807,topic_states=[{topic_name=topic-1,partition_states=[{partition_index=0,controller_epoch=2147483647,leader=0,leader_epoch=2147483647,isr=[0],zk_version=2,replicas=[0],adding_replicas=[],removing_replicas=[],is_new=true,_tagged_fields={}}],_tagged_fields={}}],live_leaders=[{broker_id=0,host_name=localhost,port=0,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+java.lang.IllegalStateException: Epoch 9223372036854775807 larger than current broker epoch 25
+	at kafka.server.KafkaApis.isBrokerEpochStale(KafkaApis.scala:2952)
+	at kafka.server.KafkaApis.handleLeaderAndIsrRequest(KafkaApis.scala:212)
+	at kafka.server.KafkaApis.handle(KafkaApis.scala:132)
+	at kafka.server.KafkaRequestHandler.run(KafkaRequestHandler.scala:70)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-01-15 10:40:04,152] ERROR [KafkaApi-0] Error when handling request: clientId=STOP_REPLICA, correlationId=2, api=STOP_REPLICA, version=2, body={controller_id=0,controller_epoch=2147483647,broker_epoch=9223372036854775807,delete_partitions=true,topics=[{name=topic-1,partition_indexes=[0],_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+java.lang.IllegalStateException: Epoch 9223372036854775807 larger than current broker epoch 25
+	at kafka.server.KafkaApis.isBrokerEpochStale(KafkaApis.scala:2952)
+	at kafka.server.KafkaApis.handleStopReplicaRequest(KafkaApis.scala:230)
+	at kafka.server.KafkaApis.handle(KafkaApis.scala:133)
+	at kafka.server.KafkaRequestHandler.run(KafkaRequestHandler.scala:70)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-01-15 10:40:04,153] ERROR [KafkaApi-0] Error when handling request: clientId=UPDATE_METADATA, correlationId=2, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=2147483647,broker_epoch=9223372036854775807,topic_states=[{topic_name=topic-1,partition_states=[{partition_index=0,controller_epoch=2147483647,leader=0,leader_epoch=2147483647,isr=[0],zk_version=2,replicas=[0],offline_replicas=[],_tagged_fields={}}],_tagged_fields={}}],live_brokers=[{id=0,endpoints=[{port=0,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+java.lang.IllegalStateException: Epoch 9223372036854775807 larger than current broker epoch 25
+	at kafka.server.KafkaApis.isBrokerEpochStale(KafkaApis.scala:2952)
+	at kafka.server.KafkaApis.handleUpdateMetadataRequest(KafkaApis.scala:269)
+	at kafka.server.KafkaApis.handle(KafkaApis.scala:134)
+	at kafka.server.KafkaRequestHandler.run(KafkaRequestHandler.scala:70)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-01-15 10:40:04,154] ERROR [KafkaApi-0] Error when handling request: clientId=STOP_REPLICA, correlationId=3, api=STOP_REPLICA, version=2, body={controller_id=0,controller_epoch=2147483647,broker_epoch=9223372036854775807,delete_partitions=true,topics=[{name=topic-1,partition_indexes=[0],_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+java.lang.IllegalStateException: Epoch 9223372036854775807 larger than current broker epoch 25
+	at kafka.server.KafkaApis.isBrokerEpochStale(KafkaApis.scala:2952)
+	at kafka.server.KafkaApis.handleStopReplicaRequest(KafkaApis.scala:230)
+	at kafka.server.KafkaApis.handle(KafkaApis.scala:133)
+	at kafka.server.KafkaRequestHandler.run(KafkaRequestHandler.scala:70)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-01-15 10:40:04,154] ERROR [KafkaApi-0] Error when handling request: clientId=UPDATE_METADATA, correlationId=3, api=UPDATE_METADATA, version=6, body={controller_id=0,controller_epoch=2147483647,broker_epoch=9223372036854775807,topic_states=[{topic_name=topic-1,partition_states=[{partition_index=0,controller_epoch=2147483647,leader=0,leader_epoch=2147483647,isr=[0],zk_version=2,replicas=[0],offline_replicas=[],_tagged_fields={}}],_tagged_fields={}}],live_brokers=[{id=0,endpoints=[{port=0,host=localhost,listener=PLAINTEXT,security_protocol=0,_tagged_fields={}}],rack=,_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+java.lang.IllegalStateException: Epoch 9223372036854775807 larger than current broker epoch 25
+	at kafka.server.KafkaApis.isBrokerEpochStale(KafkaApis.scala:2952)
+	at kafka.server.KafkaApis.handleUpdateMetadataRequest(KafkaApis.scala:269)
+	at kafka.server.KafkaApis.handle(KafkaApis.scala:134)
+	at kafka.server.KafkaRequestHandler.run(KafkaRequestHandler.scala:70)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-01-15 10:40:04,155] ERROR [KafkaApi-0] Error when handling request: clientId=STOP_REPLICA, correlationId=4, api=STOP_REPLICA, version=2, body={controller_id=0,controller_epoch=2147483647,broker_epoch=9223372036854775807,delete_partitions=true,topics=[{name=topic-1,partition_indexes=[0],_tagged_fields={}}],_tagged_fields={}} (kafka.server.KafkaApis:76)
+java.lang.IllegalStateException: Epoch 9223372036854775807 larger than current broker epoch 25
+	at kafka.server.KafkaApis.isBrokerEpochStale(KafkaApis.scala:2952)
+	at kafka.server.KafkaApis.handleStopReplicaRequest(KafkaApis.scala:230)
+	at kafka.server.KafkaApis.handle(KafkaApis.scala:133)
+	at kafka.server.KafkaRequestHandler.run(KafkaRequestHandler.scala:70)
+	at java.lang.Thread.run(Thread.java:748)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.2</a> at 2020-1-15 10:48:49</p>
+</div>
+</div>
+</body>
+</html>

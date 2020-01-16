@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class kafka.server.DynamicBrokerReconfigurationTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class kafka.server.DynamicBrokerReconfigurationTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/kafka.server.html">kafka.server</a> &gt; DynamicBrokerReconfigurationTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">12</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">1</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">3m52.39s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox skipped" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testAddRemoveSaslListeners</td>
+<td class="success">24.193s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="skipped">testAddRemoveSslListener</td>
+<td class="skipped">-</td>
+<td class="skipped">ignored</td>
+</tr>
+<tr>
+<td class="success">testAdvertisedListenerUpdate</td>
+<td class="success">21.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testConfigDescribeUsingAdminClient</td>
+<td class="success">13.297s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDefaultTopicConfig</td>
+<td class="success">15.983s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testKeyStoreAlter</td>
+<td class="success">37.564s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testLogCleanerConfig</td>
+<td class="success">13.579s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMetricsReporterUpdate</td>
+<td class="success">16.317s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testThreadPoolResize</td>
+<td class="success">24.378s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testTrustStoreAlter</td>
+<td class="success">22.466s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUncleanLeaderElectionEnable</td>
+<td class="success">24.886s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUpdatesUsingConfigProvider</td>
+<td class="success">18.725s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Completed updating config for entity: brokers '0'.
+Completed updating config for entity: brokers '1'.
+Completed updating config for entity: brokers '2'.
+[2020-01-15 10:23:34,565] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=1] Error for partition testtopic-6 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:23:34,565] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=1] Error for partition testtopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:23:34,568] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=1] Error for partition testtopic-2 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:23:34,568] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=1] Error for partition testtopic-8 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:23:34,571] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition testtopic-5 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:23:34,575] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition testtopic-9 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:23:34,575] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition testtopic-3 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:23:34,753] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition testtopic-5 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:23:34,758] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=1] Error for partition testtopic-2 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:23:34,758] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=1] Error for partition testtopic-8 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:23:38,273] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=1] Error for partition __consumer_offsets-2 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Completed updating config for entity: brokers '0'.
+Completed updating config for entity: brokers '1'.
+Completed updating config for entity: brokers '2'.
+[2020-01-15 10:23:55,149] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition __consumer_offsets-3 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:23:55,182] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=1] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:23:55,182] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=1] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:23:55,182] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition __consumer_offsets-3 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Completed updating config for entity: brokers '0'.
+Completed updating config for entity: brokers '1'.
+Completed updating config for entity: brokers '2'.
+[2020-01-15 10:24:04,841] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition testtopic-7 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:24:04,842] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition testtopic-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:24:04,842] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=1] Error for partition testtopic-4 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:24:04,842] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=1] Error for partition testtopic-6 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:24:04,842] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=1] Error for partition testtopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:24:04,847] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition testtopic-9 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:24:04,849] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition testtopic-3 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:24:10,572] WARN Unable to reconnect to ZooKeeper service, session 0x10003a681f00002 has expired (org.apache.zookeeper.ClientCnxn:1380)
+[2020-01-15 10:24:15,870] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition testtopic2-9 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:24:15,870] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=1] Error for partition testtopic2-6 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:24:15,870] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=1] Error for partition testtopic2-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:24:15,870] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition testtopic2-3 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Completed updating config for entity: brokers '0'.
+Completed updating config for entity: brokers '1'.
+Completed updating config for entity: brokers '2'.
+[2020-01-15 10:24:25,852] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition testtopic-5 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:24:25,855] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=1] Error for partition testtopic-4 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:24:25,857] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition testtopic-7 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:24:25,857] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition testtopic-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:24:25,862] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=1] Error for partition testtopic-2 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:24:25,862] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=1] Error for partition testtopic-8 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:24:25,894] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=1] Error for partition testtopic-4 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:24:25,897] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition testtopic-7 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:24:25,897] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition testtopic-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Completed updating config for entity: brokers '0'.
+Completed updating config for entity: brokers '1'.
+Completed updating config for entity: brokers '2'.
+[2020-01-15 10:24:52,301] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition testtopic-9 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:24:52,301] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition testtopic-7 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:24:52,301] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition testtopic-3 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:24:52,301] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition testtopic-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:24:52,304] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=1] Error for partition testtopic-6 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:24:52,304] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=1] Error for partition testtopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:24:52,304] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=1] Error for partition testtopic-4 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Completed updating config for entity: user-principal 'scram-user'.
+Completed updating config for entity: user-principal 'scram-admin'.
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka4778144481040041811.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka4778144481040041811.tmp refreshKrb5Config is false principal is kafka/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is kafka/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+[2020-01-15 10:24:59,277] ERROR [MetadataCache brokerId=0] Listeners are not identical across brokers: Map(0 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50124 (id: 0 rack: null), ListenerName(INTERNAL) -&gt; localhost:50123 (id: 0 rack: null), ListenerName(SASL_PLAINTEXT) -&gt; localhost:50333 (id: 0 rack: null)), 2 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50143 (id: 2 rack: null), ListenerName(INTERNAL) -&gt; localhost:50142 (id: 2 rack: null)), 1 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50131 (id: 1 rack: null), ListenerName(INTERNAL) -&gt; localhost:50129 (id: 1 rack: null))) (kafka.server.MetadataCache:74)
+[2020-01-15 10:24:59,278] ERROR [MetadataCache brokerId=2] Listeners are not identical across brokers: Map(0 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50124 (id: 0 rack: null), ListenerName(INTERNAL) -&gt; localhost:50123 (id: 0 rack: null), ListenerName(SASL_PLAINTEXT) -&gt; localhost:50333 (id: 0 rack: null)), 2 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50143 (id: 2 rack: null), ListenerName(INTERNAL) -&gt; localhost:50142 (id: 2 rack: null)), 1 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50131 (id: 1 rack: null), ListenerName(INTERNAL) -&gt; localhost:50129 (id: 1 rack: null))) (kafka.server.MetadataCache:74)
+[2020-01-15 10:24:59,277] ERROR [MetadataCache brokerId=1] Listeners are not identical across brokers: Map(0 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50124 (id: 0 rack: null), ListenerName(INTERNAL) -&gt; localhost:50123 (id: 0 rack: null), ListenerName(SASL_PLAINTEXT) -&gt; localhost:50333 (id: 0 rack: null)), 2 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50143 (id: 2 rack: null), ListenerName(INTERNAL) -&gt; localhost:50142 (id: 2 rack: null)), 1 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50131 (id: 1 rack: null), ListenerName(INTERNAL) -&gt; localhost:50129 (id: 1 rack: null))) (kafka.server.MetadataCache:74)
+[2020-01-15 10:24:59,279] ERROR [MetadataCache brokerId=2] Listeners are not identical across brokers: Map(0 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50124 (id: 0 rack: null), ListenerName(INTERNAL) -&gt; localhost:50123 (id: 0 rack: null), ListenerName(SASL_PLAINTEXT) -&gt; localhost:50333 (id: 0 rack: null)), 2 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50143 (id: 2 rack: null), ListenerName(INTERNAL) -&gt; localhost:50142 (id: 2 rack: null)), 1 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50131 (id: 1 rack: null), ListenerName(INTERNAL) -&gt; localhost:50129 (id: 1 rack: null), ListenerName(SASL_PLAINTEXT) -&gt; localhost:50327 (id: 1 rack: null))) (kafka.server.MetadataCache:74)
+[2020-01-15 10:24:59,279] ERROR [MetadataCache brokerId=0] Listeners are not identical across brokers: Map(0 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50124 (id: 0 rack: null), ListenerName(INTERNAL) -&gt; localhost:50123 (id: 0 rack: null), ListenerName(SASL_PLAINTEXT) -&gt; localhost:50333 (id: 0 rack: null)), 2 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50143 (id: 2 rack: null), ListenerName(INTERNAL) -&gt; localhost:50142 (id: 2 rack: null)), 1 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50131 (id: 1 rack: null), ListenerName(INTERNAL) -&gt; localhost:50129 (id: 1 rack: null), ListenerName(SASL_PLAINTEXT) -&gt; localhost:50327 (id: 1 rack: null))) (kafka.server.MetadataCache:74)
+[2020-01-15 10:24:59,279] ERROR [MetadataCache brokerId=1] Listeners are not identical across brokers: Map(0 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50124 (id: 0 rack: null), ListenerName(INTERNAL) -&gt; localhost:50123 (id: 0 rack: null), ListenerName(SASL_PLAINTEXT) -&gt; localhost:50333 (id: 0 rack: null)), 2 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50143 (id: 2 rack: null), ListenerName(INTERNAL) -&gt; localhost:50142 (id: 2 rack: null)), 1 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50131 (id: 1 rack: null), ListenerName(INTERNAL) -&gt; localhost:50129 (id: 1 rack: null), ListenerName(SASL_PLAINTEXT) -&gt; localhost:50327 (id: 1 rack: null))) (kafka.server.MetadataCache:74)
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt false ticketCache is null isInitiator true KeyTab is /var/folders/b3/bhnnh3l53jjdfgphtx91qd1h0000gn/T/kafka217753956465296020.tmp refreshKrb5Config is false principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+[2020-01-15 10:25:00,106] ERROR [MetadataCache brokerId=2] Listeners are not identical across brokers: Map(0 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50124 (id: 0 rack: null), ListenerName(INTERNAL) -&gt; localhost:50123 (id: 0 rack: null)), 2 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50143 (id: 2 rack: null), ListenerName(INTERNAL) -&gt; localhost:50142 (id: 2 rack: null), ListenerName(SASL_PLAINTEXT) -&gt; localhost:50332 (id: 2 rack: null)), 1 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50131 (id: 1 rack: null), ListenerName(INTERNAL) -&gt; localhost:50129 (id: 1 rack: null), ListenerName(SASL_PLAINTEXT) -&gt; localhost:50327 (id: 1 rack: null))) (kafka.server.MetadataCache:74)
+[2020-01-15 10:25:00,106] ERROR [MetadataCache brokerId=1] Listeners are not identical across brokers: Map(0 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50124 (id: 0 rack: null), ListenerName(INTERNAL) -&gt; localhost:50123 (id: 0 rack: null)), 2 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50143 (id: 2 rack: null), ListenerName(INTERNAL) -&gt; localhost:50142 (id: 2 rack: null), ListenerName(SASL_PLAINTEXT) -&gt; localhost:50332 (id: 2 rack: null)), 1 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50131 (id: 1 rack: null), ListenerName(INTERNAL) -&gt; localhost:50129 (id: 1 rack: null), ListenerName(SASL_PLAINTEXT) -&gt; localhost:50327 (id: 1 rack: null))) (kafka.server.MetadataCache:74)
+[2020-01-15 10:25:00,106] ERROR [MetadataCache brokerId=0] Listeners are not identical across brokers: Map(0 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50124 (id: 0 rack: null), ListenerName(INTERNAL) -&gt; localhost:50123 (id: 0 rack: null)), 2 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50143 (id: 2 rack: null), ListenerName(INTERNAL) -&gt; localhost:50142 (id: 2 rack: null), ListenerName(SASL_PLAINTEXT) -&gt; localhost:50332 (id: 2 rack: null)), 1 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50131 (id: 1 rack: null), ListenerName(INTERNAL) -&gt; localhost:50129 (id: 1 rack: null), ListenerName(SASL_PLAINTEXT) -&gt; localhost:50327 (id: 1 rack: null))) (kafka.server.MetadataCache:74)
+[2020-01-15 10:25:00,107] ERROR [MetadataCache brokerId=2] Listeners are not identical across brokers: Map(0 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50124 (id: 0 rack: null), ListenerName(INTERNAL) -&gt; localhost:50123 (id: 0 rack: null)), 2 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50143 (id: 2 rack: null), ListenerName(INTERNAL) -&gt; localhost:50142 (id: 2 rack: null), ListenerName(SASL_PLAINTEXT) -&gt; localhost:50332 (id: 2 rack: null)), 1 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50131 (id: 1 rack: null), ListenerName(INTERNAL) -&gt; localhost:50129 (id: 1 rack: null))) (kafka.server.MetadataCache:74)
+[2020-01-15 10:25:00,107] ERROR [MetadataCache brokerId=1] Listeners are not identical across brokers: Map(0 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50124 (id: 0 rack: null), ListenerName(INTERNAL) -&gt; localhost:50123 (id: 0 rack: null)), 2 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50143 (id: 2 rack: null), ListenerName(INTERNAL) -&gt; localhost:50142 (id: 2 rack: null), ListenerName(SASL_PLAINTEXT) -&gt; localhost:50332 (id: 2 rack: null)), 1 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50131 (id: 1 rack: null), ListenerName(INTERNAL) -&gt; localhost:50129 (id: 1 rack: null))) (kafka.server.MetadataCache:74)
+[2020-01-15 10:25:00,107] ERROR [MetadataCache brokerId=0] Listeners are not identical across brokers: Map(0 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50124 (id: 0 rack: null), ListenerName(INTERNAL) -&gt; localhost:50123 (id: 0 rack: null)), 2 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50143 (id: 2 rack: null), ListenerName(INTERNAL) -&gt; localhost:50142 (id: 2 rack: null), ListenerName(SASL_PLAINTEXT) -&gt; localhost:50332 (id: 2 rack: null)), 1 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50131 (id: 1 rack: null), ListenerName(INTERNAL) -&gt; localhost:50129 (id: 1 rack: null))) (kafka.server.MetadataCache:74)
+[2020-01-15 10:25:05,514] ERROR [MetadataCache brokerId=1] Listeners are not identical across brokers: Map(0 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50124 (id: 0 rack: null), ListenerName(INTERNAL) -&gt; localhost:50123 (id: 0 rack: null)), 2 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50143 (id: 2 rack: null), ListenerName(INTERNAL) -&gt; localhost:50142 (id: 2 rack: null), ListenerName(SCRAM_LISTENER) -&gt; localhost:50547 (id: 2 rack: null)), 1 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50131 (id: 1 rack: null), ListenerName(INTERNAL) -&gt; localhost:50129 (id: 1 rack: null))) (kafka.server.MetadataCache:74)
+[2020-01-15 10:25:05,514] ERROR [MetadataCache brokerId=0] Listeners are not identical across brokers: Map(0 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50124 (id: 0 rack: null), ListenerName(INTERNAL) -&gt; localhost:50123 (id: 0 rack: null)), 2 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50143 (id: 2 rack: null), ListenerName(INTERNAL) -&gt; localhost:50142 (id: 2 rack: null), ListenerName(SCRAM_LISTENER) -&gt; localhost:50547 (id: 2 rack: null)), 1 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50131 (id: 1 rack: null), ListenerName(INTERNAL) -&gt; localhost:50129 (id: 1 rack: null))) (kafka.server.MetadataCache:74)
+[2020-01-15 10:25:05,514] ERROR [MetadataCache brokerId=2] Listeners are not identical across brokers: Map(0 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50124 (id: 0 rack: null), ListenerName(INTERNAL) -&gt; localhost:50123 (id: 0 rack: null)), 2 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50143 (id: 2 rack: null), ListenerName(INTERNAL) -&gt; localhost:50142 (id: 2 rack: null), ListenerName(SCRAM_LISTENER) -&gt; localhost:50547 (id: 2 rack: null)), 1 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50131 (id: 1 rack: null), ListenerName(INTERNAL) -&gt; localhost:50129 (id: 1 rack: null))) (kafka.server.MetadataCache:74)
+[2020-01-15 10:25:05,515] ERROR [MetadataCache brokerId=1] Listeners are not identical across brokers: Map(0 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50124 (id: 0 rack: null), ListenerName(INTERNAL) -&gt; localhost:50123 (id: 0 rack: null)), 2 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50143 (id: 2 rack: null), ListenerName(INTERNAL) -&gt; localhost:50142 (id: 2 rack: null), ListenerName(SCRAM_LISTENER) -&gt; localhost:50547 (id: 2 rack: null)), 1 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50131 (id: 1 rack: null), ListenerName(INTERNAL) -&gt; localhost:50129 (id: 1 rack: null), ListenerName(SCRAM_LISTENER) -&gt; localhost:50548 (id: 1 rack: null))) (kafka.server.MetadataCache:74)
+[2020-01-15 10:25:05,515] ERROR [MetadataCache brokerId=2] Listeners are not identical across brokers: Map(0 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50124 (id: 0 rack: null), ListenerName(INTERNAL) -&gt; localhost:50123 (id: 0 rack: null)), 2 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50143 (id: 2 rack: null), ListenerName(INTERNAL) -&gt; localhost:50142 (id: 2 rack: null), ListenerName(SCRAM_LISTENER) -&gt; localhost:50547 (id: 2 rack: null)), 1 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50131 (id: 1 rack: null), ListenerName(INTERNAL) -&gt; localhost:50129 (id: 1 rack: null), ListenerName(SCRAM_LISTENER) -&gt; localhost:50548 (id: 1 rack: null))) (kafka.server.MetadataCache:74)
+[2020-01-15 10:25:05,515] ERROR [MetadataCache brokerId=0] Listeners are not identical across brokers: Map(0 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50124 (id: 0 rack: null), ListenerName(INTERNAL) -&gt; localhost:50123 (id: 0 rack: null)), 2 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50143 (id: 2 rack: null), ListenerName(INTERNAL) -&gt; localhost:50142 (id: 2 rack: null), ListenerName(SCRAM_LISTENER) -&gt; localhost:50547 (id: 2 rack: null)), 1 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50131 (id: 1 rack: null), ListenerName(INTERNAL) -&gt; localhost:50129 (id: 1 rack: null), ListenerName(SCRAM_LISTENER) -&gt; localhost:50548 (id: 1 rack: null))) (kafka.server.MetadataCache:74)
+[2020-01-15 10:25:05,639] ERROR [MetadataCache brokerId=2] Listeners are not identical across brokers: Map(0 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50124 (id: 0 rack: null), ListenerName(INTERNAL) -&gt; localhost:50123 (id: 0 rack: null)), 2 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50143 (id: 2 rack: null), ListenerName(INTERNAL) -&gt; localhost:50142 (id: 2 rack: null), ListenerName(SCRAM_LISTENER) -&gt; localhost:50547 (id: 2 rack: null)), 1 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50131 (id: 1 rack: null), ListenerName(INTERNAL) -&gt; localhost:50129 (id: 1 rack: null), ListenerName(SCRAM_LISTENER) -&gt; localhost:50548 (id: 1 rack: null))) (kafka.server.MetadataCache:74)
+[2020-01-15 10:25:05,641] ERROR [MetadataCache brokerId=2] Listeners are not identical across brokers: Map(0 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50124 (id: 0 rack: null), ListenerName(INTERNAL) -&gt; localhost:50123 (id: 0 rack: null)), 2 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50143 (id: 2 rack: null), ListenerName(INTERNAL) -&gt; localhost:50142 (id: 2 rack: null), ListenerName(SCRAM_LISTENER) -&gt; localhost:50547 (id: 2 rack: null)), 1 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50131 (id: 1 rack: null), ListenerName(INTERNAL) -&gt; localhost:50129 (id: 1 rack: null), ListenerName(SCRAM_LISTENER) -&gt; localhost:50548 (id: 1 rack: null))) (kafka.server.MetadataCache:74)
+[2020-01-15 10:25:05,645] ERROR [MetadataCache brokerId=2] Listeners are not identical across brokers: Map(0 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50124 (id: 0 rack: null), ListenerName(INTERNAL) -&gt; localhost:50123 (id: 0 rack: null)), 2 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50143 (id: 2 rack: null), ListenerName(INTERNAL) -&gt; localhost:50142 (id: 2 rack: null), ListenerName(SCRAM_LISTENER) -&gt; localhost:50547 (id: 2 rack: null)), 1 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50131 (id: 1 rack: null), ListenerName(INTERNAL) -&gt; localhost:50129 (id: 1 rack: null), ListenerName(SCRAM_LISTENER) -&gt; localhost:50548 (id: 1 rack: null))) (kafka.server.MetadataCache:74)
+[2020-01-15 10:25:05,648] ERROR [MetadataCache brokerId=2] Listeners are not identical across brokers: Map(0 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50124 (id: 0 rack: null), ListenerName(INTERNAL) -&gt; localhost:50123 (id: 0 rack: null)), 2 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50143 (id: 2 rack: null), ListenerName(INTERNAL) -&gt; localhost:50142 (id: 2 rack: null), ListenerName(SCRAM_LISTENER) -&gt; localhost:50547 (id: 2 rack: null)), 1 -&gt; Map(ListenerName(EXTERNAL) -&gt; localhost:50131 (id: 1 rack: null), ListenerName(INTERNAL) -&gt; localhost:50129 (id: 1 rack: null), ListenerName(SCRAM_LISTENER) -&gt; localhost:50548 (id: 1 rack: null))) (kafka.server.MetadataCache:74)
+Completed updating config for entity: brokers '0'.
+Completed updating config for entity: brokers '1'.
+Completed updating config for entity: brokers '2'.
+[2020-01-15 10:25:15,660] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=1] Error for partition testtopic-2 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:15,662] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=1] Error for partition testtopic-8 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:15,662] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=1] Error for partition testtopic-2 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:15,662] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=1] Error for partition testtopic-8 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:15,662] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition testtopic-5 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:15,660] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition testtopic-5 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:18,755] ERROR [Producer clientId=test-client] Connection to node -2 (localhost/127.0.0.1:50741) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:25:18,876] ERROR [Producer clientId=test-client] Connection to node -3 (localhost/127.0.0.1:50748) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:25:18,995] ERROR [Producer clientId=test-client] Connection to node -2 (localhost/127.0.0.1:50741) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:25:21,062] ERROR [Producer clientId=test-client] Connection to node -2 (localhost/127.0.0.1:50741) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:25:21,177] ERROR [Producer clientId=test-client] Connection to node -1 (localhost/127.0.0.1:50732) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:25:21,293] ERROR [Producer clientId=test-client] Connection to node -3 (localhost/127.0.0.1:50748) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:25:21,411] ERROR [Producer clientId=test-client] Connection to node -1 (localhost/127.0.0.1:50732) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:25:21,524] ERROR [Producer clientId=test-client] Connection to node -3 (localhost/127.0.0.1:50748) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:25:21,642] ERROR [Producer clientId=test-client] Connection to node -2 (localhost/127.0.0.1:50741) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:25:23,145] ERROR [Producer clientId=test-client] Connection to node -2 (localhost/127.0.0.1:50741) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:25:23,260] ERROR [Producer clientId=test-client] Connection to node -2 (localhost/127.0.0.1:50741) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:25:23,372] ERROR [Producer clientId=test-client] Connection to node -1 (localhost/127.0.0.1:50732) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:25:23,486] ERROR [Producer clientId=test-client] Connection to node -1 (localhost/127.0.0.1:50732) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:25:23,601] ERROR [Producer clientId=test-client] Connection to node -3 (localhost/127.0.0.1:50748) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:25:23,714] ERROR [Producer clientId=test-client] Connection to node -3 (localhost/127.0.0.1:50748) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:25:23,830] ERROR [Producer clientId=test-client] Connection to node -2 (localhost/127.0.0.1:50741) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:25:23,943] ERROR [Producer clientId=test-client] Connection to node -1 (localhost/127.0.0.1:50732) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:25:24,056] ERROR [Producer clientId=test-client] Connection to node -3 (localhost/127.0.0.1:50748) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:25:24,743] ERROR [Producer clientId=test-client] Connection to node -2 (localhost/127.0.0.1:50741) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:25:24,856] ERROR [Producer clientId=test-client] Connection to node -1 (localhost/127.0.0.1:50732) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:25:24,970] ERROR [Producer clientId=test-client] Connection to node -3 (localhost/127.0.0.1:50748) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:25:25,818] ERROR [Producer clientId=test-client] Connection to node -1 (localhost/127.0.0.1:50732) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:25:25,933] ERROR [Producer clientId=test-client] Connection to node -2 (localhost/127.0.0.1:50741) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:25:26,046] ERROR [Producer clientId=test-client] Connection to node -3 (localhost/127.0.0.1:50748) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:25:26,687] ERROR [Producer clientId=test-client] Connection to node -1 (localhost/127.0.0.1:50732) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:25:26,956] ERROR [Producer clientId=test-client] Connection to node -2 (localhost/127.0.0.1:50741) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:25:27,179] ERROR [Producer clientId=test-client] Connection to node -3 (localhost/127.0.0.1:50748) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:25:27,707] ERROR [Producer clientId=test-client] Connection to node -1 (localhost/127.0.0.1:50732) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:25:27,922] ERROR [Producer clientId=test-client] Connection to node -2 (localhost/127.0.0.1:50741) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:25:28,093] ERROR [Producer clientId=test-client] Connection to node -3 (localhost/127.0.0.1:50748) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+Completed updating config for entity: brokers '0'.
+Completed updating config for entity: brokers '1'.
+Completed updating config for entity: brokers '2'.
+[2020-01-15 10:25:38,622] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition testtopic-9 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:38,622] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition testtopic-3 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:38,624] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=1] Error for partition testtopic-2 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:38,624] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=1] Error for partition testtopic-8 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:38,625] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition testtopic-5 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:38,627] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=1] Error for partition testtopic-6 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:38,627] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=1] Error for partition testtopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:38,726] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition testtopic-9 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:38,726] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition testtopic-3 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:38,732] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=1] Error for partition testtopic-6 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:38,732] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=1] Error for partition testtopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Completed updating config for broker 0.
+Completed updating config for broker 1.
+Completed updating config for broker 2.
+Completed updating config for entity: brokers '0'.
+Completed updating config for entity: brokers '1'.
+Completed updating config for entity: brokers '2'.
+[2020-01-15 10:25:50,166] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition testtopic-7 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:50,166] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition testtopic-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:50,166] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition testtopic-9 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:50,168] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition testtopic-3 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:50,169] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition testtopic-9 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:50,169] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition testtopic-3 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:50,170] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=1] Error for partition testtopic-4 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:50,171] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=1] Error for partition testtopic-6 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:50,172] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=1] Error for partition testtopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:53,190] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=1] Error for partition __consumer_offsets-4 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:53,192] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition __consumer_offsets-3 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:53,197] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=1] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:25:53,201] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition __consumer_offsets-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Completed updating config for entity: brokers '0'.
+Completed updating config for entity: brokers '1'.
+Completed updating config for entity: brokers '2'.
+[2020-01-15 10:26:23,014] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=1] Error for partition testtopic-4 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:23,017] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition testtopic-5 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:23,032] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition testtopic-7 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:23,033] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=1] Error for partition testtopic-2 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:23,036] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition testtopic-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:23,038] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=1] Error for partition testtopic-8 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:23,064] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=1] Error for partition testtopic-4 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:23,075] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition testtopic-7 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:23,076] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition testtopic-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:29,172] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition __consumer_offsets-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:29,172] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=1] Error for partition __consumer_offsets-4 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:29,175] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition __consumer_offsets-3 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:29,180] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=1] Error for partition __consumer_offsets-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:37,196] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition testtopic2-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:37,196] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=1] Error for partition testtopic2-6 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:37,196] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=1] Error for partition testtopic2-4 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:37,196] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition testtopic2-9 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:37,197] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=1] Error for partition testtopic2-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:37,196] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition testtopic2-7 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:37,197] ERROR [ReplicaFetcher replicaId=2, leaderId=0, fetcherId=0] Error for partition testtopic2-3 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:38,073] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition testtopic2-9 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:38,073] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=0] Error for partition testtopic2-3 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:38,078] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=1] Error for partition testtopic2-6 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:38,078] ERROR [ReplicaFetcher replicaId=1, leaderId=0, fetcherId=1] Error for partition testtopic2-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:39,079] ERROR [Producer clientId=test-client] Connection to node -1 (localhost/127.0.0.1:52041) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:26:39,193] ERROR [Producer clientId=test-client] Connection to node -2 (localhost/127.0.0.1:52061) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+Completed updating config for broker 0.
+[2020-01-15 10:26:39,305] ERROR [Producer clientId=test-client] Connection to node -2 (localhost/127.0.0.1:52061) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+Completed updating config for broker 1.
+[2020-01-15 10:26:39,422] ERROR [Producer clientId=test-client] Connection to node -3 (localhost/127.0.0.1:52075) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+Completed updating config for broker 2.
+[2020-01-15 10:26:39,572] ERROR [Producer clientId=test-client] Connection to node -3 (localhost/127.0.0.1:52075) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:26:39,681] ERROR [Producer clientId=test-client] Connection to node -2 (localhost/127.0.0.1:52061) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:26:39,791] ERROR [Producer clientId=test-client] Connection to node -3 (localhost/127.0.0.1:52075) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:26:39,902] ERROR [Producer clientId=test-client] Connection to node -2 (localhost/127.0.0.1:52061) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:26:40,013] ERROR [Producer clientId=test-client] Connection to node -1 (localhost/127.0.0.1:52041) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:26:40,179] ERROR [Producer clientId=test-client] Connection to node -1 (localhost/127.0.0.1:52041) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:26:40,288] ERROR [Producer clientId=test-client] Connection to node -3 (localhost/127.0.0.1:52075) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:26:40,396] ERROR [Producer clientId=test-client] Connection to node -2 (localhost/127.0.0.1:52061) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:26:40,660] ERROR [Producer clientId=test-client] Connection to node -1 (localhost/127.0.0.1:52041) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:26:41,245] ERROR [Producer clientId=test-client] Connection to node -3 (localhost/127.0.0.1:52075) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:26:41,617] ERROR [Producer clientId=test-client] Connection to node -1 (localhost/127.0.0.1:52041) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:26:41,726] ERROR [Producer clientId=test-client] Connection to node -2 (localhost/127.0.0.1:52061) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:26:42,302] ERROR [Producer clientId=test-client] Connection to node -3 (localhost/127.0.0.1:52075) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:26:42,681] ERROR [Producer clientId=test-client] Connection to node -2 (localhost/127.0.0.1:52061) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:26:42,795] ERROR [Producer clientId=test-client] Connection to node -1 (localhost/127.0.0.1:52041) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:26:43,191] ERROR [Producer clientId=test-client] Connection to node -3 (localhost/127.0.0.1:52075) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+[2020-01-15 10:26:44,402] ERROR [Producer clientId=test-client] Connection to node -3 (localhost/127.0.0.1:52075) failed authentication due to: SSL handshake failed (org.apache.kafka.clients.NetworkClient:745)
+Completed updating config for entity: brokers '0'.
+Completed updating config for entity: brokers '1'.
+Completed updating config for entity: brokers '2'.
+[2020-01-15 10:26:59,277] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition testtopic-5 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:59,277] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition testtopic-9 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:59,278] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition testtopic-3 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:59,280] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=1] Error for partition testtopic-2 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:59,280] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=1] Error for partition testtopic-6 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:59,280] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=1] Error for partition testtopic-8 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:59,280] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=1] Error for partition testtopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:59,340] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition testtopic-9 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:59,340] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition testtopic-3 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:59,343] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=1] Error for partition testtopic-6 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:26:59,343] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=1] Error for partition testtopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+Completed updating config for broker 0.
+Completed updating config for broker 1.
+Completed updating config for broker 2.
+Completed updating config for broker 0.
+Completed updating config for broker 1.
+Completed updating config for broker 2.
+Completed updating config for broker 0.
+Completed updating config for broker 1.
+Completed updating config for broker 2.
+Completed updating config for entity: brokers '0'.
+Completed updating config for entity: brokers '1'.
+Completed updating config for entity: brokers '2'.
+[2020-01-15 10:27:12,389] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=1] Error for partition testtopic-6 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:27:12,390] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=1] Error for partition testtopic-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:27:12,391] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition testtopic-9 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:27:12,391] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition testtopic-3 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:27:12,394] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition testtopic-7 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:27:12,394] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=0] Error for partition testtopic-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:27:12,396] ERROR [ReplicaFetcher replicaId=0, leaderId=2, fetcherId=1] Error for partition testtopic-4 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:27:12,488] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition testtopic-7 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:27:12,488] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=0] Error for partition testtopic-1 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:27:12,488] ERROR [ReplicaFetcher replicaId=1, leaderId=2, fetcherId=1] Error for partition testtopic-4 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:27:16,602] ERROR [kafka-log-cleaner-thread-1]: Error due to (kafka.log.LogCleaner:76)
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedNanos(AbstractQueuedSynchronizer.java:1039)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1328)
+	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:277)
+	at kafka.utils.ShutdownableThread.pause(ShutdownableThread.scala:82)
+	at kafka.log.LogCleaner$CleanerThread.doWork(LogCleaner.scala:304)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:96)
+[2020-01-15 10:27:16,602] ERROR [kafka-log-cleaner-thread-0]: Error due to (kafka.log.LogCleaner:76)
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedNanos(AbstractQueuedSynchronizer.java:1039)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1328)
+	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:277)
+	at kafka.utils.ShutdownableThread.pause(ShutdownableThread.scala:82)
+	at kafka.log.LogCleaner$CleanerThread.doWork(LogCleaner.scala:304)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:96)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.2</a> at 2020-1-15 10:48:49</p>
+</div>
+</div>
+</body>
+</html>

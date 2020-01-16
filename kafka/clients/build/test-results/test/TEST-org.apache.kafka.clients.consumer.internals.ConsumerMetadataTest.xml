@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.kafka.clients.consumer.internals.ConsumerMetadataTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:08:09" hostname="localhost" time="2.801">
+  <properties/>
+  <testcase name="testPatternSubscriptionNoInternalTopics" classname="org.apache.kafka.clients.consumer.internals.ConsumerMetadataTest" time="2.656"/>
+  <testcase name="testTransientTopics" classname="org.apache.kafka.clients.consumer.internals.ConsumerMetadataTest" time="0.078"/>
+  <testcase name="testNormalSubscription" classname="org.apache.kafka.clients.consumer.internals.ConsumerMetadataTest" time="0.003"/>
+  <testcase name="testUserAssignment" classname="org.apache.kafka.clients.consumer.internals.ConsumerMetadataTest" time="0.061"/>
+  <testcase name="testPatternSubscriptionIncludeInternalTopics" classname="org.apache.kafka.clients.consumer.internals.ConsumerMetadataTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

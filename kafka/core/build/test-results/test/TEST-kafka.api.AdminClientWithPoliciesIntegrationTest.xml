@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.api.AdminClientWithPoliciesIntegrationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:16:57" hostname="localhost" time="23.763">
+  <properties/>
+  <testcase name="testInvalidAlterConfigs" classname="kafka.api.AdminClientWithPoliciesIntegrationTest" time="5.869"/>
+  <testcase name="testValidAlterConfigs" classname="kafka.api.AdminClientWithPoliciesIntegrationTest" time="7.313"/>
+  <testcase name="testInvalidAlterConfigsDueToPolicy" classname="kafka.api.AdminClientWithPoliciesIntegrationTest" time="10.581"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

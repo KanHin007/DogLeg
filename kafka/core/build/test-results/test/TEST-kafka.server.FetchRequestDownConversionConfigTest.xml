@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.FetchRequestDownConversionConfigTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:27:21" hostname="localhost" time="40.764">
+  <properties/>
+  <testcase name="testV1FetchWithDownConversionDisabled" classname="kafka.server.FetchRequestDownConversionConfigTest" time="7.547"/>
+  <testcase name="testV1FetchFromReplica" classname="kafka.server.FetchRequestDownConversionConfigTest" time="8.623"/>
+  <testcase name="testLatestFetchWithDownConversionDisabled" classname="kafka.server.FetchRequestDownConversionConfigTest" time="10.412"/>
+  <testcase name="testV1FetchWithTopicLevelOverrides" classname="kafka.server.FetchRequestDownConversionConfigTest" time="14.182"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

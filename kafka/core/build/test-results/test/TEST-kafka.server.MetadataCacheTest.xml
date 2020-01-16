@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.MetadataCacheTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:47:15" hostname="localhost" time="0.012">
+  <properties/>
+  <testcase name="getTopicMetadataPartitionListenerNotAvailableOnLeader" classname="kafka.server.MetadataCacheTest" time="0.002"/>
+  <testcase name="getTopicMetadataWithNonSupportedSecurityProtocol" classname="kafka.server.MetadataCacheTest" time="0.0"/>
+  <testcase name="getTopicMetadataIsrNotAvailable" classname="kafka.server.MetadataCacheTest" time="0.002"/>
+  <testcase name="getTopicMetadata" classname="kafka.server.MetadataCacheTest" time="0.003"/>
+  <testcase name="getTopicMetadataReplicaNotAvailable" classname="kafka.server.MetadataCacheTest" time="0.002"/>
+  <testcase name="getTopicMetadataPartitionListenerNotAvailableOnLeaderOldMetadataVersion" classname="kafka.server.MetadataCacheTest" time="0.0"/>
+  <testcase name="getTopicMetadataPartitionLeaderNotAvailable" classname="kafka.server.MetadataCacheTest" time="0.001"/>
+  <testcase name="getAliveBrokersShouldNotBeMutatedByUpdateCache" classname="kafka.server.MetadataCacheTest" time="0.001"/>
+  <testcase name="getTopicMetadataNonExistingTopics" classname="kafka.server.MetadataCacheTest" time="0.0"/>
+  <system-out><![CDATA[[2020-01-15 10:47:15,274] ERROR [MetadataCache brokerId=1] Listeners are not identical across brokers: Map(0 -> Map(ListenerName(PLAINTEXT) -> host0:9092 (id: 0 rack: null), ListenerName(SSL) -> host0:9093 (id: 0 rack: null)), 1 -> Map(ListenerName(PLAINTEXT) -> host1:9092 (id: 1 rack: null))) (kafka.server.MetadataCache:74)
+[2020-01-15 10:47:15,283] ERROR [MetadataCache brokerId=1] Listeners are not identical across brokers: Map(0 -> Map(ListenerName(PLAINTEXT) -> host0:9092 (id: 0 rack: null), ListenerName(SSL) -> host0:9093 (id: 0 rack: null)), 1 -> Map(ListenerName(PLAINTEXT) -> host1:9092 (id: 1 rack: null))) (kafka.server.MetadataCache:74)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

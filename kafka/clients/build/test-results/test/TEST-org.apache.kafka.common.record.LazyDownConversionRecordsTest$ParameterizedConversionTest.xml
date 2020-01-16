@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.kafka.common.record.LazyDownConversionRecordsTest$ParameterizedConversionTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:08:36" hostname="localhost" time="0.106">
+  <properties/>
+  <testcase name="testConversionWithOverflow[compressionType=NONE, toMagic=0]" classname="org.apache.kafka.common.record.LazyDownConversionRecordsTest$ParameterizedConversionTest" time="0.063"/>
+  <testcase name="testConversion[compressionType=NONE, toMagic=0]" classname="org.apache.kafka.common.record.LazyDownConversionRecordsTest$ParameterizedConversionTest" time="0.003"/>
+  <testcase name="testConversionWithOverflow[compressionType=GZIP, toMagic=0]" classname="org.apache.kafka.common.record.LazyDownConversionRecordsTest$ParameterizedConversionTest" time="0.01"/>
+  <testcase name="testConversion[compressionType=GZIP, toMagic=0]" classname="org.apache.kafka.common.record.LazyDownConversionRecordsTest$ParameterizedConversionTest" time="0.005"/>
+  <testcase name="testConversionWithOverflow[compressionType=NONE, toMagic=1]" classname="org.apache.kafka.common.record.LazyDownConversionRecordsTest$ParameterizedConversionTest" time="0.003"/>
+  <testcase name="testConversion[compressionType=NONE, toMagic=1]" classname="org.apache.kafka.common.record.LazyDownConversionRecordsTest$ParameterizedConversionTest" time="0.002"/>
+  <testcase name="testConversionWithOverflow[compressionType=GZIP, toMagic=1]" classname="org.apache.kafka.common.record.LazyDownConversionRecordsTest$ParameterizedConversionTest" time="0.004"/>
+  <testcase name="testConversion[compressionType=GZIP, toMagic=1]" classname="org.apache.kafka.common.record.LazyDownConversionRecordsTest$ParameterizedConversionTest" time="0.003"/>
+  <testcase name="testConversionWithOverflow[compressionType=NONE, toMagic=2]" classname="org.apache.kafka.common.record.LazyDownConversionRecordsTest$ParameterizedConversionTest" time="0.002"/>
+  <testcase name="testConversion[compressionType=NONE, toMagic=2]" classname="org.apache.kafka.common.record.LazyDownConversionRecordsTest$ParameterizedConversionTest" time="0.002"/>
+  <testcase name="testConversionWithOverflow[compressionType=GZIP, toMagic=2]" classname="org.apache.kafka.common.record.LazyDownConversionRecordsTest$ParameterizedConversionTest" time="0.003"/>
+  <testcase name="testConversion[compressionType=GZIP, toMagic=2]" classname="org.apache.kafka.common.record.LazyDownConversionRecordsTest$ParameterizedConversionTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

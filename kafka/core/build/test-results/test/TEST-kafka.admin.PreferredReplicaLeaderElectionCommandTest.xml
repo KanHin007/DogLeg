@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.admin.PreferredReplicaLeaderElectionCommandTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:12:42" hostname="localhost" time="151.052">
+  <properties/>
+  <testcase name="testBasicPreferredReplicaElection" classname="kafka.admin.PreferredReplicaLeaderElectionCommandTest" time="14.402"/>
+  <testcase name="testInvalidBrokerGiven" classname="kafka.admin.PreferredReplicaLeaderElectionCommandTest" time="2.404"/>
+  <testcase name="testPreferredReplicaJsonData" classname="kafka.admin.PreferredReplicaLeaderElectionCommandTest" time="0.521"/>
+  <testcase name="testTimeout" classname="kafka.admin.PreferredReplicaLeaderElectionCommandTest" time="21.291"/>
+  <testcase name="testAuthzFailure" classname="kafka.admin.PreferredReplicaLeaderElectionCommandTest" time="19.361"/>
+  <testcase name="testNoopElection" classname="kafka.admin.PreferredReplicaLeaderElectionCommandTest" time="5.506"/>
+  <testcase name="testSingletonPartitionGiven" classname="kafka.admin.PreferredReplicaLeaderElectionCommandTest" time="17.036"/>
+  <testcase name="testMultiplePartitionsSameAssignment" classname="kafka.admin.PreferredReplicaLeaderElectionCommandTest" time="18.177"/>
+  <testcase name="testTopicDoesNotExist" classname="kafka.admin.PreferredReplicaLeaderElectionCommandTest" time="5.538"/>
+  <testcase name="testWithOfflinePreferredReplica" classname="kafka.admin.PreferredReplicaLeaderElectionCommandTest" time="15.846"/>
+  <testcase name="testNoPartitionsGiven" classname="kafka.admin.PreferredReplicaLeaderElectionCommandTest" time="16.17"/>
+  <testcase name="testMultipleBrokersGiven" classname="kafka.admin.PreferredReplicaLeaderElectionCommandTest" time="14.8"/>
+  <system-out><![CDATA[Created preferred replica election path with test-0
+Successfully started preferred replica election for partitions Set(test-0)
+[2020-01-15 10:12:47,583] ERROR [Controller id=2] Error completing replica leader election (PREFERRED) for partition test-0 (kafka.controller.KafkaController:76)
+kafka.common.StateChangeFailedException: Failed to elect leader for partition test-0 under strategy PreferredReplicaPartitionLeaderElectionStrategy
+	at kafka.controller.ZkPartitionStateMachine.$anonfun$doElectLeaderForPartitions$7(PartitionStateMachine.scala:427)
+	at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)
+	at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)
+	at kafka.controller.ZkPartitionStateMachine.doElectLeaderForPartitions(PartitionStateMachine.scala:424)
+	at kafka.controller.ZkPartitionStateMachine.electLeaderForPartitions(PartitionStateMachine.scala:335)
+	at kafka.controller.ZkPartitionStateMachine.doHandleStateChanges(PartitionStateMachine.scala:236)
+	at kafka.controller.ZkPartitionStateMachine.handleStateChanges(PartitionStateMachine.scala:157)
+	at kafka.controller.KafkaController.onReplicaElection(KafkaController.scala:702)
+	at kafka.controller.KafkaController.processReplicaLeaderElection(KafkaController.scala:1754)
+	at kafka.controller.KafkaController.process(KafkaController.scala:1813)
+	at kafka.controller.QueuedEvent.process(ControllerEventManager.scala:52)
+	at kafka.controller.ControllerEventManager$ControllerEventThread.process$1(ControllerEventManager.scala:128)
+	at kafka.controller.ControllerEventManager$ControllerEventThread.$anonfun$doWork$1(ControllerEventManager.scala:131)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at kafka.metrics.KafkaTimer.time(KafkaTimer.scala:31)
+	at kafka.controller.ControllerEventManager$ControllerEventThread.doWork(ControllerEventManager.scala:131)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:96)
+This tool is deprecated. Please use kafka-leader-election tool. Tracking issue: KAFKA-8405
+Timeout waiting for election results
+Created preferred replica election path with test-1,test2-1
+This tool is deprecated. Please use kafka-leader-election tool. Tracking issue: KAFKA-8405
+Timeout waiting for election results
+[2020-01-15 10:13:22,875] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:13:22,950] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+This tool is deprecated. Please use kafka-leader-election tool. Tracking issue: KAFKA-8405
+Not authorized to perform leader election
+[2020-01-15 10:13:41,085] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:13:41,085] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+This tool is deprecated. Please use kafka-leader-election tool. Tracking issue: KAFKA-8405
+Preferred replica already elected for partitions 
+[2020-01-15 10:13:47,078] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:13:47,096] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+This tool is deprecated. Please use kafka-leader-election tool. Tracking issue: KAFKA-8405
+Successfully completed preferred leader election for partitions test-0
+This tool is deprecated. Please use kafka-leader-election tool. Tracking issue: KAFKA-8405
+Successfully completed preferred leader election for partitions testA-0, testB-0
+This tool is deprecated. Please use kafka-leader-election tool. Tracking issue: KAFKA-8405
+Error completing preferred leader election for partition: does.not.exist-0: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: The partition does not exist.
+[2020-01-15 10:14:27,599] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:27,599] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+This tool is deprecated. Please use kafka-leader-election tool. Tracking issue: KAFKA-8405
+Error completing preferred leader election for partition: test-0: org.apache.kafka.common.errors.PreferredLeaderNotAvailableException: Failed to elect leader for partition test-0 under strategy PreferredReplicaPartitionLeaderElectionStrategy
+[2020-01-15 10:14:43,834] ERROR [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[2020-01-15 10:14:43,930] ERROR [ReplicaFetcher replicaId=0, leaderId=1, fetcherId=0] Error for partition test-0 at offset 0 (kafka.server.ReplicaFetcherThread:76)
+org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+This tool is deprecated. Please use kafka-leader-election tool. Tracking issue: KAFKA-8405
+Successfully completed preferred leader election for partitions test-0
+This tool is deprecated. Please use kafka-leader-election tool. Tracking issue: KAFKA-8405
+Successfully completed preferred leader election for partitions test-0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

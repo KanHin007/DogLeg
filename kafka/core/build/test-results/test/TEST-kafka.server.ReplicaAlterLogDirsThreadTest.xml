@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.server.ReplicaAlterLogDirsThreadTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:34:01" hostname="localhost" time="4.208">
+  <properties/>
+  <testcase name="shouldFetchLeaderEpochOnFirstFetchOnly" classname="kafka.server.ReplicaAlterLogDirsThreadTest" time="0.037"/>
+  <testcase name="issuesEpochRequestFromLocalReplica" classname="kafka.server.ReplicaAlterLogDirsThreadTest" time="0.032"/>
+  <testcase name="shouldTruncateToInitialFetchOffsetIfReplicaReturnsUndefinedOffset" classname="kafka.server.ReplicaAlterLogDirsThreadTest" time="0.002"/>
+  <testcase name="shouldTruncateToReplicaOffset" classname="kafka.server.ReplicaAlterLogDirsThreadTest" time="0.036"/>
+  <testcase name="shouldFetchOneReplicaAtATime" classname="kafka.server.ReplicaAlterLogDirsThreadTest" time="0.036"/>
+  <testcase name="shouldPollIndefinitelyIfReplicaNotAvailable" classname="kafka.server.ReplicaAlterLogDirsThreadTest" time="3.052"/>
+  <testcase name="shouldTruncateToEndOffsetOfLargestCommonEpoch" classname="kafka.server.ReplicaAlterLogDirsThreadTest" time="1.008"/>
+  <testcase name="fetchEpochsFromLeaderShouldHandleExceptionFromGetLocalReplica" classname="kafka.server.ReplicaAlterLogDirsThreadTest" time="0.002"/>
+  <testcase name="shouldFetchNonDelayedAndNonTruncatingReplicas" classname="kafka.server.ReplicaAlterLogDirsThreadTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

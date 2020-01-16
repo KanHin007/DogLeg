@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kafka.log.OffsetIndexTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2020-01-15T02:21:23" hostname="localhost" time="0.019">
+  <properties/>
+  <testcase name="lookupExtremeCases" classname="kafka.log.OffsetIndexTest" time="0.001"/>
+  <testcase name="appendTooMany" classname="kafka.log.OffsetIndexTest" time="0.001"/>
+  <testcase name="testEntry" classname="kafka.log.OffsetIndexTest" time="0.001"/>
+  <testcase name="testSanityLastOffsetEqualToBaseOffset" classname="kafka.log.OffsetIndexTest" time="0.001"/>
+  <testcase name="forceUnmapTest" classname="kafka.log.OffsetIndexTest" time="0.002"/>
+  <testcase name="testFetchUpperBoundOffset" classname="kafka.log.OffsetIndexTest" time="0.001"/>
+  <testcase name="randomLookupTest" classname="kafka.log.OffsetIndexTest" time="0.009"/>
+  <testcase name="testEntryOverflow" classname="kafka.log.OffsetIndexTest" time="0.001"/>
+  <testcase name="testReopen" classname="kafka.log.OffsetIndexTest" time="0.001"/>
+  <testcase name="appendOutOfOrder" classname="kafka.log.OffsetIndexTest" time="0.0"/>
+  <testcase name="truncate" classname="kafka.log.OffsetIndexTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
